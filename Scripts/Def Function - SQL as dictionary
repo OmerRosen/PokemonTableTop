@@ -1,0 +1,28 @@
+def runSQLRetunrResults ( SQLQuery , Password):
+
+    import pyodbc
+    #SQLQuery="EXEC Pokemon.dbo.GetAvailablePokemon @Username='Audun'"
+    #Password = 's0uthparK'
+
+    SQLConnection = pyodbc.connect('DRIVER={SQL Server};SERVER=OMER-PC\SQLEXPRESS;DATABASE=Pokemon;UID=sa;PWD='+Password)
+    cursor = SQLConnection.cursor()
+    cursor.execute("EXEC Pokemon.dbo.GetAvailablePokemon @Username='Audun'")
+    titles = cursor.description
+    headers = []
+    for col_num in range(len(titles)):
+        headers.append(titles[col_num][0])
+    print headers
+    content = cursor.fetchall()
+    Dictionary = []
+
+    for row in content:
+        dic = {}
+        for header in range(len(headers)):
+            dic[headers[header]] = row[header]
+        Dictionary.append(dic)
+
+    SQLConnection.close()
+    return Dictionary
+
+
+

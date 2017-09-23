@@ -1,0 +1,6 @@
+Key:FirstPrimaryKey INT,Key:SecondPrimary NVARCHAR(100),ResultOne NVARCHAR(100),Result2 NVARCHAR(100)
+1,Omer Rosen,Undoubted King,Hung
+2,Zach Golan,Bitching Wife,Hunger
+3,line 3,ResultOne 3,ResultTwo 3
+4,libe 4,ResultOne 4,ResultTwo 4
+5,line 5,ResultOne 5,ResultTwo 5

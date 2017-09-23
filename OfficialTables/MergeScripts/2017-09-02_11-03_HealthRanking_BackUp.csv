@@ -1,0 +1,10 @@
+PercentMin,PercentMax,New_HealthDescription,Old_HealthDescription
+100,100,Fully Health,Fully Health
+80,100,Barely injured,Barely injured
+50,80,Moderetly Injured,Moderetly Injured
+30,50,Injured,Injured
+10,30,Badly Injured,Badly Injured
+5,10,Critially Injured,Critially Injured
+0,5,Fataly Injured,Fataly Injured
+-100,0,Fainted,Fainted
+-200,-100,Dead,Dead
