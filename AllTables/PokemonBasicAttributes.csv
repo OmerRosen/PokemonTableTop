@@ -1,0 +1,673 @@
+PokemonName,HP,Attack,Defense,Special Attack,Special Defense,Speed,Type1,Type2,Overland,Sky,Surface,Underwater,Burrow,Jump,Power,Intelligence,Capability 1,Capability 2,Capability 3,Capability 4,Capability 5,Capability 6,Capability 7,Size,Weight,EggGroup1,EggGroup2
+Abomasnow,9,9,8,9,9,6,Grass,Ice,8,0,4,0,0,3,4,4,Chilled,Freezer,Ice Step,-,-,-,-,Large,5,Monster,Plant
+Abra,3,2,2,11,6,9,Psychic,none,3,0,0,0,0,0,1,4,Sinker,Telekinetic,Telepath,-,-,-,-,Small,2,Humanshape,-
+Absol,7,13,6,8,6,8,Dark,none,8,0,6,0,0,4,3,4,Aura,Stealth,Tracker,-,-,-,-,Medium,3,Field,-
+Accelgor,8,7,4,10,6,15,Bug,none,15,0,10,10,0,4,3,4,-,-,-,-,-,-,-,Small,3,Bug,-
+Aerodactyl,8,11,7,6,8,13,Rock,Flying,4,15,0,0,0,4,5,4,Sinker,-,-,-,-,-,-,Huge,4,Flying,-
+Aggron,7,11,18,6,6,5,Steel,Rock,7,0,0,0,0,3,5,4,Sinker,-,-,-,-,-,-,Large,6,Monster,-
+Aipom,6,7,6,4,6,9,Normal,none,8,0,6,0,0,5,2,4,-,-,-,-,-,-,-,Small,2,Field,-
+Alakazam,6,5,5,14,9,12,Psychic,none,7,0,3,0,0,2,2,7,Aura,Telekinetic,Telepath,-,-,-,-,Medium,3,Humanshape,-
+Alomomola,17,8,8,4,5,7,Water,none,1,0,8,8,0,2,3,4,Fountain,-,-,-,-,-,-,Medium,3,Water 1,Water 2
+Altaria,8,7,9,7,11,8,Dragon,Flying,4,10,2,0,0,2,2,4,Guster,-,-,-,-,-,-,Medium,2,Flying,Dragon
+Ambipom,8,10,7,6,7,12,Normal,none,9,0,7,0,0,5,3,4,-,-,-,-,-,-,-,Medium,2,Field,-
+Amoonguss,11,9,7,9,8,3,Grass,Poison,8,0,4,0,0,1,3,4,Shrinkable,Sprouter,-,-,-,-,-,Small,1,Plant,-
+Ampharos,9,8,8,12,9,6,Electric,none,8,0,3,0,0,3,3,4,Glow,Zapper,-,-,-,-,-,Medium,4,Monster,Field
+Anorith,5,10,5,4,5,8,Rock,Bug,5,0,5,5,0,1,1,2,Gilled,-,-,-,-,-,-,Small,2,Water 3,-
+Arbok,6,9,7,7,8,8,Poison,none,9,0,7,0,0,2,3,4,Stealth,-,-,-,-,-,-,Medium,4,Field,Dragon
+Arcanine,9,11,8,10,8,10,Fire,none,16,0,6,0,0,5,4,4,Firestarter,Tracker,-,-,-,-,-,Large,5,Field,-
+Arceus,12,12,12,12,12,12,Normal,none,20,20,20,20,20,10,10,7,Aura,Avatar,Divine,Glow,Invisibility,Telekinetic,Telepath,Gigantic,6,None,-
+Archen,6,11,5,7,5,7,Rock,Flying,8,3,1,0,0,5,1,4,Fragile,-,-,-,-,-,-,Small,1,Flying,Water 3
+Archeops,8,14,7,11,7,11,Rock,Flying,12,6,1,0,0,6,2,4,Fragile,-,-,-,-,-,-,Medium,3,Flying,Water 3
+Ariados,7,9,7,6,6,4,Bug,Poison,8,0,3,0,0,6,2,4,Threaded,-,-,-,-,-,-,Medium,3,Bug,-
+Armaldo,8,13,10,7,8,5,Rock,Bug,8,0,8,8,0,3,4,4,Gilled,-,-,-,-,-,-,Medium,4,Water 3,-
+Aron,5,7,10,4,4,3,Steel,Rock,3,0,0,0,0,3,2,3,Sinker,-,-,-,-,-,-,Small,4,Monster,-
+Articuno,9,9,10,10,13,9,Ice,Flying,10,15,6,0,0,5,5,7,Chilled,Freezer,Glow,Guster,-,-,-,Large,4,Flying,-
+Audino,10,6,9,6,9,5,Normal,none,6,0,4,0,0,2,3,4,-,-,-,-,-,-,-,Medium,3,Fairy,-
+Axew,5,9,6,3,4,6,Dragon,none,6,0,4,0,0,2,3,2,-,-,-,-,-,-,-,Small,2,Monster,Dragon
+Azelf,8,13,7,13,7,12,Psychic,none,10,12,10,0,0,5,2,7,Aura,Statue,Telekinetic,Telepath,-,-,-,Small,1,None,-
+Azumarill,10,5,8,5,8,5,Water,none,5,0,10,8,0,4,4,4,Fountain,-,-,-,-,-,-,Small,3,Water 1,Fairy
+Azurill,5,2,4,2,4,2,Normal,none,3,0,8,6,0,1,1,2,Fountain,-,-,-,-,-,-,Small,1,Water 1,Fairy
+Bagon,5,8,6,4,3,5,Dragon,none,6,0,4,0,0,3,2,3,-,-,-,-,-,-,-,Small,3,Dragon,-
+Baltoy,4,4,6,4,7,6,Ground,Psychic,1,4,0,0,0,3,2,4,Sinker,-,-,-,-,-,-,Small,2,Mineral,-
+Banette,6,12,7,8,6,7,Ghost,none,6,6,4,0,0,3,3,4,Invisibility,Phasing,Stealth,-,-,-,-,Medium,2,Indeterminate,-
+Barboach,5,5,4,5,4,6,Water,Ground,3,0,8,6,0,3,1,3,Gilled,-,-,-,-,-,-,Small,1,Water 2,-
+Basculin,7,9,7,8,6,10,Water,none,1,0,9,9,0,4,4,3,Fountain,-,-,-,-,-,-,Medium,2,Water 2,-
+Bastiodon,6,5,17,5,14,3,Rock,Steel,6,0,0,0,0,3,4,4,Sinker,-,-,-,-,-,-,Medium,5,Monster,-
+Bayleef,6,6,8,6,8,6,Grass,none,8,0,2,0,0,3,2,3,Sprouter,-,-,-,-,-,-,Medium,2,Monster,Plant
+Beartic,10,11,8,7,8,5,Ice,none,7,0,7,0,0,3,4,4,Chilled,Freezer,Icestep,-,-,-,-,Large,6,Field,-
+Beautifly,6,7,5,9,5,7,Bug,Flying,2,9,0,0,0,3,3,4,Sinker,-,-,-,-,-,-,Medium,3,Bug,-
+Beedrill,7,8,4,5,8,8,Bug,Poison,2,10,0,0,0,3,3,4,Sinker,-,-,-,-,-,-,Medium,3,Bug,-
+Beheeyem,8,8,8,13,10,4,Psychic,none,7,7,7,0,0,3,3,6,Telekinetic,Telepath,-,-,-,-,-,Medium,3,Humanshape,-
+Beldum,4,6,8,4,6,3,Steel,Psychic,1,6,0,0,0,1,3,5,Magnetic,Sinker,-,-,-,-,-,Small,4,Mineral,-
+Bellossom,8,8,9,9,10,5,Grass,none,8,0,3,0,0,3,2,4,Sprouter,-,-,-,-,-,-,Small,1,Plant,-
+Bellsprout,5,8,4,7,3,4,Grass,Poison,4,0,0,0,1,1,1,2,Sinker,Sprouter,-,-,-,-,-,Small,1,Plant,-
+Bibarel,8,9,6,6,6,7,Normal,Water,8,0,9,0,0,3,3,3,Fountain,-,-,-,-,-,-,Medium,3,Water 1,Field
+Bidoof,6,5,4,4,4,3,Normal,none,6,0,6,0,0,2,1,2,-,-,-,-,-,-,-,Small,2,Water 1,Field
+Bisharp,7,13,10,6,7,7,Dark,Steel,9,0,7,0,0,4,4,4,Aura,Pack Mon,Stealth,Tracker,-,-,-,Medium,4,Humanshape,-
+Blastoise,8,8,10,9,11,8,Water,none,4,0,12,10,0,1,4,4,Fountain,-,-,-,-,-,-,Medium,4,Monster,Water 1
+Blaziken,8,12,7,11,7,8,Fire,Fighting,12,0,1,0,0,7,5,4,Firestarter,-,-,-,-,-,-,Medium,4,Field,-
+Blissey,26,1,1,8,14,6,Normal,none,8,0,3,0,0,3,3,4,-,-,-,-,-,-,-,Medium,3,Fairy,-
+Blitzle,5,6,3,5,3,8,Electric,none,8,0,6,0,0,4,2,4,Glow,Zapper,-,-,-,-,-,Medium,3,Field,-
+Boldore,7,11,11,5,4,2,Rock,none,3,0,0,0,0,1,4,4,Sinker,-,-,-,-,-,-,Medium,5,Mineral,-
+Bonsly,5,8,10,1,5,1,Rock,none,4,0,0,0,0,2,1,3,Sinker,-,-,-,-,-,-,Small,2,Mineral,-
+Bouffalant,10,11,10,4,10,6,Normal,none,12,0,8,0,0,3,4,3,Pack Mon,-,-,-,-,-,-,Large,4,Field,-
+Braviary,10,12,8,6,8,8,Normal,Flying,4,12,1,0,0,3,4,3,-,-,-,-,-,-,-,Large,3,Flying,-
+Breloom,6,13,8,6,6,7,Grass,Fighting,8,0,4,0,0,3,3,4,-,-,-,-,-,-,-,Medium,3,Fairy,Plant
+Bronzong,7,9,12,8,12,3,Steel,Psychic,1,8,0,0,0,2,4,4,Sinker,-,-,-,-,-,-,Medium,5,Mineral,-
+Bronzor,6,2,9,2,9,2,Steel,Psychic,1,4,0,0,0,2,3,4,Sinker,-,-,-,-,-,-,Small,4,Mineral,-
+Budew,4,3,4,5,7,6,Grass,Poison,4,0,2,0,0,2,1,3,Sprouter,-,-,-,-,-,-,Small,1,Fairy,Plant
+Buizel,6,7,4,6,3,9,Water,none,7,0,7,6,0,2,2,4,Fountain,-,-,-,-,-,-,Small,3,Water 1,Field
+Bulbasaur,5,5,5,7,7,5,Grass,Poison,7,0,2,0,0,2,1,3,Sprouter,-,-,-,-,-,-,Small,1,Monster,Plant
+Buneary,6,7,4,4,6,9,Normal,none,6,0,4,0,0,5,1,2,-,-,-,-,-,-,-,Small,1,Field,Humanshape
+Burmy,4,3,5,3,5,4,Bug,none,3,0,1,0,0,3,1,2,Threaded,-,-,-,-,-,-,Small,1,Bug,-
+Butterfree,6,5,5,8,8,7,Bug,Flying,2,10,0,0,0,3,3,4,Sinker,-,-,-,-,-,-,Medium,3,Bug,-
+Cacnea,5,9,4,9,4,4,Grass,none,4,0,2,0,0,3,2,4,-,-,-,-,-,-,-,Small,4,Plant,Humanshape
+Cacturne,7,12,6,12,6,6,Grass,Dark,8,0,4,0,0,3,3,4,Sprouter,Stealth,-,-,-,-,-,Medium,4,Plant,Humanshape
+Camerupt,7,10,7,11,8,4,Fire,Ground,8,0,0,0,0,2,4,4,Egg Warmer,Firestarter,Heater,Sinker,-,-,-,Large,6,Field,-
+Carnivine,7,10,7,9,7,5,Grass,none,6,4,4,0,0,3,2,4,Sprouter,-,-,-,-,-,-,Medium,3,Plant,-
+Carracosta,7,11,13,8,7,3,Water,Rock,5,0,10,10,0,2,4,4,Fountain,-,-,-,-,-,-,Medium,4,Water 1,Water 3
+Carvanha,5,9,2,7,2,7,Water,Dark,1,0,10,8,0,3,1,4,Gilled,-,-,-,-,-,-,Small,2,Water 2,-
+Cascoon,5,4,6,3,3,2,Bug,none,1,0,0,0,0,4,2,2,Sinker,Threaded,-,-,-,-,-,Small,1,Bug,-
+Castform,7,7,7,7,7,7,Normal,none,1,0,0,0,0,4,2,2,Guster,Weathershape,-,-,-,-,-,Small,1,Fairy,Indeterminate
+Castform-sun,7,7,7,7,7,7,Fire,none,1,0,0,0,0,4,2,2,Guster,Weathershape,-,-,-,-,-,Small,1,Fairy,Indeterminate
+Castform-rain,7,7,7,7,7,7,Water,none,1,0,0,0,0,4,2,2,Guster,Weathershape,-,-,-,-,-,Small,1,Fairy,Indeterminate
+Castform-snow,7,7,7,7,7,7,Ice,none,1,6,6,0,0,2,1,4,Guster,Weathershape,-,-,-,-,-,Small,1,Fairy,Indeterminate
+Caterpie,5,3,4,2,2,5,Bug,none,3,0,0,0,1,2,2,2,Sinker,Threaded,-,-,-,-,-,Small,1,Bug,-
+Celebi,10,10,10,10,10,10,Psychic,Grass,10,18,10,0,0,6,3,7,Aura,Glow,Sprouter,Telekinetic,Telepath,Time Traveler,-,Small,1,None,-
+Chandelure,6,6,9,15,9,8,Ghost,Fire,1,8,0,0,0,2,1,4,Firestarter,Heater,Invisibility,Phasing,Shrinkable,Sinker,-,Medium,2,Indeterminate,-
+Chansey,25,1,1,4,11,5,Normal,none,6,0,2,0,0,2,2,4,-,-,-,-,-,-,-,Medium,3,Fairy,-
+Charizard,8,8,8,11,9,10,Fire,Flying,6,10,0,0,0,2,4,4,Firestarter,Glow,Heater,Sinker,-,-,-,Medium,4,Monster,Dragon
+Charmander,4,5,4,6,5,7,Fire,none,6,0,0,0,0,3,1,3,Firestarter,Glow,Sinker,-,-,-,-,Small,1,Monster,Dragon
+Charmeleon,6,6,6,8,7,8,Fire,none,6,0,0,0,0,3,2,3,Firestarter,Glow,Sinker,-,-,-,-,Medium,2,Monster,Dragon
+Chatot,8,7,5,9,4,9,Normal,Flying,6,8,1,0,0,3,1,4,-,-,-,-,-,-,-,Small,1,Flying,-
+Cherrim,7,6,7,9,8,9,Grass,none,6,0,4,0,0,4,1,4,Bloom,-,-,-,-,-,-,Small,1,Fairy,Plant
+Cherubi,5,4,5,6,5,4,Grass,none,4,0,2,0,0,4,1,3,-,-,-,-,-,-,-,Small,1,Fairy,Plant
+Chikorita,5,5,7,5,7,5,Grass,none,7,0,2,0,0,2,1,3,Sprouter,-,-,-,-,-,-,Small,1,Monster,Plant
+Chimchar,4,6,4,6,4,6,Fire,none,5,0,0,0,0,2,1,3,Firestarter,Sinker,-,-,-,-,-,Small,1,Field,Humanshape
+Chimecho,7,5,7,10,8,7,Psychic,none,3,8,2,0,0,2,1,4,Telepath,-,-,-,-,-,-,Small,1,Indeterminate,-
+Chinchou,8,4,4,6,6,7,Water,Electric,2,0,8,8,0,2,1,3,Gilled,Glow,-,-,-,-,-,Small,2,Water 2,-
+Chingling,5,3,5,7,5,5,Psychic,none,2,4,1,0,0,2,1,4,Telepath,-,-,-,-,-,-,Small,1,Indeterminate,-
+Cinccino,8,10,6,7,6,12,Normal,none,8,0,6,0,7,3,2,4,-,-,-,-,-,-,-,Small,1,Field,-
+Clamperl,4,6,9,7,6,3,Water,none,1,0,6,6,0,2,2,3,Gilled,-,-,-,-,-,-,Small,4,Water 1,-
+Claydol,6,7,11,7,12,8,Ground,Psychic,1,8,0,0,0,3,3,4,Sinker,-,-,-,-,-,-,Medium,5,Mineral,-
+Clefable,10,7,7,9,9,6,Normal,none,7,0,4,0,0,5,3,4,-,-,-,-,-,-,-,Medium,3,Fairy,-
+Clefairy,7,5,5,6,7,4,Normal,none,6,0,3,0,0,4,2,3,-,-,-,-,-,-,-,Small,1,Fairy,-
+Cleffa,5,3,3,5,6,2,Normal,none,2,0,1,0,0,2,1,3,-,-,-,-,-,-,-,Small,1,Fairy,-
+Cloyster,5,10,18,9,5,7,Water,Ice,3,0,9,8,0,2,4,4,Freezer,Gilled,-,-,-,-,-,Medium,5,Water 3,-
+Cobalion,9,9,13,9,7,11,Steel,Fighting,14,0,12,0,0,4,5,5,Aura,-,-,-,-,-,-,Large,6,Field,-
+Cofagrigus,6,5,15,10,11,3,Ghost,none,7,7,7,0,0,3,3,4,Invisibility,Phasing,-,-,-,-,-,Medium,4,Mineral,Indeterminate
+Combee,3,3,4,3,4,7,Bug,Flying,1,6,0,0,1,2,1,2,Sinker,-,-,-,-,-,-,Small,1,Bug,-
+Combusken,6,9,6,9,6,6,Fire,Fighting,8,0,1,0,0,3,4,3,Firestarter,-,-,-,-,-,-,Small,2,Field,-
+Conkeldurr,11,14,10,6,7,5,Fighting,none,9,0,7,0,0,5,7,4,-,-,-,-,-,-,-,Medium,4,Humanshape,-
+Corphish,4,8,7,5,4,4,Water,none,5,0,5,5,1,2,2,3,-,-,-,-,-,-,-,Small,2,Water 1,Water 3
+Corsola,6,6,9,7,9,4,Water,Rock,4,0,8,8,0,2,1,3,Gilled,-,-,-,-,-,-,Small,1,Water 1,Water 3
+Cottonee,4,3,6,4,5,7,Grass,none,5,6,3,0,0,5,1,4,Shrinkable,Sprouter,-,-,-,-,-,Small,1,Plant,Fairy
+Cradily,9,8,10,8,11,4,Rock,Grass,6,0,5,7,0,4,3,4,Gilled,-,-,-,-,-,-,Medium,4,Water 3,-
+Cranidos,7,13,4,3,3,6,Rock,none,6,0,0,0,0,4,3,3,Sinker,-,-,-,-,-,-,Medium,3,Monster,-
+Crawdaunt,6,12,9,9,6,6,Water,Dark,7,0,7,7,1,2,3,4,-,-,-,-,-,-,-,Medium,3,Water 1,Water 3
+Cresselia,12,7,12,8,13,9,Psychic,none,10,20,10,0,0,7,6,7,Aura,Avatar,Glow,Invisibility,Telekinetic,Telepath,-,Large,4,None,-
+Croagunk,5,6,4,6,4,5,Poison,Fighting,7,0,6,0,0,4,2,4,-,-,-,-,-,-,-,Small,2,Humanshape,-
+Crobat,9,9,8,7,8,13,Poison,Flying,0,14,0,0,0,1,4,4,Guster,Sinker,Tracker,-,-,-,-,Medium,4,Flying,-
+Croconaw,7,8,8,6,6,6,Water,none,7,0,9,5,0,3,3,3,Fountain,-,-,-,-,-,-,Medium,2,Monster,Water 1
+Crustle,7,10,13,7,8,5,Bug,Rock,7,0,7,5,0,1,4,4,Groundshaper,-,-,-,-,-,-,Medium,6,Bug,Mineral
+Cryogonal,7,5,3,10,14,11,Ice,none,1,7,3,0,0,1,3,4,Chilled,Freezer,Icestep,-,-,-,-,Medium,5,Mineral,-
+Cubchoo,6,7,4,6,4,4,Ice,none,5,0,5,0,0,2,2,3,Chilled,Freezer,Icestep,-,-,-,-,Small,1,Field,-
+Cubone,5,5,10,4,5,4,Ground,none,6,0,4,0,0,3,2,4,-,-,-,-,-,-,-,Small,1,Monster,-
+Cyndaquil,4,5,4,6,5,7,Fire,none,8,0,0,0,0,3,1,3,Firestarter,Heater,Sinker,-,-,-,-,Small,1,Field,-
+Darkrai,7,9,9,14,9,13,Dark,none,10,16,10,0,0,7,8,7,Aura,Avatar,Invisibility,Phasing,Telekinetic,Telepath,-,Large,4,None,-
+Darmanitan,11,14,6,3,6,10,Fire,none,8,0,7,0,0,4,4,4,Egg Warmer,Firestarter,Heater,-,-,-,-,Medium,4,Field,-
+Darmanitan-z,11,3,11,14,11,6,Fire,none,4,0,2,0,0,1,2,6,Firestarter,Telekinetic,Telepath,-,-,-,-,Medium,4,Field,-
+Darumaka,7,9,5,2,5,5,Fire,none,4,0,4,0,0,3,3,4,Heater,-,-,-,-,-,-,Small,3,Field,-
+Deerling,6,6,5,4,5,8,Normal,Grass,6,0,4,0,0,2,1,4,Pack Mon,-,-,-,-,-,-,Small,2,Field,-
+Deino,5,7,5,5,5,4,Dark,Dragon,6,0,4,0,0,2,2,2,-,-,-,-,-,-,-,Small,2,Dragon,-
+Delcatty,7,7,7,6,6,7,Normal,none,8,0,6,0,0,3,2,4,Tracker,-,-,-,-,-,-,Medium,3,Field,Fairy
+Delibird,5,6,5,7,5,8,Ice,Flying,6,0,8,4,0,5,1,4,Chilled,Ice Step,-,-,-,-,-,Medium,2,Water 1,Field
+Deoxys-a,5,18,2,18,2,15,Psychic,none,12,15,12,12,0,6,10,7,Aura,Avatar,Invisibility,Multiform,Telekinetic,Telepath,-,Medium,4,None,-
+Deoxys-d,5,7,16,7,16,9,Psychic,none,12,15,12,12,0,4,10,7,Aura,Avatar,Invisibility,Multiform,Telekinetic,Telepath,-,Medium,4,None,-
+Deoxys,5,15,5,15,5,15,Psychic,none,12,15,12,12,0,7,8,7,Aura,Avatar,Invisibility,Multiform,Telekinetic,Telepath,-,Medium,4,None,-
+Deoxys-s,5,10,9,10,9,18,Psychic,none,20,20,20,20,0,10,4,7,Aura,Avatar,Invisibility,Multiform,Telekinetic,Telepath,-,Medium,4,None,-
+Dewgong,9,7,8,7,10,7,Water,Ice,5,0,10,10,0,2,4,4,Freezer,Ice Step,-,-,-,-,-,Medium,5,Water 1,Field
+Dewott,8,8,6,8,6,6,Water,none,7,0,9,7,0,3,3,4,Fountain,-,-,-,-,-,-,Medium,2,Field,-
+Dialga,10,12,12,15,10,9,Steel,Dragon,16,18,16,16,16,8,10,7,Aura,Realm Ruler,Telekinetic,Telepath,-,-,-,Gigantic,6,None,-
+Diglett,1,6,3,4,5,10,Ground,none,7,0,0,0,8,0,1,3,-,-,-,-,-,-,-,Small,1,Field,-
+Ditto,5,5,5,5,5,5,Normal,none,6,0,6,0,0,1,1,4,Amorphous,-,-,-,-,-,-,Small,1,Ditto,-
+Dodrio,6,11,7,6,6,10,Normal,Flying,14,2,3,0,0,8,4,5,-,-,-,-,-,-,-,Medium,4,Flying,-
+Doduo,4,9,5,4,4,8,Normal,Flying,10,0,1,0,0,6,3,4,-,-,-,-,-,-,-,Medium,3,Flying,-
+Donphan,9,12,12,6,6,5,Ground,none,8,0,5,0,0,3,4,4,Tracker,-,-,-,-,-,-,Medium,5,Field,-
+Dragonair,6,8,7,7,7,7,Dragon,none,7,0,7,7,0,2,2,4,-,-,-,-,-,-,-,Medium,2,Water 1,Dragon
+Dragonite,9,13,10,10,10,8,Dragon,Flying,10,16,10,10,0,3,4,4,Aura,-,-,-,-,-,-,Large,6,Water 1,Dragon
+Drapion,7,9,11,6,8,10,Poison,Dark,8,0,4,0,0,2,3,4,-,-,-,-,-,-,-,Medium,4,Bug,Water 3
+Dratini,4,6,5,5,5,5,Dragon,none,5,0,5,5,0,2,1,3,-,-,-,-,-,-,-,Medium,1,Water 1,Dragon
+Drifblim,15,8,4,9,5,8,Ghost,Flying,3,8,1,0,0,4,4,4,Inflatable,Shrinkable,-,-,-,-,-,Medium,2,Indeterminate,-
+Drifloon,9,5,3,6,4,7,Ghost,Flying,1,6,1,0,0,4,1,4,Inflatable,Shrinkable,-,-,-,-,-,Small,1,Indeterminate,-
+Drilbur,6,9,4,3,5,7,Ground,none,4,0,2,0,6,2,2,4,-,-,-,-,-,-,-,Small,1,Field,-
+Drowzee,6,5,5,4,9,4,Psychic,none,6,0,4,0,0,2,2,4,Dream Smoke,Mind Lock,-,-,-,-,-,Medium,3,Humanshape,-
+Druddigon,8,12,9,6,9,5,Dragon,none,6,8,4,0,0,3,5,4,-,-,-,-,-,-,-,Large,5,Dragon,Monster
+Ducklett,6,4,5,4,5,6,Water,Flying,2,6,6,4,0,3,1,3,Fountain,-,-,-,-,-,-,Small,1,Water 1,Flying
+Dugtrio,4,8,5,5,7,12,Ground,none,9,0,0,0,12,0,3,4,Groundshaper,-,-,-,-,-,-,Small,3,Field,-
+Dunsparce,10,7,7,7,7,5,Normal,none,7,0,7,0,7,1,1,3,-,-,-,-,-,-,-,Medium,2,Field,-
+Duosion,7,4,5,13,6,3,Psychic,none,4,0,2,0,0,2,1,5,Telekinetic,-,-,-,-,-,-,Small,1,Indeterminate,-
+Durant,6,11,11,5,5,11,Bug,Steel,8,0,0,0,8,2,5,2,Sinker,-,-,-,-,-,-,Small,3,Bug,-
+Dusclops,4,7,13,6,13,3,Ghost,none,0,7,7,0,0,3,3,4,Invisibility,Phasing,-,-,-,-,-,Medium,3,Indeterminate,-
+Dusknoir,5,10,14,7,14,5,Ghost,none,0,8,8,0,0,3,5,4,Invisibility,Phasing,Telepath,-,-,-,-,Medium,5,Indeterminate,-
+Duskull,2,4,9,3,9,3,Ghost,none,0,6,6,0,0,3,1,3,Invisibility,Phasing,-,-,-,-,-,Small,2,Indeterminate,-
+Dustox,6,5,7,5,9,7,Bug,Poison,2,9,0,0,0,3,3,4,Sinker,-,-,-,-,-,-,Medium,3,Bug,-
+Dwebble,5,7,9,4,4,6,Bug,Rock,5,0,5,3,0,1,2,4,-,-,-,-,-,-,-,Small,2,Bug,Mineral
+Eelektrik,7,9,7,8,7,4,Electric,none,5,6,7,7,0,2,2,4,Glow,Zapper,-,-,-,-,-,Medium,2,Indeterminate,-
+Eelektross,9,12,8,11,8,5,Electric,none,7,8,8,8,0,3,4,4,Glow,Zapper,-,-,-,-,-,Large,4,Indeterminate,-
+Eevee,6,6,5,5,7,6,Normal,none,6,0,4,0,0,3,1,4,Tracker,-,-,-,-,-,-,Small,1,Field,-
+Ekans,4,6,4,4,5,6,Poison,none,8,0,6,0,0,1,1,3,Stealth,-,-,-,-,-,-,Medium,1,Field,Dragon
+Electabuzz,7,8,6,10,9,11,Electric,none,6,0,4,0,0,3,4,4,Zapper,-,-,-,-,-,-,Medium,3,Humanshape,-
+Electivire,8,12,7,10,9,10,Electric,none,8,0,5,0,0,2,5,4,Zapper,-,-,-,-,-,-,Large,5,Humanshape,-
+Electrike,4,5,4,7,4,7,Electric,none,6,0,4,0,0,2,1,3,Tracker,-,-,-,-,-,-,Small,2,Field,-
+Electrode,6,5,7,8,8,14,Electric,none,12,0,0,0,0,3,3,4,Shrinkable,Sinker,-,-,-,-,-,Medium,4,Mineral,-
+Elekid,5,8,4,7,6,8,Electric,none,4,0,2,0,0,1,1,2,-,-,-,-,-,-,-,Small,2,Humanshape,-
+Elgyem,6,6,6,9,6,3,Psychic,none,4,4,4,0,0,3,2,5,Telekinetic,Telepath,-,-,-,-,-,Small,1,Humanshape,-
+Emboar,11,12,7,10,7,7,Fire,Fighting,8,0,6,0,0,5,6,4,Firestarter,Heater,-,-,-,-,-,Medium,5,Field,-
+Emolga,6,8,6,8,6,10,Electric,Flying,6,6,2,0,0,5,2,4,Zapper,-,-,-,-,-,-,Small,1,Field,-
+Empoleon,8,9,9,11,10,6,Water,Steel,5,0,14,12,0,2,4,4,Fountain,-,-,-,-,-,-,Medium,4,Water 1,Field
+Entei,12,12,9,9,8,10,Fire,none,20,0,12,0,0,7,5,7,Aura,Firestarter,Heater,Tracker,-,-,-,Large,5,Monster,Ground
+Escavalier,7,14,11,6,11,2,Bug,Steel,8,8,0,0,0,1,4,4,Sinker,-,-,-,-,-,-,Medium,3,Bug,-
+Espeon,7,7,6,13,10,11,Psychic,none,8,0,6,0,0,3,2,5,Telekinetic,Tracker,Telepath,-,-,-,-,Medium,3,Field,-
+Excadrill,11,14,6,5,7,9,Ground,Steel,6,0,4,0,10,3,3,4,Groundshaper,-,-,-,-,-,-,Small,3,Field,-
+Exeggcute,6,4,8,6,5,4,Grass,Psychic,4,0,2,0,0,2,1,4,-,-,-,-,-,-,-,Small,1,Plant,-
+Exeggutor,10,10,9,13,7,6,Grass,Psychic,7,0,3,0,0,3,4,5,-,-,-,-,-,-,-,Medium,5,Plant,-
+Exploud,10,9,6,9,6,7,Normal,none,7,0,6,0,0,3,5,4,-,-,-,-,-,-,-,Medium,4,Monster,Field
+Farfetch'd,5,7,6,6,6,6,Normal,Flying,6,10,3,0,0,3,1,4,-,-,-,-,-,-,-,Small,2,Flying,Field
+Fearow,7,9,7,6,6,10,Normal,Flying,6,10,1,0,0,3,3,4,-,-,-,-,-,-,-,Medium,3,Flying,-
+Feebas,2,2,2,1,6,8,Water,none,1,0,9,9,0,4,1,2,Fountain,Gilled,-,-,-,-,-,Small,1,Water 1,Dragon
+Feraligatr,9,11,10,8,8,8,Water,none,9,0,10,8,0,2,4,4,Fountain,-,-,-,-,-,-,Large,4,Monster,Water 1
+Ferroseed,4,5,9,2,9,1,Grass,Steel,4,0,0,0,0,1,2,3,Sinker,Sprouter,-,-,-,-,-,Small,2,Plant,Mineral
+Ferrothorn,7,9,13,5,12,2,Grass,Steel,5,0,0,0,0,1,3,4,Sinker,Sprouter,-,-,-,-,-,Medium,5,Plant,Mineral
+Finneon,5,5,6,5,6,7,Water,none,1,0,8,8,0,3,1,4,Gilled,-,-,-,-,-,-,Small,1,Water 2,-
+Flaaffy,7,6,6,8,6,5,Electric,none,7,0,2,0,0,2,2,3,Glow,Zapper,-,-,-,-,-,Small,2,Monster,Field
+Flareon,7,13,6,10,11,7,Fire,none,8,0,6,0,0,3,2,4,Firestarter,Tracker,-,-,-,-,-,Medium,3,Field,-
+Floatzel,9,11,6,9,5,12,Water,none,8,0,10,8,0,3,2,4,Fountain,-,-,-,-,-,-,Medium,3,Water 1,Field
+Flygon,8,10,8,8,8,10,Ground,Dragon,8,14,4,0,6,3,4,4,-,-,-,-,-,-,-,Large,4,Bug,-
+Foongus,7,6,5,6,6,2,Grass,Poison,6,0,2,0,0,1,2,4,Shrinkable,-,-,-,-,-,-,Small,1,Plant,-
+Forretress,8,9,14,6,6,4,Bug,Steel,6,0,0,0,0,4,3,4,Sinker,Threaded,-,-,-,-,-,Medium,5,Bug,-
+Fraxure,7,12,7,4,5,7,Dragon,none,7,0,5,0,0,3,4,3,-,-,-,-,-,-,-,Medium,3,Monster,Dragon
+Frillish,6,4,5,7,9,4,Water,Ghost,1,0,7,7,0,2,1,4,Fountain,Invisibility,-,-,-,-,-,Medium,3,Indeterminate,-
+Froslass,7,8,7,8,7,11,Ice,Ghost,6,8,3,0,0,2,2,4,Chilled,Freezer,Stealth,-,-,-,-,Medium,3,Fairy,Mineral
+Furret,9,8,6,5,6,9,Normal,none,9,0,7,0,0,3,3,4,Tracker,-,-,-,-,-,-,Medium,3,Field,-
+Gabite,7,9,7,5,6,8,Dragon,Ground,7,0,5,2,7,3,3,4,Sinker,-,-,-,-,-,-,Medium,4,Monster,Dragon
+Gallade,7,13,7,7,12,8,Psychic,Fighting,10,0,5,0,0,4,4,6,Aura,Telekinetic,Telepath,-,-,-,-,Medium,4,Indeterminate,-
+Galvantula,7,8,6,10,6,11,Bug,Electric,8,0,4,0,0,4,2,4,Threaded,Zapper,-,-,-,-,-,Medium,2,Bug,-
+Garbodor,8,10,8,6,8,8,Poison,none,7,0,5,0,0,1,3,4,Inflatable,-,-,-,-,-,-,Large,5,Mineral,-
+Garchomp,11,13,10,8,9,10,Dragon,Ground,8,14,8,0,8,3,4,4,-,-,-,-,-,-,-,Large,4,Monster,Dragon
+Gardevoir,7,7,7,13,12,8,Psychic,none,8,0,4,0,0,2,2,7,Aura,Telekinetic,Telepath,-,-,-,-,Medium,3,Indeterminate,-
+Gastly,3,4,3,10,4,8,Ghost,Poison,0,8,0,0,0,0,1,3,Invisibility,Phasing,-,-,-,-,-,Medium,1,Indeterminate,-
+Gastrodon,11,8,7,9,8,4,Water,Ground,4,0,10,7,0,2,2,4,Amorphous,Gilled,-,-,-,-,-,Medium,3,Water 1,Indeterminate
+Genesect,7,12,10,12,10,10,Bug,Steel,10,10,10,10,10,5,6,7,Firestarter,Fountain,Freezer,Zapper,-,-,-,Large,4,None,-
+Gengar,6,7,6,13,8,11,Ghost,Poison,6,10,0,0,0,3,3,4,Aura,Invisibility,Phasing,-,-,-,-,Medium,3,Indeterminate,-
+Geodude,4,8,10,3,3,2,Rock,Ground,6,1,0,0,6,2,3,2,Sinker,-,-,-,-,-,-,Small,2,Mineral,-
+Gible,6,7,5,4,5,4,Dragon,Ground,6,0,4,1,6,1,1,3,-,-,-,-,-,-,-,Small,2,Monster,Dragon
+Gigalith,9,14,13,6,7,3,Rock,none,4,0,0,0,0,2,4,4,Sinker,-,-,-,-,-,-,Large,6,Mineral,-
+Girafarig,7,8,7,9,7,9,Normal,Psychic,8,0,6,0,0,4,3,4,-,-,-,-,-,-,-,Medium,3,Field,-
+Giratina,15,10,12,10,12,9,Ghost,Dragon,16,20,16,16,16,8,10,7,Aura,Realm Ruler,Telekinetic,Telepath,-,-,-,Gigantic,6,None,-
+Giratina-o,15,12,10,12,10,9,Ghost,Dragon,16,20,16,16,16,8,10,7,Aura,Origin Forme,Realm Ruler,Telekinetic,Telepath,-,-,Gigantic,6,None,-
+Glaceon,7,6,11,13,10,7,Ice,none,8,0,6,0,0,3,2,4,Freezer,Ice Step,Tracker,-,-,-,-,Medium,3,Field,-
+Glalie,8,8,8,8,8,8,Ice,none,8,6,3,0,0,3,4,4,Chilled,Freezer,-,-,-,-,-,Medium,6,Fairy,Mineral
+Glameow,5,6,4,4,4,9,Normal,none,6,0,4,0,0,3,1,4,Stealth,-,-,-,-,-,-,Small,1,Field,-
+Gligar,7,8,11,4,7,9,Ground,Flying,4,6,0,0,4,4,2,4,Sinker,-,-,-,-,-,-,Medium,2,Bug,-
+Gliscor,8,10,13,5,8,10,Ground,Flying,6,10,0,0,8,4,2,4,Sinker,-,-,-,-,-,-,Medium,3,Bug,-
+Gloom,6,7,7,9,8,4,Grass,Poison,6,0,2,0,0,2,2,3,Sprouter,-,-,-,-,-,-,Small,1,Plant,-
+Golbat,8,8,7,7,8,9,Poison,Flying,0,10,0,0,0,1,3,4,Sinker,Tracker,-,-,-,-,-,Medium,4,Flying,-
+Goldeen,5,7,6,4,5,6,Water,none,2,0,8,8,0,3,1,4,Gilled,-,-,-,-,-,-,Small,2,Water 2,-
+Golduck,8,8,8,10,8,9,Water,none,6,0,10,10,0,3,4,5,Telepath,-,-,-,-,-,-,Medium,4,Water 1,Field
+Golem,8,11,13,6,7,5,Rock,Ground,9,0,0,0,5,2,4,3,Groundshaper,Sinker,-,-,-,-,-,Medium,6,Mineral,-
+Golett,6,7,6,4,5,4,Ground,Ghost,6,6,0,0,0,1,4,2,Sinker,-,-,-,-,-,-,Medium,4,Mineral,-
+Golurk,9,12,8,6,8,6,Ground,Ghost,8,10,0,0,0,1,6,4,Groundshaper,Sinker,-,-,-,-,-,Large,6,Mineral,-
+Gorebyss,6,8,11,11,8,5,Water,none,2,0,10,10,0,2,3,4,Gilled,-,-,-,-,-,-,Medium,2,Water 1,-
+Gothita,5,3,5,6,7,5,Psychic,none,6,0,4,0,0,1,1,4,Telekinetic,-,-,-,-,-,-,Small,1,Humanshape,-
+Gothitelle,7,6,10,10,11,7,Psychic,none,8,0,6,0,0,1,2,5,Telekinetic,Telepath,-,-,-,-,-,Medium,3,Humanshape,-
+Gothorita,6,5,7,8,9,6,Psychic,none,7,0,5,0,0,1,1,4,Telekinetic,-,-,-,-,-,-,Small,2,Humanshape,-
+Granbull,9,12,8,6,6,5,Normal,none,8,0,6,0,0,2,3,4,Tracker,-,-,-,-,-,-,Medium,3,Field,Fairy
+Graveler,6,10,12,5,5,4,Rock,Ground,7,0,0,0,4,2,3,2,Groundshaper,Sinker,-,-,-,-,-,Medium,5,Mineral,-
+Grimer,8,8,5,4,5,3,Poison,none,6,0,6,0,0,1,2,3,Amorphous,-,-,-,-,-,-,Small,3,Indeterminate,-
+Grotle,8,9,9,6,7,4,Grass,none,5,0,0,0,0,1,2,3,Sinker,Sprouter,-,-,-,-,-,Medium,4,Monster,Plant
+Groudon,10,15,14,10,9,9,Ground,none,14,0,6,0,20,5,10,7,Aura,Firestarter,Groundshaper,Glow,Heater,Materializer,Telepath,Gigantic,6,None,-
+Grovyle,5,7,5,9,6,7,Grass,none,10,0,2,0,0,5,2,3,Sprouter,-,-,-,-,-,-,Medium,2,Monster,Dragon
+Growlithe,6,7,5,7,5,6,Fire,none,8,0,3,0,0,2,2,4,Tracker,-,-,-,-,-,-,Small,2,Field,-
+Grumpig,8,5,7,9,11,8,Psychic,none,6,0,6,0,0,6,3,4,-,-,-,-,-,-,-,Medium,4,Field,-
+Gulpin,7,4,5,4,5,4,Poison,none,4,0,2,0,0,1,2,3,Amorphous,Inflatable,-,-,-,-,-,Small,1,Indeterminate,-
+Gurdurr,9,11,9,4,5,4,Fighting,none,7,0,5,0,0,4,5,3,-,-,-,-,-,-,-,Medium,3,Humanshape,-
+Gyarados,10,13,8,6,10,8,Water,Flying,6,0,10,10,0,4,6,4,Gilled,Reach,-,-,-,-,-,Huge,6,Water 2,Dragon
+Happiny,10,1,1,2,7,3,Normal,none,4,0,1,0,0,2,1,3,-,-,-,-,-,-,-,Small,2,Fairy,-
+Hariyama,14,12,6,4,6,5,Fighting,none,7,0,7,0,0,1,6,4,Aura,-,-,-,-,-,-,Medium,6,Humanshape,-
+Haunter,5,5,5,12,6,10,Ghost,Poison,0,9,0,0,0,0,2,3,Invisibility,Phasing,-,-,-,-,-,Medium,1,Indeterminate,-
+Haxorus,8,15,9,6,7,10,Dragon,none,8,0,6,0,0,4,5,4,Aura,-,-,-,-,-,-,Medium,5,Monster,Dragon
+Heatmor,9,10,7,11,7,7,Fire,none,8,0,0,0,4,2,3,4,Egg Warmer,Firestarter,Heater,Sinker,-,-,-,Medium,4,Field,-
+Heatran,9,9,11,13,11,8,Fire,Steel,8,0,0,0,16,1,10,5,Extinguisher,Firestarter,Glow,Heater,Sinker,-,-,Huge,6,Monster,Mineral
+Heracross,8,13,8,4,10,9,Bug,Fighting,8,6,6,0,0,4,5,4,-,-,-,-,-,-,-,Medium,4,Bug,-
+Herdier,7,8,7,4,7,6,Normal,none,7,0,5,0,0,3,3,4,Tracker,-,-,-,-,-,-,Medium,2,Field,-
+Hippopotas,7,7,8,4,4,3,Ground,none,4,0,4,2,0,2,2,4,-,-,-,-,-,-,-,Small,3,Field,-
+Hippowdon,10,11,12,7,7,5,Ground,none,6,0,6,4,0,3,4,4,Groundshaper,-,-,-,-,-,-,Large,6,Field,-
+Hitmonchan,5,11,8,4,11,8,Fighting,none,8,0,8,0,0,3,4,4,Aura,-,-,-,-,-,-,Medium,4,Humanshape,-
+Hitmonlee,5,12,5,4,11,9,Fighting,none,8,0,8,0,0,6,3,4,Aura,Reach,-,-,-,-,-,Medium,3,Humanshape,-
+Hitmontop,5,10,10,4,11,7,Fighting,none,10,0,8,0,0,2,3,4,Aura,-,-,-,-,-,-,Medium,3,Humanshape,-
+Honchkrow,10,13,5,11,5,7,Dark,Flying,6,10,1,0,0,3,2,4,Guster,Pack Mon,-,-,-,-,-,Medium,3,Flying,-
+Ho-Oh,11,13,9,11,15,9,Fire,Flying,10,20,6,0,0,6,6,7,Aura,Firestarter,Glow,Guster,Heater,Telepath,-,Huge,5,None,-
+Hoothoot,6,3,3,4,6,5,Normal,Flying,4,6,1,0,0,3,1,3,-,-,-,-,-,-,-,Small,2,Flying,-
+Hoppip,4,4,4,4,6,5,Grass,Flying,4,4,2,0,0,5,1,3,Sprouter,-,-,-,-,-,-,Small,1,Fairy,Plant
+Horsea,3,4,7,7,3,6,Water,none,2,0,8,8,0,1,1,3,Fountain,Gilled,-,-,-,-,-,Small,1,Water 1,Dragon
+Houndoom,8,9,5,11,8,10,Dark,Fire,9,0,5,0,0,3,1,3,Tracker,-,-,-,-,-,-,Medium,3,Field,-
+Houndour,5,6,3,8,5,7,Dark,Fire,6,0,4,0,0,3,1,3,Tracker,-,-,-,-,-,-,Small,1,Field,-
+Huntail,6,10,11,9,8,5,Water,none,2,0,10,10,0,2,3,4,Gilled,-,-,-,-,-,-,Medium,3,Water 1,-
+Hydreigon,9,11,9,13,9,10,Dark,Dragon,8,9,6,0,0,4,4,4,Mind Lock,-,-,-,-,-,-,Large,5,Dragon,-
+Hypno,9,7,7,7,12,7,Psychic,none,8,0,5,0,0,3,3,5,Dream Smoke,Mind Lock,-,-,-,-,-,Medium,4,Humanshape,-
+Igglybuff,9,3,2,4,2,2,Normal,none,3,0,3,0,0,3,1,3,Inflatable,-,-,-,-,-,-,Small,1,Fairy,-
+Illumise,7,5,6,7,8,9,Bug,none,6,6,0,0,0,3,1,4,Glow,Sinker,-,-,-,-,-,Small,2,Bug,Humanshape
+Infernape,8,10,7,10,7,10,Fire,Fighting,10,0,0,0,0,4,5,4,Firestarter,Heater,Sinker,-,-,-,-,Medium,4,Field,Humanshape
+Ivysaur,6,6,6,8,8,6,Grass,Poison,8,0,2,0,0,2,2,3,Sprouter,-,-,-,-,-,-,Medium,2,Monster,Plant
+Jellicent,10,6,7,9,11,6,Water,Ghost,3,0,9,9,0,2,3,4,Aura,Fountain,Invisibility,-,-,-,-,Large,5,Indeterminate,-
+Jigglypuff,12,5,2,5,3,2,Normal,none,5,0,4,0,0,3,1,3,Inflatable,-,-,-,-,-,-,Small,1,Fairy,-
+Jirachi,10,10,10,10,10,10,Steel,Psychic,12,12,12,0,0,6,3,7,Aura,Glow,Telekinetic,Telepath,Time Traveler,Wish Granter,-,Small,1,None,-
+Jolteon,7,7,6,11,10,13,Electric,none,14,0,4,0,0,4,2,4,Tracker,Zapper,-,-,-,-,-,Medium,2,Field,-
+Joltik,5,5,5,6,5,7,Bug,Electric,6,0,2,0,0,3,1,3,Threaded,Zapper,-,-,-,-,-,Small,1,Bug,-
+Jumpluff,8,6,7,6,9,11,Grass,Flying,7,12,3,0,0,7,1,4,Sprouter,-,-,-,-,-,-,Small,1,Fairy,Plant
+Jynx,7,5,4,12,10,10,Ice,Psychic,8,0,6,0,0,3,2,5,Freezer,Ice Step,Telekinetic,Telepath,-,-,-,Medium,3,Humanshape,-
+Kabuto,3,8,9,6,5,6,Rock,Water,4,0,7,7,0,1,1,2,Gilled,-,-,-,-,-,-,Small,2,Water 1,Water 3
+Kabutops,6,12,11,7,7,8,Rock,Water,9,0,8,6,0,3,3,4,Gilled,-,-,-,-,-,-,Medium,3,Water 1,Water 3
+Kadabra,4,4,3,12,7,11,Psychic,none,5,0,3,0,0,2,2,5,Telekinetic,Telepath,-,-,-,-,-,Medium,4,Humanshape,-
+Kakuna,5,3,5,3,3,4,Bug,Poison,1,0,0,0,0,4,2,2,Sinker,Threaded,-,-,-,-,-,Small,1,Bug,-
+Kangaskhan,11,10,8,4,8,9,Normal,none,8,0,6,0,0,5,4,4,-,-,-,-,-,-,-,Medium,4,Monster,-
+Karrablast,5,8,5,4,5,6,Bug,none,6,0,3,0,0,3,2,4,-,-,-,-,-,-,-,Small,1,Bug,-
+Kecleon,6,9,7,6,12,4,Normal,none,8,0,6,0,0,4,2,4,Blender,Stealth,-,-,-,-,-,Medium,2,Field,-
+Keldeo,9,7,9,13,9,11,Water,Fighting,12,0,14,12,0,4,5,5,Aura,Fountain,-,-,-,-,-,Medium,3,Field,-
+Kingdra,8,10,10,10,10,9,Water,Dragon,5,7,12,14,0,1,5,5,Aura,Fountain,Gilled,-,-,-,-,Medium,5,Water 1,Dragon
+Kingler,6,13,12,5,5,8,Water,none,7,0,7,6,1,1,4,4,-,-,-,-,-,-,-,Medium,4,Water 3,-
+Kirlia,4,4,4,7,6,5,Psychic,none,7,0,4,0,0,2,1,5,Telekinetic,Telepath,-,-,-,-,-,Small,2,Indeterminate,-
+Klang,6,8,10,7,9,5,Steel,none,1,7,0,0,0,1,3,4,Sinker,Zapper,-,-,-,-,-,Small,4,Mineral,-
+Klink,4,6,7,5,6,3,Steel,none,1,5,0,0,0,1,2,4,Sinker,Zapper,-,-,-,-,-,Small,2,Mineral,-
+Klinklang,6,10,12,7,9,9,Steel,none,1,9,0,0,0,1,4,5,Sinker,Zapper,-,-,-,-,-,Medium,4,Mineral,-
+Koffing,4,7,10,6,5,4,Poison,none,1,6,1,0,0,2,1,3,-,-,-,-,-,-,-,Small,1,Indeterminate,-
+Krabby,3,11,9,3,3,5,Water,none,6,0,6,4,1,1,1,3,-,-,-,-,-,-,-,Small,1,Water 3,-
+Kricketot,4,3,4,3,4,3,Bug,none,6,0,2,0,0,3,1,2,-,-,-,-,-,-,-,Small,1,Bug,-
+Kricketune,8,9,5,6,5,7,Bug,none,8,5,3,0,0,3,2,4,-,-,-,-,-,-,-,Medium,3,Bug,-
+Krokorok,6,8,5,5,5,7,Ground,Dark,7,0,5,0,7,3,3,4,Stealth,-,-,-,-,-,-,Medium,3,Field,-
+Krookodile,10,12,7,7,7,9,Ground,Dark,8,0,6,0,8,3,4,4,Groundshaper,Stealth,-,-,-,-,-,Medium,4,Field,-
+Kyogre,10,10,9,15,14,9,Water,none,10,0,20,20,0,7,10,7,Aura,Fountain,Gilled,Glow,Telepath,-,-,Gigantic,6,None,-
+Kyurem,13,13,9,13,9,10,Dragon,Ice,12,12,12,12,12,5,7,6,Aura,Chilled,-,-,-,-,-,Gigantic,6,None,-
+Kyurem (Black),13,12,9,17,10,10,Dragon,Ice,12,12,12,12,12,5,7,6,Aura,Chilled,-,-,-,-,-,Gigantic,6,None,-
+Kyurem (White),13,17,10,12,9,10,Dragon,Ice,12,12,12,12,12,5,7,6,Aura,Chilled,-,-,-,-,-,Gigantic,6,None,-
+Lairon,6,9,14,5,5,4,Steel,Rock,6,0,0,0,0,3,4,4,Sinker,-,-,-,-,-,-,Medium,5,Monster,-
+Lampent,6,4,6,10,6,6,Ghost,Fire,1,7,0,0,0,1,1,4,Firestarter,Heater,Invisibility,Phasing,Shrinkable,Sinker,-,Small,2,Indeterminate,-
+Landorus,9,13,9,12,8,10,Ground,Flying,10,20,10,0,0,4,6,5,-,-,-,-,-,-,-,Large,4,None,-
+Lando (T),9,15,9,11,8,9,Ground,Flying,10,20,10,0,0,4,6,5,-,-,-,-,-,-,-,Large,4,None,-
+Lanturn,13,6,6,8,8,7,Water,Electric,2,0,10,12,0,3,2,4,Gilled,Glow,-,-,-,-,-,Medium,2,Water 2,-
+Lapras,13,9,8,9,10,6,Water,Ice,4,0,12,8,0,1,6,4,Fountain,Gilled,Ice Step,-,-,-,-,Large,6,Monster,Water 1
+Larvesta,6,9,6,5,6,6,Bug,Fire,6,2,0,0,0,2,1,4,Egg Warmer,Firestarter,Heater,Sinker,-,-,-,Medium,3,Bug,-
+Larvitar,5,6,5,5,5,4,Rock,Ground,4,0,0,0,0,1,2,3,Sinker,-,-,-,-,-,-,Small,4,Monster,-
+Latias,8,8,9,11,13,11,Dragon,Psychic,12,20,12,12,0,10,4,7,Aura,Avatar,Guster,Telepath,-,-,-,Large,3,None,-
+Latios,8,9,8,13,11,11,Dragon,Psychic,12,20,12,12,0,10,4,7,Aura,Avatar,Guster,Telepath,-,-,-,Large,3,None,-
+Leafeon,7,11,13,6,7,10,Grass,none,8,0,6,0,0,5,2,4,Sprouter,Tracker,-,-,-,-,-,Medium,3,Field,-
+Leavanny,8,10,8,7,7,9,Bug,Grass,8,0,4,0,0,3,3,4,Threaded,-,-,-,-,-,-,Medium,2,Bug,-
+Ledian,6,4,5,6,11,9,Bug,Flying,6,12,0,0,0,2,2,4,Sinker,-,-,-,-,-,-,Medium,3,Bug,-
+Ledyba,4,2,3,4,8,6,Bug,Flying,4,6,0,0,0,2,1,2,Sinker,-,-,-,-,-,-,Small,1,Bug,-
+Lickilicky,11,9,10,8,10,5,Normal,none,7,0,7,0,0,3,4,4,-,-,-,-,-,-,-,Medium,5,Monster,-
+Lickitung,9,6,8,6,8,3,Normal,none,6,0,6,0,0,3,3,3,-,-,-,-,-,-,-,Medium,4,Monster,-
+Liepard,6,9,5,9,5,11,Dark,none,8,0,6,0,0,4,3,4,Stealth,-,-,-,-,-,-,Medium,3,Field,-
+Lileep,7,4,8,6,9,2,Rock,Grass,3,0,5,3,0,1,2,3,Gilled,-,-,-,-,-,-,Medium,2,Water 3,-
+Lilligant,7,6,8,11,8,9,Grass,none,8,0,6,0,0,2,2,4,Sprouter,-,-,-,-,-,-,Medium,2,Plant,-
+Lillipup,5,6,5,3,5,6,Normal,none,6,0,4,0,0,3,2,4,Tracker,-,-,-,-,-,-,Small,1,Field,-
+Linoone,8,7,6,5,6,10,Normal,none,10,0,7,0,0,3,3,4,Tracker,-,-,-,-,-,-,Small,3,Field,-
+Litwick,5,3,6,7,6,2,Ghost,Fire,1,6,0,0,0,1,1,4,Firestarter,Heater,Invisibility,Phasing,Shrinkable,Sinker,Glow,Small,1,Indeterminate,-
+Lombre,6,5,5,6,7,5,Water,Grass,5,0,9,6,0,3,2,3,Fountain,-,-,-,-,-,-,Medium,3,Water 1,Plant
+Lopunny,7,8,8,5,10,11,Normal,none,8,0,6,0,0,6,2,3,-,-,-,-,-,-,-,Medium,3,Field,Humanshape
+Lotad,4,3,3,4,5,3,Water,Grass,4,0,8,0,0,1,1,3,Fountain,-,-,-,-,-,-,Small,1,Water 1,Plant
+Loudred,8,7,4,7,4,5,Normal,none,6,0,5,0,0,3,3,4,-,-,-,-,-,-,-,Medium,3,Monster,Field
+Lucario,7,11,7,12,7,9,Fighting,Steel,8,0,6,0,0,4,4,4,Aura,-,-,-,-,-,-,Medium,4,Field,Humanshape
+Ludicolo,8,7,7,9,10,7,Water,Grass,6,0,10,6,0,4,4,4,Fountain,-,-,-,-,-,-,Medium,4,Water 1,Plant
+Lugia,11,9,13,9,15,9,Psychic,Flying,10,16,20,20,0,5,7,7,Aura,Fountain,Gilled,Glow,Guster,Telekinetic,Telepath,Huge,6,None,-
+Lumineon,7,7,8,7,9,9,Water,none,1,0,12,12,0,4,2,4,Gilled,-,-,-,-,-,-,Medium,2,Water 2,-
+Lunatone,7,6,7,10,9,7,Rock,Psychic,1,8,0,0,0,1,3,4,Sinker,Telekinetic,-,-,-,-,-,Medium,5,Mineral,-
+Luvdisc,4,3,6,4,7,6,Water,none,1,0,8,8,0,2,1,3,Gilled,-,-,-,-,-,-,Small,1,Water 2,-
+Luxio,6,9,5,6,5,6,Electric,none,7,0,5,0,0,3,2,4,Tracker,Zapper,-,-,-,-,-,Medium,3,Field,-
+Luxray,8,12,8,10,8,7,Electric,none,10,0,5,0,0,4,3,4,Pack Mon,Tracker,Zapper,-,-,-,-,Medium,3,Field,-
+Machamp,9,13,8,7,9,6,Fighting,none,10,0,7,0,0,4,8,4,Aura,-,-,-,-,-,-,Medium,5,Humanshape,-
+Machoke,8,10,7,5,6,5,Fighting,none,8,0,5,0,0,3,6,3,-,-,-,-,-,-,-,Medium,4,Humanshape,-
+Machop,7,8,5,4,4,4,Fighting,none,7,0,4,0,0,3,3,3,-,-,-,-,-,-,-,Small,2,Humanshape,-
+Magby,5,8,4,7,6,8,Fire,none,4,0,2,0,0,1,1,2,Egg Warmer,-,-,-,-,-,-,Small,2,Humanshape,-
+Magcargo,5,5,12,8,8,3,Fire,Rock,3,0,0,0,0,1,3,4,Egg Warmer,Firestarter,Heater,Sinker,-,-,-,Medium,4,Indeterminate,-
+Magikarp,2,1,6,2,2,8,Water,none,1,0,8,8,0,4,1,2,Gilled,-,-,-,-,-,-,Small,1,Water 2,Dragon
+Magmar,7,10,6,10,9,10,Fire,none,6,0,0,0,0,3,4,4,Egg Warmer,Firestarter,Glow,Heater,Sinker,-,-,Medium,3,Humanshape,-
+Magmortar,8,10,7,13,10,8,Fire,none,9,0,0,0,0,3,5,4,Egg Warmer,Firestarter,Glow,Heater,Sinker,-,-,Large,4,Humanshape,-
+Magnemite,3,4,7,10,6,5,Electric,Steel,0,6,0,0,0,0,1,3,Magnetic,Sinker,-,-,-,-,-,Small,1,Mineral,-
+Magneton,5,6,10,12,7,7,Electric,Steel,0,8,0,0,0,0,3,3,Magnetic,Sinker,-,-,-,-,-,Medium,4,Mineral,-
+Magnezone,7,7,12,13,9,6,Electric,Steel,0,10,0,0,0,0,4,4,Magnetic,Sinker,-,-,-,-,-,Medium,5,Mineral,-
+Makuhita,7,6,3,2,3,3,Fighting,none,4,0,4,0,0,1,3,4,-,-,-,-,-,-,-,Medium,4,Humanshape,-
+Mamoswine,11,13,8,7,6,8,Ice,Ground,8,0,5,0,0,3,6,4,Chilled,Freezer,Ice Step,-,-,-,-,Large,6,Field,-
+Manaphy,10,10,10,10,10,10,Water,none,10,0,20,20,0,4,2,7,Amorphous,Fountain,Gilled,Telepath,-,-,-,Small,1,Water 1,Fairy
+Mandibuzz,11,7,11,6,10,8,Dark,Flying,4,8,1,0,0,3,3,4,Guster,-,-,-,-,-,-,Medium,3,Flying,-
+Manectric,7,8,6,11,6,11,Electric,none,8,0,6,0,0,3,3,4,Tracker,-,-,-,-,-,-,Medium,3,Field,-
+Mankey,4,8,4,4,5,7,Fighting,none,6,0,5,0,0,5,2,4,-,-,-,-,-,-,-,Small,3,Field,-
+Mantine,7,4,7,8,14,7,Water,Flying,3,10,14,14,0,4,4,4,Gilled,-,-,-,-,-,-,Large,6,Water 1,-
+Mantyke,5,2,5,6,12,5,Water,Flying,1,0,8,8,0,4,2,2,Gilled,-,-,-,-,-,-,Medium,4,Water 1,-
+Maractus,8,9,7,11,8,6,Grass,none,7,0,5,0,0,2,2,4,Sprouter,-,-,-,-,-,-,Medium,3,Plant,-
+Mareep,6,4,4,7,5,4,Electric,none,7,0,2,0,0,2,1,3,Glow,-,-,-,-,-,-,Small,1,Monster,Field
+Marill,7,2,5,2,5,4,Water,none,4,0,9,7,0,2,1,3,Fountain,-,-,-,-,-,-,Small,1,Water 1,Fairy
+Marowak,6,8,11,5,8,5,Ground,none,8,0,6,0,0,4,4,4,-,-,-,-,-,-,-,Medium,3,Monster,-
+Marshtomp,7,9,7,6,7,5,Water,Ground,6,0,6,6,6,1,2,3,Fountain,Gilled,-,-,-,-,-,Small,3,Monster,Water 1
+Masquerain,7,6,6,8,8,6,Bug,Flying,6,8,1,0,0,2,1,4,-,-,-,-,-,-,-,Medium,1,Water 1,Bug
+Mawile,5,9,9,6,6,5,Steel,none,6,0,4,0,0,3,1,4,-,-,-,-,-,-,-,Small,2,Field,Fairy
+Medicham,6,6,8,6,8,8,Fighting,Psychic,7,3,7,0,0,5,4,4,Aura,-,-,-,-,-,-,Medium,3,Humanshape,-
+Meditite,3,4,6,4,6,6,Fighting,Psychic,6,1,6,0,0,4,2,4,Aura,-,-,-,-,-,-,Small,1,Humanshape,-
+Meganium,8,8,10,8,10,8,Grass,none,9,0,2,0,0,3,4,4,Sprouter,-,-,-,-,-,-,Large,5,Monster,Plant
+Meloetta,10,13,9,8,8,13,Normal,Psychic,10,0,10,0,0,7,4,5,Aura,Telepath,-,-,-,-,-,Small,1,None,-
+Meloetta-p,10,13,9,8,8,13,Normal,Fighting,10,0,10,0,0,7,4,5,Aura,Telepath,-,-,-,-,-,Small,1,None,-
+Meowth,4,5,4,4,4,9,Normal,none,6,0,4,0,0,4,1,4,Tracker,Stealth,-,-,-,-,-,Small,1,Field,-
+Mesprit,8,11,11,11,11,8,Psychic,none,10,12,10,0,0,5,2,7,Aura,Telekinetic,Telepath,Void Heart,-,-,-,Small,1,None,-
+Metagross,8,14,13,10,9,7,Steel,Psychic,8,8,0,0,0,4,8,7,Magnetic,Sinker,-,-,-,-,-,Large,6,Mineral,-
+Metang,6,8,10,6,8,5,Steel,Psychic,2,7,0,0,0,1,4,6,Magnetic,Sinker,-,-,-,-,-,Medium,6,Mineral,-
+Metapod,5,2,6,3,3,3,Bug,none,1,0,0,0,0,4,2,2,Sinker,Threaded,-,-,-,-,-,Small,1,Bug,-
+Mew,10,10,10,10,10,10,Psychic,none,12,14,10,10,0,4,7,4,Aura,Glow,Impenetrable,Invisibility,Telekinetic,Telepath,-,Small,1,Ditto,-
+Mewtwo,11,11,9,15,9,13,Psychic,none,12,10,10,10,0,7,10,7,Aura,Glow,Impenetrable,Mindslaver,Mind Lock,Telekinetic,Telepath,Large,5,None,-
+Mienfoo,5,9,5,6,5,7,Fighting,none,6,0,5,0,0,3,3,4,Aura,-,-,-,-,-,-,Small,2,Field,Humanshape
+Mienshao,7,13,6,10,6,11,Fighting,none,8,0,7,0,0,4,4,4,Aura,-,-,-,-,-,-,Medium,3,Field,Humanshape
+Mightyena,7,9,7,6,6,7,Dark,none,9,0,8,0,0,3,3,4,Pack Mon,Tracker,-,-,-,-,-,Medium,3,Field,-
+Milotic,10,6,8,10,13,8,Water,none,6,0,11,11,0,4,4,4,Gilled,-,-,-,-,-,-,Large,5,Water 1,Dragon
+Miltank,10,8,11,4,7,10,Normal,none,8,0,6,0,0,3,3,4,-,-,-,-,-,-,-,Medium,4,Field,-
+Mime Jr.,2,3,5,7,9,6,Psychic,none,8,0,6,0,0,2,1,4,-,-,-,-,-,-,-,Small,2,Humanshape,-
+Minccino,6,5,4,4,4,8,Normal,none,6,0,4,0,5,2,1,4,-,-,-,-,-,-,-,Small,1,Field,-
+Minun,6,4,5,8,9,10,Electric,none,6,0,4,0,0,2,1,4,Zapper,-,-,-,-,-,-,Small,1,Fairy,-
+Misdreavus,6,6,6,9,9,9,Ghost,none,1,8,1,0,0,0,1,4,Invisibility,Phasing,-,-,-,-,-,Small,1,Indeterminate,-
+Mismagius,6,6,6,11,11,11,Ghost,none,1,12,3,0,0,0,2,4,Invisibility,Phasing,-,-,-,-,-,Small,1,Indeterminate,-
+Moltres,9,10,9,13,9,9,Fire,Flying,10,15,0,0,0,5,5,7,Firestarter,Glow,Guster,Heater,Sinker,-,-,Large,4,Flying,-
+Monferno,6,8,5,8,5,8,Fire,Fighting,7,0,0,0,0,3,3,4,Firestarter,Heater,Sinker,-,-,-,-,Small,2,Field,Humanshape
+Mothim,7,9,5,9,5,7,Bug,Flying,2,8,0,0,0,2,2,4,Sinker,-,-,-,-,-,-,Medium,2,Bug,-
+Mr. Mime,4,5,7,10,12,9,Psychic,none,6,0,5,0,0,3,2,5,Telekinetic,Telepath,-,-,-,-,-,Medium,4,Humanshape,-
+Mudkip,5,7,5,5,5,4,Water,none,5,0,5,5,0,1,1,3,Fountain,Gilled,-,-,-,-,-,Small,1,Monster,Water 1
+Muk,11,11,8,7,10,5,Poison,none,7,0,7,0,0,1,4,4,Amorphous,-,-,-,-,-,-,Medium,3,Indeterminate,-
+Munchlax,14,9,4,4,9,1,Normal,none,4,0,3,0,0,3,3,3,Tracker,-,-,-,-,-,-,Medium,4,Monster,-
+Munna,8,3,5,7,6,2,Psychic,none,4,0,2,0,0,1,2,5,Dream Smoke,Telekinetic,-,-,-,-,-,Small,2,Field,-
+Murkrow,6,9,4,9,4,9,Dark,Flying,4,6,1,0,0,2,1,4,Stealth,-,-,-,-,-,-,Small,1,Flying,-
+Musharna,12,6,9,11,10,3,Psychic,none,5,7,3,0,0,3,3,6,Dream Smoke,Telekinetic,-,-,-,-,-,Medium,4,Field,-
+Natu,4,5,5,7,5,7,Psychic,Flying,4,4,1,0,0,3,1,4,-,-,-,-,-,-,-,Small,1,Flying,-
+Nidoking,8,9,8,9,8,9,Poison,Ground,7,0,2,0,0,2,4,4,Groundshaper,Pack Mon,-,-,-,-,-,Medium,4,Monster,Field
+Nidoqueen,9,8,9,8,9,8,Poison,Ground,7,0,2,0,0,2,4,4,Groundshaper,Pack Mon,-,-,-,-,-,Medium,4,Monster,Field
+Nidoran-F,6,5,5,4,4,4,Poison,none,6,0,4,0,4,2,1,3,-,-,-,-,-,-,-,Small,1,Monster,Field
+Nidoran-M,5,6,4,4,4,5,Poison,none,6,0,4,0,4,2,1,3,-,-,-,-,-,-,-,Small,1,Monster,Field
+Nidorina,7,6,7,6,6,6,Poison,none,6,0,4,0,6,3,2,3,-,-,-,-,-,-,-,Small,2,Monster,Field
+Nidorino,6,7,6,6,6,7,Poison,none,6,0,4,0,6,3,2,3,-,-,-,-,-,-,-,Small,2,Monster,Field
+Nincada,3,5,9,3,3,4,Bug,Ground,4,0,0,0,6,3,1,3,Sinker,Threaded,-,-,-,-,-,Small,1,Bug,-
+Ninetales,7,8,8,8,10,10,Fire,none,8,0,6,0,0,4,3,4,Firestarter,Tracker,-,-,-,-,-,Medium,2,Field,-
+Ninjask,6,9,5,5,5,16,Bug,Flying,2,16,0,0,0,2,2,4,Sinker,-,-,-,-,-,-,Small,2,Bug,-
+Noctowl,10,5,5,8,10,7,Normal,Flying,6,10,2,0,0,3,3,4,-,-,-,-,-,-,-,Medium,3,Flying,-
+Nosepass,3,5,14,5,9,3,Rock,none,3,0,0,0,0,1,3,4,Magnetic,Sinker,-,-,-,-,-,Medium,4,Mineral,-
+Numel,6,6,4,7,5,4,Fire,Ground,6,0,2,0,0,2,2,3,-,-,-,-,-,-,-,Small,2,Field,-
+Nuzleaf,7,7,4,6,4,6,Grass,Dark,6,0,4,0,0,4,3,4,-,-,-,-,-,-,-,Medium,3,Field,Plant
+Octillery,8,11,8,11,8,5,Water,none,4,0,11,11,0,3,2,4,Amorphous,-,-,-,-,-,-,Small,3,Water 1,Water 2
+Oddish,5,5,6,8,7,3,Grass,Poison,4,0,2,0,2,1,1,2,Sprouter,-,-,-,-,-,-,Small,1,Plant,-
+Omanyte,4,4,10,9,6,4,Rock,Water,4,0,7,7,0,1,1,3,Gilled,-,-,-,-,-,-,Small,1,Water 1,Water 3
+Omastar,7,6,13,12,7,6,Rock,Water,5,0,9,9,0,2,2,4,Gilled,-,-,-,-,-,-,Medium,3,Water 1,Water 3
+Onix,4,5,16,3,5,7,Rock,Ground,8,0,0,0,9,3,5,4,Groundshaper,Reach,Sinker,-,-,-,-,Huge,6,Mineral,-
+Oshawott,6,6,5,6,5,5,Water,none,6,0,8,6,0,2,2,3,Fountain,-,-,-,-,-,-,Small,1,Field,-
+Pachirisu,6,5,7,5,9,10,Electric,none,6,0,4,0,0,3,1,4,-,-,-,-,-,-,-,Small,1,Field,Fairy
+Palkia,9,12,10,15,12,10,Water,Dragon,17,17,17,20,17,8,10,7,Aura,Realm Ruler,Telekinetic,Telepath,-,-,-,Gigantic,6,None,-
+Palpitoad,8,7,6,7,6,7,Water,Ground,6,0,8,6,0,4,3,4,Fountain,-,-,-,-,-,-,Small,2,Water 1,-
+Panpour,5,5,5,5,5,6,Water,none,6,0,4,0,0,4,2,4,-,-,-,-,-,-,-,Small,1,Field,-
+Pansage,5,5,5,5,5,6,Grass,none,6,0,4,0,0,4,2,4,-,-,-,-,-,-,-,Small,1,Field,-
+Pansear,5,5,5,5,5,6,Fire,none,6,0,4,0,0,4,2,4,-,-,-,-,-,-,-,Small,1,Field,-
+Paras,4,7,6,5,6,3,Bug,Grass,5,0,2,0,4,1,1,3,-,-,-,-,-,-,-,Small,1,Bug,Plant
+Parasect,6,10,8,6,8,3,Bug,Grass,8,0,3,0,5,2,3,4,Sprouter,-,-,-,-,-,-,Medium,3,Bug,Plant
+Patrat,5,6,4,4,4,4,Normal,none,6,0,4,0,0,3,2,3,Tracker,-,-,-,-,-,-,Small,2,Field,-
+Pawniard,5,9,7,4,4,6,Dark,Steel,7,0,4,0,0,3,3,3,Pack Mon,Stealth,Tracker,-,-,-,-,Small,1,Humanshape,-
+Pelipper,6,5,10,9,7,7,Water,Flying,6,8,10,7,0,2,3,4,-,-,-,-,-,-,-,Medium,3,Water 1,Flying
+Persian,7,7,6,7,7,12,Normal,none,8,0,5,0,0,5,3,4,Pack Mon,Tracker,Stealth,-,-,-,-,Medium,3,Field,-
+Petilil,5,4,5,7,5,3,Grass,none,6,0,4,0,0,2,1,4,Sprouter,-,-,-,-,-,-,Small,1,Plant,-
+Phanpy,9,6,6,4,4,4,Ground,none,6,0,4,0,0,3,2,3,Tracker,-,-,-,-,-,-,Small,3,Field,-
+Phione,8,8,8,8,8,8,Water,none,6,0,6,16,0,4,1,4,Amorphous,Fountain,Gilled,-,-,-,-,Small,1,Water 1,Fairy
+Pichu,2,4,2,4,4,6,Electric,none,6,0,2,0,0,2,1,3,-,-,-,-,-,-,-,Small,1,Field,Fairy
+Pidgeot,8,8,8,7,7,9,Normal,Flying,6,14,1,0,0,3,4,4,Guster,-,-,-,-,-,-,Large,3,Flying,-
+Pidgeotto,6,6,6,5,5,7,Normal,Flying,6,10,1,0,0,3,2,3,-,-,-,-,-,-,-,Medium,3,Flying,-
+Pidgey,4,5,4,4,4,6,Normal,Flying,4,6,1,0,0,3,1,3,-,-,-,-,-,-,-,Small,1,Flying,-
+Pidove,5,6,5,4,3,4,Normal,Flying,4,6,1,0,0,3,2,3,Guster,-,-,-,-,-,-,Small,1,Flying,-
+Pignite,9,9,6,7,6,6,Fire,Fighting,7,0,5,0,0,4,5,4,Firestarter,Heater,-,-,-,-,-,Medium,4,Field,-
+Pikachu,4,6,3,5,4,9,Electric,none,8,0,2,0,0,3,1,4,Zapper,-,-,-,-,-,-,Small,1,Field,Fairy
+Piloswine,10,10,8,6,6,5,Ice,Ground,6,0,4,0,0,2,4,3,Ice Step,-,-,-,-,-,-,Medium,4,Field,-
+Pineco,5,7,9,4,4,2,Bug,none,3,0,0,0,0,4,1,3,Sinker,Threaded,-,-,-,-,-,Small,1,Bug,-
+Pinsir,7,13,10,6,7,9,Bug,none,7,0,7,0,0,3,5,4,-,-,-,-,-,-,-,Medium,4,Bug,-
+Piplup,5,5,5,6,6,4,Water,none,4,0,6,3,0,1,1,2,Fountain,-,-,-,-,-,-,Small,1,Water 1,Field
+Plusle,6,5,4,9,8,10,Electric,none,6,0,4,0,0,2,1,4,Zapper,-,-,-,-,-,-,Small,1,Fairy,-
+Politoed,9,8,8,9,10,7,Water,none,10,0,12,6,0,6,3,4,Fountain,Gilled,Pack Mon,-,-,-,-,Medium,3,Water 1,-
+Poliwag,4,5,4,4,4,9,Water,none,2,0,8,5,0,2,1,3,Fountain,Gilled,-,-,-,-,-,Small,2,Water 1,-
+Poliwhirl,7,7,7,5,5,9,Water,none,6,0,8,6,0,4,3,4,Fountain,Gilled,-,-,-,-,-,Medium,2,Water 1,-
+Poliwrath,9,9,10,7,9,7,Water,Fighting,6,0,10,8,0,5,5,4,Fountain,Gilled,-,-,-,-,-,Medium,4,Water 1,-
+Ponyta,5,9,6,7,7,9,Fire,none,12,0,0,0,0,4,2,4,Egg Warmer,Firestarter,Glow,Heater,Sinker,-,-,Medium,3,Field,-
+Poochyena,4,6,4,3,3,4,Dark,none,7,0,4,0,0,2,1,3,Tracker,-,-,-,-,-,-,Small,2,Field,-
+Porygon,7,6,7,9,8,4,Normal,none,6,3,4,0,0,2,1,4,Wired,-,-,-,-,-,-,Small,3,Mineral,-
+Porygon2,9,8,9,11,10,6,Normal,none,8,6,8,0,0,3,1,5,Wired,-,-,-,-,-,-,Small,3,Mineral,-
+Porygon-Z,9,8,7,14,8,9,Normal,none,9,7,9,0,0,3,1,6,Wired,-,-,-,-,-,-,Small,3,Mineral,-
+Primeape,7,11,6,6,7,10,Fighting,none,8,0,7,0,0,5,4,4,-,-,-,-,-,-,-,Medium,3,Field,-
+Prinplup,6,7,7,8,8,5,Water,none,5,0,8,5,0,2,2,3,Fountain,-,-,-,-,-,-,Small,2,Water 1,Field
+Probopass,6,6,15,8,15,4,Rock,Steel,6,0,0,0,0,1,5,4,Magnetic,Sinker,-,-,-,-,-,Medium,6,Mineral,-
+Psyduck,5,5,5,7,5,6,Water,none,4,0,6,5,0,2,1,4,-,-,-,-,-,-,-,Small,2,Water 1,Field
+Pupitar,7,8,7,7,7,5,Rock,Ground,4,0,0,0,0,5,3,4,Sinker,-,-,-,-,-,-,Medium,5,Monster,-
+Purrloin,4,5,4,5,4,7,Dark,none,6,0,4,0,0,3,2,4,Stealth,-,-,-,-,-,-,Small,1,Field,-
+Purugly,7,8,6,6,6,11,Normal,none,8,0,6,0,0,3,2,4,Tracker,-,-,-,-,-,-,Medium,3,Field,-
+Quagsire,10,9,9,7,7,4,Water,Ground,7,0,8,7,0,3,3,4,Fountain,Gilled,-,-,-,-,-,Medium,4,Water 1,Field
+Quilava,6,6,6,8,7,8,Fire,none,10,0,0,0,0,2,2,3,Firestarter,Heater,Sinker,-,-,-,-,Small,2,Field,-
+Qwilfish,7,10,8,6,6,9,Water,Poison,1,0,8,10,0,3,1,3,Gilled,-,-,-,-,-,-,Small,1,Water 2,-
+Raichu,6,9,6,9,8,10,Electric,none,9,0,4,0,0,3,2,4,Zapper,-,-,-,-,-,-,Small,3,Field,Fairy
+Raikou,9,9,8,12,10,12,Electric,none,20,0,12,0,0,7,5,7,Aura,Tracker,Zapper,-,-,-,-,Large,5,Monster,Ground
+Ralts,3,3,3,5,4,4,Psychic,none,5,0,4,0,0,2,1,4,Telekinetic,Telepath,-,-,-,-,-,Small,1,Indeterminate,-
+Rampardos,10,17,6,7,5,6,Rock,none,8,0,0,0,0,4,4,4,Sinker,-,-,-,-,-,-,Medium,5,Monster,-
+Rapidash,7,10,7,8,8,11,Fire,none,18,0,0,0,0,5,4,4,Egg Warmer,Firestarter,Glow,Heater,Sinker,-,-,Large,4,Field,-
+Raticate,6,8,6,5,7,10,Normal,none,10,0,8,0,0,3,3,4,Tracker,Stealth,-,-,-,-,-,Small,2,Field,-
+Rattata,3,6,4,3,4,7,Normal,none,8,0,6,0,0,2,1,3,Stealth,-,-,-,-,-,-,Small,1,Field,-
+Rayquaza,11,15,9,15,9,10,Dragon,Flying,12,20,12,12,12,10,10,7,Aura,Glow,Guster,Telepath,-,-,-,Gigantic,6,None,-
+Regice,8,5,10,10,20,5,Ice,none,10,0,0,0,14,1,9,5,Freezer,Groundshaper,Magnetic,Sinker,-,-,-,Huge,5,None,-
+Regigigas,11,16,11,8,11,10,Normal,none,12,0,12,12,14,1,10,7,Groundshaper,Magnetic,-,-,-,-,-,Gigantic,6,None,-
+Regirock,8,10,20,5,10,5,Rock,none,10,0,0,0,14,1,9,5,Groundshaper,Magnetic,Materializer,Sinker,-,-,-,Huge,6,None,-
+Registeel,8,8,15,8,15,5,Steel,none,10,0,0,0,14,1,9,5,Groundshaper,Magnetic,Sinker,-,-,-,-,Huge,6,None,-
+Relicanth,10,9,13,5,7,6,Water,Rock,1,0,8,8,0,1,1,3,Gilled,-,-,-,-,-,-,Medium,2,Water 1,Water 2
+Remoraid,4,7,4,7,4,7,Water,none,1,0,10,10,0,3,1,4,Gilled,-,-,-,-,-,-,Small,2,Water 1,Water 2
+Reshiram,10,12,10,15,12,9,Dragon,Fire,12,10,8,0,0,4,6,5,Aura,Egg Warmer,Heater,Firestarter,Telepath,-,-,Gigantic,6,None,-
+Reuniclus,11,7,8,13,9,3,Psychic,none,5,0,3,0,0,3,2,6,Telekinetic,Telepath,-,-,-,-,-,Medium,2,Indeterminate,-
+Rhydon,11,13,12,5,5,4,Ground,Rock,7,0,0,0,0,2,4,4,Sinker,Tracker,-,-,-,-,-,Medium,5,Monster,Field
+Rhyhorn,8,9,10,3,3,3,Ground,Rock,8,0,0,0,0,2,4,3,Sinker,Tracker,-,-,-,-,-,Medium,5,Monster,Field
+Rhyperior,12,14,13,6,6,4,Ground,Rock,7,0,0,0,0,1,5,4,Groundshaper,Sinker,Tracker,-,-,-,-,Large,6,Monster,Field
+Riolu,4,7,4,4,4,6,Fighting,none,6,0,4,0,0,3,2,3,Aura,-,-,-,-,-,-,Small,2,Field,Humanshape
+Roggenrola,6,8,9,3,3,2,Rock,none,2,0,0,0,0,1,3,4,Sinker,-,-,-,-,-,-,Small,2,Mineral,-
+Roselia,5,6,5,10,8,7,Grass,Poison,5,0,2,0,0,3,2,4,Sprouter,-,-,-,-,-,-,Small,1,Fairy,Plant
+Roserade,6,7,6,13,11,9,Grass,Poison,7,0,4,0,0,3,2,4,Sprouter,-,-,-,-,-,-,Small,2,Fairy,Plant
+Rotom-fan,5,7,11,11,11,9,Electric,Flying,8,6,2,0,0,4,1,4,Glow,Phasing,Wired,Zapper,-,-,-,Small,1,Indeterminate,-
+Rotom-frost,5,7,11,11,11,9,Electric,Ice,8,6,2,0,0,4,1,4,Glow,Phasing,Wired,Zapper,-,-,-,Small,1,Indeterminate,-
+Rotom-heat,5,7,11,11,11,9,Electric,Fire,8,6,2,0,0,4,1,4,Glow,Phasing,Wired,Zapper,-,-,-,Small,1,Indeterminate,-
+Rotom-mow,5,7,11,11,11,9,Electric,Grass,8,6,2,0,0,4,1,4,Glow,Phasing,Wired,Zapper,-,-,-,Small,1,Indeterminate,-
+Rotom,5,5,8,10,8,9,Electric,Ghost,8,6,2,0,0,4,1,4,Glow,Phasing,Wired,Zapper,-,-,-,Small,1,Indeterminate,-
+Rotom-wash,5,7,11,11,11,9,Electric,Water,8,6,2,0,0,4,1,4,Glow,Phasing,Wired,Zapper,-,-,-,Small,1,Indeterminate,-
+Rufflet,7,8,5,4,5,6,Normal,Flying,3,6,1,0,0,3,2,3,-,-,-,-,-,-,-,Small,1,Flying,-
+Sableye,5,8,8,7,7,5,Dark,Ghost,6,0,4,0,0,4,1,4,Amorphous,Invisibility,Stealth,-,-,-,-,Small,1,Humanshape,-
+Salamence,10,14,8,11,8,10,Dragon,Flying,8,14,8,0,0,4,4,4,-,-,-,-,-,-,-,Large,5,Dragon,-
+Samurott,10,10,9,10,7,7,Water,none,8,0,10,8,0,3,3,4,Fountain,-,-,-,-,-,-,Large,4,Field,-
+Sandile,5,7,4,4,4,7,Ground,Dark,6,0,4,0,6,2,3,4,Stealth,-,-,-,-,-,-,Small,2,Field,-
+Sandshrew,5,8,9,2,3,4,Ground,none,6,0,0,0,8,2,1,3,Sinker,-,-,-,-,-,-,Small,2,Field,-
+Sandslash,8,10,11,5,6,7,Ground,none,8,0,0,0,10,3,3,4,Groundshaper,Sinker,-,-,-,-,-,Medium,3,Field,-
+Sawk,8,13,8,3,8,9,Fighting,none,8,0,6,0,0,4,5,4,-,-,-,-,-,-,-,Medium,4,Humanshape,-
+Sawsbuck,8,10,7,6,7,10,Normal,Grass,8,0,6,0,0,4,4,4,Pack Mon,-,-,-,-,-,-,Large,4,Field,-
+Sceptile,7,9,7,11,9,12,Grass,none,12,0,4,0,0,6,4,4,Sprouter,-,-,-,-,-,-,Medium,4,Monster,Dragon
+Scizor,7,13,10,6,8,7,Bug,Steel,9,8,3,0,0,5,4,4,-,-,-,-,-,-,-,Medium,5,Bug,-
+Scolipede,6,9,9,6,7,11,Bug,Poison,10,0,4,0,0,3,4,4,-,-,-,-,-,-,-,Large,6,Bug,-
+Scrafty,7,9,12,5,12,6,Dark,Fighting,8,0,6,0,0,4,3,5,Pack Mon,Stealth,-,-,-,-,-,Medium,3,Field,Dragon
+Scraggy,5,8,7,4,7,5,Dark,Fighting,6,0,4,0,0,3,3,4,Pack Mon,Stealth,-,-,-,-,-,Small,2,Field,Dragon
+Scyther,7,11,8,6,8,11,Bug,Flying,8,8,2,0,0,5,3,4,-,-,-,-,-,-,-,Medium,4,Bug,-
+Seadra,6,7,10,10,5,9,Water,none,2,0,10,10,0,1,3,4,Fountain,Gilled,-,-,-,-,-,Medium,2,Water 1,Dragon
+Seaking,8,9,7,7,8,7,Water,none,3,0,10,10,0,3,3,4,Gilled,-,-,-,-,-,-,Medium,3,Water 2,-
+Sealeo,9,6,7,8,7,5,Ice,Water,6,0,9,7,0,3,3,4,Ice Step,-,-,-,-,-,-,Medium,4,Water 1,Field
+Seedot,4,4,5,3,3,3,Grass,none,4,0,2,0,0,4,1,3,-,-,-,-,-,-,-,Small,1,Field,Plant
+Seel,7,5,6,5,7,5,Water,none,4,0,8,7,0,2,3,4,Ice Step,-,-,-,-,-,-,Medium,4,Water 1,Field
+Seismitoad,11,9,8,9,8,7,Water,Ground,8,0,10,6,0,6,4,4,Fountain,Groundshaper,-,-,-,-,-,Medium,4,Water 1,-
+Sentret,4,5,3,4,5,2,Normal,none,5,0,5,0,0,3,1,3,-,-,-,-,-,-,-,Small,1,Field,-
+Serperior,8,8,10,8,10,11,Grass,none,10,0,8,0,6,2,4,5,Sprouter,Stealth,-,-,-,-,-,Large,4,Field,Plant
+Servine,6,6,8,6,8,8,Grass,none,8,0,6,0,4,1,3,4,Sprouter,Stealth,-,-,-,-,-,Small,2,Field,Plant
+Seviper,7,10,6,10,6,7,Poison,none,10,0,6,0,8,4,3,4,-,-,-,-,-,-,-,Large,4,Field,Dragon
+Sewaddle,5,5,7,4,6,4,Bug,Grass,4,0,2,0,0,2,1,2,Threaded,-,-,-,-,-,-,Small,1,Bug,-
+Sharpedo,7,12,4,10,4,10,Water,Dark,3,0,14,12,0,5,4,4,Gilled,-,-,-,-,-,-,Medium,4,Water 2,-
+Shaymin,10,10,10,10,10,10,Grass,none,10,0,6,0,10,5,2,7,Sprouter,Telepath,Sky Forme,-,-,-,-,Small,1,None,-
+Shaymin-s,10,10,8,12,8,13,Grass,Flying,12,20,10,0,0,10,2,7,Aura,Sprouter,Telepath,-,-,-,-,Small,1,None,-
+Shedinja,0,9,5,3,3,4,Bug,Ghost,2,10,0,0,0,2,1,4,Sinker,Soulless,-,-,-,-,-,Small,1,Mineral,-
+Shelgon,7,10,10,6,5,5,Dragon,none,7,0,5,0,0,2,4,3,-,-,-,-,-,-,-,Medium,5,Dragon,-
+Shellder,3,7,10,5,3,4,Water,none,1,0,6,4,0,2,1,3,Gilled,-,-,-,-,-,-,Small,1,Water 3,-
+Shellos,8,5,5,6,6,3,Water,none,2,0,6,5,0,1,1,3,Amorphous,Gilled,-,-,-,-,-,Small,1,Water 1,Indeterminate
+Shelmet,5,4,9,4,7,3,Bug,none,2,0,3,3,0,1,1,3,-,-,-,-,-,-,-,Small,1,Bug,-
+Shieldon,3,4,12,4,9,3,Rock,Steel,4,0,0,0,0,3,3,3,Sinker,-,-,-,-,-,-,Small,4,Monster,-
+Shiftry,9,10,6,9,6,8,Grass,Dark,8,0,6,0,0,4,4,4,-,-,-,-,-,-,-,Medium,4,Field,Plant
+Shinx,5,7,3,4,3,5,Electric,none,6,0,4,0,0,2,1,3,-,-,-,-,-,-,-,Small,1,Field,-
+Shroomish,6,4,6,4,6,4,Grass,none,4,0,2,0,0,2,1,3,-,-,-,-,-,-,-,Small,1,Fairy,Plant
+Shuckle,2,1,23,1,23,1,Bug,Rock,3,0,0,0,0,1,2,3,Juicer,Sinker,-,-,-,-,-,Small,2,Bug,-
+Shuppet,4,8,4,6,3,5,Ghost,none,1,4,4,0,0,3,1,4,Invisibility,Phasing,Stealth,-,-,-,-,Small,1,Indeterminate,-
+Sigilyph,7,6,8,10,8,10,Psychic,Flying,1,8,1,0,0,3,2,6,Guster,Invisibility,Telekinetic,-,-,-,-,Medium,2,Flying,-
+Silcoon,5,4,6,3,3,2,Bug,none,1,0,0,0,0,4,2,2,Sinker,Threaded,-,-,-,-,-,Small,1,Bug,-
+Simipour,8,10,6,10,6,10,Water,none,8,0,7,0,0,5,3,4,Fountain,-,-,-,-,-,-,Medium,3,Field,-
+Simisage,8,10,6,10,6,10,Grass,none,8,0,7,0,0,5,3,4,Sprouter,-,-,-,-,-,-,Medium,3,Field,-
+Simisear,8,10,6,10,6,10,Fire,none,8,0,7,0,0,5,3,4,Firestarter,-,-,-,-,-,-,Medium,3,Field,-
+Skarmory,7,8,14,4,7,7,Steel,Flying,4,14,0,0,0,3,3,4,Sinker,-,-,-,-,-,-,Large,4,Flying,-
+Skiploom,6,5,5,5,7,5,Grass,Flying,6,8,2,0,0,6,1,4,Sprouter,-,-,-,-,-,-,Small,1,Fairy,Plant
+Skitty,5,5,5,4,4,5,Normal,none,6,0,4,0,0,2,1,4,Tracker,-,-,-,-,-,-,Small,1,Field,Fairy
+Skorupi,4,5,9,3,6,7,Poison,Bug,6,0,2,0,0,2,1,3,-,-,-,-,-,-,-,Small,2,Bug,Water 3
+Skuntank,10,9,7,7,6,8,Poison,Dark,8,0,6,0,0,3,2,4,-,-,-,-,-,-,-,Medium,3,Field,-
+Slaking,15,16,10,10,7,10,Normal,none,4,0,4,0,0,4,9,4,Pack Mon,Troublesome,-,-,-,-,-,Large,5,Field,-
+Slakoth,6,6,6,4,4,3,Normal,none,1,0,1,0,0,2,2,1,Troublesome,-,-,-,-,-,-,Small,3,Field,-
+Slowbro,10,8,11,10,8,3,Water,Psychic,4,0,6,6,0,1,4,5,-,-,-,-,-,-,-,Medium,4,Monster,Water 1
+Slowking,10,8,8,10,11,3,Water,Psychic,4,0,6,6,0,1,4,7,Aura,Pack Mon,Telepath,-,-,-,-,Medium,4,Monster,Water 1
+Slowpoke,9,7,7,4,4,2,Water,Psychic,1,0,2,2,0,1,2,4,-,-,-,-,-,-,-,Medium,3,Monster,Water 1
+Slugma,4,4,4,7,4,2,Fire,none,1,0,0,0,0,1,2,3,Amorphous,Egg Warmer,Firestarter,Sinker,-,-,-,Small,3,Indeterminate,-
+Smeargle,6,2,4,2,5,8,Normal,none,6,0,6,0,0,3,3,4,-,-,-,-,-,-,-,Medium,4,Field,-
+Smoochum,5,3,2,9,7,7,Ice,Psychic,4,0,2,0,0,2,1,4,-,-,-,-,-,-,-,Small,1,Humanshape,-
+Sneasel,6,10,6,4,8,12,Dark,Ice,7,0,4,0,0,3,3,4,Ice Step,Stealth,-,-,-,-,-,Medium,3,Field,-
+Snivy,5,5,6,5,6,6,Grass,none,6,0,4,0,2,1,2,4,Sprouter,Stealth,-,-,-,-,-,Small,1,Field,Plant
+Snorlax,16,11,7,7,11,3,Normal,none,6,0,2,0,0,1,7,4,Tracker,-,-,-,-,-,-,Large,6,Monster,-
+Snorunt,5,5,5,5,5,5,Ice,none,4,0,2,0,0,2,1,3,Chilled,Glow,Ice Step,-,-,-,-,Small,2,Fairy,Mineral
+Snover,6,6,5,6,6,4,Grass,Ice,6,0,2,0,0,3,3,4,Chilled,Ice Step,-,-,-,-,-,Medium,4,Monster,Plant
+Snubbull,6,8,5,4,4,3,Normal,none,6,0,4,0,0,2,1,4,Tracker,-,-,-,-,-,-,Small,1,Field,Fairy
+Solosis,5,3,4,11,5,2,Psychic,none,3,0,1,0,0,1,1,4,Telekinetic,-,-,-,-,-,-,Small,1,Indeterminate,-
+Solrock,7,10,9,6,7,7,Rock,Psychic,1,8,0,0,0,1,3,4,Sinker,Telekinetic,-,-,-,-,-,Medium,5,Mineral,-
+Spearow,4,6,3,3,3,7,Normal,Flying,4,6,1,0,0,3,1,3,-,-,-,-,-,-,-,Small,1,Flying,-
+Spheal,7,4,5,6,5,3,Ice,Water,6,0,7,5,0,3,1,3,Ice Step,-,-,-,-,-,-,Small,3,Water 1,Field
+Spinarak,4,6,4,4,4,3,Bug,Poison,4,0,2,0,0,4,1,2,Threaded,-,-,-,-,-,-,Small,1,Bug,-
+Spinda,6,6,6,6,6,6,Normal,none,6,0,4,0,0,3,1,3,-,-,-,-,-,-,-,Medium,1,Field,Humanshape
+Spiritomb,5,9,11,9,11,4,Ghost,Dark,5,5,0,0,0,2,1,5,Aura,Invisibility,Phasing,Sinker,-,-,-,Medium,5,Indeterminate,-
+Spoink,6,3,4,7,8,6,Psychic,none,4,0,4,0,0,5,1,4,-,-,-,-,-,-,-,Small,3,Field,-
+Squirtle,4,5,7,5,6,4,Water,none,6,0,8,5,0,2,1,3,Fountain,-,-,-,-,-,-,Small,1,Monster,Water 1
+Stantler,7,10,6,9,7,9,Normal,none,8,0,6,0,0,4,3,4,Tracker,-,-,-,-,-,-,Medium,4,Field,-
+Staraptor,9,12,7,5,5,10,Normal,Flying,7,14,1,0,0,3,3,4,Guster,-,-,-,-,-,-,Medium,2,Flying,-
+Staravia,6,8,5,4,4,8,Normal,Flying,5,10,1,0,0,3,2,4,-,-,-,-,-,-,-,Small,2,Flying,-
+Starly,4,6,3,3,3,6,Normal,Flying,3,6,1,0,0,3,1,3,-,-,-,-,-,-,-,Small,1,Flying,-
+Starmie,6,8,9,10,9,12,Water,Psychic,1,10,10,10,0,2,3,4,Fountain,Gilled,-,-,-,-,-,Medium,4,Water 3,-
+Staryu,3,5,6,7,6,9,Water,none,1,5,5,5,0,2,2,4,Fountain,Gilled,-,-,-,-,-,Small,3,Water 3,-
+Steelix,8,9,20,6,7,3,Steel,Ground,8,0,0,0,12,3,5,4,Groundshaper,Reach,Sinker,-,-,-,-,Gigantic,6,Mineral,-
+Stoutland,9,10,9,5,9,8,Normal,none,8,0,6,0,0,3,4,4,Tracker,-,-,-,-,-,-,Medium,4,Field,-
+Stunfisk,11,7,8,8,10,3,Ground,Electric,4,0,8,8,0,2,1,2,Zapper,-,-,-,-,-,-,Small,1,Water 1,Indeterminate
+Stunky,6,6,5,4,4,7,Poison,Dark,6,0,4,0,0,3,1,3,-,-,-,-,-,-,-,Small,2,Field,-
+Sudowoodo,7,10,12,3,7,3,Rock,none,6,0,0,0,0,2,4,4,Sinker,Stealth,-,-,-,-,-,Medium,3,Mineral,-
+Suicune,10,8,12,9,12,9,Water,none,20,0,12,4,0,7,5,7,Aura,Fountain,Guster,Tracker,-,-,-,Large,5,Monster,Ground
+Sunflora,8,8,6,11,9,3,Grass,none,7,0,4,0,0,2,1,4,Sprouter,-,-,-,-,-,-,Small,1,Plant,-
+Sunkern,3,3,3,3,3,3,Grass,none,4,0,2,0,0,1,1,3,Sprouter,-,-,-,-,-,-,Small,1,Plant,-
+Surskit,4,3,3,5,5,7,Bug,Water,5,0,6,0,0,2,1,3,Threaded,-,-,-,-,-,-,Small,1,Water 1,Bug
+Swablu,5,4,6,4,8,5,Normal,Flying,2,6,1,0,0,2,1,3,Guster,-,-,-,-,-,-,Small,1,Flying,Dragon
+Swadloon,6,6,9,5,8,4,Bug,Grass,6,0,3,0,0,2,2,3,Threaded,-,-,-,-,-,-,Small,1,Bug,-
+Swalot,10,7,8,7,8,6,Poison,none,5,0,3,0,0,1,4,4,Amorphous,Inflatable,-,-,-,-,-,Medium,4,Indeterminate,-
+Swampert,10,11,9,9,9,6,Water,Ground,7,0,7,7,7,2,4,4,Fountain,Gilled,-,-,-,-,-,Medium,4,Monster,Water 1
+Swanna,8,9,6,9,6,10,Water,Flying,4,8,8,6,0,3,2,4,Fountain,Guster,-,-,-,-,-,Medium,2,Water 1,Flying
+Swellow,6,9,6,5,5,13,Normal,Flying,6,10,1,0,0,3,4,4,-,-,-,-,-,-,-,Medium,2,Flying,-
+Swinub,5,5,4,3,3,5,Ice,Ground,4,0,2,0,0,2,2,2,Ice Step,-,-,-,-,-,-,Small,1,Field,-
+Swoobat,7,6,6,8,6,11,Psychic,Flying,3,9,1,0,0,2,2,5,Telekinetic,Tracker,-,-,-,-,-,Medium,1,Field,Flying
+Taillow,4,6,3,3,3,9,Normal,Flying,4,8,1,0,0,3,1,3,-,-,-,-,-,-,-,Small,1,Flying,-
+Tangela,7,6,12,10,4,6,Grass,none,6,0,2,0,0,2,2,4,Reach,-,-,-,-,-,-,Medium,3,Plant,-
+Tangrowth,10,10,13,11,5,5,Grass,none,8,0,4,0,0,2,4,4,Reach,Sprouter,-,-,-,-,-,Large,5,Plant,-
+Tauros,8,10,10,4,7,11,Normal,none,10,0,6,0,0,2,4,4,Pack Mon,-,-,-,-,-,-,Medium,4,Field,-
+Teddiursa,6,8,5,5,5,4,Normal,none,6,0,4,0,0,2,1,3,Tracker,Stealth,-,-,-,-,-,Small,1,Field,-
+Tentacool,4,4,4,5,10,7,Water,Poison,1,0,8,8,0,2,2,3,Gilled,-,-,-,-,-,-,Small,3,Water 3,-
+Tentacruel,8,7,7,8,12,10,Water,Poison,4,0,10,10,0,3,4,4,Gilled,-,-,-,-,-,-,Medium,4,Water 3,-
+Tepig,7,6,5,5,5,5,Fire,none,6,0,4,0,0,2,3,3,Firestarter,Heater,-,-,-,-,-,Small,1,Field,-
+Terrakion,9,13,9,7,9,11,Rock,Fighting,10,0,0,0,14,4,5,5,Aura,Groundshaper,Sinker,-,-,-,-,Large,6,Field,-
+Throh,12,10,9,3,9,5,Fighting,none,8,0,6,0,0,4,5,4,-,-,-,-,-,-,-,Medium,4,Humanshape,-
+Thundurus,8,12,7,13,8,11,Electric,Flying,10,20,10,0,0,6,5,5,Aura,Guster,Zapper,-,-,-,-,Large,4,None,-
+Thundurus (T),8,11,7,15,8,10,Electric,Flying,10,20,10,0,0,6,5,5,Aura,Guster,Zapper,-,-,-,-,Large,4,None,-
+Timburr,8,8,6,3,4,4,Fighting,none,6,0,4,0,0,4,4,2,-,-,-,-,-,-,-,Small,2,Humanshape,-
+Tirtouga,6,8,10,5,5,2,Water,Rock,4,0,8,8,0,2,2,4,Fountain,-,-,-,-,-,-,Small,2,Water 1,Water 3
+Togekiss,9,5,10,12,12,8,Normal,Flying,5,14,6,0,0,5,3,4,Aura,Guster,-,-,-,-,-,Medium,3,Flying,Fairy
+Togepi,4,2,7,4,7,2,Normal,none,2,0,2,0,0,1,1,2,-,-,-,-,-,-,-,Small,1,Fairy,-
+Togetic,6,4,9,8,11,4,Normal,Flying,6,8,4,0,0,4,2,4,-,-,-,-,-,-,-,Small,1,Flying,Fairy
+Torchic,5,6,4,7,5,5,Fire,none,4,0,0,0,0,1,1,2,Sinker,-,-,-,-,-,-,Small,1,Field,-
+Torkoal,7,9,14,9,7,2,Fire,none,3,0,0,0,0,2,4,4,Heater,Sinker,-,-,-,-,-,Small,4,Field,-
+Tornadus,8,12,7,13,8,11,Flying,none,10,20,10,0,0,6,5,5,Aura,Guster,Zapper,-,-,-,-,Large,4,None,-
+Tornadus (T),8,10,8,11,9,12,Flying,none,10,20,10,0,0,6,5,5,Aura,Guster,Zapper,-,-,-,-,Large,4,None,-
+Torterra,10,11,11,8,9,6,Grass,Ground,6,0,0,0,0,1,4,4,Groundshaper,Sinker,Sprouter,-,-,-,-,Large,6,Monster,Plant
+Totodile,5,7,6,4,5,4,Water,none,6,0,8,0,0,3,1,2,Fountain,-,-,-,-,-,-,Small,1,Monster,Water 1
+Toxicroak,8,11,7,9,7,9,Poison,Fighting,8,0,8,0,0,5,3,4,-,-,-,-,-,-,-,Medium,3,Humanshape,-
+Tranquill,6,8,6,5,4,7,Normal,Flying,5,7,1,0,0,4,3,4,Guster,-,-,-,-,-,-,Small,2,Flying,-
+Trapinch,5,10,5,5,5,1,Ground,none,6,0,0,0,8,1,1,3,Sinker,-,-,-,-,-,-,Small,2,Bug,-
+Treecko,4,5,4,7,6,7,Grass,none,8,0,2,0,0,4,1,3,Sprouter,-,-,-,-,-,-,Small,1,Monster,Dragon
+Tropius,10,7,8,7,9,5,Grass,Flying,6,10,2,0,0,5,4,4,Guster,-,-,-,-,-,-,Large,5,Monster,Plant
+Trubbish,5,5,6,4,6,7,Poison,none,5,0,4,0,0,1,2,4,Inflatable,-,-,-,-,-,-,Small,3,Mineral,-
+Turtwig,6,7,6,5,6,3,Grass,none,4,0,2,0,4,3,1,3,Sprouter,-,-,-,-,-,-,Small,1,Monster,Plant
+Tympole,5,5,4,5,4,6,Water,none,4,0,7,6,0,3,1,4,Fountain,-,-,-,-,-,-,Small,1,Water 1,-
+Tynamo,4,6,4,5,4,6,Electric,none,3,4,6,6,0,2,1,4,Glow,Zapper,-,-,-,-,-,Small,1,Indeterminate,-
+Typhlosion,8,8,8,11,9,10,Fire,none,11,0,0,0,0,3,4,4,Firestarter,Heater,Sinker,-,-,-,-,Medium,4,Field,-
+Tyranitar,10,13,11,10,10,6,Rock,Dark,9,0,0,0,0,3,5,4,Sinker,-,-,-,-,-,-,Large,6,Monster,-
+Tyrogue,4,4,4,4,4,4,Fighting,none,7,0,7,0,0,3,2,3,-,-,-,-,-,-,-,Small,2,Humanshape,-
+Umbreon,10,7,11,6,13,7,Dark,none,8,0,6,0,0,4,2,4,Stealth,Tracker,-,-,-,-,-,Medium,3,Field,-
+Unfezant,8,11,8,7,6,9,Normal,Flying,6,10,1,0,0,4,4,4,Guster,-,-,-,-,-,-,Medium,3,Flying,-
+Unown,5,7,5,7,5,5,Psychic,none,0,6,1,0,0,0,1,5,Invisibility,-,-,-,-,-,-,Small,1,Indeterminate,-
+Ursaring,9,13,8,8,8,6,Normal,none,8,0,6,0,0,2,4,4,Tracker,-,-,-,-,-,-,Medium,5,Field,-
+Uxie,8,8,13,8,13,10,Psychic,none,10,12,10,0,0,5,2,7,Aura,Blank Slate,Telekinetic,Telepath,-,-,-,Small,1,None,-
+Vanillish,5,7,7,8,8,6,Ice,none,1,7,0,0,0,2,2,4,Chilled,Freezer,Icestep,Sinker,-,-,-,Medium,3,Mineral,-
+Vanillite,4,5,5,7,6,5,Ice,none,1,6,0,0,0,2,1,4,Chilled,Freezer,Icestep,Sinker,-,-,-,Small,1,Mineral,-
+Vanilluxe,7,10,9,11,10,8,Ice,none,1,8,0,0,0,2,3,4,Chilled,Freezer,Icestep,Sinker,-,-,-,Medium,4,Mineral,-
+Vaporeon,13,7,6,11,10,7,Water,none,6,0,10,10,0,2,2,4,Amorphous,Gilled,Tracker,Fountain,-,-,-,Medium,3,Field,-
+Venipede,3,5,6,3,4,6,Bug,Poison,5,0,1,0,0,3,2,2,-,-,-,-,-,-,-,Small,1,Bug,-
+Venomoth,7,7,6,9,8,9,Bug,Poison,4,8,0,0,0,2,2,4,Sinker,-,-,-,-,-,-,Medium,2,Bug,-
+Venonat,6,6,5,4,6,5,Bug,Poison,6,0,2,0,0,3,1,4,-,-,-,-,-,-,-,Medium,3,Bug,-
+Venusaur,8,8,8,10,10,8,Grass,Poison,9,0,2,0,0,1,4,4,Sprouter,-,-,-,-,-,-,Large,5,Monster,Plant
+Vespiquen,7,8,10,8,10,4,Bug,Flying,4,10,1,0,0,4,3,4,Pack Mon,-,-,-,-,-,-,Medium,3,Bug,-
+Vibrava,5,7,5,5,5,7,Ground,Dragon,4,8,1,0,6,3,1,4,-,-,-,-,-,-,-,Medium,2,Bug,-
+Victini,10,10,10,10,10,10,Psychic,Fire,15,15,15,0,15,7,5,4,Aura,Glow,Heater,Impenetrable,Telekinetic,Telepath,Zapper,Small,1,None,-
+Victreebel,8,11,7,10,6,7,Grass,Poison,7,0,2,0,0,3,3,4,Sprouter,-,-,-,-,-,-,Medium,2,Plant,-
+Vigoroth,8,8,8,6,6,9,Normal,none,9,0,6,0,0,4,3,3,-,-,-,-,-,-,-,Medium,3,Field,-
+Vileplume,8,8,9,10,9,5,Grass,Poison,7,0,2,0,0,3,3,4,Sprouter,-,-,-,-,-,-,Medium,2,Plant,-
+Virizion,9,9,7,9,13,11,Grass,Fighting,12,0,10,0,0,4,5,5,Aura,Sprouter,-,-,-,-,-,Large,6,Field,-
+Volbeat,7,7,6,5,8,9,Bug,none,6,6,0,0,0,3,1,4,Glow,Sinker,-,-,-,-,-,Small,2,Bug,Humanshape
+Volcarona,9,6,7,14,11,10,Bug,Fire,7,8,0,0,0,3,3,4,Egg Warmer,Firestarter,Heater,Sinker,-,-,-,Large,3,Bug,
+Voltorb,4,3,5,6,6,10,Electric,none,8,0,0,0,0,1,1,4,Shrinkable,Sinker,-,-,-,-,-,Small,1,Mineral,-
+Vullaby,7,6,8,5,7,6,Dark,Flying,3,6,1,0,0,3,1,4,Guster,-,-,-,-,-,-,Small,1,Flying,-
+Vulpix,4,4,4,5,7,7,Fire,none,6,0,4,0,0,3,1,3,Tracker,-,-,-,-,-,-,Small,1,Field,-
+Wailmer,13,7,4,7,4,6,Water,none,4,0,6,6,0,3,4,3,Fountain,-,-,-,-,-,-,Large,5,Field,Water 2
+Wailord,17,9,5,9,5,6,Water,none,4,0,12,12,0,3,6,4,Fountain,-,-,-,-,-,-,Gigantic,6,Field,Water 2
+Walrein,11,8,9,10,9,7,Ice,Water,6,0,13,10,0,2,4,4,Freezer,Ice Step,-,-,-,-,-,Large,5,Water 1,Field
+Wartortle,6,6,8,7,8,6,Water,none,6,0,10,8,0,2,2,3,Fountain,-,-,-,-,-,-,Medium,2,Monster,Water 1
+Watchog,6,9,7,6,7,8,Normal,none,8,0,6,0,0,4,3,4,Tracker,-,-,-,-,-,-,Medium,3,Field,-
+Weavile,7,12,7,5,9,13,Dark,Ice,10,0,6,0,0,4,4,4,Ice Step,Stealth,-,-,-,-,-,Medium,3,Field,-
+Weedle,4,4,3,2,2,5,Bug,Poison,3,0,0,0,1,2,1,2,Sinker,Threaded,-,-,-,-,-,Small,1,Bug,-
+Weepinbell,7,9,5,9,5,6,Grass,Poison,6,0,2,0,0,3,2,4,Sprouter,-,-,-,-,-,-,Medium,1,Plant,-
+Weezing,7,9,12,9,7,6,Poison,none,2,8,2,0,0,4,2,4,-,-,-,-,-,-,-,Medium,1,Indeterminate,-
+Whimsicott,6,7,9,8,8,12,Grass,none,8,8,4,0,0,6,2,5,Inflatable,Shrinkable,Sprouter,-,-,-,-,Small,1,Plant,Fairy
+Whirlipede,4,6,10,4,8,5,Bug,Poison,8,0,2,0,0,3,3,3,-,-,-,-,-,-,-,Medium,4,Bug,-
+Whiscash,11,8,7,8,7,6,Water,Ground,6,0,9,9,0,3,2,4,Gilled,-,-,-,-,-,-,Medium,2,Water 2,-
+Whismur,6,5,2,5,2,3,Normal,none,4,0,4,0,0,2,1,3,-,-,-,-,-,-,-,Small,2,Monster,Field
+Wigglytuff,14,7,5,8,5,5,Normal,none,7,0,5,0,0,3,2,4,Inflatable,-,-,-,-,-,-,Medium,2,Fairy,-
+Wingull,4,3,3,6,3,9,Water,Flying,4,6,8,5,0,2,1,3,-,-,-,-,-,-,-,Small,1,Water 1,Flying
+Wobbuffet,19,3,6,3,6,3,Psychic,none,8,0,6,0,0,2,2,5,Weeble,-,-,-,-,-,-,Medium,3,Indeterminate,-
+Woobat,6,5,4,6,4,7,Psychic,Flying,2,7,1,0,0,1,1,4,Tracker,-,-,-,-,-,-,Small,1,Field,Flying
+Wooper,6,5,5,3,3,2,Water,Ground,6,0,7,4,0,3,1,3,Fountain,Gilled,-,-,-,-,-,Small,1,Water 1,Field
+Wormadam,6,6,9,8,11,4,Bug,Grass,6,0,2,0,0,3,1,4,Threaded,-,-,-,-,-,-,Small,1,Bug,-
+Wormadam-plant,6,6,9,8,11,4,Bug,Grass,6,0,2,0,0,3,1,4,Threaded,-,-,-,-,-,-,Small,1,Bug,-
+Wormadam-sandy,7,8,11,6,9,4,Bug,Ground,6,0,2,0,0,3,1,4,Threaded,-,-,-,-,-,-,Small,1,Bug,-
+Wormadam-trash,6,7,10,7,10,4,Bug,Steel,6,0,2,0,0,3,1,4,Threaded,-,-,-,-,-,-,Small,1,Bug,-
+Wurmple,5,5,4,2,3,2,Bug,none,3,0,0,0,1,2,1,2,Sinker,Threaded,-,-,-,-,-,Small,1,Bug,-
+Wynaut,10,2,5,2,5,2,Psychic,none,6,0,2,0,0,4,1,3,-,-,-,-,-,-,-,Small,2,Indeterminate,-
+Xatu,7,8,7,10,7,10,Psychic,Flying,6,8,1,0,0,4,2,4,Telepath,-,-,-,-,-,-,Medium,2,Flying,-
+Yamask,4,3,9,6,7,3,Ghost,none,6,6,6,0,0,3,2,4,Invisibility,Phasing,-,-,-,-,-,Small,1,Mineral,Indeterminate
+Yanma,7,7,5,8,5,10,Bug,Flying,4,8,0,0,0,2,2,4,Sinker,-,-,-,-,-,-,Medium,3,Bug,-
+Yanmega,9,8,9,12,6,10,Bug,Flying,5,10,0,0,0,2,3,4,Sinker,-,-,-,-,-,-,Medium,4,Bug,-
+Zangoose,7,12,6,6,6,9,Normal,none,10,0,6,0,8,4,3,4,-,-,-,-,-,-,-,Medium,3,Field,-
+Zapdos,9,9,9,13,9,10,Electric,Flying,10,15,6,0,0,5,5,7,Glow,Guster,Zapper,-,-,-,-,Large,4,Flying,-
+Zebstrika,8,10,6,8,6,12,Electric,none,12,0,8,0,0,5,4,4,Glow,Zapper,-,-,-,-,-,Large,4,Field,-
+Zekrom,10,15,12,12,10,9,Dragon,Electric,12,10,8,0,0,4,6,5,Aura,Glow,Telepath,Zapper,-,-,-,Gigantic,6,None,-
+Zigzagoon,4,3,4,3,4,6,Normal,none,6,0,5,0,0,3,1,3,-,-,-,-,-,-,-,Small,2,Field,-
+Zoroark,6,11,6,12,6,11,Dark,none,8,0,6,0,0,3,3,4,Pack Mon,Stealth,Tracker,-,-,-,-,Medium,4,Field,-
+Zorua,4,7,4,8,4,7,Dark,none,6,0,4,0,0,2,2,4,Pack Mon,Stealth,Tracker,-,-,-,-,Small,2,Field,-
+Zubat,4,5,4,3,4,6,Poison,Flying,0,8,0,0,0,0,1,3,Sinker,Tracker,-,-,-,-,-,Small,1,Flying,-
+Zweilous,7,9,7,7,7,6,Dark,Dragon,7,4,5,0,0,3,3,3,Mind Lock,-,-,-,-,-,-,Medium,4,Dragon,-

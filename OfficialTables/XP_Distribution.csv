@@ -1,0 +1,1 @@
+Key:BattleId INT,BattleName NVARCHAR(100),Key:PokemonId INT,PokemonNickName NVARCHAR(100),OwnerName NVARCHAR(100),Key:EngagedPokemonId INT,EngagedPokemonNickName NVARCHAR(100),EngagedPokemonOwner NVARCHAR(100),XPToGrant INT,Status INT

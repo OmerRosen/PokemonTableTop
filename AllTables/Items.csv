@@ -1,0 +1,7 @@
+Key:ItemName,Description,UsableInBattle,Effect,Target,AC,Power,Duration,HPEffect,ATKEffect,DEFEffect,SATKEffect,SDEFEffect,SPDEffect,ACExtraEffect,ExtraEffectType,ExtraEffectPower
+Health Potion,Heals 1D12+6,0,Heal,Self,0,1D12+6,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+Gun,"Shoots a bullet thatdeals 2D10+8 Damage. On 16 and above, attack is considered fatal",1,Attack,1,6,2D10+8,NULL,NULL,NULL,NULL,NULL,NULL,NULL,17,Attack,6D20+20
+Antidote,"Removes the following Effects: Paralyze,Poison,Burn,Frozen",1,"Remove Effect: Paralyze,Poison,Burn,Frozen",Ally,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+Revive,Removes the Effect: Failnted + Restores health by 2D12+6,1,"Remove Effect: Paralyze,Poison,Burn,Frozen",Ally,0,2D12+6,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+Bright Powder Static,Held Item. Grants 2 additional SPD point when held.,0,Modify,Self,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,2,NULL,NULL,NULL
+Shield,Held Item. Grants 2 additional Def point when held.,0,Modify,Self,0,NULL,NULL,NULL,NULL,2,NULL,NULL,NULL,NULL,NULL,NULL

@@ -1,0 +1,9 @@
+Key:OwnerName NVARCHAR(100),Key:PokemonNickName NVARCHAR(100),Species NVARCHAR(100),Gender NVARCHAR(100),Nature NVARCHAR(100),StartingLevel INT,BattleXP INT,IsShiny BIT,Move1 NVARCHAR(100),Move2 NVARCHAR(100),Move3 NVARCHAR(100),Move4 NVARCHAR(100),HeldItem NVARCHAR(100),PointsLeftToSpend,HPAdd INT,ATKAdd INT,DEFAdd INT,SATKAdd INT,SDEFAdd INT,SPDAdd INT
+Rone,Horsea,Horsea,Female,Relaxed,1,13975,0,Bubblebeam,Smokescreen,twister,water gun,,0,3,3,6,8,0,1
+Rone,Shieldon,Shieldon,Male,Proud,1,3990,0,Protect,Tackle,Taunt,Metal Sound,,0,6,4,0,0,2,0
+Rone,Numel,Numel,Male,Relaxed,1,6995,0,Flame Burst,Tackle,Ember,Magnitude,,0,6,0,0,9,0,0
+Rone,Tailow,Tailow,Female,Sassy,1,6815,0,Peck,Growl,Wing Attack,Quick Attack,,0,0,6,0,0,0,9
+Rone,Electrike,Electric Faggot,Female,Rash,1,4000,0,Leer,Howl,Spark,Quick Attack,,0,0,0,0,6,0,7
+Rone,Seviper,Seviper,Female,Proud,1,150,0,Swagger,Wrap,Bite,Iron Tail,,0,0,4,0,0,0,0
+Rone,Amaura,Ofra,Female,Serious,1,9570,0,Mist,Icy Wind,Thunder Wave,Rock Throw,,0,9,0,0,9,0,0
+Rone,Pineco,hornyyy,Male,Desperate,1,8000,0,Protect,Tackle,SelfDestruct,Bug Bite,,0,9,8,0,0,0,0

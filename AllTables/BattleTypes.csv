@@ -1,0 +1,5 @@
+Key:BattleTypeId,BattleTypeDesc,CanCatchPokemon,LimitPokemonNumber,AllowItems,PlayDirty,AllowSurrender
+1,Wild Pokemon Encounter,1,0,1,1,0
+2,Un-Official Battle,0,0,1,1,0
+3,Official Battle,0,1,0,0,1
+4,Gym Battle,0,1,0,0,1

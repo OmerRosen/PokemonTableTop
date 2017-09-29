@@ -1,0 +1,7 @@
+Key:PokemonId,OwnerName,PokemonNickName,Type1,Type2,CurrentLevel,IsTopSix,TotalHealth,CurrentHealth,Effect1,Effect1Length,Effect2,Effect2Length,HPTotal,ATKTotal,DEFTotal,EvasionsToAtk,SATKTotal,SDEFTotal,EvasionsToSpcial,SPDTotal,EvasionsToAny,LastActionDescription,BattlesFought,BattlesWon
+5,Audun,Karnaf,Rock,none,18,1,57,NULL,NULL,NULL,NULL,NULL,13,21,4,0,3,3,0,9,0,NULL,0,0
+11,Audun,Queef Lava,Fire,none,26,1,83,NULL,NULL,NULL,NULL,NULL,19,6,6,1,6,7,1,23,2,NULL,0,0
+6,Audun,Tolaat,Dragon,none,9,1,39,NULL,NULL,NULL,NULL,NULL,10,12,3,0,5,5,1,5,0,NULL,0,0
+7,Bobo,Kelev,Electric,none,1,1,13,NULL,NULL,NULL,NULL,NULL,4,12,10,2,7,6,1,5,0,NULL,0,0
+8,Rone,Horsea,Water,none,22,1,40,NULL,NULL,NULL,NULL,NULL,6,7,15,3,14,3,0,5,0,NULL,0,0
+12,TeamRocket1,Rattata1,Normal,none,1,1,13,NULL,NULL,NULL,NULL,NULL,4,7,5,1,4,4,0,7,0,NULL,0,0

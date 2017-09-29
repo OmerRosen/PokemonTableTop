@@ -1,0 +1,1 @@
+Key:BattleId INT,BattleStatus INT,Key:DM NVARCHAR(100),Key:Trainer NVARCHAR(100),Key:GroupName NVARCHAR(100),Key:Pokemon INT,InBattle BIT,XPForDefeat INT,WinningGroup NVARCHAR(100)

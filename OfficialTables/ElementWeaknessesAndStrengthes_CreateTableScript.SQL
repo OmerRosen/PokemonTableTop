@@ -10,8 +10,7 @@ CREATE TABLE [dbo].ElementWeaknessesAndStrengthes
 RowId INT NOT NULL IDENTITY(1, 1)
 ,AttackElement NVARCHAR(100) NOT NULL
 ,TargetElement NVARCHAR(100) NOT NULL
-,Modifier INT
-,CreateDate DATETIME CONSTRAINT [ElementWeaknessesAndStrengthes_CreateDate] DEFAULT (GETDATE())
+,Modifier DECIMAL(18,2),CreateDate DATETIME CONSTRAINT [ElementWeaknessesAndStrengthes_CreateDate] DEFAULT (GETDATE())
 ,UpdateDate DATETIME CONSTRAINT [ElementWeaknessesAndStrengthes_UpdateDate] DEFAULT (GETDATE())
 )
 
@@ -38,8 +37,7 @@ EventDate DATETIME NULL
 ,RowId INT 
 ,AttackElement NVARCHAR(100) NOT NULL
 ,TargetElement NVARCHAR(100) NOT NULL
-,Modifier INT
-,CreateDate DATETIME 
+,Modifier DECIMAL(18,2),CreateDate DATETIME 
 ,UpdateDate DATETIME 
 )
 
@@ -136,325 +134,313 @@ AttackElement
 
 )
 VALUES
-(  'Normal' , 'Normal' , '1
-' ) ,(  'Fighting' , 'Normal' , '2
-' ) ,(  'Flying' , 'Normal' , '1
-' ) ,(  'Poison' , 'Normal' , '1
-' ) ,(  'Ground' , 'Normal' , '1
-' ) ,(  'Rock' , 'Normal' , '1
-' ) ,(  'Bug' , 'Normal' , '1
-' ) ,(  'Ghost' , 'Normal' , '0
-' ) ,(  'Steel' , 'Normal' , '1
-' ) ,(  'Fire' , 'Normal' , '1
-' ) ,(  'Water' , 'Normal' , '1
-' ) ,(  'Grass' , 'Normal' , '1
-' ) ,(  'Electric' , 'Normal' , '1
-' ) ,(  'Psychic' , 'Normal' , '1
-' ) ,(  'Ice' , 'Normal' , '1
-' ) ,(  'Dragon' , 'Normal' , '1
-' ) ,(  'Dark' , 'Normal' , '1
-' ) ,(  'Normal' , 'Fighting' , '1
-' ) ,(  'Fighting' , 'Fighting' , '1
-' ) ,(  'Flying' , 'Fighting' , '2
-' ) ,(  'Poison' , 'Fighting' , '1
-' ) ,(  'Ground' , 'Fighting' , '1
-' ) ,(  'Rock' , 'Fighting' , '0.5
-' ) ,(  'Bug' , 'Fighting' , '0.5
-' ) ,(  'Ghost' , 'Fighting' , '1
-' ) ,(  'Steel' , 'Fighting' , '1
-' ) ,(  'Fire' , 'Fighting' , '1
-' ) ,(  'Water' , 'Fighting' , '1
-' ) ,(  'Grass' , 'Fighting' , '1
-' ) ,(  'Electric' , 'Fighting' , '1
-' ) ,(  'Psychic' , 'Fighting' , '2
-' ) ,(  'Ice' , 'Fighting' , '1
-' ) ,(  'Dragon' , 'Fighting' , '1
-' ) ,(  'Dark' , 'Fighting' , '0.5
-' ) ,(  'Normal' , 'Flying' , '1
-' ) ,(  'Fighting' , 'Flying' , '0.5
-' ) ,(  'Flying' , 'Flying' , '1
-' ) ,(  'Poison' , 'Flying' , '1
-' ) ,(  'Ground' , 'Flying' , '0
-' ) ,(  'Rock' , 'Flying' , '2
-' ) ,(  'Bug' , 'Flying' , '0.5
-' ) ,(  'Ghost' , 'Flying' , '1
-' ) ,(  'Steel' , 'Flying' , '1
-' ) ,(  'Fire' , 'Flying' , '1
-' ) ,(  'Water' , 'Flying' , '1
-' ) ,(  'Grass' , 'Flying' , '0.5
-' ) ,(  'Electric' , 'Flying' , '2
-' ) ,(  'Psychic' , 'Flying' , '1
-' ) ,(  'Ice' , 'Flying' , '2
-' ) ,(  'Dragon' , 'Flying' , '1
-' ) ,(  'Dark' , 'Flying' , '1
-' ) ,(  'Normal' , 'Poison' , '1
-' ) ,(  'Fighting' , 'Poison' , '0.5
-' ) ,(  'Flying' , 'Poison' , '1
-' ) ,(  'Poison' , 'Poison' , '0.5
-' ) ,(  'Ground' , 'Poison' , '2
-' ) ,(  'Rock' , 'Poison' , '1
-' ) ,(  'Bug' , 'Poison' , '0.5
-' ) ,(  'Ghost' , 'Poison' , '1
-' ) ,(  'Steel' , 'Poison' , '1
-' ) ,(  'Fire' , 'Poison' , '1
-' ) ,(  'Water' , 'Poison' , '1
-' ) ,(  'Grass' , 'Poison' , '0.5
-' ) ,(  'Electric' , 'Poison' , '1
-' ) ,(  'Psychic' , 'Poison' , '2
-' ) ,(  'Ice' , 'Poison' , '1
-' ) ,(  'Dragon' , 'Poison' , '1
-' ) ,(  'Dark' , 'Poison' , '1
-' ) ,(  'Normal' , 'Ground' , '1
-' ) ,(  'Fighting' , 'Ground' , '1
-' ) ,(  'Flying' , 'Ground' , '1
-' ) ,(  'Poison' , 'Ground' , '0.5
-' ) ,(  'Ground' , 'Ground' , '1
-' ) ,(  'Rock' , 'Ground' , '0.5
-' ) ,(  'Bug' , 'Ground' , '1
-' ) ,(  'Ghost' , 'Ground' , '1
-' ) ,(  'Steel' , 'Ground' , '1
-' ) ,(  'Fire' , 'Ground' , '1
-' ) ,(  'Water' , 'Ground' , '2
-' ) ,(  'Grass' , 'Ground' , '2
-' ) ,(  'Electric' , 'Ground' , '0
-' ) ,(  'Psychic' , 'Ground' , '1
-' ) ,(  'Ice' , 'Ground' , '2
-' ) ,(  'Dragon' , 'Ground' , '1
-' ) ,(  'Dark' , 'Ground' , '1
-' ) ,(  'Normal' , 'Rock' , '0.5
-' ) ,(  'Fighting' , 'Rock' , '2
-' ) ,(  'Flying' , 'Rock' , '0.5
-' ) ,(  'Poison' , 'Rock' , '0.5
-' ) ,(  'Ground' , 'Rock' , '2
-' ) ,(  'Rock' , 'Rock' , '1
-' ) ,(  'Bug' , 'Rock' , '1
-' ) ,(  'Ghost' , 'Rock' , '1
-' ) ,(  'Steel' , 'Rock' , '2
-' ) ,(  'Fire' , 'Rock' , '0.5
-' ) ,(  'Water' , 'Rock' , '2
-' ) ,(  'Grass' , 'Rock' , '2
-' ) ,(  'Electric' , 'Rock' , '1
-' ) ,(  'Psychic' , 'Rock' , '1
-' ) ,(  'Ice' , 'Rock' , '1
-' ) ,(  'Dragon' , 'Rock' , '1
-' ) ,(  'Dark' , 'Rock' , '1
-' ) ,(  'Normal' , 'Bug' , '1
-' ) ,(  'Fighting' , 'Bug' , '0.5
-' ) ,(  'Flying' , 'Bug' , '2
-' ) ,(  'Poison' , 'Bug' , '1
-' ) ,(  'Ground' , 'Bug' , '0.5
-' ) ,(  'Rock' , 'Bug' , '2
-' ) ,(  'Bug' , 'Bug' , '1
-' ) ,(  'Ghost' , 'Bug' , '1
-' ) ,(  'Steel' , 'Bug' , '1
-' ) ,(  'Fire' , 'Bug' , '2
-' ) ,(  'Water' , 'Bug' , '1
-' ) ,(  'Grass' , 'Bug' , '0.5
-' ) ,(  'Electric' , 'Bug' , '1
-' ) ,(  'Psychic' , 'Bug' , '1
-' ) ,(  'Ice' , 'Bug' , '1
-' ) ,(  'Dragon' , 'Bug' , '1
-' ) ,(  'Dark' , 'Bug' , '1
-' ) ,(  'Normal' , 'Ghost' , '0
-' ) ,(  'Fighting' , 'Ghost' , '0
-' ) ,(  'Flying' , 'Ghost' , '1
-' ) ,(  'Poison' , 'Ghost' , '0.5
-' ) ,(  'Ground' , 'Ghost' , '1
-' ) ,(  'Rock' , 'Ghost' , '1
-' ) ,(  'Bug' , 'Ghost' , '0.5
-' ) ,(  'Ghost' , 'Ghost' , '2
-' ) ,(  'Steel' , 'Ghost' , '1
-' ) ,(  'Fire' , 'Ghost' , '1
-' ) ,(  'Water' , 'Ghost' , '1
-' ) ,(  'Grass' , 'Ghost' , '1
-' ) ,(  'Electric' , 'Ghost' , '1
-' ) ,(  'Psychic' , 'Ghost' , '1
-' ) ,(  'Ice' , 'Ghost' , '1
-' ) ,(  'Dragon' , 'Ghost' , '1
-' ) ,(  'Dark' , 'Ghost' , '2
-' ) ,(  'Normal' , 'Steel' , '0.5
-' ) ,(  'Fighting' , 'Steel' , '2
-' ) ,(  'Flying' , 'Steel' , '0.5
-' ) ,(  'Poison' , 'Steel' , '0
-' ) ,(  'Ground' , 'Steel' , '2
-' ) ,(  'Rock' , 'Steel' , '0.5
-' ) ,(  'Bug' , 'Steel' , '0.5
-' ) ,(  'Ghost' , 'Steel' , '0.5
-' ) ,(  'Steel' , 'Steel' , '0.5
-' ) ,(  'Fire' , 'Steel' , '2
-' ) ,(  'Water' , 'Steel' , '1
-' ) ,(  'Grass' , 'Steel' , '0.5
-' ) ,(  'Electric' , 'Steel' , '1
-' ) ,(  'Psychic' , 'Steel' , '0.5
-' ) ,(  'Ice' , 'Steel' , '0.5
-' ) ,(  'Dragon' , 'Steel' , '0.5
-' ) ,(  'Dark' , 'Steel' , '0.5
-' ) ,(  'Normal' , 'Fire' , '1
-' ) ,(  'Fighting' , 'Fire' , '1
-' ) ,(  'Flying' , 'Fire' , '1
-' ) ,(  'Poison' , 'Fire' , '1
-' ) ,(  'Ground' , 'Fire' , '2
-' ) ,(  'Rock' , 'Fire' , '2
-' ) ,(  'Bug' , 'Fire' , '0.5
-' ) ,(  'Ghost' , 'Fire' , '1
-' ) ,(  'Steel' , 'Fire' , '0.5
-' ) ,(  'Fire' , 'Fire' , '0.5
-' ) ,(  'Water' , 'Fire' , '2
-' ) ,(  'Grass' , 'Fire' , '0.5
-' ) ,(  'Electric' , 'Fire' , '1
-' ) ,(  'Psychic' , 'Fire' , '1
-' ) ,(  'Ice' , 'Fire' , '0.5
-' ) ,(  'Dragon' , 'Fire' , '1
-' ) ,(  'Dark' , 'Fire' , '1
-' ) ,(  'Normal' , 'Water' , '1
-' ) ,(  'Fighting' , 'Water' , '1
-' ) ,(  'Flying' , 'Water' , '1
-' ) ,(  'Poison' , 'Water' , '1
-' ) ,(  'Ground' , 'Water' , '1
-' ) ,(  'Rock' , 'Water' , '1
-' ) ,(  'Bug' , 'Water' , '1
-' ) ,(  'Ghost' , 'Water' , '1
-' ) ,(  'Steel' , 'Water' , '0.5
-' ) ,(  'Fire' , 'Water' , '0.5
-' ) ,(  'Water' , 'Water' , '0.5
-' ) ,(  'Grass' , 'Water' , '2
-' ) ,(  'Electric' , 'Water' , '2
-' ) ,(  'Psychic' , 'Water' , '1
-' ) ,(  'Ice' , 'Water' , '0.5
-' ) ,(  'Dragon' , 'Water' , '1
-' ) ,(  'Dark' , 'Water' , '1
-' ) ,(  'Normal' , 'Grass' , '1
-' ) ,(  'Fighting' , 'Grass' , '1
-' ) ,(  'Flying' , 'Grass' , '2
-' ) ,(  'Poison' , 'Grass' , '2
-' ) ,(  'Ground' , 'Grass' , '0.5
-' ) ,(  'Rock' , 'Grass' , '1
-' ) ,(  'Bug' , 'Grass' , '2
-' ) ,(  'Ghost' , 'Grass' , '1
-' ) ,(  'Steel' , 'Grass' , '1
-' ) ,(  'Fire' , 'Grass' , '2
-' ) ,(  'Water' , 'Grass' , '0.5
-' ) ,(  'Grass' , 'Grass' , '0.5
-' ) ,(  'Electric' , 'Grass' , '0.5
-' ) ,(  'Psychic' , 'Grass' , '1
-' ) ,(  'Ice' , 'Grass' , '2
-' ) ,(  'Dragon' , 'Grass' , '1
-' ) ,(  'Dark' , 'Grass' , '1
-' ) ,(  'Normal' , 'Electric' , '1
-' ) ,(  'Fighting' , 'Electric' , '1
-' ) ,(  'Flying' , 'Electric' , '0.5
-' ) ,(  'Poison' , 'Electric' , '1
-' ) ,(  'Ground' , 'Electric' , '2
-' ) ,(  'Rock' , 'Electric' , '1
-' ) ,(  'Bug' , 'Electric' , '1
-' ) ,(  'Ghost' , 'Electric' , '1
-' ) ,(  'Steel' , 'Electric' , '0.5
-' ) ,(  'Fire' , 'Electric' , '1
-' ) ,(  'Water' , 'Electric' , '1
-' ) ,(  'Grass' , 'Electric' , '1
-' ) ,(  'Electric' , 'Electric' , '0.5
-' ) ,(  'Psychic' , 'Electric' , '1
-' ) ,(  'Ice' , 'Electric' , '1
-' ) ,(  'Dragon' , 'Electric' , '1
-' ) ,(  'Dark' , 'Electric' , '1
-' ) ,(  'Normal' , 'Psychic' , '1
-' ) ,(  'Fighting' , 'Psychic' , '0.5
-' ) ,(  'Flying' , 'Psychic' , '1
-' ) ,(  'Poison' , 'Psychic' , '1
-' ) ,(  'Ground' , 'Psychic' , '1
-' ) ,(  'Rock' , 'Psychic' , '1
-' ) ,(  'Bug' , 'Psychic' , '2
-' ) ,(  'Ghost' , 'Psychic' , '2
-' ) ,(  'Steel' , 'Psychic' , '1
-' ) ,(  'Fire' , 'Psychic' , '1
-' ) ,(  'Water' , 'Psychic' , '1
-' ) ,(  'Grass' , 'Psychic' , '1
-' ) ,(  'Electric' , 'Psychic' , '1
-' ) ,(  'Psychic' , 'Psychic' , '0.5
-' ) ,(  'Ice' , 'Psychic' , '1
-' ) ,(  'Dragon' , 'Psychic' , '1
-' ) ,(  'Dark' , 'Psychic' , '2
-' ) ,(  'Normal' , 'Ice' , '1
-' ) ,(  'Fighting' , 'Ice' , '2
-' ) ,(  'Flying' , 'Ice' , '1
-' ) ,(  'Poison' , 'Ice' , '1
-' ) ,(  'Ground' , 'Ice' , '1
-' ) ,(  'Rock' , 'Ice' , '2
-' ) ,(  'Bug' , 'Ice' , '1
-' ) ,(  'Ghost' , 'Ice' , '1
-' ) ,(  'Steel' , 'Ice' , '2
-' ) ,(  'Fire' , 'Ice' , '2
-' ) ,(  'Water' , 'Ice' , '1
-' ) ,(  'Grass' , 'Ice' , '1
-' ) ,(  'Electric' , 'Ice' , '1
-' ) ,(  'Psychic' , 'Ice' , '1
-' ) ,(  'Ice' , 'Ice' , '0.5
-' ) ,(  'Dragon' , 'Ice' , '1
-' ) ,(  'Dark' , 'Ice' , '1
-' ) ,(  'Normal' , 'Dragon' , '1
-' ) ,(  'Fighting' , 'Dragon' , '1
-' ) ,(  'Flying' , 'Dragon' , '1
-' ) ,(  'Poison' , 'Dragon' , '1
-' ) ,(  'Ground' , 'Dragon' , '1
-' ) ,(  'Rock' , 'Dragon' , '1
-' ) ,(  'Bug' , 'Dragon' , '1
-' ) ,(  'Ghost' , 'Dragon' , '1
-' ) ,(  'Steel' , 'Dragon' , '1
-' ) ,(  'Fire' , 'Dragon' , '0.5
-' ) ,(  'Water' , 'Dragon' , '0.5
-' ) ,(  'Grass' , 'Dragon' , '0.5
-' ) ,(  'Electric' , 'Dragon' , '0.5
-' ) ,(  'Psychic' , 'Dragon' , '1
-' ) ,(  'Ice' , 'Dragon' , '2
-' ) ,(  'Dragon' , 'Dragon' , '2
-' ) ,(  'Dark' , 'Dragon' , '1
-' ) ,(  'Normal' , 'Dark' , '1
-' ) ,(  'Fighting' , 'Dark' , '2
-' ) ,(  'Flying' , 'Dark' , '1
-' ) ,(  'Poison' , 'Dark' , '1
-' ) ,(  'Ground' , 'Dark' , '1
-' ) ,(  'Rock' , 'Dark' , '1
-' ) ,(  'Bug' , 'Dark' , '2
-' ) ,(  'Ghost' , 'Dark' , '0.5
-' ) ,(  'Steel' , 'Dark' , '1
-' ) ,(  'Fire' , 'Dark' , '1
-' ) ,(  'Water' , 'Dark' , '1
-' ) ,(  'Grass' , 'Dark' , '1
-' ) ,(  'Electric' , 'Dark' , '1
-' ) ,(  'Psychic' , 'Dark' , '0
-' ) ,(  'Ice' , 'Dark' , '1
-' ) ,(  'Dragon' , 'Dark' , '1
-' ) ,(  'Dark' , 'Dark' , '0.5
-' ) ,(  'Normal' , 'None' , '1
-' ) ,(  'Fighting' , 'None' , '1
-' ) ,(  'Flying' , 'None' , '1
-' ) ,(  'Poison' , 'None' , '1
-' ) ,(  'Ground' , 'None' , '1
-' ) ,(  'Rock' , 'None' , '1
-' ) ,(  'Bug' , 'None' , '1
-' ) ,(  'Ghost' , 'None' , '1
-' ) ,(  'Steel' , 'None' , '1
-' ) ,(  'Fire' , 'None' , '1
-' ) ,(  'Water' , 'None' , '1
-' ) ,(  'Grass' , 'None' , '1
-' ) ,(  'Electric' , 'None' , '1
-' ) ,(  'Psychic' , 'None' , '1
-' ) ,(  'Ice' , 'None' , '1
-' ) ,(  'Dragon' , 'None' , '1
-' ) ,(  'Dark' , 'None' , '1
-' ) ,
+( N'Normal' , N'Normal' , N'1' ),
+( N'Fighting' , N'Normal' , N'2' ),
+( N'Flying' , N'Normal' , N'1' ),
+( N'Poison' , N'Normal' , N'1' ),
+( N'Ground' , N'Normal' , N'1' ),
+( N'Rock' , N'Normal' , N'1' ),
+( N'Bug' , N'Normal' , N'1' ),
+( N'Ghost' , N'Normal' , N'0' ),
+( N'Steel' , N'Normal' , N'1' ),
+( N'Fire' , N'Normal' , N'1' ),
+( N'Water' , N'Normal' , N'1' ),
+( N'Grass' , N'Normal' , N'1' ),
+( N'Electric' , N'Normal' , N'1' ),
+( N'Psychic' , N'Normal' , N'1' ),
+( N'Ice' , N'Normal' , N'1' ),
+( N'Dragon' , N'Normal' , N'1' ),
+( N'Dark' , N'Normal' , N'1' ),
+( N'Normal' , N'Fighting' , N'1' ),
+( N'Fighting' , N'Fighting' , N'1' ),
+( N'Flying' , N'Fighting' , N'2' ),
+( N'Poison' , N'Fighting' , N'1' ),
+( N'Ground' , N'Fighting' , N'1' ),
+( N'Rock' , N'Fighting' , N'0.5' ),
+( N'Bug' , N'Fighting' , N'0.5' ),
+( N'Ghost' , N'Fighting' , N'1' ),
+( N'Steel' , N'Fighting' , N'1' ),
+( N'Fire' , N'Fighting' , N'1' ),
+( N'Water' , N'Fighting' , N'1' ),
+( N'Grass' , N'Fighting' , N'1' ),
+( N'Electric' , N'Fighting' , N'1' ),
+( N'Psychic' , N'Fighting' , N'2' ),
+( N'Ice' , N'Fighting' , N'1' ),
+( N'Dragon' , N'Fighting' , N'1' ),
+( N'Dark' , N'Fighting' , N'0.5' ),
+( N'Normal' , N'Flying' , N'1' ),
+( N'Fighting' , N'Flying' , N'0.5' ),
+( N'Flying' , N'Flying' , N'1' ),
+( N'Poison' , N'Flying' , N'1' ),
+( N'Ground' , N'Flying' , N'0' ),
+( N'Rock' , N'Flying' , N'2' ),
+( N'Bug' , N'Flying' , N'0.5' ),
+( N'Ghost' , N'Flying' , N'1' ),
+( N'Steel' , N'Flying' , N'1' ),
+( N'Fire' , N'Flying' , N'1' ),
+( N'Water' , N'Flying' , N'1' ),
+( N'Grass' , N'Flying' , N'0.5' ),
+( N'Electric' , N'Flying' , N'2' ),
+( N'Psychic' , N'Flying' , N'1' ),
+( N'Ice' , N'Flying' , N'2' ),
+( N'Dragon' , N'Flying' , N'1' ),
+( N'Dark' , N'Flying' , N'1' ),
+( N'Normal' , N'Poison' , N'1' ),
+( N'Fighting' , N'Poison' , N'0.5' ),
+( N'Flying' , N'Poison' , N'1' ),
+( N'Poison' , N'Poison' , N'0.5' ),
+( N'Ground' , N'Poison' , N'2' ),
+( N'Rock' , N'Poison' , N'1' ),
+( N'Bug' , N'Poison' , N'0.5' ),
+( N'Ghost' , N'Poison' , N'1' ),
+( N'Steel' , N'Poison' , N'1' ),
+( N'Fire' , N'Poison' , N'1' ),
+( N'Water' , N'Poison' , N'1' ),
+( N'Grass' , N'Poison' , N'0.5' ),
+( N'Electric' , N'Poison' , N'1' ),
+( N'Psychic' , N'Poison' , N'2' ),
+( N'Ice' , N'Poison' , N'1' ),
+( N'Dragon' , N'Poison' , N'1' ),
+( N'Dark' , N'Poison' , N'1' ),
+( N'Normal' , N'Ground' , N'1' ),
+( N'Fighting' , N'Ground' , N'1' ),
+( N'Flying' , N'Ground' , N'1' ),
+( N'Poison' , N'Ground' , N'0.5' ),
+( N'Ground' , N'Ground' , N'1' ),
+( N'Rock' , N'Ground' , N'0.5' ),
+( N'Bug' , N'Ground' , N'1' ),
+( N'Ghost' , N'Ground' , N'1' ),
+( N'Steel' , N'Ground' , N'1' ),
+( N'Fire' , N'Ground' , N'1' ),
+( N'Water' , N'Ground' , N'2' ),
+( N'Grass' , N'Ground' , N'2' ),
+( N'Electric' , N'Ground' , N'0' ),
+( N'Psychic' , N'Ground' , N'1' ),
+( N'Ice' , N'Ground' , N'2' ),
+( N'Dragon' , N'Ground' , N'1' ),
+( N'Dark' , N'Ground' , N'1' ),
+( N'Normal' , N'Rock' , N'0.5' ),
+( N'Fighting' , N'Rock' , N'2' ),
+( N'Flying' , N'Rock' , N'0.5' ),
+( N'Poison' , N'Rock' , N'0.5' ),
+( N'Ground' , N'Rock' , N'2' ),
+( N'Rock' , N'Rock' , N'1' ),
+( N'Bug' , N'Rock' , N'1' ),
+( N'Ghost' , N'Rock' , N'1' ),
+( N'Steel' , N'Rock' , N'2' ),
+( N'Fire' , N'Rock' , N'0.5' ),
+( N'Water' , N'Rock' , N'2' ),
+( N'Grass' , N'Rock' , N'2' ),
+( N'Electric' , N'Rock' , N'1' ),
+( N'Psychic' , N'Rock' , N'1' ),
+( N'Ice' , N'Rock' , N'1' ),
+( N'Dragon' , N'Rock' , N'1' ),
+( N'Dark' , N'Rock' , N'1' ),
+( N'Normal' , N'Bug' , N'1' ),
+( N'Fighting' , N'Bug' , N'0.5' ),
+( N'Flying' , N'Bug' , N'2' ),
+( N'Poison' , N'Bug' , N'1' ),
+( N'Ground' , N'Bug' , N'0.5' ),
+( N'Rock' , N'Bug' , N'2' ),
+( N'Bug' , N'Bug' , N'1' ),
+( N'Ghost' , N'Bug' , N'1' ),
+( N'Steel' , N'Bug' , N'1' ),
+( N'Fire' , N'Bug' , N'2' ),
+( N'Water' , N'Bug' , N'1' ),
+( N'Grass' , N'Bug' , N'0.5' ),
+( N'Electric' , N'Bug' , N'1' ),
+( N'Psychic' , N'Bug' , N'1' ),
+( N'Ice' , N'Bug' , N'1' ),
+( N'Dragon' , N'Bug' , N'1' ),
+( N'Dark' , N'Bug' , N'1' ),
+( N'Normal' , N'Ghost' , N'0' ),
+( N'Fighting' , N'Ghost' , N'0' ),
+( N'Flying' , N'Ghost' , N'1' ),
+( N'Poison' , N'Ghost' , N'0.5' ),
+( N'Ground' , N'Ghost' , N'1' ),
+( N'Rock' , N'Ghost' , N'1' ),
+( N'Bug' , N'Ghost' , N'0.5' ),
+( N'Ghost' , N'Ghost' , N'2' ),
+( N'Steel' , N'Ghost' , N'1' ),
+( N'Fire' , N'Ghost' , N'1' ),
+( N'Water' , N'Ghost' , N'1' ),
+( N'Grass' , N'Ghost' , N'1' ),
+( N'Electric' , N'Ghost' , N'1' ),
+( N'Psychic' , N'Ghost' , N'1' ),
+( N'Ice' , N'Ghost' , N'1' ),
+( N'Dragon' , N'Ghost' , N'1' ),
+( N'Dark' , N'Ghost' , N'2' ),
+( N'Normal' , N'Steel' , N'0.5' ),
+( N'Fighting' , N'Steel' , N'2' ),
+( N'Flying' , N'Steel' , N'0.5' ),
+( N'Poison' , N'Steel' , N'0' ),
+( N'Ground' , N'Steel' , N'2' ),
+( N'Rock' , N'Steel' , N'0.5' ),
+( N'Bug' , N'Steel' , N'0.5' ),
+( N'Ghost' , N'Steel' , N'0.5' ),
+( N'Steel' , N'Steel' , N'0.5' ),
+( N'Fire' , N'Steel' , N'2' ),
+( N'Water' , N'Steel' , N'1' ),
+( N'Grass' , N'Steel' , N'0.5' ),
+( N'Electric' , N'Steel' , N'1' ),
+( N'Psychic' , N'Steel' , N'0.5' ),
+( N'Ice' , N'Steel' , N'0.5' ),
+( N'Dragon' , N'Steel' , N'0.5' ),
+( N'Dark' , N'Steel' , N'0.5' ),
+( N'Normal' , N'Fire' , N'1' ),
+( N'Fighting' , N'Fire' , N'1' ),
+( N'Flying' , N'Fire' , N'1' ),
+( N'Poison' , N'Fire' , N'1' ),
+( N'Ground' , N'Fire' , N'2' ),
+( N'Rock' , N'Fire' , N'2' ),
+( N'Bug' , N'Fire' , N'0.5' ),
+( N'Ghost' , N'Fire' , N'1' ),
+( N'Steel' , N'Fire' , N'0.5' ),
+( N'Fire' , N'Fire' , N'0.5' ),
+( N'Water' , N'Fire' , N'2' ),
+( N'Grass' , N'Fire' , N'0.5' ),
+( N'Electric' , N'Fire' , N'1' ),
+( N'Psychic' , N'Fire' , N'1' ),
+( N'Ice' , N'Fire' , N'0.5' ),
+( N'Dragon' , N'Fire' , N'1' ),
+( N'Dark' , N'Fire' , N'1' ),
+( N'Normal' , N'Water' , N'1' ),
+( N'Fighting' , N'Water' , N'1' ),
+( N'Flying' , N'Water' , N'1' ),
+( N'Poison' , N'Water' , N'1' ),
+( N'Ground' , N'Water' , N'1' ),
+( N'Rock' , N'Water' , N'1' ),
+( N'Bug' , N'Water' , N'1' ),
+( N'Ghost' , N'Water' , N'1' ),
+( N'Steel' , N'Water' , N'0.5' ),
+( N'Fire' , N'Water' , N'0.5' ),
+( N'Water' , N'Water' , N'0.5' ),
+( N'Grass' , N'Water' , N'2' ),
+( N'Electric' , N'Water' , N'2' ),
+( N'Psychic' , N'Water' , N'1' ),
+( N'Ice' , N'Water' , N'0.5' ),
+( N'Dragon' , N'Water' , N'1' ),
+( N'Dark' , N'Water' , N'1' ),
+( N'Normal' , N'Grass' , N'1' ),
+( N'Fighting' , N'Grass' , N'1' ),
+( N'Flying' , N'Grass' , N'2' ),
+( N'Poison' , N'Grass' , N'2' ),
+( N'Ground' , N'Grass' , N'0.5' ),
+( N'Rock' , N'Grass' , N'1' ),
+( N'Bug' , N'Grass' , N'2' ),
+( N'Ghost' , N'Grass' , N'1' ),
+( N'Steel' , N'Grass' , N'1' ),
+( N'Fire' , N'Grass' , N'2' ),
+( N'Water' , N'Grass' , N'0.5' ),
+( N'Grass' , N'Grass' , N'0.5' ),
+( N'Electric' , N'Grass' , N'0.5' ),
+( N'Psychic' , N'Grass' , N'1' ),
+( N'Ice' , N'Grass' , N'2' ),
+( N'Dragon' , N'Grass' , N'1' ),
+( N'Dark' , N'Grass' , N'1' ),
+( N'Normal' , N'Electric' , N'1' ),
+( N'Fighting' , N'Electric' , N'1' ),
+( N'Flying' , N'Electric' , N'0.5' ),
+( N'Poison' , N'Electric' , N'1' ),
+( N'Ground' , N'Electric' , N'2' ),
+( N'Rock' , N'Electric' , N'1' ),
+( N'Bug' , N'Electric' , N'1' ),
+( N'Ghost' , N'Electric' , N'1' ),
+( N'Steel' , N'Electric' , N'0.5' ),
+( N'Fire' , N'Electric' , N'1' ),
+( N'Water' , N'Electric' , N'1' ),
+( N'Grass' , N'Electric' , N'1' ),
+( N'Electric' , N'Electric' , N'0.5' ),
+( N'Psychic' , N'Electric' , N'1' ),
+( N'Ice' , N'Electric' , N'1' ),
+( N'Dragon' , N'Electric' , N'1' ),
+( N'Dark' , N'Electric' , N'1' ),
+( N'Normal' , N'Psychic' , N'1' ),
+( N'Fighting' , N'Psychic' , N'0.5' ),
+( N'Flying' , N'Psychic' , N'1' ),
+( N'Poison' , N'Psychic' , N'1' ),
+( N'Ground' , N'Psychic' , N'1' ),
+( N'Rock' , N'Psychic' , N'1' ),
+( N'Bug' , N'Psychic' , N'2' ),
+( N'Ghost' , N'Psychic' , N'2' ),
+( N'Steel' , N'Psychic' , N'1' ),
+( N'Fire' , N'Psychic' , N'1' ),
+( N'Water' , N'Psychic' , N'1' ),
+( N'Grass' , N'Psychic' , N'1' ),
+( N'Electric' , N'Psychic' , N'1' ),
+( N'Psychic' , N'Psychic' , N'0.5' ),
+( N'Ice' , N'Psychic' , N'1' ),
+( N'Dragon' , N'Psychic' , N'1' ),
+( N'Dark' , N'Psychic' , N'2' ),
+( N'Normal' , N'Ice' , N'1' ),
+( N'Fighting' , N'Ice' , N'2' ),
+( N'Flying' , N'Ice' , N'1' ),
+( N'Poison' , N'Ice' , N'1' ),
+( N'Ground' , N'Ice' , N'1' ),
+( N'Rock' , N'Ice' , N'2' ),
+( N'Bug' , N'Ice' , N'1' ),
+( N'Ghost' , N'Ice' , N'1' ),
+( N'Steel' , N'Ice' , N'2' ),
+( N'Fire' , N'Ice' , N'2' ),
+( N'Water' , N'Ice' , N'1' ),
+( N'Grass' , N'Ice' , N'1' ),
+( N'Electric' , N'Ice' , N'1' ),
+( N'Psychic' , N'Ice' , N'1' ),
+( N'Ice' , N'Ice' , N'0.5' ),
+( N'Dragon' , N'Ice' , N'1' ),
+( N'Dark' , N'Ice' , N'1' ),
+( N'Normal' , N'Dragon' , N'1' ),
+( N'Fighting' , N'Dragon' , N'1' ),
+( N'Flying' , N'Dragon' , N'1' ),
+( N'Poison' , N'Dragon' , N'1' ),
+( N'Ground' , N'Dragon' , N'1' ),
+( N'Rock' , N'Dragon' , N'1' ),
+( N'Bug' , N'Dragon' , N'1' ),
+( N'Ghost' , N'Dragon' , N'1' ),
+( N'Steel' , N'Dragon' , N'1' ),
+( N'Fire' , N'Dragon' , N'0.5' ),
+( N'Water' , N'Dragon' , N'0.5' ),
+( N'Grass' , N'Dragon' , N'0.5' ),
+( N'Electric' , N'Dragon' , N'0.5' ),
+( N'Psychic' , N'Dragon' , N'1' ),
+( N'Ice' , N'Dragon' , N'2' ),
+( N'Dragon' , N'Dragon' , N'2' ),
+( N'Dark' , N'Dragon' , N'1' ),
+( N'Normal' , N'Dark' , N'1' ),
+( N'Fighting' , N'Dark' , N'2' ),
+( N'Flying' , N'Dark' , N'1' ),
+( N'Poison' , N'Dark' , N'1' ),
+( N'Ground' , N'Dark' , N'1' ),
+( N'Rock' , N'Dark' , N'1' ),
+( N'Bug' , N'Dark' , N'2' ),
+( N'Ghost' , N'Dark' , N'0.5' ),
+( N'Steel' , N'Dark' , N'1' ),
+( N'Fire' , N'Dark' , N'1' ),
+( N'Water' , N'Dark' , N'1' ),
+( N'Grass' , N'Dark' , N'1' ),
+( N'Electric' , N'Dark' , N'1' ),
+( N'Psychic' , N'Dark' , N'0' ),
+( N'Ice' , N'Dark' , N'1' ),
+( N'Dragon' , N'Dark' , N'1' ),
+( N'Dark' , N'Dark' , N'0.5' ),
+( N'Normal' , N'None' , N'1' ),
+( N'Fighting' , N'None' , N'1' ),
+( N'Flying' , N'None' , N'1' ),
+( N'Poison' , N'None' , N'1' ),
+( N'Ground' , N'None' , N'1' ),
+( N'Rock' , N'None' , N'1' ),
+( N'Bug' , N'None' , N'1' ),
+( N'Ghost' , N'None' , N'1' ),
+( N'Steel' , N'None' , N'1' ),
+( N'Fire' , N'None' , N'1' ),
+( N'Water' , N'None' , N'1' ),
+( N'Grass' , N'None' , N'1' ),
+( N'Electric' , N'None' , N'1' ),
+( N'Psychic' , N'None' , N'1' ),
+( N'Ice' , N'None' , N'1' ),
+( N'Dragon' , N'None' , N'1' ),
+( N'Dark' , N'None' , N'1' )
 
-
-SELECT
-Temp.AttackElement
-,Temp.TargetElement
-,Temp.Modifier As New_Modifier
-,Main.Modifier As Old_Modifier
-
-FROM  #temptable AS Temp  WITH ( NOLOCK )
-LEFT JOIN ElementWeaknessesAndStrengthes as Main ON
-Main.AttackElement = Temp.AttackElement
-AND Main.TargetElement = Temp.TargetElement
 
 
 MERGE ElementWeaknessesAndStrengthes as Main
@@ -486,4 +472,4 @@ AttackElement
 
 DROP TABLE #temptable
 
-ROLLBACK
+COMMIT

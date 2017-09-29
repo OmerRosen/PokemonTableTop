@@ -1,0 +1,12 @@
+Key:OwnerName,Key:PokemonNickName,Species,Gender,Nature,StartingLevel,BattleXP,IsShiny,Move1,Move2,Move3,Move4,HeldItem,HPAdd,ATKAdd,DEFAdd,SATKAdd,SDEFAdd,SPDAdd
+Audun,Tolaat,Dratini,Male,Docile,12,935,0,Test Move 1,Test Move 2,Test 3,,,5,6,0,0,0,0
+Bobo,Kelev,Electrike,Female,Sassy,14,0,0,Spark,Quick Attack,Howl,Leer,,0,7,6,0,0,0
+Rone,Horsea,Horsea,Female,Relaxed,1,13975,0,Bubblebeam,Smokescreen,twister,water gun,,3,3,6,7,0,1
+Audun,Karnaf,Cranidos,Male,Timid,1,8135,0,Headbutt,Take Down,Pursuit,Shock wave,,6,10,0,0,0,1
+TeamRocket1,Rattata1,Rattata,Female,Ssassy,5,0,0,Tackle,Tail Whip,Quick Attack,,,1,1,1,1,0,0
+Audun,Queef Lava,Quilava,Male,Proud,1,19550,0,Smokescreen,Flame Wheel,Quick Attack,Flame Burst,Bright Powder Static,12,0,0,0,0,13
+WildPokemon,Ratata1,Rattata,Male,Proud,7,0,0,Tackle,Tail Whip,Quick Attack,,,0,0,0,0,0,0
+WildPokemon,Ratata2,Rattata,Male,Proud,7,0,0,Tackle,Tail Whip,Quick Attack,,,0,0,0,0,0,0
+WildPokemon,Ratata3,Rattata,Male,Proud,7,0,0,Tackle,Tail Whip,Quick Attack,,,0,0,0,0,0,0
+WildPokemon,Ratata4,Rattata,Male,Proud,7,0,0,Tackle,Tail Whip,Quick Attack,,,0,0,0,0,0,0
+WildPokemon,Zapdos,Zapdos,Male,Proud,20,0,0,Tackle,Tail Whip,Quick Attack,,,0,0,0,0,0,0

@@ -1,0 +1,10 @@
+Key:OwnerName NVARCHAR(100),Key:PokemonNickName NVARCHAR(100),Species NVARCHAR(100),Gender NVARCHAR(100),Nature NVARCHAR(100),StartingLevel INT,BattleXP INT,IsShiny BIT,Move1 NVARCHAR(100),Move2 NVARCHAR(100),Move3 NVARCHAR(100),Move4 NVARCHAR(100),HeldItem NVARCHAR(100),PointsLeftToSpend,HPAdd INT,ATKAdd INT,DEFAdd INT,SATKAdd INT,SDEFAdd INT,SPDAdd INT
+Vlad,Cookie,Houndour,Male,Serious,25,17814,0,Ember,Bite,Smog,Roar,,0,3,3,0,5,3,10
+Vlad,Splash,Ducklett,Male,Desperate,19,9168,0,Water Gun,Arial Ace,Wing Attack,Water Pulse,,0,3,4,3,1,3,4
+Vlad,Puppy,Mightyena,Male,Calm,20,10638,0,Tackle,Snarl,Sand-Attack,Bite,Razor Claw,0,2,1,1,0,7,8
+Vlad,Sparkles,Shinx,Female,Composed,12,2640,0,Tackle,Leer,Charge,,,0,2,3,1,1,1,3
+Vlad,Leafy,Chikorita,Male,Lonely,15,10555,0,Razor Leaf,Tackle,Poisonpowder,Synthesis,,0,1,5,1,1,5,1
+Vlad,Aisha,Litwick,Male,Na?ve,20,10645,0,Fire Spin,Minimize,Night Shade,Confuse Ray,,0,4,0,5,5,0,5
+Vlad,Jew,Cranidos,Male,Lonely,14,4770,0,Headbutt,Leer,Focus Energy,Pursuit,,0,5,0,1,1,1,5
+Vlad,Chewie,Raticate,Female,Bold,20,10060,1,Hyper Fang,Sucker Punch,Quick Attack,Bite,,0,0,0,5,0,4,10
+Vlad,Dizzy,Sentret,Female,Adamant,10,1000,0,Foresight,Scratch,Defense Curl,Quick Attack,,9,0,0,0,0,0,0
