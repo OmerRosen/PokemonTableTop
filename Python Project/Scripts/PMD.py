@@ -47,7 +47,7 @@ def RollDice (DiceString,AutoRoll,IsCritical=0):
 #print total,output
 
 
-def UpdateBattleLog(turnlistinfo,actiontype,movelistinfo,Successful,Result,ExtraEffect,ExtraEffectDuration,AccuracyBonusEffect,AccuracyBonusDuration,UserOutput,OutPutForDM,TestMode=0):
+def UpdateBattleLog(turnlistinfo,actiontype,movelistinfo,resultlistinfo,TestMode=0):
     """Action Types:
         Pokemon Turn
         Trainer Turn
@@ -65,19 +65,28 @@ def UpdateBattleLog(turnlistinfo,actiontype,movelistinfo,Successful,Result,Extra
     PokemonId=turnlistinfo['PokemonId']
     PokemonTurnNumber=turnlistinfo['PokemonTurnNumber']
     """movelistinfo"""
-    MoveName = movelistinfo['MoveName']
+    MoveName = movelistinfo['Move']
     MoveType = movelistinfo['MoveType']
     MoveElement = movelistinfo['MoveElement']
-    TargetType = movelistinfo['TargetType ']
+    TargetType = movelistinfo['TargetType']
     TargetId = movelistinfo['TargetId']
     TargetName = movelistinfo['TargetName']
+    """resultlistinfo"""
+    Successful = resultlistinfo['Successful']
+    Result = resultlistinfo['Result']
+    ExtraEffect = resultlistinfo['ExtraEffect']
+    ExtraEffectDuration = resultlistinfo['ExtraEffectDuration']
+    AccuracyBonusEffect = resultlistinfo['AccuracyBonusEffect']
+    AccuracyBonusDuration = resultlistinfo['AccuracyBonusDuration']
+    UserOutput = resultlistinfo['UserOutput']
+    OutPutForDM = resultlistinfo['OutPutForDM']
 
-    BattleLogInsertSQL = "EXEC dbo.Update_Move_Results @BattleId = %s,@BattleName = %s,@Round = %s, @Turn = %s,@TurnType = %s,@Owner = %s, @PokemonNickname = %s, @PokemonId = %s, @PokemonTurnNumber = %s, @ActionType = %s,@Move = %s,@MoveType = %s,@MoveElement = %s, @TargetType = %s,@TargetId = %s,@TargetName = %s,@Successful = %s, @Result = %s,@ExtraEffect = %s, @ExtraEffectDuration = %s, @AccuracyBonusEffect = %s, @AccuracyBonusDuration = %s, @UserOutput = %s,@OutPutForDM = %s" % (
+    BattleLogInsertSQL = "EXEC dbo.Update_BattleLog @BattleId = %s,@BattleName = %s,@Round = %s, @Turn = %s,@TurnType = %s,@Owner = %s, @PokemonNickname = %s, @PokemonId = %s, @PokemonTurnNumber = %s, @ActionType = %s,@Move = %s,@MoveType = %s,@MoveElement = %s, @TargetType = %s,@TargetId = %s,@TargetName = %s,@Successful = %s, @Result = %s,@ExtraEffect = %s, @ExtraEffectDuration = %s, @AccuracyBonusEffect = %s, @AccuracyBonusDuration = %s, @UserOutput = %s,@OutPutForDM = %s" % (
     MiniModules.ModifyValueForSQL(BattleId), MiniModules.ModifyValueForSQL(BattleName),
     MiniModules.ModifyValueForSQL(Round), MiniModules.ModifyValueForSQL(Turn), MiniModules.ModifyValueForSQL(TurnType),
     MiniModules.ModifyValueForSQL(Owner), MiniModules.ModifyValueForSQL(PokemonNickname),
     MiniModules.ModifyValueForSQL(PokemonId), MiniModules.ModifyValueForSQL(PokemonTurnNumber),
-    MiniModules.ModifyValueForSQL(ActionType), MiniModules.ModifyValueForSQL(Move),
+    MiniModules.ModifyValueForSQL(ActionType), MiniModules.ModifyValueForSQL(MoveName),
     MiniModules.ModifyValueForSQL(MoveType), MiniModules.ModifyValueForSQL(MoveElement),
     MiniModules.ModifyValueForSQL(TargetType), MiniModules.ModifyValueForSQL(TargetId),
     MiniModules.ModifyValueForSQL(TargetName), MiniModules.ModifyValueForSQL(Successful),
@@ -177,6 +186,16 @@ def SwitchPokemon(turnlistinfo, movelistinfo, TestMode,pauseseconds,CompletePart
     AccuracyBonusDuration = ""
     UserOutput = ""
     OutPutForDM = ""
+    """result list info"""
+    Successful = 1
+    Result = ""
+    ExtraEffect = ""
+    ExtraEffectDuration = ""
+    AccuracyBonusEffect = ""
+    AccuracyBonusDuration = ""
+    UserOutput = ""
+    OutPutForDM = ""
+    PokemonFaintedSQL = ""
 
     trainerinfo=[{'GroupName':GroupName,'EntityName':Owner,'EntityId':EntityId}]
     ParticipatingPokemons_New = []
@@ -198,9 +217,11 @@ def SwitchPokemon(turnlistinfo, movelistinfo, TestMode,pauseseconds,CompletePart
 
     UserOutput = "Trainer %s switched Pokemon %s (%s) instead of %s" %(Owner,NewPokemon['PokemonNickName'],NewPokemon['Species'],PokemonNickname)
     OutPutForDM = UserOutput
-    EffectCheck.AffectResultTemplate(turnlistinfo, Move, MoveType, Successful, Result , ExtraEffect,
-                         ExtraEffectDuration, AccuracyBonusEffect, AccuracyBonusDuration,
-                         UserOutput, OutPutForDM, TestMode=0)
+    resultlistinfo = {'Successful': Successful, 'Result': Result, 'ExtraEffect': ExtraEffect,
+                      'ExtraEffectDuration': ExtraEffectDuration, 'AccuracyBonusEffect': AccuracyBonusEffect,
+                      'AccuracyBonusDuration': AccuracyBonusDuration, 'UserOutput': UserOutput,
+                      'OutPutForDM': OutPutForDM, 'PokemonFaintedSQL': PokemonFaintedSQL}
+    UpdateBattleLog(turnlistinfo,TurnType,movelistinfo,resultlistinfo,TestMode)
 
     ParticipatingPokemons_New = sorted(ParticipatingPokemons_New, key=lambda x: x["SPDTotal"], reverse=True)
     return ParticipatingPokemons_New

@@ -87,7 +87,7 @@ def FilterList (Table,HeaderToFilter,CommaSeperatedItems):
     return  FilteredList
 
 def SpecialString():
-    file = open(r"E:\Dropbox\Pokemon Tabletop Project\Special String.txt", "r")
+    file = open(r"E:\Pokemon-Table-Top\Git Project\PokemonTableTop\config.txt", "r")
     #print file.read()
     return file.read()
 

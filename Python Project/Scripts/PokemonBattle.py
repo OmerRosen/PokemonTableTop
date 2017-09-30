@@ -28,7 +28,7 @@ else:
     DMName = raw_input("Please insert your DM Name: ")
 
 if TestMode==1:
-    BattleName = 'Test Battle %s' % (random.randInt(10000-99999)) # Un-Official Battle
+    BattleName = 'Test Battle %s' % (random.randrange(10000,99999)) # Un-Official Battle
 else:
     BattleName = raw_input("Type in a title for the battle:" )
 
@@ -145,7 +145,7 @@ while not MiniModules.FilterList(MiniModules.FilterList(CompleteParticipatingTra
             TrainerGroup = trainer['GroupName']
             turnlistinfo = {'BattleId': BattleId, 'BattleName': BattleName, 'Round': round, 'Turn': turn,'TurnType': 'TrainerTurn', 'Owner': TrainerName,'EntityId': TrainerId,'GroupName':TrainerGroup,'PokemonNickname': "",'PokemonId': "",'PokemonTurnNumber': ""}
             movelistinfo = {'Move': '', 'MoveType': '', 'MoveElement': '', 'TargetType': '', 'TargetId': '','TargetName': ''}
-            WantedHeaders = ['ActionId','ActionDescription','ISAllowed','AvailabilityResults','Notes']
+            WantedHeaders = ['ActionId','ActionDescription','IsAllowed','AvailabilityResults','Notes']
             PossibleTrainerActionsSQL = "EXEC dbo.GetAllowedTrainerActions @DMName = %s, @TrainerName = %s, @BattleTypeDesc = %s,@PokemonNumberLimit = %s,@BattleId = %s" % (MiniModules.ModifyValueForSQL(DMName),MiniModules.ModifyValueForSQL(TrainerName),MiniModules.ModifyValueForSQL(BattleTypeDesc),MiniModules.ModifyValueForSQL(LimitPokemonNumber),MiniModules.ModifyValueForSQL(BattleId))
             PossibleTrainerActions = MiniModules.runSQLreturnresults(PossibleTrainerActionsSQL,Password)
             traineraction=99
@@ -155,7 +155,7 @@ while not MiniModules.FilterList(MiniModules.FilterList(CompleteParticipatingTra
                 traineraction = input("")-1
                 if int(traineraction)>6:
                     print "The number you choose is not a valid action"
-                elif not PossibleTrainerActions[traineraction]['ISAllowed'] == 1:
+                elif not PossibleTrainerActions[traineraction]['IsAllowed'] == 1:
                     print "Action %s is currently not available. Reason: %s" % (PossibleTrainerActions[traineraction]['ActionDescription'],PossibleTrainerActions[traineraction]['AvailabilityResults'])
                     traineraction=99
                 else:

@@ -6,7 +6,7 @@ import itertools
 from operator import itemgetter
 
 import  MiniModules
-def MapANewBattleMove(AttackName,ContributedBy,Password='123qwe!!',SecondsDelay=0):
+def MapANewBattleMove(AttackName,ContributedBy,Password=MiniModules.SpecialString(),SecondsDelay=0):
 
     def SetDamage(SecondsDelay):
         Damage = ""
@@ -408,7 +408,7 @@ def MapANewBattleMove(AttackName,ContributedBy,Password='123qwe!!',SecondsDelay=
             if AttackInfo["AttackCategory"] == 'Scatter':
                 NumOfTurns=""
                 while NumOfTurns=="":
-                    print "We can see that this attack in uncer the category 'Scatter'"
+                    print "We can see that this attack in under the category 'Scatter'"
                     print "Below you can find the attack's description:\n\n " \
                       "%s\n" % (AttackInfo["AttackEffects"].replace(".",'.\n'))
                     print "Which of the following is most accurate about this move:\n" \
@@ -418,20 +418,21 @@ def MapANewBattleMove(AttackName,ContributedBy,Password='123qwe!!',SecondsDelay=
                     Selection = input("Select number")
                     if Selection==3:
                         print "This attack will be set as a none-multiple move. Thank you"
-                        NumOfTurns
+                        NumOfTurns=1
                     else:
                         x = input("Up to how many times can this move hit? (numbers)")
                     if Selection==1:
-                        NumOfTurns=Selection
+                        NumOfTurns=x
                         print "Thank you"
                     if Selection==2:
-                        NumOfTurns=="Up-To(%s)" %(str(Selection))
-                MultiTurn = raw_input("Can this move hit more than 1 time? (y/n)")
-                if MultiTurn == 'y' or MultiTurn == 'Y':
-                    NumOfTurns = input("How many time?")
-                    print "Thank you\n"
-                else:
-                    NumOfTurns=1
+                        NumOfTurns="Up-To(%s)" %(str(x))
+            #else:
+            #    MultiTurn = raw_input("Can this move hit more than 1 time? (y/n)")
+            #    if MultiTurn == 'y' or MultiTurn == 'Y':
+            #        NumOfTurns = input("How many time?")
+            #        print "Thank you\n"
+            #    else:
+            #        NumOfTurns=1
             print "\nHere's a reminder of the move's description:\n"
             print AttackInfo["AttackEffects"].replace(".", ".\n")
             AccuracyCheckBonus = ""
@@ -496,4 +497,7 @@ def MapANewBattleMove(AttackName,ContributedBy,Password='123qwe!!',SecondsDelay=
             return AttackInfo
 
 
-#MapANewBattleMove('Tackle','Omer')
+#MapANewBattleMove('Fury Attack','Omer')
+
+#E:\Pokemon-Table-Top\Git Project\PokemonTableTop\Python Project\Scripts\NewBattleMove.py
+#E:\Pokemon-Table-Top\Git Project\PokemonTableTop\Python Project\Scripts\MiniModules.py

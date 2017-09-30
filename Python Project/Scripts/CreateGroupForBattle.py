@@ -35,7 +35,7 @@ def CreateGroupForBattle(DMName,BattleId,BattleTypeDesc,BattleType,TestMode=0,pa
         print MiniModules.PrettyTable(WantedHeaders, AvailableEntities, 1)
 
         if TestMode == 1:
-            ListOfEntitesForTeamA = '1,2'
+            ListOfEntitesForTeamA = '1,3'
         else:
             ListOfEntitesForTeamA = raw_input('\nWho should be included in team %s? (Comma seperated):' %(MainGroupName))
 
