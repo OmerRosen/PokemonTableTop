@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load staticfiles %}
+
+<head>
+	<title>{% block TabName %}Pokemon TableBTM{% endblock %}</title>
+	<meta charset="utf-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'entities/css/style.css' %}">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <!-- Logo -->
+
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">Pokemon TableBTTM</a>
+            </div>
+
+                <!-- Menu Items -->
+
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href='/'>Home</a></li>
+                    <li><a href='/entities/'>View Entities</a></li>
+                    <li><a href='/startbattle/'>Start a battle</a></li>
+                </ul>
+            </div>
+            <!-- Right menu bar -->
+
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href='#'>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="min-height:95%; ">
+        <!---<div class="col-md-4">
+            <center>
+                <img src="{% static '\pokemon\img\professor-oak.jpg' %}" class="responsive-img" style='max-height:150px;' alt="face">
+            </center>
+        </div>--->
+        <div class="col-md-10">
+
+            <div class='container-fluid'>
+                <br><br>
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+
+    </div>
+	<footer>
+		<div class="container-fluid" style='margin-left:15px'>
+			<p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a></p>
+		</div>
+	</footer>
+
+</body>
+
+</html>

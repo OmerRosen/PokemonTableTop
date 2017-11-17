@@ -1,0 +1,53 @@
+{% extends "pokemon/headers.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="container">
+    <div>
+        <h2>Hey, welcome to professor Oak's sexy ass dungeon<br></h2>
+    </div>
+    <div>
+        <br></h2>
+    </div>
+    <div  class="container">
+        <img src="https://68.media.tumblr.com/313705680da1450b9dde4dd72f706d0e/tumblr_oj6xp91lfh1tgjlm2o1_500.gif" class="img-rounded" alt="Professor Oak" width="304" height="150">
+        <!--<img src="{% static '\pokemon\img\professor-oak.jpg' %}" class="img-rounded" alt="Professor Oak" width="304" height="236">-->
+
+    </div>
+    <div class="container">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#LoginPopup" style="padding: 5px 64px; font-size: 64px">Log In</button>
+    </div>
+    <div class="modal fade" id="LoginPopup">
+        <div class="modal-dialog">
+            <div class="modle-content" style="background-color:white">
+
+                <!--- Header --->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Log In</h3>
+                </div>
+
+                <!--- Body --->
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+
+                <!--- Footer --->
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-block">Log In</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

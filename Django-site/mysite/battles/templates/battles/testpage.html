@@ -1,0 +1,236 @@
+{% extends "pokemon/headers.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event24X7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/css/bootstrap-timepicker.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.js"></script>
+<script>
+$(document).ready(function(){
+    $("#ScheduleType").change(function(){
+    if ($( "#ScheduleType option:selected" ).text()=="Constantly"){
+       $("#timepicker3").hide();
+       $("#Period").show();
+       } else if ($( "#ScheduleType option:selected" ).text()=="Daily") {
+        $("#Period").hide();
+        $("#timepicker3").show();
+       }
+       else {
+        $("#Period").hide();
+        $("#timepicker3").hide();
+       }
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#IsIncident").change(function(){
+    if (document.getElementById("IsIncident").checked){
+       $("#subject").prop( "disabled", true );
+        $("#emails").hide();
+        $("#IncidentRecipients").show();
+       } else {
+        $("#subject").prop( "disabled", false );
+        $("#IncidentRecipients").hide();
+        $("#emails").show();
+       }
+    });
+});
+</script>
+<script>
+$("document").ready(function () {
+    $("#CheckPermission").on('click',function (e) {
+            var Table = document.getElementById("TableInput").value;
+            $.ajax({
+                    url: "http://192.168.0.158:8000/UploadMonitor/CheckPermissions",
+                data:{TableName:Table},
+                type: "GET",
+                success: function (response) {
+                if (response.includes("General error") || response.includes("User Monitor doesn't have permissions") ){
+                document.getElementById("PermissionStatus").innerHTML = response;
+                document.getElementById("PermissionStatus").style = "color:red;";}
+                else{
+                document.getElementById("PermissionStatus").innerHTML = response;
+                document.getElementById("PermissionStatus").style = "color:green;";}
+                },
+                error: function (jXHR, textStatus, errorThrown) {
+                    alert(555);
+                }
+        });
+        });
+        });
+</script>
+<script>
+$("document").ready(function () {
+    $("#submitAll").on('click',function (f) {
+    var valid = true;
+    if (document.getElementById("SP").value ==""){
+        document.getElementById("SPEmpty").innerHTML= "you must fill SP";
+        valid = false;
+    }
+    var IncidentCheck = document.getElementById("IsIncident").checked
+    if (document.getElementById("emails").value ==""&&(IncidentCheck == false)){
+        document.getElementById("RecipientsEmpty").innerHTML= "yot must chose recipients";
+        valid = false;
+    }
+    if (document.getElementById("subject").value ==""&&(IncidentCheck == false)){
+        document.getElementById("SubjectEmpty").innerHTML= "you must fill subject";
+        valid = false;
+    }
+    if (document.getElementById("MonitorName").value ==""){
+        document.getElementById("MonitorNameEmpty").innerHTML= "you must fill MonitorName";
+        valid = false;
+    }
+    if (document.getElementById("ScheduleType").value =="None"){
+        document.getElementById("TimeEmpty").innerHTML= "you must insert time";
+        valid = false;
+    }
+    if (document.getElementById("ScheduleType").value =="Constantly" && document.getElementById("Period").value == ""){
+        document.getElementById("TimeEmpty").innerHTML= "you must insert time";
+        valid = false;
+    }
+    if(valid){
+            if ($( "#ScheduleType option:selected" ).text() == "Daily"){
+            var TimeToRun = document.getElementById("timepicker3").value
+            } else{
+            var TimeToRun = document.getElementById("Period").value
+            };
+            if (document.getElementById("IsIncident").checked){
+            var Recipients = $( "#IncidentRecipients option:selected" ).text()
+            } else{
+            var Recipients = document.getElementById("emails").value
+            };
+            $.ajax({
+                url: "http://192.168.0.158:8000/UploadMonitor/InsertMonitor",
+                data:{SP:document.getElementById("SP").value,
+                      MonitorName:document.getElementById("MonitorName").value,
+                      Recipients:Recipients,
+                      Subject:document.getElementById("subject").value,
+                      AttachResultsFlag:document.getElementById("AttachResultsFlag").checked,
+                      EmailContent:document.getElementById("EmailContent").value,
+                      TimeType:$( "#ScheduleType option:selected" ).text(),
+                      IsIncident:document.getElementById("IsIncident").checked,
+                      TimeRun: TimeToRun},
+                type: "GET",
+                success: function (response) {
+                $('#MainForm').trigger("reset");
+                $('#SPEmpty').hide();
+                $('#RecipientsEmpty').hide();
+                $('#SubjectEmpty').hide();
+                $('#MonitorNameEmpty').hide();
+                $('#TimeEmpty').hide();
+                document.getElementById("ScheduleType").value =="None";
+                alert("The monitor was uploaded to the 'Pending for M&A Approval' queue");
+                },
+                error: function (jXHR, textStatus, errorThrown) {
+                    alert(errorThrown);
+                }
+        });
+        };
+        });
+        });
+</script>
+</head>
+<body>
+<div class="container">
+  <h2>Create New Monitor</h2>
+  <label>First check if user "Monitor" got permissions:</label>
+    <p1>You should check every table that is not in the same DB as the SP</p1>
+  <form class="form-group" id="PermissionsForm">
+  <textarea id ="TableInput" class="form-group" rows="1" cols="60" placeholder="Enter the full table name and cliec Check"></textarea>
+  <button type="button" class="btn btn-default" id="CheckPermission">Check</button>
+  <p id="PermissionStatus" ></p>
+  </form>
+    <br>
+  <form class="form-group" id="MainForm">
+  <label>MonitorName<p style="color:red;" id ="MonitorNameEmpty"></p></label>
+      <br>
+    <div class="col-xs-6">
+      <input type="text" class="form-control" id="MonitorName" placeholder="Choose a name for the monitor, use just alphanumric chars or '_'" size="2">
+    </div>
+      <br>
+      <br>
+      <br>
+    <div class="form-group">
+        <label>SP:<p style="color:red;" id ="SPEmpty"></p></label>
+        <br>
+      <textarea id = "SP" class="form-group" rows="10" cols="100" placeholder="Please enter the SP you would like to run, including the parameters" ></textarea>
+    </div>
+    <div class="checkbox">
+      <label><input id="IsIncident" type="checkbox">Open incident</label>
+    </div>
+    <div class="col-xs-6">
+      <label for="emails">Recipients:<p style="color:red;" id ="RecipientsEmpty"></p></label>
+      <input id="emails" type="email" class="form-control"  placeholder="Enter the recipients email, separated with ;">
+    <select name="IncidentRecipients" id="IncidentRecipients" style="display:none;">
+            <option value="IT">IT</option>
+            <option value="PS">PS</option>
+        </select>
+    </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    <div class="col-xs-6">
+      <label for="subject">Email Subject:<p style="color:red;" id ="SubjectEmpty"></p></label>
+      <input type="text" class="form-control" id="subject" placeholder="Enter the email subjuct">
+    </div>
+    <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    <label>Email Content:</label>
+    <div class="form-group">
+      <textarea id="EmailContent" class="form-group" rows="10" cols="100" placeholder="Please enter the content of the mail"></textarea>
+    </div>
+    <div class="checkbox">
+      <label><input id="AttachResultsFlag" type="checkbox"> Attach Results to alert</label>
+    </div>
+    <label>Time Interval:<p style="color:red;" id ="TimeEmpty"></p></label>
+    <div class="input-group bootstrap-timepicker timepicker"  >
+        <select name="ScheduleType" id="ScheduleType">
+            <option value="None"></option>
+            <option value="Daily">Daily</option>
+            <option value="Constantly">Constantly</option>
+        </select>
+        <div class="row" id="TimeChoice">
+        <div class="col-sm-8" id="timecheck">
+        <input id="timepicker3" type="text" class="form-control input-small" style="display:none;">
+        </div>
+        <div class="col-sm-8">
+        <input id="Period" type="number" class="form-control" style="display:none;">
+        </div>
+        </div>
+        <br>
+        <br>
+
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#TimeChoice #timecheck #timepicker3").timepicker({
+            minuteStep: 5,
+            showInputs: false,
+            disableFocus: true
+        });
+        });
+    </script>
+  <button type="button" class="btn btn-default" id="submitAll">Submit</button>
+
+  </form>
+
+
+</div>
+</body>
+</html>
+
+{% endblock %}

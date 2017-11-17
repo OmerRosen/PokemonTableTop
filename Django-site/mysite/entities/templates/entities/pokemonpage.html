@@ -1,0 +1,44 @@
+{% extends "pokemon/headers.html" %}
+
+{% block tabname %}Pokemon Page - {{pokemondetails.PokemonNickName}}{% endblock %}
+
+{% block content %}
+{% if pokemondetails %}
+
+<div>
+    <!--<h2>{{pokemondetails.PokemonNickName}}</h2>-->
+    <img src="https://img.pokemondb.net/artwork/{{ pokemondetails.Species|lower }}.jpg" alt="({{ pokemondetails.Species }}" />
+</div>
+
+<div class="container-fluid">
+    <form class="form-horizontal" action="{% url 'Entities:UpdatePokemonDetails' entity_Id pokemondetails.PokemonId %}" method="Post" enctype="multipart/form-data">
+    <!--<form class="form-horizontal" action="http://127.0.0.1:8000/entities/{{entity_Id}}/pokemonpage/{{pokemondetails.PokemonId}}" method="Post" enctype="multipart/form-data">-->
+        {% csrf_token %}
+        <h1>{{ pokemondetails.PokemonNickName }}</h1>
+        <h5>"{{ pokemondetails.Species }}"</h5>
+        {% for header in PokemonHeaders %}
+        {% if header.RowNumber == '-1' %}
+            <input type="hidden" name="{{header.ColumnName}}" id="header{{ forloop.counter }}" value="{% if header.ColumnName == 'DMName' %}Sagi{% else %}{{header.ColumnValue}}{% endif %}">
+        {% else %}
+            <div class="col-md-{{ header.ColumnWidth }}">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">{{ header.ColumnDisplayName }}</div>
+                    <input type="{{header.InputType}}" id="{{header.ColumnName}}" name="{{header.ColumnName}}" class="form-control" value="{{header.ColumnValue}}" {% if not header.AllowEditing == '1' %} readonly {% endif %}></input>
+                </div>
+            </div>
+        {% endif %}
+        {% endfor %}
+
+        <input type="submit" class="btn btn-secondary btn-lg btn-block" value="Update Details"/>
+    </form>
+</div>
+
+<h4>{{pokemondetails}}</h4>
+
+
+{% else %}
+	<h3>Pokemon does not exist.<br>Are you a moron??</h3>
+{% endif %}
+
+
+{% endblock %}

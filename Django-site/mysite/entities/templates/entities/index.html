@@ -1,0 +1,71 @@
+{% extends "pokemon/headers.html" %}
+{% block content %}
+
+{% if entities %}
+	<div class="container-fluid">
+		<h2>Hello Sagi the Game-Master</h2>
+		<h3>Here are all your Players</h3>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Trainer Name</th>
+					<th>Entity Type</th>
+					<th>Player Name</th>
+					<th>Title</th>
+					<th>Level</th>
+					<th>Available to battle?</th>
+					<th>Roll Your own dice?</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for entity in entities %}
+					{% if entity.EntityType == "Player" %}
+						<tr>
+							<td><a href="{% url 'Entities:getentities' entity.EntityId %}">{{ entity.EntityName }}</a></td>
+							<td>{{ entity.EntityType }}</td>
+							<td>{{ entity.PlayerName }}</td>
+							<td>{{ entity.EntityTitle }}</td>
+							<td>{{ entity.Level }}</td>
+							<td>{{ entity.IsAvailableForBattle }}</td>
+							<td>{{ entity.RollYourOwnDice }}</td>
+						</tr>
+					{% endif %}
+				{% endfor %}
+			</tbody>
+		</table>
+		<h3>Here are all your NPCs</h3>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Entity Name</th>
+					<th>Entity Type</th>
+					<th>Player Name</th>
+					<th>Title</th>
+					<th>Level</th>
+					<th>Available to battle?</th>
+					<th>Roll Your own dice?</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for entity in entities %}
+					{% if entity.EntityType == "NPC" %}
+						<tr>
+							<td><a href="{% url 'Entities:getentities' entity.EntityId %}">{{ entity.EntityName }}</a></td>
+							<td>{{ entity.EntityType }}</td>
+							<td>{{ entity.PlayerName }}</td>
+							<td>{{ entity.EntityTitle }}</td>
+							<td>{{ entity.Level }}</td>
+							<td>{{ entity.IsAvailableForBattle }}</td>
+							<td>{{ entity.RollYourOwnDice }}</td>
+						</tr>
+					{% endif %}
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+
+
+{% else %}
+	<h3>Entity does not exist.<br>Are you a moron??</h3>
+{% endif %}
+{% endblock %}

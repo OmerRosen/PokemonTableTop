@@ -1,0 +1,378 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+from mysite import ImportModules
+from django.db import models
+
+# Create your models here.
+
+
+def getpokemonsbasedonentitiy(entity_Id):
+    EntityPokemons = []
+    EntityDetails = {}
+    all_entities = ImportModules.runSQLreturnresults("EXEC dbo.GetAllEntitiesForBattle @DMName = N'Sagi'",
+                                       '%s' % (ImportModules.SpecialString()))
+    all_entities = sorted(all_entities, key=lambda x: x["EntityName"], reverse=False)
+    for ent in all_entities:
+        if int(ent['EntityId']) == int(entity_Id):
+            EntityDetails = ent
+            EntityPokemons = ImportModules.runSQLreturnresults(
+                "EXEC dbo.GetAllPokemonsPerTrainer @Username = N'%s', @DMName = N'%s'" % (EntityDetails['EntityName'], 'Sagi'),
+                '%s' % (ImportModules.SpecialString()))
+    return EntityDetails,EntityPokemons
+
+def EntityHeaders():
+    EntityHeaders = [
+        #{'AppearenceOrder':'"&&"','RowNumber':'"&&"','ColumnName':'"&&"',DBColumnName':'"&&"','ColumnDisplayName':'"&&"','InputType':'"&&"','ColumnWidth':'"&&"','AllowEditing':'"&&"','Notes':'"&&"','OverrideValue':'"&&"'},
+        {'AppearenceOrder': '-99', 'RowNumber': '-1', 'ColumnName': 'TrainerId', 'DBColumnName': 'EntityId',
+         'ColumnDisplayName': 'Trainer Id', 'InputType': 'number', 'ColumnWidth': '0', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '-99', 'RowNumber': '-1', 'ColumnName': 'DMName', 'DBColumnName': 'DMName',
+         'ColumnDisplayName': 'DM Name', 'InputType': 'text', 'ColumnWidth': '0', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': 'Sagi'},
+        {'AppearenceOrder': '-99', 'RowNumber': '-1', 'ColumnName': 'TrainerName', 'DBColumnName': 'EntityName',
+         'ColumnDisplayName': 'Trainer Name', 'InputType': 'text', 'ColumnWidth': '0', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '-99', 'RowNumber': '-1', 'ColumnName': 'CatchPhrase', 'DBColumnName': 'CatchPhrase',
+         'ColumnDisplayName': 'Catch Phrase', 'InputType': 'text', 'ColumnWidth': '0', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '10', 'RowNumber': '1', 'ColumnName': 'EntityType', 'DBColumnName': 'EntityType',
+         'ColumnDisplayName': 'Entity Type', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '20', 'RowNumber': '1', 'ColumnName': 'PlayerName', 'DBColumnName': 'PlayerName',
+         'ColumnDisplayName': 'Player Name', 'InputType': 'text', 'ColumnWidth': '3', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '30', 'RowNumber': '1', 'ColumnName': 'Level', 'DBColumnName': 'Level',
+         'ColumnDisplayName': 'Level', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '40', 'RowNumber': '1', 'ColumnName': 'TrainerTitle', 'DBColumnName': 'EntityTitle',
+         'ColumnDisplayName': ' Title', 'InputType': 'text', 'ColumnWidth': '5', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '50', 'RowNumber': '2', 'ColumnName': 'TrainerGender', 'DBColumnName': 'TrainerGender',
+         'ColumnDisplayName': 'Trainer Gender', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '60', 'RowNumber': '2', 'ColumnName': 'Age', 'DBColumnName': 'Age',
+         'ColumnDisplayName': 'Age', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '70', 'RowNumber': '2', 'ColumnName': 'WeightKg', 'DBColumnName': 'WeightKg',
+         'ColumnDisplayName': 'Weight (Kg)', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '80', 'RowNumber': '2', 'ColumnName': 'HeightCm', 'DBColumnName': 'HeightCm',
+         'ColumnDisplayName': 'Height( Cm)', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '90', 'RowNumber': '2', 'ColumnName': 'CreateDate', 'DBColumnName': 'CreateDate',
+         'ColumnDisplayName': 'Create Date', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '100', 'RowNumber': '2', 'ColumnName': 'LastUpdateDate', 'DBColumnName': 'LastUpdateDate',
+         'ColumnDisplayName': 'Last Update Date', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '110', 'RowNumber': '3', 'ColumnName': 'HealthDescription',
+         'DBColumnName': 'HealthDescription', 'ColumnDisplayName': 'Health Description', 'InputType': 'text',
+         'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '120', 'RowNumber': '3', 'ColumnName': 'TrainerMaxHP', 'DBColumnName': 'EntityMaxHP',
+         'ColumnDisplayName': 'Max Health', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '130', 'RowNumber': '3', 'ColumnName': 'TrainerCurrentHP',
+         'DBColumnName': 'EntityCurrentHP', 'ColumnDisplayName': 'Current Health', 'InputType': 'number',
+         'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '140', 'RowNumber': '3', 'ColumnName': 'IsAvailableForBattle',
+         'DBColumnName': 'IsAvailableForBattle', 'ColumnDisplayName': 'Available For Battle', 'InputType': 'text',
+         'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '150', 'RowNumber': '3', 'ColumnName': 'RollYourOwnDice', 'DBColumnName': 'RollYourOwnDice',
+         'ColumnDisplayName': 'Roll Own Dice', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '160', 'RowNumber': '3', 'ColumnName': 'Money', 'DBColumnName': 'Money',
+         'ColumnDisplayName': 'Money', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '161', 'RowNumber': '4', 'ColumnName': 'StatBoosters', 'DBColumnName': 'StatBoosters',
+         'ColumnDisplayName': 'Stat Boosters', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '162', 'RowNumber': '4', 'ColumnName': 'PointLeft', 'DBColumnName': 'PointsLeft',
+         'ColumnDisplayName': 'Points Left', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '163', 'RowNumber': '4', 'ColumnName': 'PointsEarned', 'DBColumnName': 'PointsEarned',
+         'ColumnDisplayName': 'Points Earned', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '170', 'RowNumber': '4', 'ColumnName': 'Background', 'DBColumnName': 'Background',
+         'ColumnDisplayName': 'Character Background', 'InputType': 'text', 'ColumnWidth': '6', 'AllowEditing': '1',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '190', 'RowNumber': '5', 'ColumnName': 'TrainerStr', 'DBColumnName': 'EntityStr',
+         'ColumnDisplayName': 'Str', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '200', 'RowNumber': '5', 'ColumnName': 'TrainerDex', 'DBColumnName': 'EntityDex',
+         'ColumnDisplayName': 'Dex', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '210', 'RowNumber': '5', 'ColumnName': 'TrainerCon', 'DBColumnName': 'EntityCon',
+         'ColumnDisplayName': 'Con', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '220', 'RowNumber': '5', 'ColumnName': 'TrainerInt', 'DBColumnName': 'EntityInt',
+         'ColumnDisplayName': 'Int', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '230', 'RowNumber': '5', 'ColumnName': 'TrainerWis', 'DBColumnName': 'EntityWis',
+         'ColumnDisplayName': 'Wis', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '240', 'RowNumber': '5', 'ColumnName': 'TrainerCha', 'DBColumnName': 'EntityCha',
+         'ColumnDisplayName': 'Cha', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '260', 'RowNumber': '6', 'ColumnName': 'StrModifier', 'DBColumnName': 'StrModifier',
+         'ColumnDisplayName': 'Str Modifier', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '270', 'RowNumber': '6', 'ColumnName': 'DexModifier', 'DBColumnName': 'DexModifier',
+         'ColumnDisplayName': 'Dex Modifier', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '280', 'RowNumber': '6', 'ColumnName': 'ConModifier', 'DBColumnName': 'ConModifier',
+         'ColumnDisplayName': 'Con Modifier', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '290', 'RowNumber': '6', 'ColumnName': 'IntModifier', 'DBColumnName': 'IntModifier',
+         'ColumnDisplayName': 'Int Modifier', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '300', 'RowNumber': '6', 'ColumnName': 'WisModifier', 'DBColumnName': 'WisModifier',
+         'ColumnDisplayName': 'Wis Modifier', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '310', 'RowNumber': '6', 'ColumnName': 'ChaModifier', 'DBColumnName': 'ChaModifier',
+         'ColumnDisplayName': 'Cha Modifier', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''}
+    ]
+    return EntityHeaders
+
+
+def PokemonHeaders():
+    PokemonHeaders = [
+        {'AppearenceOrder': '-99', 'RowNumber': '-1', 'ColumnName': 'PokemonNickName',
+         'DBColumnName': 'PokemonNickName', 'ColumnDisplayName': 'NickName', 'InputType': 'text', 'ColumnWidth': '0',
+         'AllowEditing': '1', 'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '10', 'RowNumber': '1', 'ColumnName': 'PokemonId', 'DBColumnName': 'PokemonId',
+         'ColumnDisplayName': 'Id', 'InputType': 'number', 'ColumnWidth': '1', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '20', 'RowNumber': '1', 'ColumnName': 'OwnerName', 'DBColumnName': 'OwnerName',
+         'ColumnDisplayName': 'Owner Name', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '30', 'RowNumber': '1', 'ColumnName': 'Species', 'DBColumnName': 'Species',
+         'ColumnDisplayName': 'Species', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '40', 'RowNumber': '1', 'ColumnName': 'Type1', 'DBColumnName': 'Type1',
+         'ColumnDisplayName': 'Type1', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '50', 'RowNumber': '1', 'ColumnName': 'Type2', 'DBColumnName': 'Type2',
+         'ColumnDisplayName': 'Type2', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '60', 'RowNumber': '1', 'ColumnName': 'Gender', 'DBColumnName': 'Gender',
+         'ColumnDisplayName': 'Gender', 'InputType': 'text', 'ColumnWidth': '1', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '70', 'RowNumber': '1', 'ColumnName': 'Nature', 'DBColumnName': 'Nature',
+         'ColumnDisplayName': 'Nature', 'InputType': 'text', 'ColumnWidth': '1', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '80', 'RowNumber': '1', 'ColumnName': 'IsShiny', 'DBColumnName': 'IsShiny',
+         'ColumnDisplayName': 'Shiny?', 'InputType': 'text', 'ColumnWidth': '1', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '90', 'RowNumber': '2', 'ColumnName': 'StartingLevel', 'DBColumnName': 'StartingLevel',
+         'ColumnDisplayName': 'Starting Level', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '100', 'RowNumber': '2', 'ColumnName': 'CurrentLevel', 'DBColumnName': 'CurrentLevel',
+         'ColumnDisplayName': 'Current Level', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '110', 'RowNumber': '2', 'ColumnName': 'BattleXP', 'DBColumnName': 'BattleXP',
+         'ColumnDisplayName': 'Battle XP', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '120', 'RowNumber': '2', 'ColumnName': 'TotalXP', 'DBColumnName': 'TotalXP',
+         'ColumnDisplayName': 'Total XP', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '130', 'RowNumber': '2', 'ColumnName': 'XPForNextlvl', 'DBColumnName': 'XPForNextlvl',
+         'ColumnDisplayName': 'XP To Next Level', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '140', 'RowNumber': '2', 'ColumnName': 'IsOnBelt', 'DBColumnName': 'IsOnBelt',
+         'ColumnDisplayName': 'On Belt?', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '170', 'RowNumber': '3', 'ColumnName': 'Move1', 'DBColumnName': 'Move1',
+         'ColumnDisplayName': 'Move1', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '180', 'RowNumber': '3', 'ColumnName': 'Move2', 'DBColumnName': 'Move2',
+         'ColumnDisplayName': 'Move2', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '190', 'RowNumber': '3', 'ColumnName': 'Move3', 'DBColumnName': 'Move3',
+         'ColumnDisplayName': 'Move3', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '200', 'RowNumber': '3', 'ColumnName': 'Move4', 'DBColumnName': 'Move4',
+         'ColumnDisplayName': 'Move4', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '220', 'RowNumber': '3', 'ColumnName': 'HasQuickAttack', 'DBColumnName': 'HasQuickAttack',
+         'ColumnDisplayName': 'Quick ATK?', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '150', 'RowNumber': '4', 'ColumnName': 'TotalHealth', 'DBColumnName': 'TotalHealth',
+         'ColumnDisplayName': 'Max HP', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '160', 'RowNumber': '4', 'ColumnName': 'CurrentHealth', 'DBColumnName': 'CurrentHealth',
+         'ColumnDisplayName': 'Current HP', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '210', 'RowNumber': '4', 'ColumnName': 'HealthDescription',
+         'DBColumnName': 'HealthDescription', 'ColumnDisplayName': 'Health Description', 'InputType': 'text',
+         'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '230', 'RowNumber': '4', 'ColumnName': 'CreateDate', 'DBColumnName': 'CreateDate',
+         'ColumnDisplayName': 'Create Date', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '240', 'RowNumber': '4', 'ColumnName': 'UpdateDate', 'DBColumnName': 'UpdateDate',
+         'ColumnDisplayName': 'Update Date', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '250', 'RowNumber': '4', 'ColumnName': 'EnemiesFought', 'DBColumnName': 'EnemiesFought',
+         'ColumnDisplayName': 'Enemies Fought', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '260', 'RowNumber': '4', 'ColumnName': 'EnemiesDefeated', 'DBColumnName': 'EnemiesDefeated',
+         'ColumnDisplayName': 'Enemies Defeated', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '270', 'RowNumber': '6', 'ColumnName': 'Effect1', 'DBColumnName': 'Effect1',
+         'ColumnDisplayName': 'Effect One', 'InputType': 'text', 'ColumnWidth': '3', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '280', 'RowNumber': '6', 'ColumnName': 'Effect1Length', 'DBColumnName': 'Effect1Length',
+         'ColumnDisplayName': 'Effect One Duration', 'InputType': 'text', 'ColumnWidth': '3', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '290', 'RowNumber': '6', 'ColumnName': 'Effect2', 'DBColumnName': 'Effect2',
+         'ColumnDisplayName': 'Effect Two', 'InputType': 'text', 'ColumnWidth': '3', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '300', 'RowNumber': '6', 'ColumnName': 'Effect2Length', 'DBColumnName': 'Effect2Length',
+         'ColumnDisplayName': 'Effect Two Duration', 'InputType': 'text', 'ColumnWidth': '3', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '310', 'RowNumber': '7', 'ColumnName': 'SpeciesHP', 'DBColumnName': 'SpeciesHP',
+         'ColumnDisplayName': 'Basic HP', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '320', 'RowNumber': '7', 'ColumnName': 'HPAdd', 'DBColumnName': 'HPAdd',
+         'ColumnDisplayName': 'HP Add', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '330', 'RowNumber': '7', 'ColumnName': 'HPStage', 'DBColumnName': 'HPStage',
+         'ColumnDisplayName': 'HP Stage', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '340', 'RowNumber': '7', 'ColumnName': 'HPTotal', 'DBColumnName': 'HPTotal',
+         'ColumnDisplayName': 'HP Total', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '350', 'RowNumber': '7', 'ColumnName': 'TotalHealth', 'DBColumnName': 'TotalHealth',
+         'ColumnDisplayName': 'Health', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '360', 'RowNumber': '8', 'ColumnName': 'SpeciesATK', 'DBColumnName': 'SpeciesATK',
+         'ColumnDisplayName': 'Basic ATK', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '370', 'RowNumber': '8', 'ColumnName': 'ATKAdd', 'DBColumnName': 'ATKAdd',
+         'ColumnDisplayName': 'ATK Add', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '380', 'RowNumber': '8', 'ColumnName': 'ATKStage', 'DBColumnName': 'ATKStage',
+         'ColumnDisplayName': 'ATK Stage', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '390', 'RowNumber': '8', 'ColumnName': 'ATKTotal', 'DBColumnName': 'ATKTotal',
+         'ColumnDisplayName': 'ATK Total', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '400', 'RowNumber': '8', 'ColumnName': 'ATKTotal', 'DBColumnName': 'ATKTotal',
+         'ColumnDisplayName': 'Bonus ATK', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '410', 'RowNumber': '9', 'ColumnName': 'SpeciesDEF', 'DBColumnName': 'SpeciesDEF',
+         'ColumnDisplayName': 'Basic DEF', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '420', 'RowNumber': '9', 'ColumnName': 'DEFAdd', 'DBColumnName': 'DEFAdd',
+         'ColumnDisplayName': 'DEF Add', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '430', 'RowNumber': '9', 'ColumnName': 'DEFStage', 'DBColumnName': 'DEFStage',
+         'ColumnDisplayName': 'DEF Stage', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '440', 'RowNumber': '9', 'ColumnName': 'DEFTotal', 'DBColumnName': 'DEFTotal',
+         'ColumnDisplayName': 'DEF Total', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '450', 'RowNumber': '9', 'ColumnName': 'EvasionsToAtk', 'DBColumnName': 'EvasionsToAtk',
+         'ColumnDisplayName': 'EvasionsToAtk', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '460', 'RowNumber': '10', 'ColumnName': 'SpeciesSATK', 'DBColumnName': 'SpeciesSATK',
+         'ColumnDisplayName': 'Basic SATK', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '470', 'RowNumber': '10', 'ColumnName': 'SATKAdd', 'DBColumnName': 'SATKAdd',
+         'ColumnDisplayName': 'SATK Add', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '480', 'RowNumber': '10', 'ColumnName': 'SATKStage', 'DBColumnName': 'SATKStage',
+         'ColumnDisplayName': 'SATK Stage', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '490', 'RowNumber': '10', 'ColumnName': 'SATKTotal', 'DBColumnName': 'SATKTotal',
+         'ColumnDisplayName': 'SATK Total', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '500', 'RowNumber': '10', 'ColumnName': 'SATKTotal', 'DBColumnName': 'SATKTotal',
+         'ColumnDisplayName': 'Bonus SATK', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '510', 'RowNumber': '11', 'ColumnName': 'SpeciesSDEF', 'DBColumnName': 'SpeciesSDEF',
+         'ColumnDisplayName': 'Basic SDEF', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '520', 'RowNumber': '11', 'ColumnName': 'SDEFAdd', 'DBColumnName': 'SDEFAdd',
+         'ColumnDisplayName': 'SDEF Add', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '530', 'RowNumber': '11', 'ColumnName': 'SDEFStage', 'DBColumnName': 'SDEFStage',
+         'ColumnDisplayName': 'SDEF Stage', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '540', 'RowNumber': '11', 'ColumnName': 'SDEFTotal', 'DBColumnName': 'SDEFTotal',
+         'ColumnDisplayName': 'SDEF Total', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '550', 'RowNumber': '11', 'ColumnName': 'EvasionsToSpcial',
+         'DBColumnName': 'EvasionsToSpcial', 'ColumnDisplayName': 'EvasionsToSpcial', 'InputType': 'number',
+         'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '560', 'RowNumber': '12', 'ColumnName': 'SpeciesSPD', 'DBColumnName': 'SpeciesSPD',
+         'ColumnDisplayName': 'Basic SPD', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '570', 'RowNumber': '12', 'ColumnName': 'SPDAdd', 'DBColumnName': 'SPDAdd',
+         'ColumnDisplayName': 'SPD Add', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '580', 'RowNumber': '12', 'ColumnName': 'SPDStage', 'DBColumnName': 'SPDStage',
+         'ColumnDisplayName': 'SPD Stage', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '590', 'RowNumber': '12', 'ColumnName': 'SPDTotal', 'DBColumnName': 'SPDTotal',
+         'ColumnDisplayName': 'SPD Total', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '0', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '600', 'RowNumber': '12', 'ColumnName': 'EvasionsToAny', 'DBColumnName': 'EvasionsToAny',
+         'ColumnDisplayName': 'EvasionsToAny', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '610', 'RowNumber': '5', 'ColumnName': 'HeldItem', 'DBColumnName': 'HeldItem',
+         'ColumnDisplayName': 'Held Item', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',
+         'OverrideValue': ''},
+        {'AppearenceOrder': '615', 'RowNumber': '5', 'ColumnName': 'PointsLeft', 'DBColumnName': 'PointsLeft',
+         'ColumnDisplayName': 'Points Left', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
+         'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '620', 'RowNumber': '5', 'ColumnName': 'LastActionDescription',
+         'DBColumnName': 'LastActionDescription', 'ColumnDisplayName': 'LastActionDescription', 'InputType': 'text',
+         'ColumnWidth': '4', 'AllowEditing': '0', 'Notes': '', 'OverrideValue': ''},
+        {'AppearenceOrder': '630', 'RowNumber': '5', 'ColumnName': 'AdditionalTrainerNotes',
+         'DBColumnName': 'AdditionalTrainerNotes', 'ColumnDisplayName': 'Additional Notes', 'InputType': 'text',
+         'ColumnWidth': '4', 'AllowEditing': '1', 'Notes': '', 'OverrideValue': ''}
+    ]
+
+    return PokemonHeaders
+
+
+class temp_entities_dict(models.Model):
+    EntityType = models.CharField(max_length=100)
+    PlayerName = models.CharField(max_length=100)
+    RollYourOwnDice = models.BooleanField
+    EntityName = models.CharField(max_length=100)
+    EntityId = models.IntegerField
+    EntityTitle = models.CharField(max_length=100)
+    IsAvailableForBattle = models.BooleanField
+    Level = models.IntegerField
+    EntityMaxHP = models.IntegerField
+    EntityCurrentHP = models.IntegerField
+    HealthDescription = models.CharField(max_length=100)
+    Money = models.IntegerField
+    EntityStr = models.IntegerField
+    EntityDex = models.IntegerField
+    EntityCon = models.IntegerField
+    EntityInt = models.IntegerField
+    EntityWis = models.IntegerField
+    EntityCha = models.IntegerField
+    CatchPhrase = models.CharField(max_length=200)
+
+    def __str__(self):
+        return "%s (player %s) - Title: %s" % (self.EntityName,self.PlayerName,self.EntityTitle)
+
+def ForSQL(Value):
+    if type(Value) is None or Value == "":
+        OutPut = "NULL"
+    elif type(Value) == int:
+        OutPut = Value
+    elif type(Value) in (unicode, str):
+        if Value == "NULL":
+            OutPut = "NULL"
+        else:
+            OutPut = "N'" + str(Value.replace("'", "''").replace("\n", "")) + "'"
+    else:
+        # print type(Value)
+        OutPut = "NULL"
+    return OutPut
+
