@@ -58,7 +58,7 @@ GetBattleId = "EXEC Pokemon.dbo.StartNewBattle @DMName='%s'" % (DMName)
 
 BattleId = MiniModules.runSQLreturnresults(GetBattleId, Password)[0]['MaxBattleId']
 
-CompleteParticipatingTrainers,CompleteParticipatingPokemons,MainGroupName,SecondGroupName = CreateGroupForBattle.CreateGroupForBattle(DMName,BattleId,BattleTypeDesc,BattleTypeId,TestMode,pauseseconds)
+CompleteParticipatingTrainers,CompleteParticipatingPokemons,MainGroupName,SecondGroupName = CreateGroupForBattle.CreateGroupForBattle(DMName,BattleId,BattleTypeDesc,BattleTypeId,1,pauseseconds)
 
 #if TestMode==1:
 #    pass

@@ -149,8 +149,8 @@ def InsertIntoBattleLog (turnlistinfo,movelistinfo,TestMode,pauseseconds=1):
                 elif ACCheck >= 19:
                     Successful = 1
                     IsCritical=1
-                    OutPutForDM = "%s, and landed a critical hit of %s" % (UserOutput,str(ACCheck))
-                    UserOutput += ", and landed a critical hit"
+                    OutPutForDM = "%s, and landed a critical roll of %s" % (UserOutput,str(ACCheck))
+                    UserOutput += ", and landed a critical roll"
                 else:
                     UserOutput = '%s, and managed to hit %s' % (UserOutput, TRGT_PokemonNickName)
                     OutPutForDM = UserOutput+" (roll %s)" %(ACCheck)
@@ -164,15 +164,25 @@ def InsertIntoBattleLog (turnlistinfo,movelistinfo,TestMode,pauseseconds=1):
                         ACBonus=1
                         AccuracyBonusEffect=AccuracyBonusResult
                         AccuracyBonusDuration= PMD.AffectLengthInt(LengthOfBonusAffect)
+                        if 'StagePenelty' in AccuracyBonusEffect or 'StageBonus' in AccuracyBonusEffect:
+                            StageModifySQL = """EXEC dbo.StageModifiers @PokemonId = %s,
+                                                @Effect = N'%s', 
+                                                @Reverse = 0 """ % (TRGT_PokemonId, AccuracyBonusEffect)
+                            MiniModules.runSQLNoResults(StageModifySQL, MiniModules.SpecialString(), 1)
 
             """Effect Result"""
 
             if not (ExtraAffectResult is None or ExtraAffectResult in ("","None")) and Successful==1:
-                UserOutput += 'Attack Triggered the effect of: %s.' %(ExtraAffectResult)
-                OutPutForDM += 'Attack Triggered the effect of: %s.' % (ExtraAffectResult)
+                UserOutput += '. Additional affect: %s.' %(ExtraAffectResult)
+                OutPutForDM += '. Additional affect: %s.' % (ExtraAffectResult)
                 time.sleep(pauseseconds)
                 ExtraEffect=ExtraAffectResult
                 ExtraEffectDuration= PMD.AffectLengthInt(LengthOfExtraAffect)
+                if 'StagePenelty' in ExtraAffectResult or 'StageBonus' in ExtraAffectResult:
+                    StageModifySQL = """EXEC dbo.StageModifiers @PokemonId = %s,
+                                        @Effect = N'%s', 
+                                        @Reverse = 0 """ % (TRGT_PokemonId,ExtraEffect)
+                    MiniModules.runSQLNoResults(StageModifySQL,MiniModules.SpecialString(),1)
             else:
                 print 'No additional effect'
                 ExtraEffect=""

@@ -1,12 +1,12 @@
-Key:DMName NVARCHAR(100),Key:EntityType NVARCHAR(100),Key:PlayerName NVARCHAR(100),Key:TrainerName NVARCHAR(100),Key:TrainerId INT,TrainerGender NVARCHAR(100),TrainerTitle NVARCHAR(200),IsAvailableForBattle BIT,Level INT,Age INT,HeightCm INT,WeightKg INT,TrainerMaxHP INT,TrainerCurrentHP INT,Money INT,TrainerStr INT,TrainerDex INT,TrainerCon INT,TrainerInt INT,TrainerWis INT,TrainerCha INT,Background NVARCHAR(MAX),CatchPhrase NVARCHAR(MAX),RollYourOwnDice INT
-Sagi,Player,Ron,Rone,1,Female,Mystic,1,3,13,165,48,48,48,8580,14,12,9,10,16,6,User Input. No effect,I'm with stupid,0
-Sagi,Player,Merrick,Vlad,2,Male,Merrick to Fill,1,4,14,167,66,56,56,3526,19,17,18,9,22,21,User Input. No effect,Kakoi Razmir Chlen,1
-Sagi,Player,Omer,Audun,3,Male,Capture Speciallist,1,7,14,182,47,56,56,3072,8,20,9,15,12,12,User Input. No effect,You're not Zapdos!,1
-Sagi,Player,Eran,Bobo,4,Male,Warrior,1,5,12,168,67,56,56,2999,18,14,17,16,18,15,User Input. No effect,Bobo,0
-Sagi,Player,Micha,Tiras,5,UnDecided,Annoyance,1,2,10,184,54,56,56,3151,20,17,22,15,10,18,User Input. No effect,It is I - Tiras!,0
-Sagi,NPC,Sagi,Thug1,1,Male,Team Rocket Thug,1,7,22,182,47,56,56,250,8,20,9,15,12,12,User Input. No effect,Team Rocket Rules!,0
-Sagi,NPC,Sagi,Thug2,2,Female,Team Rocket Thug,1,5,23,168,67,56,56,250,18,14,17,16,18,15,User Input. No effect,We hate Kids!,0
-Sagi,NPC,Sagi,Thug3,3,Male,Team Rocket Thug,1,3,22,189,70,56,56,250,21,15,19,22,10,12,User Input. No effect,I miss Jessie,0
-Sagi,NPC,Sagi,Laura,4,Female,Gym Owner,1,4,16,167,66,56,56,250,19,17,18,9,22,21,User Input. No effect,A girl can be a gym owner you know!,0
-Sagi,NPC,Sagi,Trainer Joey,5,Male,Young Trainer,1,2,8,184,54,56,56,250,20,17,22,15,10,18,User Input. No effect,I'm a dumb ass kid,0
-Sagi,NPC,Sagi,WildPokemon,0,NULL,Wild Pokemon(s),1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,Once This Opponent Is selected the DM can choose as many wild pokemons he wishes to use for a list,Wild Pokemon Appeared,0
+Key:DMName NVARCHAR(100),Key:EntityType NVARCHAR(100),Key:PlayerName NVARCHAR(100),Key:TrainerName NVARCHAR(100),Key:TrainerId INT,TrainerGender NVARCHAR(100),TrainerTitle NVARCHAR(200),IsAvailableForBattle BIT,Level INT,Age INT,HeightCm INT,WeightKg INT,TrainerMaxHP INT,TrainerCurrentHP INT,Money INT,StatBoosters INT,TrainerStr INT,TrainerDex INT,TrainerCon INT,TrainerInt INT,TrainerWis INT,TrainerCha INT,Background NVARCHAR(MAX),CatchPhrase NVARCHAR(MAX),RollYourOwnDice INT
+Sagi,Player,Ron,Rone,1,Female,Mystic,1,3,13,165,48,48,48,8580,0,14,12,9,10,16,6,User Input. No effect,I'm with stupid,0
+Sagi,Player,Merrick,Vlad,2,Male,Merrick to Fill,1,4,14,167,66,56,56,3526,0,19,17,18,9,22,21,User Input. No effect,Kakoi Razmir Chlen,1
+Sagi,Player,Omer,Audun,3,Male,Capture Speciallist,1,7,14,182,47,56,56,3072,0,8,20,9,15,12,12,User Input. No effect,You're not Zapdos!,1
+Sagi,Player,Eran,Bobo,4,Male,Warrior,1,5,12,168,67,56,56,2999,0,18,14,17,16,18,15,User Input. No effect,Bobo,0
+Sagi,Player,Micha,Tiras,5,UnDecided,Annoyance,1,2,10,184,54,56,56,3151,0,20,17,22,15,10,18,User Input. No effect,It is I - Tiras!,0
+Sagi,NPC,Sagi,Thug1,1,Male,Team Rocket Thug,1,7,22,182,47,56,56,250,0,8,20,9,15,12,12,User Input. No effect,Team Rocket Rules!,0
+Sagi,NPC,Sagi,Thug2,2,Female,Team Rocket Thug,1,5,23,168,67,56,56,250,0,18,14,17,16,18,15,User Input. No effect,We hate Kids!,0
+Sagi,NPC,Sagi,Thug3,3,Male,Team Rocket Thug,1,3,22,189,70,56,56,250,0,21,15,19,22,10,12,User Input. No effect,I miss Jessie,0
+Sagi,NPC,Sagi,Laura,4,Female,Gym Owner,1,4,16,167,66,56,56,250,0,19,17,18,9,22,21,User Input. No effect,A girl can be a gym owner you know!,0
+Sagi,NPC,Sagi,Trainer Joey,5,Male,Young Trainer,1,2,8,184,54,56,56,250,0,20,17,22,15,10,18,User Input. No effect,I'm a dumb ass kid,0
+Sagi,NPC,Sagi,WildPokemon,0,NULL,Wild Pokemon(s),1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,Once This Opponent Is selected the DM can choose as many wild pokemons he wishes to use for a list,Wild Pokemon Appeared,0

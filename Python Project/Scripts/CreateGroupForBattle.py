@@ -9,7 +9,7 @@ import SelectPokemon
 def CreateGroupForBattle(DMName,BattleId,BattleTypeDesc,BattleType,TestMode=0,pauseseconds = 0):
 
     pauseseconds = pauseseconds
-    Password = '123qwe!!'
+    Password = MiniModules.SpecialString()
     print "Hi %s, we are now starting %s (BattleId #%s).\n" % (
     DMName, BattleTypeDesc, BattleId)
     if TestMode==1:
@@ -196,4 +196,4 @@ def CreateGroupForBattle(DMName,BattleId,BattleTypeDesc,BattleType,TestMode=0,pa
 
     return CompleteParticipatingTrainers,CompleteParticipatingPokemons,MainGroupName,SecondGroupName
 
-#x,y,GroupA,GroupB = CreateGroupForBattle('Sagy',1,'TestFight',3,0)
+#x,y,GroupA,GroupB = CreateGroupForBattle('Sagi',1,'TestFight',3,0)

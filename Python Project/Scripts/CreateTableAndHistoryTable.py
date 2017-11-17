@@ -2,7 +2,7 @@ import MergeToCSVTable
 import MiniModules
 
 
-CSVpath = r'E:\Pokemon Table Top\Git Project\PokemonTableTop\OfficialTables\ElementWeaknessesAndStrengthes.csv'
+CSVpath = r'E:\Pokemon Table Top\Git Project\PokemonTableTop\OfficialTables\TrainerDetails.csv'
 DropTableIfExists = 1
 DropTableIfExists_History = 1
 IsCommit=1
