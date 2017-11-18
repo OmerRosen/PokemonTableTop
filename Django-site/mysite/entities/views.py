@@ -24,7 +24,7 @@ def index(request):
     return render(request, 'entities/index.html', context)
 
 
-def getentities(request, entity_Id, canedit=0):
+def getentities(request, entity_Id, canedit=0, error=""):
     all_entities=[]
     all_pokemon = []
     entity = {}
@@ -43,7 +43,7 @@ def getentities(request, entity_Id, canedit=0):
                     EntityHeaders[head]['ColumnValue'] = entity[key]
                     #print "ColumnName %s == str(key) %s == Value: %s" % (str(EntityHeaders[head]['ColumnName']), str(key),EntityHeaders[head]['ColumnValue'])
     #print EntityHeaders
-    return render(request, 'entities/trainerpage.html', {'entity':entity,'all_pokemon':all_pokemon,'EntityHeaders':EntityHeaders, 'CanEndit':canedit})
+    return render(request, 'entities/trainerpage.html', {'entity':entity,'all_pokemon':all_pokemon,'EntityHeaders':EntityHeaders, 'CanEndit':canedit, 'error':error})
 
 
 
@@ -181,10 +181,16 @@ def CreateNewPokemon(request, DMName, entity_Id, OwnerName):
                     SELECT @ErrCode ErrCode,
                     @ErrDescription ErrDescription,
                     @PokemonId PokemonId;""" %(DMName,OwnerName,entity_Id,PokemonNickName,Species,Gender,Nature,StartingLevel,0,Move1,Move2,Move3,Move4,AdditionalTrainerNotes)
-    print UpdateQuery
+    #print UpdateQuery
     Results = ImportModules.runSQLreturnresults(UpdateQuery,ImportModules.SpecialString())
     print Results
-    return redirect('Entities:pokemonpage', entity_Id,Results[0]['PokemonId'])
+    if Results[0]['ErrCode'] is None:
+        return redirect('Entities:pokemonpage', entity_Id,Results[0]['PokemonId'])
+    else:
+        print Results[0]['ErrCode']
+        print Results[0]['ErrDescription']
+        error = {'ErrCode':Results[0]['ErrCode'],'ErrDescription':Results[0]['ErrDescription']}
+        return redirect('Entities:getentities', entity_Id, error)
 
 
 # Create your views here.

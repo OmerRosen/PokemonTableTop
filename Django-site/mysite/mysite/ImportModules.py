@@ -23,21 +23,27 @@ def runSQLreturnresults ( SQLQuery , Password):
     cursor = SQLConnection.cursor()
     cursor.execute(SQLQuery)
     titles = cursor.description
-    headers = []
-    for col_num in range(len(titles)):
-        headers.append(titles[col_num][0])
-    #print headers
-    content = cursor.fetchall()
-    Dictionary = []
+    if titles is None:
+        print '/nNo results found for query'
+        titles = ""
+        error = [{'Error':'No results for Query'}]
+        return error
+    else:
+        headers = []
+        for col_num in range(len(titles)):
+            headers.append(titles[col_num][0])
+        #print headers
+        content = cursor.fetchall()
+        Dictionary = []
+        #print content
+        for row in content:
+            dic = {}
+            for header in range(len(headers)):
+                dic[headers[header]] = row[header]
+            Dictionary.append(dic)
 
-    for row in content:
-        dic = {}
-        for header in range(len(headers)):
-            dic[headers[header]] = row[header]
-        Dictionary.append(dic)
-
-    SQLConnection.close()
-    return Dictionary
+        SQLConnection.close()
+        return Dictionary
 
 #print runSQLreturnresults ( "EXEC dbo.Pokemon_Has_Fainted @PokemonId = 20, @BattleId = 3,  @TestMode = 1" , '123qwe!!')
 

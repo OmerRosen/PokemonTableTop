@@ -5,6 +5,11 @@
 {% block content %}
 {% if entity %}
 
+{% if error %}
+
+<h1>{{ error.ErrDescription }}</h1>
+
+{% endif %}
 
 <div class="container-fluid">
     <form class="form-horizontal" action="{% url 'Entities:UpdateTrainerDetails' entity.EntityId %}" method="Post" enctype="multipart/form-data">

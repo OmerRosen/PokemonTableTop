@@ -2,11 +2,9 @@ import pyodbc
 import sys
 Folder=r'E:\Pokemon Table Top\Git Project\PokemonTableTop\Scripts'
 
-print sys.path
+
 if Folder not in sys.path:
     sys.path.append(Folder)
-
-print sys.path
 
 
 def runSQLreturnresultsDjango(SQLQuery, Password):
