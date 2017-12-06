@@ -1,4 +1,25 @@
+<style>
 .inputContainer {
     display: inline-block;
     width: 33%;
 }
+</style>
+
+<style>
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: right;
+    width: 18px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+

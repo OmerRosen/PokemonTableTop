@@ -1,18 +1,16 @@
-import pyodbc
 import sys
-Folder=r'E:\Pokemon Table Top\Git Project\PokemonTableTop\Scripts'
-
-print sys.path
-if Folder not in sys.path:
-    sys.path.append(Folder)
-
-print sys.path
-
 import pyodbc
 import re
 import itertools
 import time
 from operator import itemgetter
+
+#Folder=r'E:\Pokemon Table Top\Git Project\PokemonTableTop\Scripts'
+#if Folder not in sys.path:
+#    sys.path.append(Folder)
+
+
+
 
 def runSQLreturnresults ( SQLQuery , Password):
 
@@ -45,7 +43,7 @@ def runSQLreturnresults ( SQLQuery , Password):
         SQLConnection.close()
         return Dictionary
 
-#print runSQLreturnresults ( "EXEC dbo.Pokemon_Has_Fainted @PokemonId = 20, @BattleId = 3,  @TestMode = 1" , '123qwe!!')
+print runSQLreturnresults ( "EXEC dbo.Get_all_available_Moves @PokemonId = 5" , '123qwe!!')
 
 """ A function to run SQL SP/Updates that don't require an output """
 
@@ -186,10 +184,6 @@ def UserInput(TextForUser,Mode,ListToChooseFrom=[],ModifySelectionForTable=1):
             exit()
     return Selection
 
-#TestList=['Omer','Eran','Ron','Merrick']
-#Selection = UserInput('Select your number','ultipleNumbersFromAList',TestList)
-##print TestList[Selection]
-#for x in Selection:
-#    print TestList[x]
+
 
 

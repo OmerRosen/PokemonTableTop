@@ -26,7 +26,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 	url(r'^$', include('pokemon.urls')),
 	url(r'^entities/', include('entities.urls')),
-	url(r'^startbattle/', include('battles.urls')),
+	url(r'^battles/', include('battles.urls')),
 ]
 
 

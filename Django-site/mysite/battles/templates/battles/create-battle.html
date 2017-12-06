@@ -1,0 +1,129 @@
+{% extends "pokemon/headers.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <script src="https://fb.me/react-15.2.0.js"></script>
+    <script src="https://fb.me/react-dom-15.2.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Create Battle</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+  <div id="title">
+    <h1>Please select your battle</h1>
+  </div>
+  <div class="panel panel-default">
+    <h2>Battle config:</h2>
+    <form action="{% url 'battles:CreateBattle' %}" method="Post">
+      {% csrf_token %}
+      <div>
+        <div class="panel panel-primary">
+          <div class="panel-heading ">Battle Type</div>
+            <select type="text" id="battletype" name="battletype" class="form-control" value="battletype"</input>
+            <label class="checkbox-inline">
+            <input disabled id="CanCatchPokemon" type="checkbox" value="CanCatchPokemon">Can Catch Pokemon?
+            </label>
+            <label class="checkbox-inline">
+            <input disabled id="LimitPokemonNumber" type="checkbox" value="LimitPokemonNumber">Limit PokemonNumber
+            </label>
+            <label class="checkbox-inline">
+            <input disabled id="AllowItems" type="checkbox" value="AllowItems">Allow Items
+            </label>
+            <label class="checkbox-inline">
+            <input disabled id="PlayDirty" type="checkbox" value="PlayDirty">Play Dirty?
+            </label>
+            <label class="checkbox-inline">
+            <input disabled id="AllowSurrender" type="checkbox" value="AllowSurrender">Allow Surrender?
+            </label>
+        </div>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <div class="group">
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Name</label>
+        </div>
+
+        <div class="group">
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Email</label>
+        </div>
+
+
+      </div>
+      <input type="submit" class="btn btn-primary btn-lg" value="Remove From belt"/>
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="{% static '\battles\js\main.js' %}"></script>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+
+
+{% endblock %}

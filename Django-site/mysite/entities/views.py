@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from models import temp_entities_dict
+from django import forms
 from django.shortcuts import render, get_object_or_404, get_list_or_404,redirect
 from django.http import HttpResponse, Http404
 from django.template import loader
 from mysite import ImportModules
 from . import models
+from django.http import JsonResponse
 
 import pyodbc
 import re
@@ -51,14 +53,17 @@ def pokemonpage(request,entity_Id,pokemon_Id,canedit=0):
     pokemondetails = ImportModules.runSQLreturnresults("EXEC dbo.GetPokemonDetails @PokemonId = N'%s' " %(pokemon_Id), ImportModules.SpecialString())
     pokemondetails = pokemondetails[0]
     PokemonHeaders = models.PokemonHeaders()
+    AllSpecies = ImportModules.runSQLreturnresults("SELECT TOP 5000 Pokemon AS Species FROM dbo.PokemonBasicAttributes WITH (NOLOCK)", ImportModules.SpecialString())
     for head in range(len(PokemonHeaders)):
         head = head - 1
         PokemonHeaders[head]['ColumnValue'] = ''
         for key in pokemondetails.keys():
             if str(PokemonHeaders[head]['DBColumnName']) == str(key):
                 PokemonHeaders[head]['ColumnValue'] = pokemondetails[key]
-    #print pokemondetails
-    return render(request, 'entities/pokemonpage.html', {'pokemondetails':pokemondetails,'PokemonHeaders':PokemonHeaders,'entity_Id':entity_Id})
+    allavailablemoves = ImportModules.runSQLreturnresults(
+        "EXEC dbo.Get_all_available_Moves @PokemonId = %s" % (ImportModules.ModifyValueForSQL(pokemon_Id)), ImportModules.SpecialString())
+    #print allavailablemoves
+    return render(request, 'entities/pokemonpage.html', {'pokemondetails':pokemondetails,'PokemonHeaders':PokemonHeaders,'entity_Id':entity_Id,'allavailablemoves':allavailablemoves, 'AllSpecies':AllSpecies})
 
 
 def TopSix(request, entity_Id):
@@ -136,10 +141,14 @@ def UpdatePokemonDetails(request, entity_Id, pokemon_Id):
 
     return redirect('Entities:pokemonpage', entity_Id,pokemon_Id)
 
+def GetAllNatures(request):
+    data = ImportModules.runSQLreturnresults(
+        "SELECT TOP 1000 * FROM dbo.Pokemon_NatureAndModifiers WITH (NOLOCK)", (ImportModules.SpecialString()))
+    return JsonResponse(data, safe=False);
 
 def CreateNewPokemon(request, DMName, entity_Id, OwnerName):
     try:
-        print request
+        #print request
         PokemonNickName = models.ForSQL(request.POST['PokemonNickName'])
         Species = models.ForSQL(request.POST['Species'])
         Gender = models.ForSQL(request.POST['Gender'])
@@ -183,14 +192,19 @@ def CreateNewPokemon(request, DMName, entity_Id, OwnerName):
                     @PokemonId PokemonId;""" %(DMName,OwnerName,entity_Id,PokemonNickName,Species,Gender,Nature,StartingLevel,0,Move1,Move2,Move3,Move4,AdditionalTrainerNotes)
     #print UpdateQuery
     Results = ImportModules.runSQLreturnresults(UpdateQuery,ImportModules.SpecialString())
-    print Results
-    if Results[0]['ErrCode'] is None:
+    #print Results
+    if Results[0]['ErrCode'] is None or str(Results[0]['ErrCode'])=="0":
         return redirect('Entities:pokemonpage', entity_Id,Results[0]['PokemonId'])
     else:
         print Results[0]['ErrCode']
         print Results[0]['ErrDescription']
         error = {'ErrCode':Results[0]['ErrCode'],'ErrDescription':Results[0]['ErrDescription']}
-        return redirect('Entities:getentities', entity_Id, error)
+        all_pokemon = ImportModules.runSQLreturnresults(
+            "EXEC dbo.GetAllPokemonsPerTrainer @Username = N'%s', @DMName = N'%s'" % (entity_Id, 'Sagi'),
+            '%s' % (ImportModules.SpecialString()))
+        #return render(request, 'entities/trainerpage.html', {'entity': entity_Id, 'all_pokemon': all_pokemon, 'error':error})
+        #raise forms.ValidationError(error['ErrDescription'])
+        return HttpResponse(render(request, 'entities/ErrPage.html', {'error':error,'entity_Id':entity_Id}))
 
 
 # Create your views here.

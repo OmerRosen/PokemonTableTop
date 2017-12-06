@@ -25,7 +25,7 @@
             <div class="col-md-{{ header.ColumnWidth }}">
                 <div class="panel panel-info">
                     <div class="panel-heading">{{ header.ColumnDisplayName }}</div>
-                    <input type="{{header.InputType}}" id="{{header.ColumnName}}" name="{{header.ColumnName}}" class="form-control" value="{{header.ColumnValue}}" {% if not header.AllowEditing == '1' %} readonly {% endif %}></input>
+                    <input type="{{header.InputType}}" id="{{header.ColumnName}}" name="{{header.ColumnName}}" class="form-control" value="{{header.ColumnValue}}" disabled="disabled" {% if not header.AllowEditing == '1' %} readonly {% endif %}></input>
                 </div>
             </div>
         {% endif %}
@@ -45,8 +45,38 @@
     <div class="panel panel-default"></div>
 
 
-    <div class="container">
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#CreatePokemon">Create a new Pokemon</button>
+
+
+
+    <div class="container-fluid">
+        <div class="panel panel-default">
+            <h2>Pokemon on Belt:</h2>
+            <form action="{% url 'Entities:TopSixRemove' entity.EntityId %}" method="Post">
+                {% csrf_token %}
+                {% for Pokemon in all_pokemon %}
+                {% if Pokemon.IsOnBelt == True %}
+                <div class="inputContainer">
+                    <input type="radio" id="Pokemon{{ forloop.counter }}" name="Pokemon" value="{{ Pokemon.PokemonId }}"/>
+                        <label for="Pokemon{{ forloop.counter }}">
+                            <img src="http://pokemonforever.com/images/title_icons/pokeball.png"/>
+                            <a href="{% url 'Entities:pokemonpage' entity.EntityId Pokemon.PokemonId %}">
+                                <img src="http://www.pokestadium.com/sprites/xy/{{ Pokemon.Species|lower }}.gif" alt="({{ Pokemon.Species }}"/>
+                            </a>
+                            {{ Pokemon.PokemonNickName }} ({{ Pokemon.Species }} - Level {{ Pokemon.CurrentLevel }})
+                         </label>
+
+                </div>
+                {% endif %}
+                {% endfor %}
+                <input type="submit" class="btn btn-primary btn-lg" value="Remove From belt"/>
+            </form>
+        </div>
+
+        <div class="container">
+            <div>
+                <img src="http://4.bp.blogspot.com/-OBRogIaFK5Q/U7rS_Tc_Z0I/AAAAAAAAC2s/LxuERLcIv4E/s1600/pokeball+growth.gif" >
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#CreatePokemon"  style="padding: 3px 64px; font-size: 60px">Create a new Pokemon</button><br>
+            </div>
         </div>
         <div class="modal fade" id="CreatePokemon">
             <div class="modal-dialog">
@@ -78,13 +108,13 @@
                             </div>
                             <div class="panel-heading">Move 1</div>
                             <input type="text" id="Move1" name="Move1" class="form-control" value="da"></input>
-                            <div class="panel-heading">Move 2</div>
+                            <div class="panel-heading">Move 2 (optional)</div>
                             <input type="text" id="Move2" name="Move2" class="form-control" value="asd"></input>
-                            <div class="panel-heading">Move 3</div>
+                            <div class="panel-heading">Move 3 (optional)</div>
                             <input type="text" id="Move3" name="Move3" class="form-control" value="asfa"></input>
-                            <div class="panel-heading">Move 4</div>
+                            <div class="panel-heading">Move 4 (optional)</div>
                             <input type="text" id="Move4" name="Move4" class="form-control" value="agas"></input>
-                            <div class="panel-heading">AdditionalTrainerNotes</div>
+                            <div class="panel-heading">AdditionalTrainerNotes (optional)</div>
                             <input type="text" id="AdditionalTrainerNotes" name="AdditionalTrainerNotes" class="form-control" value="Additional Trainer Notes"></input>
                             <div class="modal-footer">
                                 <input type="submit" class="btn btn-primary btn-block" value="Submit"/>
@@ -99,30 +129,6 @@
             </div>
         </div>
 
-
-    <div class="container-fluid">
-        <div class="panel panel-default">
-            <h2>Pokemon on Belt:</h2>
-            <form action="{% url 'Entities:TopSixRemove' entity.EntityId %}" method="Post">
-                {% csrf_token %}
-                {% for Pokemon in all_pokemon %}
-                {% if Pokemon.IsOnBelt == True %}
-                <div class="inputContainer">
-                    <input type="radio" id="Pokemon{{ forloop.counter }}" name="Pokemon" value="{{ Pokemon.PokemonId }}"/>
-                        <label for="Pokemon{{ forloop.counter }}">
-                            <img src="http://pokemonforever.com/images/title_icons/pokeball.png"/>
-                            <a href="{% url 'Entities:pokemonpage' entity.EntityId Pokemon.PokemonId %}">
-                                <img src="http://www.pokestadium.com/sprites/xy/{{ Pokemon.Species|lower }}.gif" alt="({{ Pokemon.Species }}"/>
-                            </a>
-                            {{ Pokemon.PokemonNickName }} ({{ Pokemon.Species }} - Level {{ Pokemon.CurrentLevel }})
-                         </label>
-
-                </div>
-                {% endif %}
-                {% endfor %}
-                <input type="submit" class="btn btn-primary btn-lg" value="Remove From belt"/>
-            </form>
-        </div>
         <div class="panel panel-default">
             <h2>Pokemon at Professors Oak's <strike>slaughterhouse</strike> happy-ranch :</h2>
             <form action="{% url 'Entities:TopSix' entity.EntityId %}" method="Post">
@@ -133,7 +139,9 @@
                     <li class="list-group-item">
                     <div>
                     <input type="radio" id="Pokemon{{ forloop.counter }}" name="Pokemon" value="{{ Pokemon.PokemonId }}"/>
-                        <img src="http://www.pokestadium.com/sprites/xy/{{ Pokemon.Species|lower }}.gif" />
+                        <a href="{% url 'Entities:pokemonpage' entity.EntityId Pokemon.PokemonId %}">
+                            <img src="http://www.pokestadium.com/sprites/xy/{{ Pokemon.Species|lower }}.gif" />
+                        </a>
 
                                 <div><h4><b>{{ Pokemon.PokemonNickName }}</b></h4></div>
                                 <div><h5><b>{{ Pokemon.Species }}</b> - Level {{ Pokemon.CurrentLevel }}</h5></input>
