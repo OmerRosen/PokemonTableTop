@@ -44,7 +44,7 @@ $.ajaxSetup(
         }
     });
 
-//console.log('now function')
+//Get the list of all battle types and associate them with their properties)
 (function()
     {
     $.ajax
@@ -79,19 +79,27 @@ $.ajaxSetup(
                 var AllowItems = document.getElementById('AllowItems')
                 var PlayDirty = document.getElementById('PlayDirty')
                 var AllowSurrender = document.getElementById('AllowSurrender')
-                console.log('CanCatchPokemon: '+Selection.CanCatchPokemon)
-                console.log('LimitPokemonNumber: '+Selection.LimitPokemonNumber)
-                console.log('AllowItems: '+Selection.AllowItems)
-                console.log('PlayDirty: '+Selection.PlayDirty)
-                console.log('AllowSurrender: '+Selection.AllowSurrender)
-                console.log(CanCatchPokemon)
-                console.log(CanCatchPokemon.checked)
+                //console.log('CanCatchPokemon: '+Selection.CanCatchPokemon)
+                //console.log('LimitPokemonNumber: '+Selection.LimitPokemonNumber)
+                //console.log('AllowItems: '+Selection.AllowItems)
+                //console.log('PlayDirty: '+Selection.PlayDirty)
+                //console.log('AllowSurrender: '+Selection.AllowSurrender)
+                //console.log(CanCatchPokemon)
+                //console.log(CanCatchPokemon.checked)
                 if (Selection.CanCatchPokemon == true)
                     {CanCatchPokemon.checked = true}
                 else {CanCatchPokemon.checked = false}
                 if (Selection.LimitPokemonNumber == true)
-                    {LimitPokemonNumber.checked = true}
-                else {LimitPokemonNumber.checked = false}
+                    {LimitPokemonNumber.checked = true
+                    document.getElementById('pokemonLimit').style.display= '';
+                    //console.log('pokemonLimit: '+document.getElementById('pokemonLimit').style)
+                    }
+                else{
+                    LimitPokemonNumber.checked = false;
+                    document.getElementById('pokemonLimit').style.display= 'none';
+                    document.getElementById('pokemonLimitInput').style.value= '6'; // If no limit - Limit is 6 (Full belt)
+                    //console.log('pokemonLimit: '+document.getElementById('pokemonLimit').style)
+                    }
                 if (Selection.AllowItems == true)
                     {AllowItems.checked = true}
                 else {AllowItems.checked = false}
@@ -101,7 +109,7 @@ $.ajaxSetup(
                 if (Selection.AllowSurrender == true)
                     {AllowSurrender.checked = true}
                 else {AllowSurrender.checked = false}
-                console.log(Selection.CanCatchPokemon)
+                //console.log(Selection.CanCatchPokemon)
 
                 //console.log('LimitPokemonNumber: '+Selection.LimitPokemonNumber)
                 //console.log('AllowItems: '+Selection.AllowItems)
@@ -125,6 +133,47 @@ $.ajaxSetup(
         //    },
 
         });
+    console.log('Get availableEntities')
+    $.ajax
+        ({
+        type: 'POST',
+        url:'/battles/GetAllEntities/',
+        data: { },
+        dataType: 'json',
+        success: function(data)
+            {
+            availableEntities = data;
+            console.log(availableEntities)
+            var sel_player = document.getElementById('groupA_select_Players');
+            var sel_NPC = document.getElementById('groupA_select_NPCs');
+            for(var i = 0; i < availableEntities.length; i++)
+                {
+                if (availableEntities[i].EntityType == 'Player')
+                    {
+                    var opt = document.createElement('option')
+                    opt.innerHTML = availableEntities[i].EntityName+' - '+availableEntities[i].PlayerName;
+                    opt.value = availableEntities[i].EntityId;
+                    opt.setAttribute('data-icon','glyphicon glyphicon-user')
+                    opt.setAttribute('data-subtext','Level '+availableEntities[i].Level+' - '+availableEntities[i].EntityTitle)
+                    sel_player.appendChild(opt);
+                    }
+                else{
+                    var opt = document.createElement('option')
+                    opt.innerHTML = availableEntities[i].EntityName+' (Player '+availableEntities[i].PlayerName+')';
+                    opt.value = availableEntities[i].EntityId;
+                    opt.setAttribute('data-icon','glyphicon glyphicon-knight')
+                    opt.setAttribute('data-subtext','Level '+availableEntities[i].Level+' - '+availableEntities[i].EntityTitle)
+                    sel_NPC.appendChild(opt);
+                    }
+                }
+            //console.log('You have reached here')
+            $('#groupA_select').selectpicker('refresh');
+            },
+        error: function(XMLHttpRequest, textStatus, errorThrown)
+            {
+            alert("some error");
+            }
+        })
 
     })();
 

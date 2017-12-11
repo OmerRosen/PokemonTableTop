@@ -15,4 +15,5 @@ urlpatterns = [
 
 
     url(r'^GetAllBattleTypes/$', views.GetAllBattleTypes, name='GetAllBattleTypes'),
+    url(r'^GetAllEntities/$', views.GetAllEntities, name='GetAllEntities'),
 ]

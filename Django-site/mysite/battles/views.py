@@ -31,3 +31,10 @@ def GetAllBattleTypes(request):
         "SELECT TOP 1000 * FROM dbo.BattleTypes WITH (NOLOCK)", (ImportModules.SpecialString()))
     print 'GetAllBattleTypes(request)'
     return JsonResponse(data, safe=False);
+
+
+def GetAllEntities(request):
+    data = ImportModules.runSQLreturnresults(
+        "EXEC dbo.GetAllEntitiesForBattle @DMName = N'%s'" %('Sagi'), (ImportModules.SpecialString()))
+    print 'GetAllBattleTypes(request)'
+    return JsonResponse(data, safe=False);

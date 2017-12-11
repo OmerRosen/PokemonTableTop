@@ -1,23 +1,27 @@
-{% extends "pokemon/headers.html" %}
-{% load staticfiles %}
-{% block content %}
+{% extends "pokemon/headers.html" %} {% load staticfiles %} {% block content %}
 
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" type="text/css" href="{% static 'entities/css/style.css' %}" />
+    <!--
     <script src="https://fb.me/react-15.2.0.js"></script>
     <script src="https://fb.me/react-dom-15.2.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-    <!--
+
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-
+    <!--Bootstrap select &#45;&#45; for addtional pleasure-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>-->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -28,102 +32,151 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Create Battle</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <noscript>
-      You need to enable JavaScript to run this app.
+        You need to enable JavaScript to run this app.
     </noscript>
-  <div id="title">
-    <h1>Please select your battle</h1>
-  </div>
-  <div class="panel panel-default">
-    <h2>Battle config:</h2>
-    <form action="{% url 'battles:CreateBattle' %}" method="Post">
-      {% csrf_token %}
-      <div>
-        <div class="panel panel-primary">
-          <div class="panel-heading ">Battle Type</div>
-            <select type="text" id="battletype" name="battletype" class="form-control" value="battletype"</input>
-            <label class="checkbox-inline">
-            <input disabled id="CanCatchPokemon" type="checkbox" value="CanCatchPokemon">Can Catch Pokemon?
-            </label>
-            <label class="checkbox-inline">
-            <input disabled id="LimitPokemonNumber" type="checkbox" value="LimitPokemonNumber">Limit PokemonNumber
-            </label>
-            <label class="checkbox-inline">
-            <input disabled id="AllowItems" type="checkbox" value="AllowItems">Allow Items
-            </label>
-            <label class="checkbox-inline">
-            <input disabled id="PlayDirty" type="checkbox" value="PlayDirty">Play Dirty?
-            </label>
-            <label class="checkbox-inline">
-            <input disabled id="AllowSurrender" type="checkbox" value="AllowSurrender">Allow Surrender?
-            </label>
-        </div>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
-        <div class="group">
-          <input type="text" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Name</label>
-        </div>
+    <div id="title">
+        <h1>Please select your battle</h1>
+    </div>
+    <div class="panel panel-default">
+        <h2>Battle config:</h2>
+        <form action="{% url 'battles:CreateBattle' %}" method="Post">
+            {% csrf_token %}
+            <div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading ">Battle Type</div>
+                    <div>
+                        <select type="text" id="battletype" name="battletype" class="form-control" value="battletype" </input>
+                    </div>
 
-        <div class="group">
-          <input type="text" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Email</label>
-        </div>
+                    <div>
+                        <label>
+                            <input disabled checked id="CanCatchPokemon" class="option-input checkbox" type="checkbox" value="CanCatchPokemon">Can Catch Pokemon?
+                        </label>
+                        <label>
+                            <input disabled id="LimitPokemonNumber" class="option-input checkbox" type="checkbox" value="LimitPokemonNumber">Limit PokemonNumber
+                        </label>
+                        <label>
+                            <input disabled checked id="AllowItems" class="option-input checkbox" type="checkbox" value="AllowItems">Allow Items
+                        </label>
+                        <label>
+                            <input disabled checked id="PlayDirty" class="option-input checkbox" type="checkbox" value="PlayDirty">Play Dirty?
+                        </label>
+                        <label>
+                            <input disabled id="AllowSurrender" class="option-input checkbox" type="checkbox" value="AllowSurrender">Allow Surrender?
+                        </label>
+                    </div>
+                    <br>
+
+                    <div class="selectionWrapper">
+
+                        <div id="battleTitle">
+                            <label>Battle Title(optional)</label>
+                            <input type="text" class="battleTitleInput form-control" name="battleTitle">
+                        </div>
+                        <div id="pokemonLimit" class="hiddenSelection">
+                            <label>Pokemon Limit</label>
+                            <input id="pokemonLimitInput" type="number" max="6" class="pokemonLimitInput form-control" name="pokemonLimit">
+                        </div>
+                        <div class="entities">
+
+                            <div id="groupA" class="entity_groups">
+                                <h1>Group A</h1>
+                                <!--<h2>Select group name(optional)</h2>-->
+                                <input type="text" class="groupName form-control" name="GroupA_name" placeholder="Select group name(optional)">
+                                <h3>Select your group:</h3>
+                                <select id="groupA_select" name="groupA_select" multiple class="selectpicker show-tick form-control" data-live-search="true" title="Select one or more" tabindex="-1" required="" data-size="10">
+                                    <optgroup id="groupA_select_Players" label="Players">
+                                    </optgroup>
+                                    <optgroup id="groupA_select_NPCs" label="NPCs">
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div id="groupB" class="entity_groups">
+                                <h1>Group B</h1>
+                                <!--<h2>Select group name(optional)</h2>-->
+                                <input type="text" class="groupName form-control" name="GroupB_name" placeholder="Select group name(optional)">
+                                <h3>Select your group:</h3>
+                                <select id="groupB_select"
+                                        name="groupB_select"
+                                        multiple
+                                        class="selectpicker form-control entity_groups_selectionmenu"
+                                        tabindex="-1"
+                                        required="">
+                                    <option value="" disabled="" selected="" hidden="">Option1</option>
+                                    <option value="option2" data-content="<ul><li>item1</li><li>item2</li></ul>">
+                                        Relish
+                                    </option>
+                                    <!--<img src='http://cdn2-www.dogtime.com/assets/uploads/2011/01/file_23244_what-is-the-appenzeller-sennenhunde-dog-300x189.jpg'/>-->
+                                    <option data-content="<span class='test123'>Relish</span>">Relish</option>
+                                    <option value="option3" data-icon="glyphicon glyphicon-knight">Option3</option>
+                                    <option value="option4">Option4</option>
+                                    <option value="option5">Option5</option>
+                                    <option value="option6">Option6</option>
+                                    <option value="option7">Option7</option>
+                                    <option value="option8">Option8</option>
+                                    <option value="option9">Option9</option>
+                                </select>
+                                <!--Entity Card - Demo for now-->
+                                <div class="selected-entity-card">
+                                    <div class="selected-entity-card-details">
+                                        <div class="selected-entity-card-img-container">
+                                            <img class="selected-entity-card-img" src="https://orig00.deviantart.net/d7c4/f/2014/294/9/d/trainerwip2_by_foxeaf-d83mhhs.png" />
+                                        </div>
+                                        <div class="selected-entity-card-text">
+                                            <div>Audun</div>
+                                            <div>Player: Omer</div>
+                                            <div>Level 7 Capture Speciallist</div>
+                                        </div>
+                                    </div>
+                                    <div class="selected-entity-card-pokemon-selection">
+                                        <select id="Omer_selectPokemon" name="Omer_selectPokemon" class="selectpicker show-tick form-control" title="Select your Pokemon" tabindex="-1" required="" data-size="10">
+                                            <option value="7" data-subtext="Level 21 Cranidos">Karnaf</option>
+                                            <option value="8" data-subtext="Level 21 Quilava">Queef Lava</option>
+                                            <option value="9" data-subtext="Gar Bagan">Parpar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
 
 
-      </div>
-      <input type="submit" class="btn btn-primary btn-lg" value="Remove From belt"/>
-    </form>
-  </div>
+                    </div>
+
+                </div>
 
 
 
+                    <div class="startBattle">
 
+                        <div class="box"></div>
+                        <span>Start your battle!</span>
+                        <div style="clear:both;"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <input type="submit" class="btn btn-primary btn-lg" value="Remove From belt" />
+                </div>
+            </div>
 
+        </form>
 
+    </div>
+    <div class="container">
+    </div>
+    <script src="{% static '\battles\js\main.js' %}"></script>
+</body>
 
-
-
-
-
-
-<div class="container">
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="{% static '\battles\js\main.js' %}"></script>
-
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
 </html>
 
+<!--bind the buttons div to the submit button fucker mother mother mother moana :)-->
+<script>
+    $('.startBattle').on('click', function() {
+        $('form')[0].submit();
 
+    });
+</script>
 {% endblock %}
