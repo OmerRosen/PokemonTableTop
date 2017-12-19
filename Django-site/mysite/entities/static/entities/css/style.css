@@ -245,7 +245,7 @@ rgba(0,
 .startBattle:hover {
     cursor: pointer;
 }
-input[type=submit] {
+input[type=submit] .InvisibleSubmit {
     display: none;
 }
 .startBattle span {

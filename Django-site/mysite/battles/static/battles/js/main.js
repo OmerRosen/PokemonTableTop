@@ -144,8 +144,10 @@ $.ajaxSetup(
             {
             availableEntities = data;
             console.log(availableEntities)
-            var sel_player = document.getElementById('groupA_select_Players');
-            var sel_NPC = document.getElementById('groupA_select_NPCs');
+            var sel_playerA = document.getElementById('groupA_select_Players');
+            var sel_NPC_A = document.getElementById('groupA_select_NPCs');
+            var sel_playerB = document.getElementById('groupB_select_Players');
+            var sel_NPC_B = document.getElementById('groupB_select_NPCs');
             for(var i = 0; i < availableEntities.length; i++)
                 {
                 if (availableEntities[i].EntityType == 'Player')
@@ -155,7 +157,9 @@ $.ajaxSetup(
                     opt.value = availableEntities[i].EntityId;
                     opt.setAttribute('data-icon','glyphicon glyphicon-user')
                     opt.setAttribute('data-subtext','Level '+availableEntities[i].Level+' - '+availableEntities[i].EntityTitle)
-                    sel_player.appendChild(opt);
+                    sel_playerB.appendChild(opt);
+                    sel_playerA.appendChild(opt);
+
                     }
                 else{
                     var opt = document.createElement('option')
@@ -163,11 +167,15 @@ $.ajaxSetup(
                     opt.value = availableEntities[i].EntityId;
                     opt.setAttribute('data-icon','glyphicon glyphicon-knight')
                     opt.setAttribute('data-subtext','Level '+availableEntities[i].Level+' - '+availableEntities[i].EntityTitle)
-                    sel_NPC.appendChild(opt);
+                    sel_NPC_A.appendChild(opt);
+                    sel_NPC_B.appendChild(opt);
+
                     }
                 }
             //console.log('You have reached here')
+            $('#groupB_select').selectpicker('refresh');
             $('#groupA_select').selectpicker('refresh');
+
             },
         error: function(XMLHttpRequest, textStatus, errorThrown)
             {

@@ -43,7 +43,7 @@
     </div>
     <div class="panel panel-default">
         <h2>Battle config:</h2>
-        <form action="{% url 'battles:CreateBattle' %}" method="Post">
+        <form action="{% url 'battles:CreateBattle_New' 'Sagi' %}" method="Post">
             {% csrf_token %}
             <div>
                 <div class="panel panel-primary">
@@ -75,9 +75,9 @@
 
                         <div id="battleTitle">
                             <label>Battle Title(optional)</label>
-                            <input type="text" class="battleTitleInput form-control" name="battleTitle">
+                            <input type="text" value="" class="battleTitleInput form-control" name="battleTitle">
                         </div>
-                        <div id="pokemonLimit" class="hiddenSelection">
+                        <div id="pokemonLimit" class="hiddenSelection" style="display:none;">
                             <label>Pokemon Limit</label>
                             <input id="pokemonLimitInput" type="number" max="6" class="pokemonLimitInput form-control" name="pokemonLimit">
                         </div>
@@ -86,7 +86,7 @@
                             <div id="groupA" class="entity_groups">
                                 <h1>Group A</h1>
                                 <!--<h2>Select group name(optional)</h2>-->
-                                <input type="text" class="groupName form-control" name="GroupA_name" placeholder="Select group name(optional)">
+                                <input type="text" class="groupName form-control" name="GroupA_name" value="Group A" placeholder="Select group name(optional)">
                                 <h3>Select your group:</h3>
                                 <select id="groupA_select" name="groupA_select" multiple class="selectpicker show-tick form-control" data-live-search="true" title="Select one or more" tabindex="-1" required="" data-size="10">
                                     <optgroup id="groupA_select_Players" label="Players">
@@ -98,29 +98,15 @@
                             <div id="groupB" class="entity_groups">
                                 <h1>Group B</h1>
                                 <!--<h2>Select group name(optional)</h2>-->
-                                <input type="text" class="groupName form-control" name="GroupB_name" placeholder="Select group name(optional)">
+                                <input type="text" class="groupName form-control" name="GroupB_name" value="Group B" placeholder="Select group name(optional)">
                                 <h3>Select your group:</h3>
-                                <select id="groupB_select"
-                                        name="groupB_select"
-                                        multiple
-                                        class="selectpicker form-control entity_groups_selectionmenu"
-                                        tabindex="-1"
-                                        required="">
-                                    <option value="" disabled="" selected="" hidden="">Option1</option>
-                                    <option value="option2" data-content="<ul><li>item1</li><li>item2</li></ul>">
-                                        Relish
-                                    </option>
-                                    <!--<img src='http://cdn2-www.dogtime.com/assets/uploads/2011/01/file_23244_what-is-the-appenzeller-sennenhunde-dog-300x189.jpg'/>-->
-                                    <option data-content="<span class='test123'>Relish</span>">Relish</option>
-                                    <option value="option3" data-icon="glyphicon glyphicon-knight">Option3</option>
-                                    <option value="option4">Option4</option>
-                                    <option value="option5">Option5</option>
-                                    <option value="option6">Option6</option>
-                                    <option value="option7">Option7</option>
-                                    <option value="option8">Option8</option>
-                                    <option value="option9">Option9</option>
+                                <select id="groupB_select" name="groupB_select" multiple class="selectpicker show-tick form-control" data-live-search="true" title="Select one or more" tabindex="-1" required="" data-size="10">
+                                    <optgroup id="groupB_select_Players" label="Players">
+                                    </optgroup>
+                                    <optgroup id="groupB_select_NPCs" label="NPCs">
+                                    </optgroup>
                                 </select>
-                                <!--Entity Card - Demo for now-->
+                                <!--Entity Card - Demo for now
                                 <div class="selected-entity-card">
                                     <div class="selected-entity-card-details">
                                         <div class="selected-entity-card-img-container">
@@ -139,8 +125,11 @@
                                             <option value="9" data-subtext="Gar Bagan">Parpar</option>
                                         </select>
                                     </div>
-                                </div>
+                                </div>-->
                             </div>
+                                        {% if errorcode %}
+            <h4>Error number {{ errorcode }} - "{{ errormsg }}"</h4>
+            {% endif %}
                             <div style="clear:both;"></div>
                         </div>
 
@@ -151,20 +140,27 @@
 
 
 
-                    <div class="startBattle">
+                <div class="startBattle">
 
-                        <div class="box"></div>
-                        <span>Start your battle!</span>
-                        <div style="clear:both;"></div>
-                    </div>
+                    <div class="box"></div>
+                    <span>Start your battle!</span>
                     <div style="clear:both;"></div>
-                    <input type="submit" class="btn btn-primary btn-lg" value="Remove From belt" />
                 </div>
-            </div>
+                <div style="clear:both;"></div>
 
+
+            </div>
+            <input type="submit" class="InvisibleSubmit" value="Create New Battle"/>
         </form>
 
+
     </div>
+    {% if Data %}
+    <h4>New Battle was created: {{ BattleId }}</h4>
+    <h5>{{ Data }}</h5>
+    {% endif %}
+
+
     <div class="container">
     </div>
     <script src="{% static '\battles\js\main.js' %}"></script>

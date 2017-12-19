@@ -48,7 +48,7 @@ div.desc {
     <input type="button" id="show-more-less" class="btn btn-secondary btn-lg btn-block" value="Show Less"/>
     <form class="form-horizontal" action="{% url 'Entities:UpdatePokemonDetails' entity_Id pokemondetails.PokemonId %}" method="Post" enctype="multipart/form-data">
     <!--<form class="form-horizontal" action="http://127.0.0.1:8000/entities/{{entity_Id}}/pokemonpage/{{pokemondetails.PokemonId}}" method="Post" enctype="multipart/form-data">-->
-        <!--{% csrf_token %}-->
+        {% csrf_token %}
         {% for header in PokemonHeaders %}
         {% if header.RowNumber == '-1' %}
             <input type="hidden" name="{{header.ColumnName}}" id="header{{ forloop.counter }}" value="{% if header.ColumnName == 'DMName' %}Sagi{% else %}{{header.ColumnValue}}{% endif %}">
