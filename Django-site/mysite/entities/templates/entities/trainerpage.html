@@ -1,8 +1,26 @@
 {% extends "pokemon/headers.html" %}
 {% load staticfiles %}
 {% block tabname %}Trainer Page - {{entity.EntityName}}{% endblock %}
-
 {% block content %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" type="text/css" href="{% static 'entities/css/style.css' %}"/>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Create Battle</title>
+</head>
+
 {% if entity %}
 
 {% if error %}
@@ -11,158 +29,339 @@
 
 {% endif %}
 
-<div class="container-fluid">
-    <form class="form-horizontal" action="{% url 'Entities:UpdateTrainerDetails' entity.EntityId %}" method="Post" enctype="multipart/form-data">
+<h1>{{ entity.EntityName }}</h1>
+<h3>"{{ entity.CatchPhrase }}"</h3>
+<div class="trainer-form-div">
+    <form action="{% url 'Entities:UpdateTrainerDetails' entity.EntityId %}" method="Post"
+          enctype="multipart/form-data">
         {% csrf_token %}
-        <h1>{{ entity.EntityName }}</h1>
-        <h4>"{{ entity.CatchPhrase }}"</h4>
-        <a id="close-open-edit" class="btn btn-secondary btn-lg btn-block">Edit</a>
-        <script src="{% static '\entities\js\EditTest.js' %}"></script>
-        {% for header in EntityHeaders %}
-        {% if header.RowNumber == '-1' %}
-            <input type="hidden" name="{{header.ColumnName}}" id="header{{ forloop.counter }}" value="{% if header.ColumnName == 'DMName' %}Sagi{% else %}{{header.ColumnValue}}{% endif %}">
-        {% else %}
-            <div class="col-md-{{ header.ColumnWidth }}">
-                <div class="panel panel-info">
-                    <div class="panel-heading">{{ header.ColumnDisplayName }}</div>
-                    <input type="{{header.InputType}}" id="{{header.ColumnName}}" name="{{header.ColumnName}}" class="form-control" value="{{header.ColumnValue}}" disabled="disabled" {% if not header.AllowEditing == '1' %} readonly {% endif %}></input>
+        <div class="light-border">
+
+            <!-- Row 1-->
+
+            <div class="form-row">
+                <h3>Trainer details</h3>
+                <div class="form-group col-md-1">
+                    <label for="TrainerId">TrainerId</label>
+                    <input type="number" class="form-control" id="TrainerId" value={{ entity.EntityId }} readonly>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="EntityType">Entity Type</label>
+                    <input type="text" class="form-control" id="EntityType" value={{ entity.EntityType }} readonly>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="PlayerName">Player Name</label>
+                    <input type="text" class="form-control" id="PlayerName" value={{ entity.PlayerName }} readonly>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="Level">Level</label>
+                    <input type="number" class="form-control" id="Level" value={{ entity.Level }}>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="TrainerTitle">Title</label>
+                    <input type="text" class="form-control" id="TrainerTitle" value={{ entity.EntityTitle }}>
+                </div>
+
+                <!-- Health Bar -->
+
+                <div class="form-group col-md-2">
+                    <label for="TrainerCurrentHP">Current Health</label>
+                    <input type="text" class="form-control" id="TrainerCurrentHP" value={{ entity.EntityCurrentHP }}>
+                </div>
+                <div class="form-group col-md-8">
+                    <div class="w3-light-grey w3-round-xlarge">
+                        <div id="health-bar-trainer" class="w3-container w3-green w3-padding w3-center w3-round-xlarge"
+                             style="width:100%">{{ entity.HealthDescription }}
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="TrainerMaxHP">Max Health</label>
+                    <input type="text" class="form-control" id="TrainerMaxHP" value={{ entity.EntityMaxHP }} readonly>
                 </div>
             </div>
-        {% endif %}
-        {% endfor %}
 
-        <input type="submit" class="btn btn-secondary btn-lg btn-block" value="Update Details"/>
+            <!-- Row 4-->
+
+            <div class="form-row">
+                <h3>Stats and modifiers</h3>
+                <div class="form-group col-md-2">
+                    <label for="StatBoosters">Stat Boosters</label>
+                    <input type="number" class="form-control" id="StatBoosters" value="{{ entity.StatBoosters }}">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="PointLeft">Stat Points Left</label>
+                    <input type="number" class="form-control" id="PointLeft" value="{{ entity.PointLeft }}" readonly>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="PointsEarned">Total Stat Points</label>
+                    <input type="number" class="form-control" id="PointsEarned" value="{{ entity.PointsEarned }}"
+                           readonly>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="IsAvailableForBattle">Is Fit For Battle</label>
+                    <input type="text" class="form-control" id="IsAvailableForBattle"
+                           value="{{ entity.IsAvailableForBattle }}" readonly>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="RollYourOwnDice">Roll Own Dice</label>
+                    <input type="text" class="form-control" id="RollYourOwnDice" value="{{ entity.RollYourOwnDice }}">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="DMName">DM Name</label>
+                    <input type="text" class="form-control" id="DMName"
+                           value="{% if entity.DMName %}{{ entity.DMName }}{% else %}Sagi{% endif %}">
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 2-->
+
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="TrainerStr">Str</label>
+                <input type="number" class="form-control" id="TrainerStr" value="{{ entity.EntityStr }}">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="TrainerDex">Dex</label>
+                <input type="number" class="form-control" id="TrainerDex" value="{{ entity.EntityDex }}">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="TrainerCon">Con</label>
+                <input type="number" class="form-control" id="TrainerCon" value="{{ entity.EntityCon }}">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="TrainerInt">Int</label>
+                <input type="number" class="form-control" id="TrainerInt" value="{{ entity.EntityInt }}">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="TrainerWis">Wis</label>
+                <input type="number" class="form-control" id="TrainerWis" value="{{ entity.EntityWis }}">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="TrainerCha">Charisma</label>
+                <input type="number" class="form-control" id="TrainerCha" value="{{ entity.EntityCha }}">
+            </div>
+        </div>
+
+        <!-- Row 3-->
+
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="StrModifier">StrModifier</label>
+                <input type="number" class="form-control" id="StrModifier" value="{{ entity.StrModifier }}"
+                       readonly>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="DexModifier">DexModifier</label>
+                <input type="number" class="form-control" id="DexModifier" value="{{ entity.DexModifier }}"
+                       readonly>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="ConModifier">ConModifier</label>
+                <input type="number" class="form-control" id="ConModifier" value="{{ entity.ConModifier }}"
+                       readonly>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="IntModifier">IntModifier</label>
+                <input type="number" class="form-control" id="IntModifier" value="{{ entity.IntModifier }}"
+                       readonly>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="WisModifier">WisModifier</label>
+                <input type="number" class="form-control" id="WisModifier" value="{{ entity.WisModifier }}"
+                       readonly>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="ChaModifier">ChaModifier</label>
+                <input type="number" class="form-control" id="ChaModifier" value="{{ entity.ChaModifier }}"
+                       readonly>
+            </div>
+        </div>
+
+        <!-- Row 6-->
+
+        <div class="form-row">
+            <h3>General character information</h3>
+            <div class="form-group col-md-1">
+                <label for="Age">Age</label>
+                <input type="number" class="form-control" id="Age" value="{{ entity.Age }}">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="TrainerGender">Gender</label>
+                <input type="text" class="form-control" id="TrainerGender" value="{{ entity.TrainerGender }}">
+            </div>
+            <div class="form-group col-md-1">
+                <label for="WeightKg">WeightKg</label>
+                <input type="number" class="form-control" id="WeightKg" value="{{ entity.WeightKg }}">
+            </div>
+            <div class="form-group col-md-1">
+                <label for="HeightCm">HeightCm</label>
+                <input type="number" class="form-control" id="HeightCm" value="{{ entity.HeightCm }}">
+            </div>
+            <div class="form-group col-md-7">
+                <label for="CatchPhrase">Catch Phrase</label>
+                <input type="text" class="form-control" id="CatchPhrase" value="{{ entity.CatchPhrase }}">
+            </div>
+        </div>
+
+        <!-- Row 7-->
+
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="Money">Money</label>
+                <input type="number" class="form-control" id="Money" value="{{ entity.Money }}">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="CreateDate">CreateDate</label>
+                <input type="text" class="form-control" id="CreateDate" value="{{ entity.CreateDate }}">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="LastUpdateDate">LastUpdateDate</label>
+                <input type="text" class="form-control" id="LastUpdateDate" value="{{ entity.LastUpdateDate }}">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="Background">Background</label>
+                <input type="text" class="form-control" id="Background" value="{{ entity.Background }}">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update Details</button>
+        {% if errorcode %}
+        <div>
+            <p class="text-danger">Error number {{ errorcode }} - "{{ errormsg }}"</p>
+            {% endif %}
+        </div>
     </form>
 </div>
 
-    {% if WasUpdated == 'Yes' %}
+<!-- Pokemon Belt - Top 6-->
+
+<div class="container-fluid top-six-container">
     <div class="panel panel-default">
-        <h5 class="text-success">Trainer's details have been updated successfully.</h5>
+        <h2>Pokemon on Belt:</h2>
+        <form action="{% url 'Entities:TopSixRemove' entity.EntityId %}" method="Post">
+            {% csrf_token %}
+            {% for Pokemon in all_pokemon %}
+            {% if Pokemon.IsOnBelt == True %}
+            <div class="inputContainer">
+                <input type="radio" id="Pokemon{{ forloop.counter }}" name="Pokemon"
+                       value="{{ Pokemon.PokemonId }}"/>
+                <label for="Pokemon{{ forloop.counter }}">
+                    <img src="http://pokemonforever.com/images/title_icons/pokeball.png"/>
+                    <a href="{% url 'Entities:pokemonpage' entity.EntityId Pokemon.PokemonId %}">
+                        <img src="http://www.pokestadium.com/sprites/xy/{{ Pokemon.Species|lower }}.gif"
+                             alt="({{ Pokemon.Species }}"/>
+                    </a>
+                    {{ Pokemon.PokemonNickName }} ({{ Pokemon.Species }} - Level {{ Pokemon.CurrentLevel }})
+                </label>
+
+            </div>
+            {% endif %}
+            {% endfor %}
+            <input type="submit" class="btn btn-primary btn-lg" value="Remove From belt"/>
+        </form>
     </div>
-    {% endif %}
+</div>
+<div class="container div-for-new-pokemon">
+    <img src="http://4.bp.blogspot.com/-OBRogIaFK5Q/U7rS_Tc_Z0I/AAAAAAAAC2s/LxuERLcIv4E/s1600/pokeball+growth.gif">
+    <button type="button" class="btn btn-success new-pokemon-button" data-toggle="modal" data-target="#CreatePokemon">
+        Create a new Pokemon
+    </button>
+    <br>
+</div>
+<div class="modal fade" id="CreatePokemon">
+    <div class="modal-dialog">
+        <div class="modle-content" style="background-color:white">
 
-
-    <div class="panel panel-default"></div>
-
-
-
-
-
-    <div class="container-fluid">
-        <div class="panel panel-default">
-            <h2>Pokemon on Belt:</h2>
-            <form action="{% url 'Entities:TopSixRemove' entity.EntityId %}" method="Post">
-                {% csrf_token %}
-                {% for Pokemon in all_pokemon %}
-                {% if Pokemon.IsOnBelt == True %}
-                <div class="inputContainer">
-                    <input type="radio" id="Pokemon{{ forloop.counter }}" name="Pokemon" value="{{ Pokemon.PokemonId }}"/>
-                        <label for="Pokemon{{ forloop.counter }}">
-                            <img src="http://pokemonforever.com/images/title_icons/pokeball.png"/>
-                            <a href="{% url 'Entities:pokemonpage' entity.EntityId Pokemon.PokemonId %}">
-                                <img src="http://www.pokestadium.com/sprites/xy/{{ Pokemon.Species|lower }}.gif" alt="({{ Pokemon.Species }}"/>
-                            </a>
-                            {{ Pokemon.PokemonNickName }} ({{ Pokemon.Species }} - Level {{ Pokemon.CurrentLevel }})
-                         </label>
-
-                </div>
-                {% endif %}
-                {% endfor %}
-                <input type="submit" class="btn btn-primary btn-lg" value="Remove From belt"/>
-            </form>
-        </div>
-
-        <div class="container">
-            <div>
-                <img src="http://4.bp.blogspot.com/-OBRogIaFK5Q/U7rS_Tc_Z0I/AAAAAAAAC2s/LxuERLcIv4E/s1600/pokeball+growth.gif" >
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#CreatePokemon"  style="padding: 3px 64px; font-size: 60px">Create a new Pokemon</button><br>
+            <!--- Header --->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">Create a new Pokemon</h3>
             </div>
-        </div>
-        <div class="modal fade" id="CreatePokemon">
-            <div class="modal-dialog">
-                <div class="modle-content" style="background-color:white">
 
-                    <!--- Header --->
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h3 class="modal-title">Create a new Pokemon</h3>
+            <!--- Body --->
+            <div class="modal-body">
+                <form role="form"
+                      action="{% url 'Entities:CreateNewPokemon' 'Sagi' entity.EntityId entity.EntityName %}"
+                      method="Post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="panel-heading">Pokemon Species</div>
+                    <input type="text" id="Species" name="Species" class="form-control" value="Pikachu"></input>
+                    <div class="panel-heading">Pokemon NickName</div>
+                    <input type="text" id="PokemonNickName" name="PokemonNickName" class="form-control"
+                           value="Test Pokemon"></input>
+                    <div class="panel-heading">Pokemon Gender</div>
+                    <input type="text" id="Gender" name="Gender" class="form-control" value="Male"></input>
+                    <div class="panel-heading">Pokemon Nature</div>
+                    <input type="text" id="Nature" name="Nature" class="form-control" value="Timid"></input>
+                    <div class="panel-heading">Starting Level</div>
+                    <input type="number" id="StartingLevel" name="StartingLevel" class="form-control" value="1"></input>
+                    <!--<div class="panel-heading">Is Shiny?</div>-->
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="IsShiny">Is Shiny?</label>
                     </div>
-
-                    <!--- Body --->
-                    <div class="modal-body">
-                        <form role="form" action="{% url 'Entities:CreateNewPokemon' 'Sagi' entity.EntityId entity.EntityName %}" method="Post" enctype="multipart/form-data">
-                            {% csrf_token %}
-                            <div class="panel-heading">Pokemon Species</div>
-                            <input type="text" id="Species" name="Species" class="form-control" value="Pikachu"></input>
-                            <div class="panel-heading">Pokemon NickName</div>
-                            <input type="text" id="PokemonNickName" name="PokemonNickName" class="form-control" value="Test Pokemon"></input>
-                            <div class="panel-heading">Pokemon Gender</div>
-                            <input type="text" id="Gender" name="Gender" class="form-control" value="Male"></input>
-                            <div class="panel-heading">Pokemon Nature</div>
-                            <input type="text" id="Nature" name="Nature" class="form-control" value="Timid"></input>
-                            <div class="panel-heading">Starting Level</div>
-                            <input type="number" id="StartingLevel" name="StartingLevel" class="form-control" value="1"></input>
-                            <!--<div class="panel-heading">Is Shiny?</div>-->
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="IsShiny">Is Shiny?</label>
-                            </div>
-                            <div class="panel-heading">Move 1</div>
-                            <input type="text" id="Move1" name="Move1" class="form-control" value="da"></input>
-                            <div class="panel-heading">Move 2 (optional)</div>
-                            <input type="text" id="Move2" name="Move2" class="form-control" value="asd"></input>
-                            <div class="panel-heading">Move 3 (optional)</div>
-                            <input type="text" id="Move3" name="Move3" class="form-control" value="asfa"></input>
-                            <div class="panel-heading">Move 4 (optional)</div>
-                            <input type="text" id="Move4" name="Move4" class="form-control" value="agas"></input>
-                            <div class="panel-heading">AdditionalTrainerNotes (optional)</div>
-                            <input type="text" id="AdditionalTrainerNotes" name="AdditionalTrainerNotes" class="form-control" value="Additional Trainer Notes"></input>
-                            <div class="modal-footer">
-                                <input type="submit" class="btn btn-primary btn-block" value="Submit"/>
-                            </div>
-                        </form>
+                    <div class="panel-heading">Move 1</div>
+                    <input type="text" id="Move1" name="Move1" class="form-control" value="da"></input>
+                    <div class="panel-heading">Move 2 (optional)</div>
+                    <input type="text" id="Move2" name="Move2" class="form-control" value="asd"></input>
+                    <div class="panel-heading">Move 3 (optional)</div>
+                    <input type="text" id="Move3" name="Move3" class="form-control" value="asfa"></input>
+                    <div class="panel-heading">Move 4 (optional)</div>
+                    <input type="text" id="Move4" name="Move4" class="form-control" value="agas"></input>
+                    <div class="panel-heading">AdditionalTrainerNotes (optional)</div>
+                    <input type="text" id="AdditionalTrainerNotes" name="AdditionalTrainerNotes" class="form-control"
+                           value="Additional Trainer Notes"></input>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-primary btn-block" value="Submit"/>
                     </div>
-
-                    <!--- Footer --->
-
-
-                </div>
+                </form>
             </div>
+
+            <!--- Footer --->
+
+
         </div>
+    </div>
+</div>
 
-        <div class="panel panel-default">
-            <h2>Pokemon at Professors Oak's <strike>slaughterhouse</strike> happy-ranch :</h2>
-            <form action="{% url 'Entities:TopSix' entity.EntityId %}" method="Post">
-                <ul class="list-group">
-                {% csrf_token %}
-                {% for Pokemon in all_pokemon %}
-                {% if Pokemon.IsOnBelt == False %}
-                    <li class="list-group-item">
-                    <div>
-                    <input type="radio" id="Pokemon{{ forloop.counter }}" name="Pokemon" value="{{ Pokemon.PokemonId }}"/>
-                        <a href="{% url 'Entities:pokemonpage' entity.EntityId Pokemon.PokemonId %}">
-                            <img src="http://www.pokestadium.com/sprites/xy/{{ Pokemon.Species|lower }}.gif" />
-                        </a>
+<div class="panel panel-default">
+    <h2>Pokemon at Professors Oak's <strike>slaughterhouse</strike> happy-ranch :</h2>
+    <form action="{% url 'Entities:TopSix' entity.EntityId %}" method="Post">
+        <ul class="list-group">
+            {% csrf_token %}
+            {% for Pokemon in all_pokemon %}
+            {% if Pokemon.IsOnBelt == False %}
+            <li class="list-group-item">
+                <div>
+                    <input type="radio" id="Pokemon{{ forloop.counter }}" name="Pokemon"
+                           value="{{ Pokemon.PokemonId }}"/>
+                    <a href="{% url 'Entities:pokemonpage' entity.EntityId Pokemon.PokemonId %}">
+                        <img src="http://www.pokestadium.com/sprites/xy/{{ Pokemon.Species|lower }}.gif"/>
+                    </a>
 
-                                <div><h4><b>{{ Pokemon.PokemonNickName }}</b></h4></div>
-                                <div><h5><b>{{ Pokemon.Species }}</b> - Level {{ Pokemon.CurrentLevel }}</h5></input>
+                    <div><h4><b>{{ Pokemon.PokemonNickName }}</b></h4></div>
+                    <div><h5><b>{{ Pokemon.Species }}</b> - Level {{ Pokemon.CurrentLevel }}</h5></input>
 
                         <!--<label for="Pokemon{{ forloop.counter }}">
 
                             {{ Pokemon.PokemonNickName }} ({{ Pokemon.Species }} - Level {{ Pokemon.CurrentLevel }})
                         </label><br>-->
-                    {% endif %}
-                    {% endfor %}
-                    <input type="submit" class="btn btn-primary btn-lg" value="Add to belt"/>
+                        {% endif %}
+                        {% endfor %}
+                        <input type="submit" class="btn btn-primary btn-lg" value="Add to belt"/>
                     </div>
-                    </li>
-                </ul>
-            </form>
-        </div>
-    </div>
+            </li>
+        </ul>
+    </form>
+</div>
+</div>
 </div>
 
+<script src="{% static '\entities\js\trainer-page.js' %}"></script>
+
 {% else %}
-	<h3>Entity does not exist.<br>Are you a moron??</h3>
+<h3>Entity does not exist.<br>Are you a moron??</h3>
 {% endif %}
 
 

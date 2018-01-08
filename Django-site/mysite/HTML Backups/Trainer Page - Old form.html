@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <form class="form-horizontal" action="{% url 'Entities:UpdateTrainerDetails' entity.EntityId %}" method="Post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h1>{{ entity.EntityName }}</h1>
+        <h4>"{{ entity.CatchPhrase }}"</h4>
+        <a id="close-open-edit" class="btn btn-secondary btn-lg btn-block">Edit</a>
+        <script src="{% static '\entities\js\EditTest.js' %}"></script>
+        {% for header in EntityHeaders %}
+        {% if header.RowNumber == '-1' %}
+            <input type="hidden" name="{{header.ColumnName}}" id="header{{ forloop.counter }}" value="{% if header.ColumnName == 'DMName' %}Sagi{% else %}{{header.ColumnValue}}{% endif %}">
+        {% else %}
+            <div class="col-md-{{ header.ColumnWidth }}">
+                <div class="panel panel-info">
+                    <div class="panel-heading">{{ header.ColumnDisplayName }}</div>
+                    <input type="{{header.InputType}}" id="{{header.ColumnName}}" name="{{header.ColumnName}}" class="form-control" value="{{header.ColumnValue}}" disabled="disabled" {% if not header.AllowEditing == '1' %} readonly {% endif %}></input>
+                </div>
+            </div>
+        {% endif %}
+        {% endfor %}
+
+        <input type="submit" class="btn btn-secondary btn-lg btn-block" value="Update Details"/>
+    </form>
+</div>
+
+    {% if WasUpdated == 'Yes' %}
+    <div class="panel panel-default">
+        <h5 class="text-success">Trainer's details have been updated successfully.</h5>
+    </div>
+    {% endif %}
+
+
+    <div class="panel panel-default"></div>

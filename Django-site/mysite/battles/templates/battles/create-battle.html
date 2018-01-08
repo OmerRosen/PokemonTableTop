@@ -1,4 +1,6 @@
-{% extends "pokemon/headers.html" %} {% load staticfiles %} {% block content %}
+{% extends "pokemon/headers.html" %}
+{% load staticfiles %}
+{% block content %}
 
 <!doctype html>
 <html lang="en">
@@ -106,31 +108,13 @@
                                     <optgroup id="groupB_select_NPCs" label="NPCs">
                                     </optgroup>
                                 </select>
-                                <!--Entity Card - Demo for now
-                                <div class="selected-entity-card">
-                                    <div class="selected-entity-card-details">
-                                        <div class="selected-entity-card-img-container">
-                                            <img class="selected-entity-card-img" src="https://orig00.deviantart.net/d7c4/f/2014/294/9/d/trainerwip2_by_foxeaf-d83mhhs.png" />
-                                        </div>
-                                        <div class="selected-entity-card-text">
-                                            <div>Audun</div>
-                                            <div>Player: Omer</div>
-                                            <div>Level 7 Capture Speciallist</div>
-                                        </div>
-                                    </div>
-                                    <div class="selected-entity-card-pokemon-selection">
-                                        <select id="Omer_selectPokemon" name="Omer_selectPokemon" class="selectpicker show-tick form-control" title="Select your Pokemon" tabindex="-1" required="" data-size="10">
-                                            <option value="7" data-subtext="Level 21 Cranidos">Karnaf</option>
-                                            <option value="8" data-subtext="Level 21 Quilava">Queef Lava</option>
-                                            <option value="9" data-subtext="Gar Bagan">Parpar</option>
-                                        </select>
-                                    </div>
-                                </div>-->
                             </div>
-                                        {% if errorcode %}
-            <h4>Error number {{ errorcode }} - "{{ errormsg }}"</h4>
-            {% endif %}
                             <div style="clear:both;"></div>
+                            {% if errorcode %}
+                            <div>
+                                <p class="text-danger">Error number {{ errorcode }} - "{{ errormsg }}"</p>
+                            {% endif %}
+                            </div>
                         </div>
 
 
@@ -140,10 +124,10 @@
 
 
 
-                <div class="startBattle">
+                <div class="startBattle" id="build-your-team">
 
                     <div class="box"></div>
-                    <span>Start your battle!</span>
+                    <span>Create your battle!</span>
                     <div style="clear:both;"></div>
                 </div>
                 <div style="clear:both;"></div>
@@ -155,9 +139,80 @@
 
 
     </div>
-    {% if Data %}
-    <h4>New Battle was created: {{ BattleId }}</h4>
-    <h5>{{ Data }}</h5>
+    {% if AvailablePokemonA %}
+    <h3>New Battle was created: {{ BattleId }}</h3>
+    <h5>Trainers from both groups, please choose which Pokemon you will fight using:</h5>
+                        <div class="entities entities-bothgroups" style="display:flex">
+                            <div style="clear:both;"></div>
+                            <div id="groupATrainers" class="entity_groups">
+                                <div>
+                                    <h1 class="centered-text">Group A Trainers</h1>
+                                    <div>
+                                    {% regroup AvailablePokemonA by OwnerName as PokemonA_list %}
+                                    {% for OwnerName in PokemonA_list %}
+
+                                        <div class="trainer-box trainer-{{OwnerName.grouper}}" trainer="{{OwnerName.grouper}}" group="GroupA">
+                                            <h2 class="centered-text">Trainer <b>{{OwnerName.grouper}}</b></h2>
+                                            <h4 class="centered-text">please select your Pokemon:</h4>
+                                            <div class="col-md-12">
+                                                {% for Poke in OwnerName.list %}
+                                                  <div class='pokemon-box col-md-4 pokemon-{{Poke.PokemonId}}' onclick="pokemonClick(this)" pokemonId="{{Poke.PokemonId}}">
+                                                      <input type="hidden" name="groupA" value="0" trainerName="{{OwnerName.grouper}}" pokemonid="{{Poke.PokemonId}}">
+                                                      <h4><b>{{ Poke.PokemonNickName }}</b></h4>
+                                                      <h7 class="centered-text">Level {{ Poke.CurrentLevel }} {{ Poke.Species }}</h7>
+                                                      <div class="pokemon-gif">
+                                                          <img src="http://www.pokestadium.com/sprites/xy/{{ Poke.Species|lower }}.gif" alt="({{ Pokemon.Species }}"/>
+                                                      </div>
+                                                  </div>
+                                                {% endfor %}
+                                            </div>
+                                            </li>
+                                        </div>
+                                        {% endfor %}
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both;"></div>
+                            <div id="groupBTrainers" class="entity_groups">
+                                <div>
+                                    <h1 class="centered-text">Group B Trainers</h1>
+                                    <div>
+                                    {% regroup AvailablePokemonB by OwnerName as PokemonB_list %}
+                                    {% for OwnerName in PokemonB_list %}
+                                        <div class="trainer-box trainer-{{OwnerName.grouper}}" trainer="{{OwnerName.grouper}}" group="GroupB">
+                                            <h2 class="centered-text">Trainer <b>{{OwnerName.grouper}}</b></h2>
+                                            <h4 class="centered-text">please select your Pokemon:</h4>
+                                            <div class="col-md-12">
+                                                {% for Poke in OwnerName.list %}
+                                                  <div class="pokemon-box col-md-4 pokemon-{{Poke.PokemonId}}" onclick="pokemonClick(this)" pokemonId="{{Poke.PokemonId}}">
+                                                      <input type="hidden" name="groupB" value="0" trainerName="{{OwnerName.grouper}}" pokemonid="{{Poke.PokemonId}}">
+                                                      <div>
+                                                          <h4><b>{{ Poke.PokemonNickName }}</b></h4>
+                                                          <h7>Level {{ Poke.CurrentLevel }} {{ Poke.Species }}</h7>
+                                                          <div class="pokemon-gif">
+                                                              <img src="http://www.pokestadium.com/sprites/xy/{{ Poke.Species|lower }}.gif" alt="({{ Pokemon.Species }}"/>
+                                                          </div>
+                                                      </div>
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                            </li>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+    <h5>{{ Allpokemon }}</h5>
+    <div class="startBattle button-hidden" id="start-battle-for-realzies" hidden>
+
+        <div class="box"></div>
+            <span>Start your battle!</span>
+        <div style="clear:both;"></div>
+    </div>
+    <div style="clear:both;"></div>
     {% endif %}
 
 
@@ -170,9 +225,10 @@
 
 <!--bind the buttons div to the submit button fucker mother mother mother moana :)-->
 <script>
-    $('.startBattle').on('click', function() {
+    $('#build-your-team').on('click', function()
+        {
         $('form')[0].submit();
-
-    });
+        }
+    );
 </script>
 {% endblock %}

@@ -1,0 +1,83 @@
+import bs4
+import sys
+from bs4 import BeautifulSoup as soup
+from urllib import urlopen as uReq
+from csv import DictWriter
+import xlsxwriter
+import datetime
+import time
+
+runcount = 0
+print 'Starting process'
+
+while 1==1:
+    try:
+        runcount+=1
+        StartTime = datetime.datetime.now()
+        print 'Starting Run Count %d. Time: %s' %(runcount,StartTime)
+
+        data = []
+        FilePath = r'C:\Users\Home\Documents\CoinMarketCap.csv'
+
+        Myurl = 'https://coinmarketcap.com/'
+
+        MarketCap = uReq(Myurl)
+        print 'Page info received'
+        page_html = MarketCap.read()
+        MarketCap.close()
+        page_soup = soup(page_html, 'html.parser')
+
+        #print len(page_soup.findAll("table",{'class':'table no-footer dataTable'}))
+        table = page_soup.find('table', attrs={'id':'currencies'})
+        table_body = table.find('tbody')
+        rows = table_body.find_all('tr')
+        for row in rows[0:99]:
+            currency = row['id'].replace('id-','')
+            cols = row.find_all('td')
+            number_currency = cols[0].text.strip()
+            #print number_currency
+            ISO3 = cols[1].span.a.text.strip()
+            #print ISO3
+            #currency = cols[1].a.text.strip()
+            #print currency
+            MarketCap = cols[2].text.strip()
+            ValueUSD = cols[3].a['data-usd']
+            ValueBTC = cols[3].a['data-btc']
+            Change24H = cols[6].text
+            LastUpdateDate = datetime.datetime.now()
+            Summary = {'currency':currency,'number_currency':number_currency,'ISO3':ISO3,'currency':currency,'MarketCap':MarketCap,'ValueUSD':ValueUSD,'ValueBTC':ValueBTC,'Change24H':Change24H,'LastUpdateDate':str(LastUpdateDate)}
+            data.append(Summary)
+            #cols = [ele.text.strip() for ele in cols]
+            #data.append([ele for ele in cols if ele]) # Get rid of empty values
+
+        #print data
+        Headers = ('currency','number_currency','ISO3','currency','MarketCap','ValueUSD','ValueBTC','Change24H','LastUpdateDate')
+
+        ## Write to CSV
+        #with open(FilePath,'w') as outfile:
+        #    writer = DictWriter(outfile,(Headers))
+        #    writer.writeheader()
+        #    writer.writerows(data)
+
+        # Write to Excel:
+        workbook = xlsxwriter.Workbook(FilePath.replace('.csv','.xlsx'))
+        worksheet = workbook.add_worksheet()
+        for Head in range(len(Headers)):
+            worksheet.write(0, Head, Headers[Head])
+            for line in range(len(data)):
+                worksheet.write(line+1, Head, data[line][Headers[Head]])
+        workbook.close()
+        EndTime = datetime.datetime.now()
+        timeDifference = EndTime-StartTime
+        print 'Process %s has ended. Seconds took: %s' %(runcount,timeDifference.seconds)
+        time.sleep(180)
+    except IOError as e:
+        print "I/O error({0}): {1}".format(e.errno, e.strerror)
+        time.sleep(600)
+    except ValueError:
+        print "Could not convert data to an integer."
+        time.sleep(600)
+    except:
+        print "Unexpected error:", sys.exc_info()[0]
+        #raise
+        time.sleep(600)

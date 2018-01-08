@@ -1,6 +1,6 @@
 
 
-
+var createBattleData = {};
 
 
 function getCookie(name)
@@ -25,7 +25,6 @@ function getCookie(name)
     }
 
 var csrftoken = getCookie('csrftoken');
-//console.log('csrftoken: '+csrftoken)
 var Omer = 'Hi Gurl'
 
 function csrfSafeMethod(method)
@@ -45,8 +44,8 @@ $.ajaxSetup(
     });
 
 //Get the list of all battle types and associate them with their properties)
-(function()
-    {
+//(function()
+//    {
     $.ajax
         ({
         type: 'POST',
@@ -59,7 +58,7 @@ $.ajaxSetup(
             var sel = document.getElementById('battletype');
             for(var i = 0; i < battletypes.length; i++)
                 {
-                console.log(battletypes[i].BattleTypeDesc)
+//                console.log(battletypes[i].BattleTypeDesc)
                 var opt = document.createElement('option')
                 opt.innerHTML = battletypes[i].BattleTypeDesc;
                 opt.value = battletypes[i].BattleTypeId;
@@ -73,7 +72,7 @@ $.ajaxSetup(
             $("#battletype").change(function(event)
                 {
                 var Selection = $(this)[0][$(this)[0].value-1]
-                console.log(Selection)
+//                console.log(Selection)
                 var CanCatchPokemon = document.getElementById('CanCatchPokemon')
                 var LimitPokemonNumber = document.getElementById('LimitPokemonNumber')
                 var AllowItems = document.getElementById('AllowItems')
@@ -143,6 +142,7 @@ $.ajaxSetup(
         success: function(data)
             {
             availableEntities = data;
+            createBattleData = data;
             console.log(availableEntities)
             var sel_playerA = document.getElementById('groupA_select_Players');
             var sel_NPC_A = document.getElementById('groupA_select_NPCs');
@@ -155,27 +155,46 @@ $.ajaxSetup(
                     var opt = document.createElement('option')
                     opt.innerHTML = availableEntities[i].EntityName+' - '+availableEntities[i].PlayerName;
                     opt.value = availableEntities[i].EntityId;
+                    if (availableEntities[i].NumberOfAvailablePokemon == 0)
+                        {
+//                        console.log('Option was disabled for '+availableEntities[i].EntityName)
+                        opt.disabled = true;
+                        }
                     opt.setAttribute('data-icon','glyphicon glyphicon-user')
-                    opt.setAttribute('data-subtext','Level '+availableEntities[i].Level+' - '+availableEntities[i].EntityTitle)
-                    sel_playerB.appendChild(opt);
+                    opt.setAttribute('title','Player '+availableEntities[i].EntityName)
+                    opt.setAttribute('trainerId',availableEntities[i].EntityId)
+                    opt.setAttribute('trainerName',availableEntities[i].EntityName)
+                    opt.setAttribute('data-subtext','Level '+availableEntities[i].Level+' - '+availableEntities[i].EntityTitle+' (Pokemon: '+availableEntities[i].NumberOfAvailablePokemon+')')
                     sel_playerA.appendChild(opt);
-
+                    var optB = opt.cloneNode(true)
+                    sel_playerB.appendChild(optB);
+//                    console.log(opt);
                     }
                 else{
                     var opt = document.createElement('option')
                     opt.innerHTML = availableEntities[i].EntityName+' (Player '+availableEntities[i].PlayerName+')';
                     opt.value = availableEntities[i].EntityId;
+//                    console.log(availableEntities[i].EntityName+ ' - Available Pokemon: '+availableEntities[i].NumberOfAvailablePokemon)
+//                    console.log(opt);
+                    if (availableEntities[i].NumberOfAvailablePokemon == 0)
+                        {
+//                        console.log('Option was disabled for '+availableEntities[i].EntityName)
+                        opt.disabled = true;
+                        }
                     opt.setAttribute('data-icon','glyphicon glyphicon-knight')
-                    opt.setAttribute('data-subtext','Level '+availableEntities[i].Level+' - '+availableEntities[i].EntityTitle)
+                    opt.setAttribute('title','NPC '+availableEntities[i].EntityName)
+                    opt.setAttribute('trainerId',availableEntities[i].EntityId)
+                    opt.setAttribute('trainerName',availableEntities[i].EntityName)
+                    opt.setAttribute('data-subtext','Level '+availableEntities[i].Level+' - '+availableEntities[i].EntityTitle+' (Pokemon: '+availableEntities[i].NumberOfAvailablePokemon+')')
                     sel_NPC_A.appendChild(opt);
-                    sel_NPC_B.appendChild(opt);
-
+                    var optB = opt.cloneNode(true)
+                    sel_NPC_B.appendChild(optB);
+//                    console.log(opt);
                     }
                 }
-            //console.log('You have reached here')
+//            console.log(sel_NPC_A);
             $('#groupB_select').selectpicker('refresh');
             $('#groupA_select').selectpicker('refresh');
-
             },
         error: function(XMLHttpRequest, textStatus, errorThrown)
             {
@@ -183,15 +202,132 @@ $.ajaxSetup(
             }
         })
 
-    })();
+//    })()
 
 
+$('#groupA_select').on('changed.bs.select', function (e, clickedIndex, newValue, oldValue)
+    {
+        console.log('newValue:')
+        console.log(newValue)
+        console.log('Trainer Details');
+        TrainerId = document.querySelectorAll("#groupA_select")[0].options[clickedIndex].value
+        tagName = document.querySelectorAll("#groupA_select")[0].options[clickedIndex].title
+        console.log(document.querySelectorAll("#groupA_select")[0].options[clickedIndex]);
+        console.log(tagName+' - '+TrainerId);
+
+        var GroupB_ToRemove = document.getElementById("groupB_select").querySelectorAll('option')
+        for (var i=0; i<GroupB_ToRemove.length; i++ )
+            {
+            console.log('GroupB_ToRemove '+GroupB_ToRemove[i])
+            if (GroupB_ToRemove[i].value == TrainerId && newValue==true)
+                {
+                console.log('trainer will be disabled')
+                GroupB_ToRemove[i].disabled=true
+                }
+            else if (GroupB_ToRemove[i].value == TrainerId && newValue==false)
+                {
+                GroupB_ToRemove[i].disabled=false
+                }
+            }
+        $('#groupB_select').selectpicker('refresh');
+        $('#groupA_select').selectpicker('refresh');
+    })
+$('#groupB_select').on('changed.bs.select', function (e, clickedIndex, newValue, oldValue)
+    {
+        console.log('newValue:')
+        console.log(newValue)
+        console.log('Trainer Details');
+        TrainerId = document.querySelectorAll("#groupB_select")[0].options[clickedIndex].value
+        tagName = document.querySelectorAll("#groupB_select")[0].options[clickedIndex].title
+        console.log(document.querySelectorAll("#groupB_select")[0].options[clickedIndex]);
+        console.log(tagName+' - '+TrainerId);
+
+        var GroupB_ToRemove = document.getElementById("groupA_select").querySelectorAll('option')
+        for (var i=0; i<GroupB_ToRemove.length; i++ )
+            {
+            console.log('GroupA_ToRemove '+GroupB_ToRemove[i])
+            if (GroupB_ToRemove[i].value == TrainerId && newValue==true)
+                {
+                console.log('trainer will be disabled')
+                GroupB_ToRemove[i].disabled=true
+                }
+            else if (GroupB_ToRemove[i].value == TrainerId && newValue==false)
+                {
+                GroupB_ToRemove[i].disabled=false
+                }
+            }
+        $('#groupB_select').selectpicker('refresh');
+        $('#groupA_select').selectpicker('refresh');
+    })
 
 
+allTrainers = []
+finalListOfTrainersPokemons = []
 
+function pokemonClick(a, b, c) {
+    var pokemons = $(a).closest(".trainer-box").find("input");
+    for (var i = 0; i < pokemons.length; i++) {
+        $(pokemons[i]).val(0);
+        $($(pokemons[i]).closest(".pokemon-box")).removeClass("selected");
+    }
+    $(a).addClass("selected");
+    $($(a).find("input")[0]).val(1);
 
+    var enableButton = 1
+    finalListOfTrainersPokemons = []
+    var allTrainers = document.querySelectorAll('div.trainer-box');
+    for (var i = 0; i < allTrainers.length; i++)
+        {
+        var trainer = allTrainers[i].getAttribute("trainer");
+        var group = allTrainers[i].getAttribute("group");
+        var selectedAmount = allTrainers[i].querySelectorAll('.pokemon-box.selected').length;
 
+        if (selectedAmount != 1)
+            {
+            console.log('Trainer '+trainer+' have not selected a Pokemon so list cannot be submitted');
+            enableButton = 0;
+            }
+        else
+            {
+            var pokemon = allTrainers[i].querySelectorAll('.pokemon-box.selected')[0].getAttribute("pokemonId");;
+            var selectionDetails = []
+            selectionDetails = [{'OwnerName':trainer,'PokemonId':pokemon,'Group':group}]
+            finalListOfTrainersPokemons.push(selectionDetails[0])
+            }
+        }
+    if (enableButton == 1) // if after all validations enable button is still on, fight can continue:
+        {
+        console.log('All trainers have selected their Pokemon. Battle can begin');
+        console.log(finalListOfTrainersPokemons)
+        document.getElementById('start-battle-for-realzies').classList.remove('button-hidden')
+        }
 
+//    var allPokemons = document.querySelectorAll('div.trainer-box');
+//    var countOfEntities = allTrainers.length
+//    console.log('countOfEntities: '+countOfEntities)
+//    console.log(allTrainers)
+}
+
+$('#start-battle-for-realzies').on('click', function()
+{   console.log(finalListOfTrainersPokemons)
+    //finalListOfTrainersPokemons = JSON.stringify(finalListOfTrainersPokemons)
+    console.log(finalListOfTrainersPokemons)
+    $.ajax
+        ({
+        type: 'POST'
+        ,url:'/battles/SubmitFullBattleDetails/'
+        ,data: {'ListOfOMERRRRRRRRRRRRRR':finalListOfTrainersPokemons} //['This Makes Me Moist','You Make Me Moist','TheyMake Me Moist']} //{'finalListOfTrainersPokemons':JSON.stringify(finalListOfTrainersPokemons), },
+        ,dataType: 'json'
+        ,success: function(data)
+            {
+            console.log(data)
+            }
+        ,error: function(XMLHttpRequest, textStatus, errorThrown)
+            {
+            alert("some error");
+            }
+        })
+});
 
 
 

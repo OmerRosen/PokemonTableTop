@@ -45,6 +45,8 @@ $("#CurrentHealth").on('focus', function () {
       if (newValue > maxHealth){
         $(this)[0].value = previous;
       }
+      var healthBar = document.getElementById('health-bar-trainer');
+      healthBar.style.width = parseIntstr(newValue/maxHealth*100)+'%'
     });
 
 (function()

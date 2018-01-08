@@ -13,6 +13,7 @@ urlpatterns = [
 
     url(r'^CreateBattle/$', views.CreateBattle, name='CreateBattle'),
     url(r'^CreateBattle_New/(?P<DMName>[A-Za-z0-9]+)$', views.CreateBattle_New, name='CreateBattle_New'),
+    url(r'^SubmitFullBattleDetails/$', views.SubmitFullBattleDetails, name='SubmitFullBattleDetails'),
 
 
     url(r'^GetAllBattleTypes/$', views.GetAllBattleTypes, name='GetAllBattleTypes'),

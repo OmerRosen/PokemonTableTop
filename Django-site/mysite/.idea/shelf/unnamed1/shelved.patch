@@ -1,0 +1,946 @@
+Index: .idea/shelf/unnamed.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/shelf/unnamed.xml	(date 1513727439468)
++++ .idea/shelf/unnamed.xml	(date 1513727439468)
+@@ -0,0 +1,4 @@
++<changelist name="unnamed" date="1513727429118" recycled="false">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/unnamed/shelved.patch" />
++  <option name="DESCRIPTION" value="" />
++</changelist>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1513727383417)
++++ .idea/vcs.xml	(date 1513727383417)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"ce5d8bbc-916d-4c35-b9b5-96df3676fa2c\" name=\"Default\" comment=\"\" />\n    <option name=\"EXCLUDED_CONVERTED_TO_IGNORED\" value=\"true\" />\n    <option name=\"TRACKING_ENABLED\" value=\"true\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileEditorManager\">\n    <splitter split-orientation=\"horizontal\" split-proportion=\"0.46720836\">\n      <split-first>\n        <leaf SIDE_TABS_SIZE_LIMIT_KEY=\"300\">\n          <file leaf-file-name=\"urls.py\" pinned=\"false\" current-in-tab=\"false\">\n            <entry file=\"file://$PROJECT_DIR$/battles/urls.py\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"352\">\n                  <caret line=\"19\" column=\"1\" lean-forward=\"false\" selection-start-line=\"19\" selection-start-column=\"1\" selection-end-line=\"19\" selection-end-column=\"1\" />\n                  <folding>\n                    <element signature=\"e#24#63#0\" expanded=\"true\" />\n                  </folding>\n                </state>\n              </provider>\n            </entry>\n          </file>\n          <file leaf-file-name=\"views.py\" pinned=\"false\" current-in-tab=\"false\">\n            <entry file=\"file://$PROJECT_DIR$/battles/views.py\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"-349\">\n                  <caret line=\"57\" column=\"12\" lean-forward=\"true\" selection-start-line=\"57\" selection-start-column=\"12\" selection-end-line=\"57\" selection-end-column=\"12\" />\n                  <folding>\n                    <element signature=\"e#0#39#0\" expanded=\"true\" />\n                  </folding>\n                </state>\n              </provider>\n            </entry>\n          </file>\n          <file leaf-file-name=\"PokemonBattle.py\" pinned=\"false\" current-in-tab=\"false\">\n            <entry file=\"file://$PROJECT_DIR$/../../Python Project/Scripts/PokemonBattle.py\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"1210\">\n                  <caret line=\"60\" column=\"128\" lean-forward=\"false\" selection-start-line=\"60\" selection-start-column=\"128\" selection-end-line=\"60\" selection-end-column=\"128\" />\n                  <folding>\n                    <element signature=\"e#0#13#0\" expanded=\"true\" />\n                  </folding>\n                </state>\n              </provider>\n            </entry>\n          </file>\n          <file leaf-file-name=\"CreateGroupForBattle.py\" pinned=\"false\" current-in-tab=\"false\">\n            <entry file=\"file://$PROJECT_DIR$/../../Python Project/Scripts/CreateGroupForBattle.py\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"1342\">\n                  <caret line=\"67\" column=\"59\" lean-forward=\"false\" selection-start-line=\"67\" selection-start-column=\"59\" selection-end-line=\"67\" selection-end-column=\"59\" />\n                  <folding />\n                </state>\n              </provider>\n            </entry>\n          </file>\n          <file leaf-file-name=\"style.css\" pinned=\"false\" current-in-tab=\"true\">\n            <entry file=\"file://$PROJECT_DIR$/entities/static/entities/css/style.css\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"538\">\n                  <caret line=\"258\" column=\"5\" lean-forward=\"true\" selection-start-line=\"258\" selection-start-column=\"5\" selection-end-line=\"258\" selection-end-column=\"5\" />\n                  <folding />\n                </state>\n              </provider>\n            </entry>\n          </file>\n        </leaf>\n      </split-first>\n      <split-second>\n        <leaf SIDE_TABS_SIZE_LIMIT_KEY=\"300\">\n          <file leaf-file-name=\"SelectPokemon.py\" pinned=\"false\" current-in-tab=\"false\">\n            <entry file=\"file://$PROJECT_DIR$/../../Python Project/Scripts/SelectPokemon.py\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"286\">\n                  <caret line=\"19\" column=\"32\" lean-forward=\"false\" selection-start-line=\"19\" selection-start-column=\"16\" selection-end-line=\"19\" selection-end-column=\"32\" />\n                  <folding />\n                </state>\n              </provider>\n            </entry>\n          </file>\n          <file leaf-file-name=\"main.js\" pinned=\"false\" current-in-tab=\"false\">\n            <entry file=\"file://$PROJECT_DIR$/battles/static/battles/js/main.js\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"581\">\n                  <caret line=\"169\" column=\"20\" lean-forward=\"false\" selection-start-line=\"169\" selection-start-column=\"20\" selection-end-line=\"169\" selection-end-column=\"20\" />\n                  <folding />\n                </state>\n              </provider>\n            </entry>\n          </file>\n          <file leaf-file-name=\"create-battle.html\" pinned=\"false\" current-in-tab=\"false\">\n            <entry file=\"file://$PROJECT_DIR$/battles/templates/battles/create-battle.html\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"1301\">\n                  <caret line=\"160\" column=\"15\" lean-forward=\"false\" selection-start-line=\"160\" selection-start-column=\"15\" selection-end-line=\"160\" selection-end-column=\"15\" />\n                  <folding>\n                    <element signature=\"n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top\" expanded=\"true\" />\n                    <element signature=\"n#style#0;n#div#2;n#div#2;n#div#3;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top\" expanded=\"true\" />\n                    <element signature=\"n#style#0;n#div#1;n#div#1;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top\" expanded=\"true\" />\n                    <element signature=\"n#style#0;n#div#2;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top\" expanded=\"true\" />\n                  </folding>\n                </state>\n              </provider>\n            </entry>\n          </file>\n          <file leaf-file-name=\"urls.py\" pinned=\"false\" current-in-tab=\"false\">\n            <entry file=\"file://$PROJECT_DIR$/entities/urls.py\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"396\">\n                  <caret line=\"20\" column=\"20\" lean-forward=\"false\" selection-start-line=\"20\" selection-start-column=\"20\" selection-end-line=\"20\" selection-end-column=\"20\" />\n                  <folding />\n                </state>\n              </provider>\n            </entry>\n          </file>\n          <file leaf-file-name=\"pokemonpage.html\" pinned=\"false\" current-in-tab=\"true\">\n            <entry file=\"file://$PROJECT_DIR$/entities/templates/entities/pokemonpage.html\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"113\">\n                  <caret line=\"60\" column=\"18\" lean-forward=\"true\" selection-start-line=\"60\" selection-start-column=\"18\" selection-end-line=\"60\" selection-end-column=\"18\" />\n                  <folding />\n                </state>\n              </provider>\n            </entry>\n          </file>\n          <file leaf-file-name=\"models.py\" pinned=\"false\" current-in-tab=\"false\">\n            <entry file=\"file://$PROJECT_DIR$/entities/models.py\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"-2725\">\n                  <caret line=\"150\" column=\"43\" lean-forward=\"true\" selection-start-line=\"150\" selection-start-column=\"43\" selection-end-line=\"150\" selection-end-column=\"43\" />\n                  <folding />\n                </state>\n              </provider>\n            </entry>\n          </file>\n          <file leaf-file-name=\"trainerpage.html\" pinned=\"false\" current-in-tab=\"false\">\n            <entry file=\"file://$PROJECT_DIR$/entities/templates/entities/trainerpage.html\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"22\">\n                  <caret line=\"57\" column=\"13\" lean-forward=\"false\" selection-start-line=\"57\" selection-start-column=\"13\" selection-end-line=\"57\" selection-end-column=\"13\" />\n                  <folding />\n                </state>\n              </provider>\n            </entry>\n          </file>\n          <file leaf-file-name=\"views.py\" pinned=\"false\" current-in-tab=\"false\">\n            <entry file=\"file://$PROJECT_DIR$/entities/views.py\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"3168\">\n                  <caret line=\"158\" column=\"29\" lean-forward=\"false\" selection-start-line=\"158\" selection-start-column=\"16\" selection-end-line=\"158\" selection-end-column=\"29\" />\n                  <folding>\n                    <element signature=\"e#24#63#0\" expanded=\"true\" />\n                  </folding>\n                </state>\n              </provider>\n            </entry>\n          </file>\n        </leaf>\n      </split-second>\n    </splitter>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"HTML File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"FindInProjectRecents\">\n    <findStrings>\n      <find>AttachResultsFlag</find>\n      <find>IsIncident</find>\n      <find>click</find>\n      <find>edit</find>\n      <find>DMname</find>\n      <find>name</find>\n      <find>all_pokemon</find>\n      <find>UpdateTrainerDetails</find>\n      <find>Health Desc</find>\n      <find>currentHP</find>\n      <find>current HP</find>\n      <find>SP</find>\n      <find>EntityType</find>\n      <find>disa</find>\n      <find>endfor</find>\n      <find>scrip</find>\n      <find>bonus</find>\n      <find>print</find>\n      <find>battles</find>\n      <find>Battle</find>\n      <find>getentities</find>\n      <find>stylesheet</find>\n      <find>pokemonli</find>\n      <find>ajax/libs/bootstrap-select</find>\n      <find>hover</find>\n      <find>entity_groups_selectionmenu</find>\n      <find>pokemonLimit</find>\n      <find>species</find>\n      <find>datatype': '1'</find>\n      <find>id=</find>\n    </findStrings>\n  </component>\n  <component name=\"IdeDocumentHistory\">\n    <option name=\"CHANGED_PATHS\">\n      <list>\n        <option value=\"$PROJECT_DIR$/entities/tests.py\" />\n        <option value=\"$PROJECT_DIR$/entities/admin.py\" />\n        <option value=\"$PROJECT_DIR$/entities/templates/entities/test.html\" />\n        <option value=\"C:/ProgramData/Anaconda2/Scripts/django-admin.py\" />\n        <option value=\"$PROJECT_DIR$/Import Modules\" />\n        <option value=\"$PROJECT_DIR$/battles/url.py\" />\n        <option value=\"$PROJECT_DIR$/battles/models.py\" />\n        <option value=\"$PROJECT_DIR$/entities/static/entities/style\" />\n        <option value=\"$PROJECT_DIR$/battles/static/battles/style\" />\n        <option value=\"$PROJECT_DIR$/entities/templates/entities/headers.html\" />\n        <option value=\"$PROJECT_DIR$/../../Python Project/Scripts/CreateTableAndHistoryTable.py\" />\n        <option value=\"$PROJECT_DIR$/pokemon/templates/pokemon/home.html\" />\n        <option value=\"$PROJECT_DIR$/entities/crawler.py\" />\n        <option value=\"$PROJECT_DIR$/entities/static/entities/js/EditText.js\" />\n        <option value=\"$PROJECT_DIR$/pokemon/urls.py\" />\n        <option value=\"$PROJECT_DIR$/pokemon/views.py\" />\n        <option value=\"$PROJECT_DIR$/ImportModules.py\" />\n        <option value=\"$PROJECT_DIR$/entities/templates/entities/ErrPage.html\" />\n        <option value=\"$PROJECT_DIR$/battles/templates/battles/testpage.html\" />\n        <option value=\"$PROJECT_DIR$/manage.py\" />\n        <option value=\"$PROJECT_DIR$/battles/static/battles/js/title.js\" />\n        <option value=\"$PROJECT_DIR$/mysite/ImportModules.py\" />\n        <option value=\"$PROJECT_DIR$/entities/templates/entities/trainerpage.html\" />\n        <option value=\"$PROJECT_DIR$/entities/static/entities/js/EditTest.js\" />\n        <option value=\"$PROJECT_DIR$/entities/static/entities/js/show-more-less\" />\n        <option value=\"$PROJECT_DIR$/entities/models.py\" />\n        <option value=\"$PROJECT_DIR$/pokemon/templates/pokemon/headers.html\" />\n        <option value=\"$PROJECT_DIR$/mysite/settings.py\" />\n        <option value=\"$PROJECT_DIR$/entities/static/entities/js/show-more-less.js\" />\n        <option value=\"$PROJECT_DIR$/entities/templates/entities/index.html\" />\n        <option value=\"$PROJECT_DIR$/entities/urls.py\" />\n        <option value=\"$PROJECT_DIR$/mysite/urls.py\" />\n        <option value=\"$PROJECT_DIR$/battles/static/battles/css/CSSFile\" />\n        <option value=\"$PROJECT_DIR$/entities/views.py\" />\n        <option value=\"$PROJECT_DIR$/battles/urls.py\" />\n        <option value=\"$PROJECT_DIR$/battles/static/battles/js/main.js\" />\n        <option value=\"$PROJECT_DIR$/battles/views.py\" />\n        <option value=\"$PROJECT_DIR$/battles/templates/battles/create-battle.html\" />\n        <option value=\"$PROJECT_DIR$/entities/static/entities/css/style.css\" />\n        <option value=\"$PROJECT_DIR$/entities/templates/entities/pokemonpage.html\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"ProjectFrameBounds\" extendedState=\"6\">\n    <option name=\"x\" value=\"421\" />\n    <option name=\"y\" value=\"104\" />\n    <option name=\"width\" value=\"1936\" />\n    <option name=\"height\" value=\"1056\" />\n  </component>\n  <component name=\"ProjectInspectionProfilesVisibleTreeState\">\n    <entry key=\"Project Default\">\n      <profile-state>\n        <expanded-state>\n          <State>\n            <id />\n          </State>\n        </expanded-state>\n        <selected-state>\n          <State>\n            <id>Buildout</id>\n          </State>\n        </selected-state>\n      </profile-state>\n    </entry>\n  </component>\n  <component name=\"ProjectView\">\n    <navigator currentView=\"ProjectPane\" proportions=\"\" version=\"1\">\n      <flattenPackages />\n      <showMembers />\n      <showModules />\n      <showLibraryContents />\n      <hideEmptyPackages />\n      <abbreviatePackageNames />\n      <autoscrollToSource />\n      <autoscrollFromSource />\n      <sortByType />\n      <manualOrder />\n      <foldersAlwaysOnTop value=\"true\" />\n    </navigator>\n    <panes>\n      <pane id=\"Scope\" />\n      <pane id=\"Scratches\" />\n      <pane id=\"ProjectPane\">\n        <subPane>\n          <expand>\n            <path>\n              <item name=\"mysite\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"mysite\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"mysite\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"mysite\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"battles\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"mysite\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"mysite\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"entities\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"mysite\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"mysite\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"entities\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"static\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"mysite\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"mysite\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"entities\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"static\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"entities\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"mysite\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"mysite\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"entities\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"static\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"entities\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"img\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"mysite\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"mysite\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"entities\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"templates\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"mysite\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"mysite\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"entities\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"templates\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"entities\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"mysite\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"mysite\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"mysite\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n          </expand>\n          <select />\n        </subPane>\n      </pane>\n    </panes>\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.pluginManager\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\n    <property name=\"settings.editor.splitter.proportion\" value=\"0.25\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"E:\\Pokemon-Table-Top\\Git Project\\PokemonTableTop\\Django-site\\mysite\\entities\\static\\entities\\img\" />\n      <recent name=\"E:\\Pokemon-Table-Top\\Git Project\\PokemonTableTop\\Django-site\\mysite\\battles\\static\\battles\" />\n      <recent name=\"E:\\Pokemon-Table-Top\\Git Project\\PokemonTableTop\\Django-site\\mysite\\battles\" />\n      <recent name=\"E:\\Pokemon-Table-Top\\Git Project\\PokemonTableTop\\Django-site\\mysite\" />\n    </key>\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"E:\\Pokemon-Table-Top\\Git Project\\PokemonTableTop\\Django-site\\mysite\\battles\\static\\battles\\js\" />\n      <recent name=\"E:\\Pokemon-Table-Top\\Git Project\\PokemonTableTop\\Django-site\\mysite\\battles\\templates\\battles\" />\n      <recent name=\"E:\\Pokemon-Table-Top\\Git Project\\PokemonTableTop\\Django-site\\mysite\\entities\\templates\\entities\" />\n      <recent name=\"E:\\Pokemon-Table-Top\\Git Project\\PokemonTableTop\\Django-site\\mysite\\entities\\static\\entities\\js\" />\n      <recent name=\"E:\\Pokemon-Table-Top\\Git Project\\PokemonTableTop\\Django-site\\mysite\\entities\" />\n    </key>\n  </component>\n  <component name=\"RunDashboard\">\n    <option name=\"ruleStates\">\n      <list>\n        <RuleState>\n          <option name=\"name\" value=\"ConfigurationTypeDashboardGroupingRule\" />\n        </RuleState>\n        <RuleState>\n          <option name=\"name\" value=\"StatusDashboardGroupingRule\" />\n        </RuleState>\n      </list>\n    </option>\n  </component>\n  <component name=\"RunManager\" selected=\"Python.ImportModules\">\n    <configuration name=\"CreateTableAndHistoryTable\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/../../Python Project/Scripts\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"mysite\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/../../Python Project/Scripts/CreateTableAndHistoryTable.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n    </configuration>\n    <configuration name=\"ImportModules\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/mysite\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"mysite\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/mysite/ImportModules.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n    </configuration>\n    <configuration name=\"crawler\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/entities\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"mysite\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/entities/crawler.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n    </configuration>\n    <configuration name=\"manage\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"mysite\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/manage.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n    </configuration>\n    <configuration name=\"settings\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/mysite\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"mysite\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/mysite/settings.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n    </configuration>\n    <list size=\"5\">\n      <item index=\"0\" class=\"java.lang.String\" itemvalue=\"Python.CreateTableAndHistoryTable\" />\n      <item index=\"1\" class=\"java.lang.String\" itemvalue=\"Python.crawler\" />\n      <item index=\"2\" class=\"java.lang.String\" itemvalue=\"Python.settings\" />\n      <item index=\"3\" class=\"java.lang.String\" itemvalue=\"Python.manage\" />\n      <item index=\"4\" class=\"java.lang.String\" itemvalue=\"Python.ImportModules\" />\n    </list>\n    <recent_temporary>\n      <list size=\"5\">\n        <item index=\"0\" class=\"java.lang.String\" itemvalue=\"Python.ImportModules\" />\n        <item index=\"1\" class=\"java.lang.String\" itemvalue=\"Python.manage\" />\n        <item index=\"2\" class=\"java.lang.String\" itemvalue=\"Python.settings\" />\n        <item index=\"3\" class=\"java.lang.String\" itemvalue=\"Python.crawler\" />\n        <item index=\"4\" class=\"java.lang.String\" itemvalue=\"Python.CreateTableAndHistoryTable\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"ShelveChangesManager\" show_recycled=\"false\">\n    <option name=\"remove_strategy\" value=\"false\" />\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"ce5d8bbc-916d-4c35-b9b5-96df3676fa2c\" name=\"Default\" comment=\"\" />\n      <created>1507237060045</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1507237060045</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"ToolWindowManager\">\n    <frame x=\"-8\" y=\"-8\" width=\"1936\" height=\"1056\" extended-state=\"6\" />\n    <editor active=\"true\" />\n    <layout>\n      <window_info id=\"Project\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"true\" show_stripe_button=\"true\" weight=\"0.102604166\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"combo\" />\n      <window_info id=\"TODO\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"6\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Event Log\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.2840549\" sideWeight=\"0.50625\" order=\"7\" side_tool=\"true\" content_ui=\"tabs\" />\n      <window_info id=\"Version Control\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"10\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Python Console\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"8\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Run\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.39513677\" sideWeight=\"0.49375\" order=\"2\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Structure\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.25\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Terminal\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"9\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Favorites\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"2\" side_tool=\"true\" content_ui=\"tabs\" />\n      <window_info id=\"Debug\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.39817628\" sideWeight=\"0.5\" order=\"3\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Cvs\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.25\" sideWeight=\"0.5\" order=\"4\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Message\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Commander\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.4\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Inspection\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.4\" sideWeight=\"0.5\" order=\"5\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Hierarchy\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.25\" sideWeight=\"0.5\" order=\"2\" side_tool=\"false\" content_ui=\"combo\" />\n      <window_info id=\"Find\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"true\" show_stripe_button=\"true\" weight=\"0.21413502\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Ant Build\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.25\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Data View\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" show_stripe_button=\"true\" weight=\"0.33\" sideWeight=\"0.5\" order=\"3\" side_tool=\"false\" content_ui=\"tabs\" />\n    </layout>\n  </component>\n  <component name=\"VcsContentAnnotationSettings\">\n    <option name=\"myLimit\" value=\"2678400000\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <option name=\"time\" value=\"3\" />\n    </breakpoint-manager>\n    <watches-manager />\n  </component>\n  <component name=\"editorHistoryManager\">\n    <entry file=\"file://$PROJECT_DIR$/pokemon/templates/pokemon/includes/htmlsnippet.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pokemon/tests.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pokemon/apps.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pokemon/__init__.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pokemon/admin.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/crawler.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"770\">\n          <caret line=\"43\" column=\"27\" lean-forward=\"true\" selection-start-line=\"43\" selection-start-column=\"27\" selection-end-line=\"43\" selection-end-column=\"27\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/apps.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/admin.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"110\">\n          <caret line=\"8\" column=\"38\" lean-forward=\"false\" selection-start-line=\"8\" selection-start-column=\"20\" selection-end-line=\"8\" selection-end-column=\"38\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/ImportModules.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"462\">\n          <caret line=\"21\" column=\"0\" lean-forward=\"true\" selection-start-line=\"21\" selection-start-column=\"0\" selection-end-line=\"21\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pokemon/models.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pokemon/views.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"242\">\n          <caret line=\"14\" column=\"0\" lean-forward=\"true\" selection-start-line=\"14\" selection-start-column=\"0\" selection-end-line=\"14\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/static/entities/js/bootstrap.js\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/static/entities/js/bootstrap.min.js\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/templates/entities/ErrPage.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"418\">\n          <caret line=\"19\" column=\"8\" lean-forward=\"true\" selection-start-line=\"19\" selection-start-column=\"8\" selection-end-line=\"21\" selection-end-column=\"15\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://C:/ProgramData/Anaconda2/Lib/UserDict.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"189\">\n          <caret line=\"94\" column=\"8\" lean-forward=\"false\" selection-start-line=\"94\" selection-start-column=\"8\" selection-end-line=\"94\" selection-end-column=\"8\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://C:/ProgramData/Anaconda2/Lib/site-packages/django/core/management/__init__.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"305\">\n          <caret line=\"358\" column=\"4\" lean-forward=\"false\" selection-start-line=\"358\" selection-start-column=\"4\" selection-end-line=\"358\" selection-end-column=\"4\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/manage.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"414\">\n          <caret line=\"22\" column=\"0\" lean-forward=\"true\" selection-start-line=\"22\" selection-start-column=\"0\" selection-end-line=\"22\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/battles/tests.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/battles/templates/battles/create-a-battle.html\" />\n    <entry file=\"file://$PROJECT_DIR$/entities/static/entities/js/EditTest.js\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"484\">\n          <caret line=\"22\" column=\"36\" lean-forward=\"true\" selection-start-line=\"22\" selection-start-column=\"36\" selection-end-line=\"22\" selection-end-column=\"36\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/battles/templates/battles/testpage.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"462\">\n          <caret line=\"133\" column=\"17\" lean-forward=\"false\" selection-start-line=\"133\" selection-start-column=\"17\" selection-end-line=\"133\" selection-end-column=\"17\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/battles/static/battles/js/title.js\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"110\">\n          <caret line=\"5\" column=\"20\" lean-forward=\"true\" selection-start-line=\"5\" selection-start-column=\"20\" selection-end-line=\"5\" selection-end-column=\"20\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/mysite/urls.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"528\">\n          <caret line=\"28\" column=\"19\" lean-forward=\"true\" selection-start-line=\"28\" selection-start-column=\"19\" selection-end-line=\"28\" selection-end-column=\"19\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pokemon/urls.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"110\">\n          <caret line=\"6\" column=\"1\" lean-forward=\"false\" selection-start-line=\"6\" selection-start-column=\"1\" selection-end-line=\"6\" selection-end-column=\"1\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pokemon/templates/pokemon/home.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"130\">\n          <caret line=\"10\" column=\"10\" lean-forward=\"true\" selection-start-line=\"10\" selection-start-column=\"10\" selection-end-line=\"10\" selection-end-column=\"10\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pokemon/templates/pokemon/LoginPage.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"330\">\n          <caret line=\"15\" column=\"7\" lean-forward=\"true\" selection-start-line=\"15\" selection-start-column=\"7\" selection-end-line=\"15\" selection-end-column=\"7\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/battles/static/battles/style\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"44\">\n          <caret line=\"2\" column=\"5\" lean-forward=\"true\" selection-start-line=\"2\" selection-start-column=\"5\" selection-end-line=\"2\" selection-end-column=\"5\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/templates/entities/index.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"440\">\n          <caret line=\"20\" column=\"44\" lean-forward=\"true\" selection-start-line=\"20\" selection-start-column=\"44\" selection-end-line=\"20\" selection-end-column=\"44\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pokemon/templates/pokemon/headers.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"286\">\n          <caret line=\"22\" column=\"17\" lean-forward=\"false\" selection-start-line=\"22\" selection-start-column=\"17\" selection-end-line=\"22\" selection-end-column=\"17\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/battles/static/battles/css/CSSFile\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"494\">\n          <caret line=\"79\" column=\"0\" lean-forward=\"true\" selection-start-line=\"6\" selection-start-column=\"0\" selection-end-line=\"79\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/static/entities/js/show-more-less.js\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"545\">\n          <caret line=\"127\" column=\"45\" lean-forward=\"false\" selection-start-line=\"127\" selection-start-column=\"45\" selection-end-line=\"127\" selection-end-column=\"45\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/mysite/settings.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"330\">\n          <caret line=\"42\" column=\"1\" lean-forward=\"false\" selection-start-line=\"42\" selection-start-column=\"1\" selection-end-line=\"42\" selection-end-column=\"1\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/__init__.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/static/entities/img/2017-11-30 19.39.37.jpg\">\n      <provider selected=\"true\" editor-type-id=\"images\">\n        <state />\n      </provider>\n    </entry>\n    <entry file=\"jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/common.rnc\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"239\">\n          <caret line=\"124\" column=\"18\" lean-forward=\"false\" selection-start-line=\"124\" selection-start-column=\"18\" selection-end-line=\"124\" selection-end-column=\"18\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/battles/models.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"0\">\n          <caret line=\"0\" column=\"0\" lean-forward=\"false\" selection-start-line=\"0\" selection-start-column=\"0\" selection-end-line=\"0\" selection-end-column=\"0\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/mysite/ImportModules.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"-2224\">\n          <caret line=\"24\" column=\"44\" lean-forward=\"false\" selection-start-line=\"24\" selection-start-column=\"44\" selection-end-line=\"24\" selection-end-column=\"44\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/urls.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"396\">\n          <caret line=\"20\" column=\"20\" lean-forward=\"false\" selection-start-line=\"20\" selection-start-column=\"20\" selection-end-line=\"20\" selection-end-column=\"20\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/views.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"3168\">\n          <caret line=\"158\" column=\"29\" lean-forward=\"false\" selection-start-line=\"158\" selection-start-column=\"16\" selection-end-line=\"158\" selection-end-column=\"29\" />\n          <folding>\n            <element signature=\"e#24#63#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/battles/urls.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"352\">\n          <caret line=\"19\" column=\"1\" lean-forward=\"false\" selection-start-line=\"19\" selection-start-column=\"1\" selection-end-line=\"19\" selection-end-column=\"1\" />\n          <folding>\n            <element signature=\"e#24#63#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/../../Python Project/Scripts/BattleLog.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"-1870\">\n          <caret line=\"17\" column=\"24\" lean-forward=\"true\" selection-start-line=\"17\" selection-start-column=\"24\" selection-end-line=\"17\" selection-end-column=\"24\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/../../Python Project/Scripts/PokemonBattle.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"1210\">\n          <caret line=\"60\" column=\"128\" lean-forward=\"false\" selection-start-line=\"60\" selection-start-column=\"128\" selection-end-line=\"60\" selection-end-column=\"128\" />\n          <folding>\n            <element signature=\"e#0#13#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/../../Python Project/Scripts/CreateGroupForBattle.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"1342\">\n          <caret line=\"67\" column=\"59\" lean-forward=\"false\" selection-start-line=\"67\" selection-start-column=\"59\" selection-end-line=\"67\" selection-end-column=\"59\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/../../Python Project/Scripts/SelectPokemon.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"286\">\n          <caret line=\"19\" column=\"32\" lean-forward=\"false\" selection-start-line=\"19\" selection-start-column=\"16\" selection-end-line=\"19\" selection-end-column=\"32\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/battles/static/battles/js/main.js\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"581\">\n          <caret line=\"169\" column=\"20\" lean-forward=\"false\" selection-start-line=\"169\" selection-start-column=\"20\" selection-end-line=\"169\" selection-end-column=\"20\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/battles/views.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"-349\">\n          <caret line=\"57\" column=\"12\" lean-forward=\"true\" selection-start-line=\"57\" selection-start-column=\"12\" selection-end-line=\"57\" selection-end-column=\"12\" />\n          <folding>\n            <element signature=\"e#0#39#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/battles/templates/battles/create-battle.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"1301\">\n          <caret line=\"160\" column=\"15\" lean-forward=\"false\" selection-start-line=\"160\" selection-start-column=\"15\" selection-end-line=\"160\" selection-end-column=\"15\" />\n          <folding>\n            <element signature=\"n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top\" expanded=\"true\" />\n            <element signature=\"n#style#0;n#div#2;n#div#2;n#div#3;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top\" expanded=\"true\" />\n            <element signature=\"n#style#0;n#div#1;n#div#1;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top\" expanded=\"true\" />\n            <element signature=\"n#style#0;n#div#2;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/models.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"-2725\">\n          <caret line=\"150\" column=\"43\" lean-forward=\"true\" selection-start-line=\"150\" selection-start-column=\"43\" selection-end-line=\"150\" selection-end-column=\"43\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/templates/entities/trainerpage.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"22\">\n          <caret line=\"57\" column=\"13\" lean-forward=\"false\" selection-start-line=\"57\" selection-start-column=\"13\" selection-end-line=\"57\" selection-end-column=\"13\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/templates/entities/pokemonpage.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"113\">\n          <caret line=\"60\" column=\"18\" lean-forward=\"true\" selection-start-line=\"60\" selection-start-column=\"18\" selection-end-line=\"60\" selection-end-column=\"18\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/entities/static/entities/css/style.css\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"538\">\n          <caret line=\"258\" column=\"5\" lean-forward=\"true\" selection-start-line=\"258\" selection-start-column=\"5\" selection-end-line=\"258\" selection-end-column=\"5\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 4d8a046c8a6842c6c56fbb97e2f0d1d1985d9c3d)
++++ .idea/workspace.xml	(date 1513811168665)
+@@ -1,7 +1,16 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="ce5d8bbc-916d-4c35-b9b5-96df3676fa2c" name="Default" comment="" />
++    <list default="true" id="ce5d8bbc-916d-4c35-b9b5-96df3676fa2c" name="Default" comment="">
++      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/shelf/unnamed.xml" />
++      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
++      <change beforePath="$PROJECT_DIR$/entities/models.py" afterPath="$PROJECT_DIR$/entities/models.py" />
++      <change beforePath="$PROJECT_DIR$/entities/static/entities/js/EditTest.js" afterPath="$PROJECT_DIR$/entities/static/entities/js/EditTest.js" />
++      <change beforePath="$PROJECT_DIR$/entities/templates/entities/pokemonpage.html" afterPath="$PROJECT_DIR$/entities/templates/entities/pokemonpage.html" />
++      <change beforePath="$PROJECT_DIR$/entities/templates/entities/trainerpage.html" afterPath="$PROJECT_DIR$/entities/templates/entities/trainerpage.html" />
++      <change beforePath="$PROJECT_DIR$/entities/views.py" afterPath="$PROJECT_DIR$/entities/views.py" />
++    </list>
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="TRACKING_ENABLED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+@@ -10,159 +19,60 @@
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+   <component name="FileEditorManager">
+-    <splitter split-orientation="horizontal" split-proportion="0.46720836">
+-      <split-first>
+-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/battles/urls.py">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="352">
+-                  <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+-                  <folding>
+-                    <element signature="e#24#63#0" expanded="true" />
+-                  </folding>
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/battles/views.py">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="-349">
+-                  <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+-                  <folding>
+-                    <element signature="e#0#39#0" expanded="true" />
+-                  </folding>
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="PokemonBattle.py" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/../../Python Project/Scripts/PokemonBattle.py">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="1210">
+-                  <caret line="60" column="128" lean-forward="false" selection-start-line="60" selection-start-column="128" selection-end-line="60" selection-end-column="128" />
+-                  <folding>
+-                    <element signature="e#0#13#0" expanded="true" />
+-                  </folding>
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="CreateGroupForBattle.py" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/../../Python Project/Scripts/CreateGroupForBattle.py">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="1342">
+-                  <caret line="67" column="59" lean-forward="false" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
+-                  <folding />
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+-            <entry file="file://$PROJECT_DIR$/entities/static/entities/css/style.css">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="538">
+-                  <caret line="258" column="5" lean-forward="true" selection-start-line="258" selection-start-column="5" selection-end-line="258" selection-end-column="5" />
+-                  <folding />
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-        </leaf>
+-      </split-first>
+-      <split-second>
+-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+-          <file leaf-file-name="SelectPokemon.py" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/../../Python Project/Scripts/SelectPokemon.py">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="286">
+-                  <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="32" />
+-                  <folding />
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/battles/static/battles/js/main.js">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="581">
+-                  <caret line="169" column="20" lean-forward="false" selection-start-line="169" selection-start-column="20" selection-end-line="169" selection-end-column="20" />
+-                  <folding />
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="create-battle.html" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/battles/templates/battles/create-battle.html">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="1301">
+-                  <caret line="160" column="15" lean-forward="false" selection-start-line="160" selection-start-column="15" selection-end-line="160" selection-end-column="15" />
+-                  <folding>
+-                    <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+-                    <element signature="n#style#0;n#div#2;n#div#2;n#div#3;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+-                    <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+-                    <element signature="n#style#0;n#div#2;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+-                  </folding>
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/entities/urls.py">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="396">
+-                  <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+-                  <folding />
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="pokemonpage.html" pinned="false" current-in-tab="true">
+-            <entry file="file://$PROJECT_DIR$/entities/templates/entities/pokemonpage.html">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="113">
+-                  <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+-                  <folding />
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/entities/models.py">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="-2725">
+-                  <caret line="150" column="43" lean-forward="true" selection-start-line="150" selection-start-column="43" selection-end-line="150" selection-end-column="43" />
+-                  <folding />
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="trainerpage.html" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/entities/templates/entities/trainerpage.html">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="22">
+-                  <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+-                  <folding />
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/entities/views.py">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="3168">
+-                  <caret line="158" column="29" lean-forward="false" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="29" />
+-                  <folding>
+-                    <element signature="e#24#63#0" expanded="true" />
+-                  </folding>
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-        </leaf>
+-      </split-second>
+-    </splitter>
++    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
++      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/entities/static/entities/css/style.css">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="516">
++              <caret line="251" column="20" lean-forward="true" selection-start-line="251" selection-start-column="20" selection-end-line="251" selection-end-column="20" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="pokemonpage.html" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/entities/templates/entities/pokemonpage.html">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="330">
++              <caret line="66" column="36" lean-forward="true" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="show-more-less.js" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/entities/static/entities/js/show-more-less.js">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="-88">
++              <caret line="102" column="39" lean-forward="false" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/entities/models.py">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="317">
++              <caret line="208" column="109" lean-forward="true" selection-start-line="208" selection-start-column="109" selection-end-line="208" selection-end-column="109" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/entities/views.py">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="339">
++              <caret line="124" column="57" lean-forward="true" selection-start-line="124" selection-start-column="57" selection-end-line="124" selection-end-column="57" />
++              <folding>
++                <element signature="e#24#63#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++    </leaf>
+   </component>
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+@@ -173,9 +83,6 @@
+   </component>
+   <component name="FindInProjectRecents">
+     <findStrings>
+-      <find>AttachResultsFlag</find>
+-      <find>IsIncident</find>
+-      <find>click</find>
+       <find>edit</find>
+       <find>DMname</find>
+       <find>name</find>
+@@ -200,10 +107,16 @@
+       <find>hover</find>
+       <find>entity_groups_selectionmenu</find>
+       <find>pokemonLimit</find>
+-      <find>species</find>
+       <find>datatype': '1'</find>
+       <find>id=</find>
++      <find>'species'</find>
++      <find>getpokemonsbasedonentitiy</find>
++      <find>species</find>
++      <find>speciest</find>
+     </findStrings>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+   </component>
+   <component name="IdeDocumentHistory">
+     <option name="CHANGED_PATHS">
+@@ -230,24 +143,25 @@
+         <option value="$PROJECT_DIR$/manage.py" />
+         <option value="$PROJECT_DIR$/battles/static/battles/js/title.js" />
+         <option value="$PROJECT_DIR$/mysite/ImportModules.py" />
+-        <option value="$PROJECT_DIR$/entities/templates/entities/trainerpage.html" />
+-        <option value="$PROJECT_DIR$/entities/static/entities/js/EditTest.js" />
+         <option value="$PROJECT_DIR$/entities/static/entities/js/show-more-less" />
+-        <option value="$PROJECT_DIR$/entities/models.py" />
+         <option value="$PROJECT_DIR$/pokemon/templates/pokemon/headers.html" />
+         <option value="$PROJECT_DIR$/mysite/settings.py" />
+-        <option value="$PROJECT_DIR$/entities/static/entities/js/show-more-less.js" />
+         <option value="$PROJECT_DIR$/entities/templates/entities/index.html" />
+         <option value="$PROJECT_DIR$/entities/urls.py" />
+         <option value="$PROJECT_DIR$/mysite/urls.py" />
+         <option value="$PROJECT_DIR$/battles/static/battles/css/CSSFile" />
+-        <option value="$PROJECT_DIR$/entities/views.py" />
+         <option value="$PROJECT_DIR$/battles/urls.py" />
+         <option value="$PROJECT_DIR$/battles/static/battles/js/main.js" />
+         <option value="$PROJECT_DIR$/battles/views.py" />
+         <option value="$PROJECT_DIR$/battles/templates/battles/create-battle.html" />
+         <option value="$PROJECT_DIR$/entities/static/entities/css/style.css" />
++        <option value="$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.groovy" />
++        <option value="$PROJECT_DIR$/entities/static/entities/js/EditTest.js" />
++        <option value="$PROJECT_DIR$/entities/templates/entities/trainerpage.html" />
++        <option value="$PROJECT_DIR$/entities/static/entities/js/show-more-less.js" />
++        <option value="$PROJECT_DIR$/entities/views.py" />
+         <option value="$PROJECT_DIR$/entities/templates/entities/pokemonpage.html" />
++        <option value="$PROJECT_DIR$/entities/models.py" />
+       </list>
+     </option>
+   </component>
+@@ -273,6 +187,7 @@
+       </profile-state>
+     </entry>
+   </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectView">
+     <navigator currentView="ProjectPane" proportions="" version="1">
+       <flattenPackages />
+@@ -288,8 +203,6 @@
+       <foldersAlwaysOnTop value="true" />
+     </navigator>
+     <panes>
+-      <pane id="Scope" />
+-      <pane id="Scratches" />
+       <pane id="ProjectPane">
+         <subPane>
+           <expand>
+@@ -332,6 +245,14 @@
+               <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
+               <item name="mysite" type="462c0819:PsiDirectoryNode" />
+               <item name="entities" type="462c0819:PsiDirectoryNode" />
++              <item name="static" type="462c0819:PsiDirectoryNode" />
++              <item name="entities" type="462c0819:PsiDirectoryNode" />
++              <item name="js" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
++              <item name="mysite" type="462c0819:PsiDirectoryNode" />
++              <item name="entities" type="462c0819:PsiDirectoryNode" />
+               <item name="templates" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+@@ -350,6 +271,8 @@
+           <select />
+         </subPane>
+       </pane>
++      <pane id="Scratches" />
++      <pane id="Scope" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
+@@ -385,7 +308,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="RunManager" selected="Python.ImportModules">
++  <component name="RunManager" selected="Python.manage">
+     <configuration name="CreateTableAndHistoryTable" type="PythonConfigurationType" factoryName="Python" temporary="true">
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -485,8 +408,8 @@
+     </list>
+     <recent_temporary>
+       <list size="5">
+-        <item index="0" class="java.lang.String" itemvalue="Python.ImportModules" />
+-        <item index="1" class="java.lang.String" itemvalue="Python.manage" />
++        <item index="0" class="java.lang.String" itemvalue="Python.manage" />
++        <item index="1" class="java.lang.String" itemvalue="Python.ImportModules" />
+         <item index="2" class="java.lang.String" itemvalue="Python.settings" />
+         <item index="3" class="java.lang.String" itemvalue="Python.crawler" />
+         <item index="4" class="java.lang.String" itemvalue="Python.CreateTableAndHistoryTable" />
+@@ -507,34 +430,56 @@
+       <option name="presentableId" value="Default" />
+       <updated>1507237060045</updated>
+     </task>
++    <task id="LOCAL-00001">
++      <created>1513727429918</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1513727429918</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+     <editor active="true" />
+     <layout>
+-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.102604166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
++      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122395836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
++      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2840549" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
+-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39513677" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
++      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
++      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39451477" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39817628" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
++      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
++      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2840549" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
+       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
++      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
++      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
++      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39513677" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
++      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.102604166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21413502" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
++      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39817628" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+     </layout>
+   </component>
+   <component name="VcsContentAnnotationSettings">
+     <option name="myLimit" value="2678400000" />
++  </component>
++  <component name="VcsManagerConfiguration">
++    <option name="LAST_COMMIT_MESSAGE" value="" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+@@ -543,13 +488,6 @@
+     <watches-manager />
+   </component>
+   <component name="editorHistoryManager">
+-    <entry file="file://$PROJECT_DIR$/pokemon/templates/pokemon/includes/htmlsnippet.html">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="0">
+-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+-        </state>
+-      </provider>
+-    </entry>
+     <entry file="file://$PROJECT_DIR$/pokemon/tests.py">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="0">
+@@ -634,13 +572,6 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/entities/templates/entities/ErrPage.html">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="418">
+-          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="21" selection-end-column="15" />
+-        </state>
+-      </provider>
+-    </entry>
+     <entry file="file://C:/ProgramData/Anaconda2/Lib/UserDict.py">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="189">
+@@ -670,13 +601,6 @@
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/battles/templates/battles/create-a-battle.html" />
+-    <entry file="file://$PROJECT_DIR$/entities/static/entities/js/EditTest.js">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="484">
+-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+-        </state>
+-      </provider>
+-    </entry>
+     <entry file="file://$PROJECT_DIR$/battles/templates/battles/testpage.html">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="462">
+@@ -744,13 +668,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="494">
+           <caret line="79" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/entities/static/entities/js/show-more-less.js">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="545">
+-          <caret line="127" column="45" lean-forward="false" selection-start-line="127" selection-start-column="45" selection-end-line="127" selection-end-column="45" />
+         </state>
+       </provider>
+     </entry>
+@@ -777,13 +694,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="239">
+           <caret line="124" column="18" lean-forward="false" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/battles/models.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="0">
+-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+         </state>
+       </provider>
+     </entry>
+@@ -802,118 +712,162 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/entities/views.py">
++    <entry file="file://$PROJECT_DIR$/../../Python Project/Scripts/BattleLog.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="-1870">
++          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/../../Python Project/Scripts/SelectPokemon.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="0">
++          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="32" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/battles/templates/battles/create-battle.html">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="3520">
++          <caret line="160" column="15" lean-forward="false" selection-start-line="160" selection-start-column="15" selection-end-line="160" selection-end-column="15" />
++          <folding>
++            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
++            <element signature="n#style#0;n#div#2;n#div#2;n#div#3;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
++            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
++            <element signature="n#style#0;n#div#2;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.groovy">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="22">
++          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/entities/templates/entities/ErrPage.html">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="550">
++          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/battles/models.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="3168">
+-          <caret line="158" column="29" lean-forward="false" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="29" />
++        <state relative-caret-position="0">
++          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+           <folding>
+-            <element signature="e#24#63#0" expanded="true" />
++            <element signature="e#24#63#0" expanded="false" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/battles/urls.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="352">
++        <state relative-caret-position="418">
+           <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+           <folding>
+-            <element signature="e#24#63#0" expanded="true" />
++            <element signature="e#24#63#0" expanded="false" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/../../Python Project/Scripts/BattleLog.py">
++    <entry file="file://$PROJECT_DIR$/battles/views.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-1870">
+-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
++        <state relative-caret-position="22">
++          <caret line="57" column="12" lean-forward="false" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
++          <folding>
++            <element signature="e#0#39#0" expanded="false" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/../../Python Project/Scripts/PokemonBattle.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="1210">
++        <state relative-caret-position="22">
+           <caret line="60" column="128" lean-forward="false" selection-start-line="60" selection-start-column="128" selection-end-line="60" selection-end-column="128" />
+           <folding>
+-            <element signature="e#0#13#0" expanded="true" />
++            <element signature="e#0#13#0" expanded="false" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/../../Python Project/Scripts/CreateGroupForBattle.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="1342">
++        <state relative-caret-position="541">
+           <caret line="67" column="59" lean-forward="false" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/../../Python Project/Scripts/SelectPokemon.py">
++    <entry file="file://$PROJECT_DIR$/entities/templates/entities/trainerpage.html">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="286">
+-          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="32" />
+-          <folding />
++        <state relative-caret-position="440">
++          <caret line="42" column="37" lean-forward="false" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
++          <folding>
++            <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#!!top" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/battles/static/battles/js/main.js">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="581">
+-          <caret line="169" column="20" lean-forward="false" selection-start-line="169" selection-start-column="20" selection-end-line="169" selection-end-column="20" />
++        <state relative-caret-position="520">
++          <caret line="86" column="31" lean-forward="false" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/battles/views.py">
++    <entry file="file://$PROJECT_DIR$/entities/static/entities/css/style.css">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-349">
+-          <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+-          <folding>
+-            <element signature="e#0#39#0" expanded="true" />
+-          </folding>
++        <state relative-caret-position="516">
++          <caret line="251" column="20" lean-forward="true" selection-start-line="251" selection-start-column="20" selection-end-line="251" selection-end-column="20" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/battles/templates/battles/create-battle.html">
++    <entry file="file://$PROJECT_DIR$/entities/static/entities/js/EditTest.js">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="1301">
+-          <caret line="160" column="15" lean-forward="false" selection-start-line="160" selection-start-column="15" selection-end-line="160" selection-end-column="15" />
+-          <folding>
+-            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+-            <element signature="n#style#0;n#div#2;n#div#2;n#div#3;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+-            <element signature="n#style#0;n#div#2;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+-          </folding>
++        <state relative-caret-position="484">
++          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/entities/models.py">
++    <entry file="file://$PROJECT_DIR$/entities/static/entities/js/show-more-less.js">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-2725">
+-          <caret line="150" column="43" lean-forward="true" selection-start-line="150" selection-start-column="43" selection-end-line="150" selection-end-column="43" />
++        <state relative-caret-position="-88">
++          <caret line="102" column="39" lean-forward="false" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/entities/templates/entities/trainerpage.html">
++    <entry file="file://$PROJECT_DIR$/entities/views.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="22">
+-          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+-          <folding />
++        <state relative-caret-position="339">
++          <caret line="124" column="57" lean-forward="true" selection-start-line="124" selection-start-column="57" selection-end-line="124" selection-end-column="57" />
++          <folding>
++            <element signature="e#24#63#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/entities/templates/entities/pokemonpage.html">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="113">
+-          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
++        <state relative-caret-position="330">
++          <caret line="66" column="36" lean-forward="true" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/entities/static/entities/css/style.css">
++    <entry file="file://$PROJECT_DIR$/entities/models.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="538">
+-          <caret line="258" column="5" lean-forward="true" selection-start-line="258" selection-start-column="5" selection-end-line="258" selection-end-column="5" />
++        <state relative-caret-position="317">
++          <caret line="208" column="109" lean-forward="true" selection-start-line="208" selection-start-column="109" selection-end-line="208" selection-end-column="109" />
+           <folding />
+         </state>
+       </provider>
+Index: entities/static/entities/js/EditTest.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>var button = document.getElementById(\"close-open-edit\");\n\nbutton.onclick = function(){\n\n    //var inputElements = Array.from(document.querySelectorAll(\"input.form-control\"));/\n    var panels = Array.from(document.querySelectorAll(\"form .panel:not([type='hidden']\"));\n    for (var i = 0; i < panels.length; i++){\n        var panel = panels[i];\n        var panelInput = panel.querySelector(\".form-control\");\n\n        if(button.innerHTML == \"Edit\"){\n            panelInput.removeAttribute('disabled')\n            if (panelInput.getAttribute('readonly') !== \"\") {\n                panel.classList.replace('panel-info','panel-success');\n            }\n        }\n        else{\n            panelInput.setAttribute('disabled','disabled')\n            panel.classList.replace('panel-success','panel-info');\n\n        }\n    }\n    if (button.innerHTML == \"Edit\"){\n        button.innerHTML = \"Stop Editing\"\n    }\n    else {\n        button.innerHTML = \"Edit\"\n        }\n\n\n};\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- entities/static/entities/js/EditTest.js	(revision 4d8a046c8a6842c6c56fbb97e2f0d1d1985d9c3d)
++++ entities/static/entities/js/EditTest.js	(date 1513803796921)
+@@ -1,9 +1,11 @@
+ var button = document.getElementById("close-open-edit");
+ 
++
+ button.onclick = function(){
+ 
+     //var inputElements = Array.from(document.querySelectorAll("input.form-control"));/
+     var panels = Array.from(document.querySelectorAll("form .panel:not([type='hidden']"));
++
+     for (var i = 0; i < panels.length; i++){
+         var panel = panels[i];
+         var panelInput = panel.querySelector(".form-control");
+@@ -22,9 +24,11 @@
+     }
+     if (button.innerHTML == "Edit"){
+         button.innerHTML = "Stop Editing"
++        document.getElementById("update-trainer-details-btn").style.display= '';
+     }
+     else {
+         button.innerHTML = "Edit"
++        document.getElementById("update-trainer-details-btn").style.display= 'none';
+         }
+ 
+ 
+Index: entities/templates/entities/pokemonpage.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{% extends \"pokemon/headers.html\" %}\n{% load staticfiles %}\n{% block tabname %}Pokemon Page - {{pokemondetails.PokemonNickName}}{% endblock %}\n\n{% block content %}\n{% if pokemondetails %}\n\n<style>\ndiv.gallery {\n    margin: 5px;\n    border: 1px solid #ccc;\n    float: right;\n    width: 180px;\n}\n\ndiv.gallery:hover {\n    border: 1px solid #777;\n}\n\ndiv.gallery img {\n    width: 100%;\n    height: auto;\n}\n\ndiv.desc {\n    padding: 15px;\n    text-align: center;\n}\n</style>\n\n<div class=\"container-fluid\">\n    <div align=\"left\">\n        <!--<h2>{{pokemondetails.PokemonNickName}}</h2>-->\n        <img src=\"https://img.pokemondb.net/artwork/{{ pokemondetails.Species|lower }}.jpg\"  align=\"left\" alt=\"({{ pokemondetails.Species }}\" />\n\n        <div class=\"gallery\">\n                  <a target=\"{% url 'Entities:getentities' entity_Id %}\" href=\"{% url 'Entities:getentities' entity_Id %}\">\n                    <img src=\"http://i63.tinypic.com/6fwr40.png\" alt=\"trainer\" width=\"300\" height=\"200\">\n                  </a>\n                  <div class=\"desc\">Back to trainer '{{ pokemondetails.OwnerName }}'</div>\n        </div>\n        <!--<a href=\"{% url 'Entities:getentities' entity_Id %}\" align=\"right\"><img src=\"http://i63.tinypic.com/6fwr40.png\" alt=\"trainer\" align=\"right\"/><div style=\"font-size:24px;\" align=\"right\">Back to trainer '{{ pokemondetails.OwnerName }}'</div></a>-->\n    </div>\n</div>\n<div class=\"container-fluid\">\n    <h1>{{ pokemondetails.PokemonNickName }}</h1>\n    <h4>{{ pokemondetails.Species }}</h4>\n    <input type=\"button\" id=\"show-more-less\" class=\"btn btn-secondary btn-lg btn-block\" value=\"Show Less\"/>\n    <form class=\"form-horizontal\" action=\"{% url 'Entities:UpdatePokemonDetails' entity_Id pokemondetails.PokemonId %}\" method=\"Post\" enctype=\"multipart/form-data\">\n    <!--<form class=\"form-horizontal\" action=\"http://127.0.0.1:8000/entities/{{entity_Id}}/pokemonpage/{{pokemondetails.PokemonId}}\" method=\"Post\" enctype=\"multipart/form-data\">-->\n        {% csrf_token %}\n        {% for header in PokemonHeaders %}\n        {% if header.RowNumber == '-1' %}\n            <input type=\"hidden\" name=\"{{header.ColumnName}}\" id=\"header{{ forloop.counter }}\" value=\"{% if header.ColumnName == 'DMName' %}Sagi{% else %}{{header.ColumnValue}}{% endif %}\">\n        {% elif header.DataType == '0' %}\n            <div class=\"col-md-{{ header.ColumnWidth }}\" id=\"{{header.ColumnName}}ID\" about=\"what?\">\n                <div class=\"panel panel-primary\">\n                    <div class=\"panel-heading\">{{ header.ColumnDisplayName }}</div>\n                    <input type=\"{{header.InputType}}\" id=\"{{header.ColumnName}}\" name=\"{{header.ColumnName}}\" class=\"form-control\" value=\"{{header.ColumnValue}}\" {% if not header.AllowEditing == '1' %} readonly {% endif %}></input>\n                </div>\n            </div>\n        {% elif header.DataType == '1' %}\n            <div class=\"col-md-{{ header.ColumnWidth }}\" id=\"{{header.ColumnName}}ID\" about=\"what?\">\n                <div class=\"panel panel-primary\">\n                    <div class=\"panel-heading\">{{ header.ColumnDisplayName }}</div>\n                    <select class=\"form-control\" id=\"{{header.ColumnName}}\">\n                        {% for Specie in AllSpecies %}\n                      <option value={{Specie.Species}} >{{Specie.Species}}</option>\n                        {% endfor %}\n                    </select>\n                </div>\n            </div>\n\n        {% else %}\n            <div class=\"col-md-{{ header.ColumnWidth }}\" id=\"{{header.ColumnName}}ID\" about=\"what?\">\n                <div class=\"panel panel-primary\">\n                    <div class=\"panel-heading\">{{ header.ColumnDisplayName }}</div>\n                    <select class=\"form-control\" id=\"{{header.ColumnName}}\">\n\n                    </select>\n                </div>\n            </div>\n        {% endif %}\n        {% endfor %}\n\n        <input type=\"submit\" class=\"btn btn-secondary btn-lg btn-block\" value=\"Update Details\"/>\n    </form>\n</div>\n\n<h3>Pokemon Moves:</h3>\n{% if allavailablemoves %}\n<div>\n    <table class=\"table table-hover\">\n        <thead>\n            <th>Move #</th>\n            <th>Move Name</th>\n            <th>Element Type</th>\n            <th>Category</th>\n            <th>Frequency</th>\n            <th>Target</th>\n            <th>AC Check</th>\n            <th>Damage</th>\n            <th>Move's Description</th>\n        </thead>\n        <tbody>\n        {% for moove in allavailablemoves %}\n            <tr>\n                <td>{{ moove.MoveNumber }}</td>\n                <td>{{ moove.MoveName }}</td>\n                <td>{{ moove.ElementType }}</td>\n                <td>{{ moove.Category }}</td>\n                <td>{{ moove.Frequency }}</td>\n                <td>{{ moove.NumOfTargets }}</td>\n                <td>{{ moove.AC }}</td>\n                <td>{{ moove.Damage }}{% if moove.Damage != '-' and moove.Damage != 'None' %}+{{ moove.DamageModifier }}{% endif %}</td>\n                <td>{{ moove.AttackEffects }}</td>\n\n            </tr>\n        {% endfor %}\n        </tbody>\n    </table>\n</div>\n<script src=\"{% static '\\entities\\js\\show-more-less.js' %}\"></script>\n\n{% else %}\n    <h3>No Available Moves found</h3>\n{% endif %}\n\n{% else %}\n\t<h3>Pokemon does not exist.<br>Are you a moron??</h3>\n{% endif %}\n\n\n{% endblock %}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- entities/templates/entities/pokemonpage.html	(revision 4d8a046c8a6842c6c56fbb97e2f0d1d1985d9c3d)
++++ entities/templates/entities/pokemonpage.html	(date 1513811000871)
+@@ -30,7 +30,6 @@
+ 
+ <div class="container-fluid">
+     <div align="left">
+-        <!--<h2>{{pokemondetails.PokemonNickName}}</h2>-->
+         <img src="https://img.pokemondb.net/artwork/{{ pokemondetails.Species|lower }}.jpg"  align="left" alt="({{ pokemondetails.Species }}" />
+ 
+         <div class="gallery">
+@@ -39,7 +38,6 @@
+                   </a>
+                   <div class="desc">Back to trainer '{{ pokemondetails.OwnerName }}'</div>
+         </div>
+-        <!--<a href="{% url 'Entities:getentities' entity_Id %}" align="right"><img src="http://i63.tinypic.com/6fwr40.png" alt="trainer" align="right"/><div style="font-size:24px;" align="right">Back to trainer '{{ pokemondetails.OwnerName }}'</div></a>-->
+     </div>
+ </div>
+ <div class="container-fluid">
+@@ -47,37 +45,42 @@
+     <h4>{{ pokemondetails.Species }}</h4>
+     <input type="button" id="show-more-less" class="btn btn-secondary btn-lg btn-block" value="Show Less"/>
+     <form class="form-horizontal" action="{% url 'Entities:UpdatePokemonDetails' entity_Id pokemondetails.PokemonId %}" method="Post" enctype="multipart/form-data">
+-    <!--<form class="form-horizontal" action="http://127.0.0.1:8000/entities/{{entity_Id}}/pokemonpage/{{pokemondetails.PokemonId}}" method="Post" enctype="multipart/form-data">-->
+         {% csrf_token %}
+         {% for header in PokemonHeaders %}
+         {% if header.RowNumber == '-1' %}
+-            <input type="hidden" name="{{header.ColumnName}}" id="header{{ forloop.counter }}" value="{% if header.ColumnName == 'DMName' %}Sagi{% else %}{{header.ColumnValue}}{% endif %}">
+-        {% elif header.DataType == '0' %}
+-            <div class="col-md-{{ header.ColumnWidth }}" id="{{header.ColumnName}}ID" about="what?">
++        <!--For hidden fields-->
++            <input type="hidden"
++                   name="{{header.ColumnName}}"
++                   id="{{header.ColumnName}}"
++                   value="{% if header.ColumnName == 'DMName' %}Sagi{% else %}{{header.ColumnValue}}{% endif %}">
++        <!--For Species selection list-->
++        {% elif header.ColumnName == 'Species' %}
++            <div class="col-md-3" id="SpeciesID" about="what?">
+                 <div class="panel panel-primary">
+-                    <div class="panel-heading">{{ header.ColumnDisplayName }}</div>
+-                    <input type="{{header.InputType}}" id="{{header.ColumnName}}" name="{{header.ColumnName}}" class="form-control" value="{{header.ColumnValue}}" {% if not header.AllowEditing == '1' %} readonly {% endif %}></input>
++                    <div class="panel-heading">Species</div>
++                    <select class="form-control" value="Species" name="{{header.ColumnName}}" id="Species">
++                        {% for Specie in AllSpecies %}
++                        <h2>{{Specie.Species}}</h2>
++                      <option value="{{Specie.Species}}"
++                              name="{{Specie.Species}}"
++                              {% if Specie.Species == pokemondetails.Species %}selected="selected"{% endif %}>{{Specie.Species}}</option>
++                        {% endfor %}
++                    </select>
+                 </div>
+             </div>
+-        {% elif header.DataType == '1' %}
+-            <div class="col-md-{{ header.ColumnWidth }}" id="{{header.ColumnName}}ID" about="what?">
++        {% elif header.ColumnName == 'Nature' %}
++            <div class="col-md-3" id="NatureID" about="what?">
+                 <div class="panel panel-primary">
+-                    <div class="panel-heading">{{ header.ColumnDisplayName }}</div>
+-                    <select class="form-control" id="{{header.ColumnName}}">
+-                        {% for Specie in AllSpecies %}
+-                      <option value={{Specie.Species}} >{{Specie.Species}}</option>
+-                        {% endfor %}
++                    <div class="panel-heading">Nature</div>
++                    <select class="form-control" value="{{pokemondetails.Nature}}" name="{{header.ColumnName}}" id="Nature">
+                     </select>
+                 </div>
+             </div>
+-
+         {% else %}
+             <div class="col-md-{{ header.ColumnWidth }}" id="{{header.ColumnName}}ID" about="what?">
+                 <div class="panel panel-primary">
+                     <div class="panel-heading">{{ header.ColumnDisplayName }}</div>
+-                    <select class="form-control" id="{{header.ColumnName}}">
+-
+-                    </select>
++                    <input type="{{header.InputType}}" id="header{{ forloop.counter }}" name="{{header.ColumnName}}" class="form-control" value="{{header.ColumnValue}}" {% if not header.AllowEditing == '1' %} readonly {% endif %}></input>
+                 </div>
+             </div>
+         {% endif %}
+Index: entities/templates/entities/trainerpage.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{% extends \"pokemon/headers.html\" %}\n{% load staticfiles %}\n{% block tabname %}Trainer Page - {{entity.EntityName}}{% endblock %}\n\n{% block content %}\n{% if entity %}\n\n{% if error %}\n\n<h1>{{ error.ErrDescription }}</h1>\n\n{% endif %}\n\n<div class=\"container-fluid\">\n    <form class=\"form-horizontal\" action=\"{% url 'Entities:UpdateTrainerDetails' entity.EntityId %}\" method=\"Post\" enctype=\"multipart/form-data\">\n        {% csrf_token %}\n        <h1>{{ entity.EntityName }}</h1>\n        <h4>\"{{ entity.CatchPhrase }}\"</h4>\n        <a id=\"close-open-edit\" class=\"btn btn-secondary btn-lg btn-block\">Edit</a>\n        <script src=\"{% static '\\entities\\js\\EditTest.js' %}\"></script>\n        {% for header in EntityHeaders %}\n        {% if header.RowNumber == '-1' %}\n            <input type=\"hidden\" name=\"{{header.ColumnName}}\" id=\"header{{ forloop.counter }}\" value=\"{% if header.ColumnName == 'DMName' %}Sagi{% else %}{{header.ColumnValue}}{% endif %}\">\n        {% else %}\n            <div class=\"col-md-{{ header.ColumnWidth }}\">\n                <div class=\"panel panel-info\">\n                    <div class=\"panel-heading\">{{ header.ColumnDisplayName }}</div>\n                    <input type=\"{{header.InputType}}\" id=\"{{header.ColumnName}}\" name=\"{{header.ColumnName}}\" class=\"form-control\" value=\"{{header.ColumnValue}}\" disabled=\"disabled\" {% if not header.AllowEditing == '1' %} readonly {% endif %}></input>\n                </div>\n            </div>\n        {% endif %}\n        {% endfor %}\n\n        <input type=\"submit\" class=\"btn btn-secondary btn-lg btn-block\" value=\"Update Details\"/>\n    </form>\n</div>\n\n    {% if WasUpdated == 'Yes' %}\n    <div class=\"panel panel-default\">\n        <h5 class=\"text-success\">Trainer's details have been updated successfully.</h5>\n    </div>\n    {% endif %}\n\n\n    <div class=\"panel panel-default\"></div>\n\n\n\n\n\n    <div class=\"container-fluid\">\n        <div class=\"panel panel-default\">\n            <h2>Pokemon on Belt:</h2>\n            <form action=\"{% url 'Entities:TopSixRemove' entity.EntityId %}\" method=\"Post\">\n                {% csrf_token %}\n                {% for Pokemon in all_pokemon %}\n                {% if Pokemon.IsOnBelt == True %}\n                <div class=\"inputContainer\">\n                    <input type=\"radio\" id=\"Pokemon{{ forloop.counter }}\" name=\"Pokemon\" value=\"{{ Pokemon.PokemonId }}\"/>\n                        <label for=\"Pokemon{{ forloop.counter }}\">\n                            <img src=\"http://pokemonforever.com/images/title_icons/pokeball.png\"/>\n                            <a href=\"{% url 'Entities:pokemonpage' entity.EntityId Pokemon.PokemonId %}\">\n                                <img src=\"http://www.pokestadium.com/sprites/xy/{{ Pokemon.Species|lower }}.gif\" alt=\"({{ Pokemon.Species }}\"/>\n                            </a>\n                            {{ Pokemon.PokemonNickName }} ({{ Pokemon.Species }} - Level {{ Pokemon.CurrentLevel }})\n                         </label>\n\n                </div>\n                {% endif %}\n                {% endfor %}\n                <input type=\"submit\" class=\"btn btn-primary btn-lg\" value=\"Remove From belt\"/>\n            </form>\n        </div>\n\n        <div class=\"container\">\n            <div>\n                <img src=\"http://4.bp.blogspot.com/-OBRogIaFK5Q/U7rS_Tc_Z0I/AAAAAAAAC2s/LxuERLcIv4E/s1600/pokeball+growth.gif\" >\n                <button type=\"button\" class=\"btn btn-success\" data-toggle=\"modal\" data-target=\"#CreatePokemon\"  style=\"padding: 3px 64px; font-size: 60px\">Create a new Pokemon</button><br>\n            </div>\n        </div>\n        <div class=\"modal fade\" id=\"CreatePokemon\">\n            <div class=\"modal-dialog\">\n                <div class=\"modle-content\" style=\"background-color:white\">\n\n                    <!--- Header --->\n                    <div class=\"modal-header\">\n                        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n                        <h3 class=\"modal-title\">Create a new Pokemon</h3>\n                    </div>\n\n                    <!--- Body --->\n                    <div class=\"modal-body\">\n                        <form role=\"form\" action=\"{% url 'Entities:CreateNewPokemon' 'Sagi' entity.EntityId entity.EntityName %}\" method=\"Post\" enctype=\"multipart/form-data\">\n                            {% csrf_token %}\n                            <div class=\"panel-heading\">Pokemon Species</div>\n                            <input type=\"text\" id=\"Species\" name=\"Species\" class=\"form-control\" value=\"Pikachu\"></input>\n                            <div class=\"panel-heading\">Pokemon NickName</div>\n                            <input type=\"text\" id=\"PokemonNickName\" name=\"PokemonNickName\" class=\"form-control\" value=\"Test Pokemon\"></input>\n                            <div class=\"panel-heading\">Pokemon Gender</div>\n                            <input type=\"text\" id=\"Gender\" name=\"Gender\" class=\"form-control\" value=\"Male\"></input>\n                            <div class=\"panel-heading\">Pokemon Nature</div>\n                            <input type=\"text\" id=\"Nature\" name=\"Nature\" class=\"form-control\" value=\"Timid\"></input>\n                            <div class=\"panel-heading\">Starting Level</div>\n                            <input type=\"number\" id=\"StartingLevel\" name=\"StartingLevel\" class=\"form-control\" value=\"1\"></input>\n                            <!--<div class=\"panel-heading\">Is Shiny?</div>-->\n                            <div class=\"checkbox\">\n                              <label><input type=\"checkbox\" value=\"IsShiny\">Is Shiny?</label>\n                            </div>\n                            <div class=\"panel-heading\">Move 1</div>\n                            <input type=\"text\" id=\"Move1\" name=\"Move1\" class=\"form-control\" value=\"da\"></input>\n                            <div class=\"panel-heading\">Move 2 (optional)</div>\n                            <input type=\"text\" id=\"Move2\" name=\"Move2\" class=\"form-control\" value=\"asd\"></input>\n                            <div class=\"panel-heading\">Move 3 (optional)</div>\n                            <input type=\"text\" id=\"Move3\" name=\"Move3\" class=\"form-control\" value=\"asfa\"></input>\n                            <div class=\"panel-heading\">Move 4 (optional)</div>\n                            <input type=\"text\" id=\"Move4\" name=\"Move4\" class=\"form-control\" value=\"agas\"></input>\n                            <div class=\"panel-heading\">AdditionalTrainerNotes (optional)</div>\n                            <input type=\"text\" id=\"AdditionalTrainerNotes\" name=\"AdditionalTrainerNotes\" class=\"form-control\" value=\"Additional Trainer Notes\"></input>\n                            <div class=\"modal-footer\">\n                                <input type=\"submit\" class=\"btn btn-primary btn-block\" value=\"Submit\"/>\n                            </div>\n                        </form>\n                    </div>\n\n                    <!--- Footer --->\n\n\n                </div>\n            </div>\n        </div>\n\n        <div class=\"panel panel-default\">\n            <h2>Pokemon at Professors Oak's <strike>slaughterhouse</strike> happy-ranch :</h2>\n            <form action=\"{% url 'Entities:TopSix' entity.EntityId %}\" method=\"Post\">\n                <ul class=\"list-group\">\n                {% csrf_token %}\n                {% for Pokemon in all_pokemon %}\n                {% if Pokemon.IsOnBelt == False %}\n                    <li class=\"list-group-item\">\n                    <div>\n                    <input type=\"radio\" id=\"Pokemon{{ forloop.counter }}\" name=\"Pokemon\" value=\"{{ Pokemon.PokemonId }}\"/>\n                        <a href=\"{% url 'Entities:pokemonpage' entity.EntityId Pokemon.PokemonId %}\">\n                            <img src=\"http://www.pokestadium.com/sprites/xy/{{ Pokemon.Species|lower }}.gif\" />\n                        </a>\n\n                                <div><h4><b>{{ Pokemon.PokemonNickName }}</b></h4></div>\n                                <div><h5><b>{{ Pokemon.Species }}</b> - Level {{ Pokemon.CurrentLevel }}</h5></input>\n\n                        <!--<label for=\"Pokemon{{ forloop.counter }}\">\n\n                            {{ Pokemon.PokemonNickName }} ({{ Pokemon.Species }} - Level {{ Pokemon.CurrentLevel }})\n                        </label><br>-->\n                    {% endif %}\n                    {% endfor %}\n                    <input type=\"submit\" class=\"btn btn-primary btn-lg\" value=\"Add to belt\"/>\n                    </div>\n                    </li>\n                </ul>\n            </form>\n        </div>\n    </div>\n</div>\n\n{% else %}\n\t<h3>Entity does not exist.<br>Are you a moron??</h3>\n{% endif %}\n\n\n{% endblock %}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- entities/templates/entities/trainerpage.html	(revision 4d8a046c8a6842c6c56fbb97e2f0d1d1985d9c3d)
++++ entities/templates/entities/trainerpage.html	(date 1513804030714)
+@@ -25,13 +25,24 @@
+             <div class="col-md-{{ header.ColumnWidth }}">
+                 <div class="panel panel-info">
+                     <div class="panel-heading">{{ header.ColumnDisplayName }}</div>
+-                    <input type="{{header.InputType}}" id="{{header.ColumnName}}" name="{{header.ColumnName}}" class="form-control" value="{{header.ColumnValue}}" disabled="disabled" {% if not header.AllowEditing == '1' %} readonly {% endif %}></input>
++                    <input type="{{header.InputType}}"
++                           id="{{header.ColumnName}}"
++                           name="{{header.ColumnName}}"
++                           class="form-control"
++                           value="{{header.ColumnValue}}"
++                           disabled="disabled"
++                           {% if not header.AllowEditing == '1' %} readonly {% endif %}>
++                    </input>
+                 </div>
+             </div>
+         {% endif %}
+         {% endfor %}
+ 
+-        <input type="submit" class="btn btn-secondary btn-lg btn-block" value="Update Details"/>
++        <input type="submit"
++               id="update-trainer-details-btn"
++               class="btn btn-primary btn-lg btn-block"
++               value="Update Details"
++               style="display:none"/>
+     </form>
+ </div>
+ 
+Index: entities/models.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># -*- coding: utf-8 -*-\nfrom __future__ import unicode_literals\nfrom mysite import ImportModules\nfrom django.db import models\n\n# Create your models here.\n\n\ndef getpokemonsbasedonentitiy(entity_Id):\n    EntityPokemons = []\n    EntityDetails = {}\n    all_entities = ImportModules.runSQLreturnresults(\"EXEC dbo.GetAllEntitiesForBattle @DMName = N'Sagi'\",\n                                       '%s' % (ImportModules.SpecialString()))\n    all_entities = sorted(all_entities, key=lambda x: x[\"EntityName\"], reverse=False)\n    for ent in all_entities:\n        if int(ent['EntityId']) == int(entity_Id):\n            EntityDetails = ent\n            EntityPokemons = ImportModules.runSQLreturnresults(\n                \"EXEC dbo.GetAllPokemonsPerTrainer @Username = N'%s', @DMName = N'%s'\" % (EntityDetails['EntityName'], 'Sagi'),\n                '%s' % (ImportModules.SpecialString()))\n    return EntityDetails,EntityPokemons\n\ndef EntityHeaders():\n    EntityHeaders = [\n        #{'AppearenceOrder':'\"&&\"','RowNumber':'\"&&\"','ColumnName':'\"&&\"',DBColumnName':'\"&&\"','ColumnDisplayName':'\"&&\"','InputType':'\"&&\"','ColumnWidth':'\"&&\"','AllowEditing':'\"&&\"','Notes':'\"&&\"','OverrideValue':'\"&&\"'},\n        {'AppearenceOrder': '-99', 'RowNumber': '-1', 'ColumnName': 'TrainerId', 'DBColumnName': 'EntityId',\n         'ColumnDisplayName': 'Trainer Id', 'InputType': 'number', 'ColumnWidth': '0', 'AllowEditing': '0', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '-99', 'RowNumber': '-1', 'ColumnName': 'DMName', 'DBColumnName': 'DMName',\n         'ColumnDisplayName': 'DM Name', 'InputType': 'text', 'ColumnWidth': '0', 'AllowEditing': '0', 'Notes': '',\n         'OverrideValue': 'Sagi'},\n        {'AppearenceOrder': '-99', 'RowNumber': '-1', 'ColumnName': 'TrainerName', 'DBColumnName': 'EntityName',\n         'ColumnDisplayName': 'Trainer Name', 'InputType': 'text', 'ColumnWidth': '0', 'AllowEditing': '0', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '-99', 'RowNumber': '-1', 'ColumnName': 'CatchPhrase', 'DBColumnName': 'CatchPhrase',\n         'ColumnDisplayName': 'Catch Phrase', 'InputType': 'text', 'ColumnWidth': '0', 'AllowEditing': '0', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '10', 'RowNumber': '1', 'ColumnName': 'EntityType', 'DBColumnName': 'EntityType',\n         'ColumnDisplayName': 'Entity Type', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '20', 'RowNumber': '1', 'ColumnName': 'PlayerName', 'DBColumnName': 'PlayerName',\n         'ColumnDisplayName': 'Player Name', 'InputType': 'text', 'ColumnWidth': '3', 'AllowEditing': '1', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '30', 'RowNumber': '1', 'ColumnName': 'Level', 'DBColumnName': 'Level',\n         'ColumnDisplayName': 'Level', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '40', 'RowNumber': '1', 'ColumnName': 'TrainerTitle', 'DBColumnName': 'EntityTitle',\n         'ColumnDisplayName': ' Title', 'InputType': 'text', 'ColumnWidth': '5', 'AllowEditing': '1', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '50', 'RowNumber': '2', 'ColumnName': 'TrainerGender', 'DBColumnName': 'TrainerGender',\n         'ColumnDisplayName': 'Trainer Gender', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '60', 'RowNumber': '2', 'ColumnName': 'Age', 'DBColumnName': 'Age',\n         'ColumnDisplayName': 'Age', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '70', 'RowNumber': '2', 'ColumnName': 'WeightKg', 'DBColumnName': 'WeightKg',\n         'ColumnDisplayName': 'Weight (Kg)', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '80', 'RowNumber': '2', 'ColumnName': 'HeightCm', 'DBColumnName': 'HeightCm',\n         'ColumnDisplayName': 'Height( Cm)', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '90', 'RowNumber': '2', 'ColumnName': 'CreateDate', 'DBColumnName': 'CreateDate',\n         'ColumnDisplayName': 'Create Date', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '100', 'RowNumber': '2', 'ColumnName': 'LastUpdateDate', 'DBColumnName': 'LastUpdateDate',\n         'ColumnDisplayName': 'Last Updated', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '110', 'RowNumber': '3', 'ColumnName': 'HealthDescription',\n         'DBColumnName': 'HealthDescription', 'ColumnDisplayName': 'Health Desc', 'InputType': 'text',\n         'ColumnWidth': '2', 'AllowEditing': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '120', 'RowNumber': '3', 'ColumnName': 'TrainerMaxHP', 'DBColumnName': 'EntityMaxHP',\n         'ColumnDisplayName': 'Max Health', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '130', 'RowNumber': '3', 'ColumnName': 'TrainerCurrentHP',\n         'DBColumnName': 'EntityCurrentHP', 'ColumnDisplayName': 'Current Health', 'InputType': 'number',\n         'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '140', 'RowNumber': '3', 'ColumnName': 'IsAvailableForBattle',\n         'DBColumnName': 'IsAvailableForBattle', 'ColumnDisplayName': 'Fit For Battle', 'InputType': 'text',\n         'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '150', 'RowNumber': '3', 'ColumnName': 'RollYourOwnDice', 'DBColumnName': 'RollYourOwnDice',\n         'ColumnDisplayName': 'Roll Own Dice', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '160', 'RowNumber': '3', 'ColumnName': 'Money', 'DBColumnName': 'Money',\n         'ColumnDisplayName': 'Money', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '161', 'RowNumber': '4', 'ColumnName': 'StatBoosters', 'DBColumnName': 'StatBoosters',\n         'ColumnDisplayName': 'Stat Boosters', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '162', 'RowNumber': '4', 'ColumnName': 'PointLeft', 'DBColumnName': 'PointsLeft',\n         'ColumnDisplayName': 'Points Left', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '163', 'RowNumber': '4', 'ColumnName': 'PointsEarned', 'DBColumnName': 'PointsEarned',\n         'ColumnDisplayName': 'Points Earned', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '170', 'RowNumber': '4', 'ColumnName': 'Background', 'DBColumnName': 'Background',\n         'ColumnDisplayName': 'Character Background', 'InputType': 'text', 'ColumnWidth': '6', 'AllowEditing': '1',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '190', 'RowNumber': '5', 'ColumnName': 'TrainerStr', 'DBColumnName': 'EntityStr',\n         'ColumnDisplayName': 'Str', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '200', 'RowNumber': '5', 'ColumnName': 'TrainerDex', 'DBColumnName': 'EntityDex',\n         'ColumnDisplayName': 'Dex', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '210', 'RowNumber': '5', 'ColumnName': 'TrainerCon', 'DBColumnName': 'EntityCon',\n         'ColumnDisplayName': 'Con', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '220', 'RowNumber': '5', 'ColumnName': 'TrainerInt', 'DBColumnName': 'EntityInt',\n         'ColumnDisplayName': 'Int', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '230', 'RowNumber': '5', 'ColumnName': 'TrainerWis', 'DBColumnName': 'EntityWis',\n         'ColumnDisplayName': 'Wis', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '240', 'RowNumber': '5', 'ColumnName': 'TrainerCha', 'DBColumnName': 'EntityCha',\n         'ColumnDisplayName': 'Cha', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1', 'Notes': '',\n         'OverrideValue': ''},\n        {'AppearenceOrder': '260', 'RowNumber': '6', 'ColumnName': 'StrModifier', 'DBColumnName': 'StrModifier',\n         'ColumnDisplayName': 'Str Modifier', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '270', 'RowNumber': '6', 'ColumnName': 'DexModifier', 'DBColumnName': 'DexModifier',\n         'ColumnDisplayName': 'Dex Modifier', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '280', 'RowNumber': '6', 'ColumnName': 'ConModifier', 'DBColumnName': 'ConModifier',\n         'ColumnDisplayName': 'Con Modifier', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '290', 'RowNumber': '6', 'ColumnName': 'IntModifier', 'DBColumnName': 'IntModifier',\n         'ColumnDisplayName': 'Int Modifier', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '300', 'RowNumber': '6', 'ColumnName': 'WisModifier', 'DBColumnName': 'WisModifier',\n         'ColumnDisplayName': 'Wis Modifier', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '310', 'RowNumber': '6', 'ColumnName': 'ChaModifier', 'DBColumnName': 'ChaModifier',\n         'ColumnDisplayName': 'Cha Modifier', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'Notes': '', 'OverrideValue': ''}\n    ]\n    return EntityHeaders\n\n\ndef PokemonHeaders():\n    PokemonHeaders = [\n        {'AppearenceOrder': '-99', 'RowNumber': '-1', 'ColumnName': 'PokemonNickName',\n         'DBColumnName': 'PokemonNickName', 'ColumnDisplayName': 'NickName', 'InputType': 'text', 'ColumnWidth': '0',\n         'AllowEditing': '1', 'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '10', 'RowNumber': '1', 'ColumnName': 'PokemonId', 'DBColumnName': 'PokemonId',\n         'ColumnDisplayName': 'Id', 'InputType': 'number', 'ColumnWidth': '1', 'AllowEditing': '0', 'DataType': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '20', 'RowNumber': '1', 'ColumnName': 'OwnerName', 'DBColumnName': 'OwnerName',\n         'ColumnDisplayName': 'Owner Name', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '30', 'RowNumber': '1', 'ColumnName': 'Species', 'DBColumnName': 'Species',\n         'ColumnDisplayName': 'Species', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'DataType': '1',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '40', 'RowNumber': '1', 'ColumnName': 'Type1', 'DBColumnName': 'Type1',\n         'ColumnDisplayName': 'Type1', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '0', 'DataType': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '50', 'RowNumber': '1', 'ColumnName': 'Type2', 'DBColumnName': 'Type2',\n         'ColumnDisplayName': 'Type2', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '0', 'DataType': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '60', 'RowNumber': '1', 'ColumnName': 'Gender', 'DBColumnName': 'Gender',\n         'ColumnDisplayName': 'Gender', 'InputType': 'text', 'ColumnWidth': '1', 'AllowEditing': '1', 'DataType': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '70', 'RowNumber': '1', 'ColumnName': 'Nature', 'DBColumnName': 'Nature',\n         'ColumnDisplayName': 'Nature', 'InputType': 'text', 'ColumnWidth': '1', 'AllowEditing': '1', 'DataType': '2',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '80', 'RowNumber': '1', 'ColumnName': 'IsShiny', 'DBColumnName': 'IsShiny',\n         'ColumnDisplayName': 'Shiny?', 'InputType': 'text', 'ColumnWidth': '1', 'AllowEditing': '1', 'DataType': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '90', 'RowNumber': '2', 'ColumnName': 'StartingLevel', 'DBColumnName': 'StartingLevel',\n         'ColumnDisplayName': 'Starting Level', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '100', 'RowNumber': '2', 'ColumnName': 'CurrentLevel', 'DBColumnName': 'CurrentLevel',\n         'ColumnDisplayName': 'Current Level', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '110', 'RowNumber': '2', 'ColumnName': 'BattleXP', 'DBColumnName': 'BattleXP',\n         'ColumnDisplayName': 'Battle XP', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '120', 'RowNumber': '2', 'ColumnName': 'TotalXP', 'DBColumnName': 'TotalXP',\n         'ColumnDisplayName': 'Total XP', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '130', 'RowNumber': '2', 'ColumnName': 'XPForNextlvl', 'DBColumnName': 'XPForNextlvl',\n         'ColumnDisplayName': 'XP To Next Level', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '140', 'RowNumber': '2', 'ColumnName': 'IsOnBelt', 'DBColumnName': 'IsOnBelt',\n         'ColumnDisplayName': 'On Belt?', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'DataType': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '170', 'RowNumber': '3', 'ColumnName': 'Move1', 'DBColumnName': 'Move1',\n         'ColumnDisplayName': 'Move1', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'DataType': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '180', 'RowNumber': '3', 'ColumnName': 'Move2', 'DBColumnName': 'Move2',\n         'ColumnDisplayName': 'Move2', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'DataType': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '190', 'RowNumber': '3', 'ColumnName': 'Move3', 'DBColumnName': 'Move3',\n         'ColumnDisplayName': 'Move3', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'DataType': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '200', 'RowNumber': '3', 'ColumnName': 'Move4', 'DBColumnName': 'Move4',\n         'ColumnDisplayName': 'Move4', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1', 'DataType': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '220', 'RowNumber': '3', 'ColumnName': 'HasQuickAttack', 'DBColumnName': 'HasQuickAttack',\n         'ColumnDisplayName': 'Quick ATK?', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '150', 'RowNumber': '4', 'ColumnName': 'TotalHealth', 'DBColumnName': 'TotalHealth',\n         'ColumnDisplayName': 'Max HP', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'DataType': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '160', 'RowNumber': '4', 'ColumnName': 'CurrentHealth', 'DBColumnName': 'CurrentHealth',\n         'ColumnDisplayName': 'Current HP', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '210', 'RowNumber': '4', 'ColumnName': 'HealthDescription',\n         'DBColumnName': 'HealthDescription', 'ColumnDisplayName': 'Health Description', 'InputType': 'text',\n         'ColumnWidth': '2', 'AllowEditing': '0', 'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '230', 'RowNumber': '4', 'ColumnName': 'CreateDate', 'DBColumnName': 'CreateDate',\n         'ColumnDisplayName': 'Create Date', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '240', 'RowNumber': '4', 'ColumnName': 'UpdateDate', 'DBColumnName': 'UpdateDate',\n         'ColumnDisplayName': 'Update Date', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '250', 'RowNumber': '4', 'ColumnName': 'EnemiesFought', 'DBColumnName': 'EnemiesFought',\n         'ColumnDisplayName': 'Enemies Fought', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '260', 'RowNumber': '4', 'ColumnName': 'EnemiesDefeated', 'DBColumnName': 'EnemiesDefeated',\n         'ColumnDisplayName': 'Enemies Defeated', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '270', 'RowNumber': '6', 'ColumnName': 'Effect1', 'DBColumnName': 'Effect1',\n         'ColumnDisplayName': 'Effect One', 'InputType': 'text', 'ColumnWidth': '3', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '280', 'RowNumber': '6', 'ColumnName': 'Effect1Length', 'DBColumnName': 'Effect1Length',\n         'ColumnDisplayName': 'Effect One Duration', 'InputType': 'text', 'ColumnWidth': '3', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '290', 'RowNumber': '6', 'ColumnName': 'Effect2', 'DBColumnName': 'Effect2',\n         'ColumnDisplayName': 'Effect Two', 'InputType': 'text', 'ColumnWidth': '3', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '300', 'RowNumber': '6', 'ColumnName': 'Effect2Length', 'DBColumnName': 'Effect2Length',\n         'ColumnDisplayName': 'Effect Two Duration', 'InputType': 'text', 'ColumnWidth': '3', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '310', 'RowNumber': '7', 'ColumnName': 'SpeciesHP', 'DBColumnName': 'SpeciesHP',\n         'ColumnDisplayName': 'Basic HP', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '320', 'RowNumber': '7', 'ColumnName': 'HPAdd', 'DBColumnName': 'HPAdd',\n         'ColumnDisplayName': 'HP Add', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '1', 'DataType': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '330', 'RowNumber': '7', 'ColumnName': 'HPStage', 'DBColumnName': 'HPStage',\n         'ColumnDisplayName': 'HP Stage', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '340', 'RowNumber': '7', 'ColumnName': 'HPTotal', 'DBColumnName': 'HPTotal',\n         'ColumnDisplayName': 'HP Total', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '350', 'RowNumber': '7', 'ColumnName': 'TotalHealth', 'DBColumnName': 'TotalHealth',\n         'ColumnDisplayName': 'Health', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'DataType': '0',\n         'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '360', 'RowNumber': '8', 'ColumnName': 'SpeciesATK', 'DBColumnName': 'SpeciesATK',\n         'ColumnDisplayName': 'Basic ATK', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '370', 'RowNumber': '8', 'ColumnName': 'ATKAdd', 'DBColumnName': 'ATKAdd',\n         'ColumnDisplayName': 'ATK Add', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '1',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '380', 'RowNumber': '8', 'ColumnName': 'ATKStage', 'DBColumnName': 'ATKStage',\n         'ColumnDisplayName': 'ATK Stage', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '390', 'RowNumber': '8', 'ColumnName': 'ATKTotal', 'DBColumnName': 'ATKTotal',\n         'ColumnDisplayName': 'ATK Total', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '400', 'RowNumber': '8', 'ColumnName': 'ATKTotal', 'DBColumnName': 'ATKTotal',\n         'ColumnDisplayName': 'Bonus ATK', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '410', 'RowNumber': '9', 'ColumnName': 'SpeciesDEF', 'DBColumnName': 'SpeciesDEF',\n         'ColumnDisplayName': 'Basic DEF', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '420', 'RowNumber': '9', 'ColumnName': 'DEFAdd', 'DBColumnName': 'DEFAdd',\n         'ColumnDisplayName': 'DEF Add', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '1',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '430', 'RowNumber': '9', 'ColumnName': 'DEFStage', 'DBColumnName': 'DEFStage',\n         'ColumnDisplayName': 'DEF Stage', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '440', 'RowNumber': '9', 'ColumnName': 'DEFTotal', 'DBColumnName': 'DEFTotal',\n         'ColumnDisplayName': 'DEF Total', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '450', 'RowNumber': '9', 'ColumnName': 'EvasionsToAtk', 'DBColumnName': 'EvasionsToAtk',\n         'ColumnDisplayName': 'EvasionsToAtk', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '460', 'RowNumber': '10', 'ColumnName': 'SpeciesSATK', 'DBColumnName': 'SpeciesSATK',\n         'ColumnDisplayName': 'Basic SATK', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '470', 'RowNumber': '10', 'ColumnName': 'SATKAdd', 'DBColumnName': 'SATKAdd',\n         'ColumnDisplayName': 'SATK Add', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '1',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '480', 'RowNumber': '10', 'ColumnName': 'SATKStage', 'DBColumnName': 'SATKStage',\n         'ColumnDisplayName': 'SATK Stage', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '490', 'RowNumber': '10', 'ColumnName': 'SATKTotal', 'DBColumnName': 'SATKTotal',\n         'ColumnDisplayName': 'SATK Total', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '500', 'RowNumber': '10', 'ColumnName': 'SATKTotal', 'DBColumnName': 'SATKTotal',\n         'ColumnDisplayName': 'Bonus SATK', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '510', 'RowNumber': '11', 'ColumnName': 'SpeciesSDEF', 'DBColumnName': 'SpeciesSDEF',\n         'ColumnDisplayName': 'Basic SDEF', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '520', 'RowNumber': '11', 'ColumnName': 'SDEFAdd', 'DBColumnName': 'SDEFAdd',\n         'ColumnDisplayName': 'SDEF Add', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '1',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '530', 'RowNumber': '11', 'ColumnName': 'SDEFStage', 'DBColumnName': 'SDEFStage',\n         'ColumnDisplayName': 'SDEF Stage', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '540', 'RowNumber': '11', 'ColumnName': 'SDEFTotal', 'DBColumnName': 'SDEFTotal',\n         'ColumnDisplayName': 'SDEF Total', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '550', 'RowNumber': '11', 'ColumnName': 'EvasionsToSpcial',\n         'DBColumnName': 'EvasionsToSpcial', 'ColumnDisplayName': 'EvasionsToSpcial', 'InputType': 'number',\n         'ColumnWidth': '2', 'AllowEditing': '0', 'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '560', 'RowNumber': '12', 'ColumnName': 'SpeciesSPD', 'DBColumnName': 'SpeciesSPD',\n         'ColumnDisplayName': 'Basic SPD', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '570', 'RowNumber': '12', 'ColumnName': 'SPDAdd', 'DBColumnName': 'SPDAdd',\n         'ColumnDisplayName': 'SPD Add', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '1',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '580', 'RowNumber': '12', 'ColumnName': 'SPDStage', 'DBColumnName': 'SPDStage',\n         'ColumnDisplayName': 'SPD Stage', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '590', 'RowNumber': '12', 'ColumnName': 'SPDTotal', 'DBColumnName': 'SPDTotal',\n         'ColumnDisplayName': 'SPD Total', 'InputType': 'number', 'ColumnWidth': '3', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '600', 'RowNumber': '12', 'ColumnName': 'EvasionsToAny', 'DBColumnName': 'EvasionsToAny',\n         'ColumnDisplayName': 'EvasionsToAny', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '610', 'RowNumber': '5', 'ColumnName': 'HeldItem', 'DBColumnName': 'HeldItem',\n         'ColumnDisplayName': 'Held Item', 'InputType': 'text', 'ColumnWidth': '2', 'AllowEditing': '1',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '615', 'RowNumber': '5', 'ColumnName': 'PointsLeft', 'DBColumnName': 'PointsLeft',\n         'ColumnDisplayName': 'Points Left', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',\n         'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '620', 'RowNumber': '5', 'ColumnName': 'LastActionDescription',\n         'DBColumnName': 'LastActionDescription', 'ColumnDisplayName': 'LastActionDescription', 'InputType': 'text',\n         'ColumnWidth': '4', 'AllowEditing': '0', 'DataType': '0', 'Notes': '', 'OverrideValue': ''},\n        {'AppearenceOrder': '630', 'RowNumber': '5', 'ColumnName': 'AdditionalTrainerNotes',\n         'DBColumnName': 'AdditionalTrainerNotes', 'ColumnDisplayName': 'Additional Notes', 'InputType': 'text',\n         'ColumnWidth': '4', 'AllowEditing': '1', 'DataType': '0', 'Notes': '', 'OverrideValue': ''}\n    ]\n\n    return PokemonHeaders\n\n\nclass temp_entities_dict(models.Model):\n    EntityType = models.CharField(max_length=100)\n    PlayerName = models.CharField(max_length=100)\n    RollYourOwnDice = models.BooleanField\n    EntityName = models.CharField(max_length=100)\n    EntityId = models.IntegerField\n    EntityTitle = models.CharField(max_length=100)\n    IsAvailableForBattle = models.BooleanField\n    Level = models.IntegerField\n    EntityMaxHP = models.IntegerField\n    EntityCurrentHP = models.IntegerField\n    HealthDescription = models.CharField(max_length=100)\n    Money = models.IntegerField\n    EntityStr = models.IntegerField\n    EntityDex = models.IntegerField\n    EntityCon = models.IntegerField\n    EntityInt = models.IntegerField\n    EntityWis = models.IntegerField\n    EntityCha = models.IntegerField\n    CatchPhrase = models.CharField(max_length=200)\n\n    def __str__(self):\n        return \"%s (player %s) - Title: %s\" % (self.EntityName,self.PlayerName,self.EntityTitle)\n\ndef ForSQL(Value):\n    if type(Value) is None or Value == \"\":\n        OutPut = \"NULL\"\n    elif type(Value) == int:\n        OutPut = Value\n    elif type(Value) in (unicode, str):\n        if Value == \"NULL\":\n            OutPut = \"NULL\"\n        else:\n            OutPut = \"N'\" + str(Value.replace(\"'\", \"''\").replace(\"\\n\", \"\")) + \"'\"\n    else:\n        # print type(Value)\n        OutPut = \"NULL\"\n    return OutPut\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- entities/models.py	(revision 4d8a046c8a6842c6c56fbb97e2f0d1d1985d9c3d)
++++ entities/models.py	(date 1513811093660)
+@@ -201,7 +201,7 @@
+          'ColumnDisplayName': 'Max HP', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0', 'DataType': '0',
+          'Notes': '', 'OverrideValue': ''},
+         {'AppearenceOrder': '160', 'RowNumber': '4', 'ColumnName': 'CurrentHealth', 'DBColumnName': 'CurrentHealth',
+-         'ColumnDisplayName': 'Current HP', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '0',
++         'ColumnDisplayName': 'Current HP', 'InputType': 'number', 'ColumnWidth': '2', 'AllowEditing': '1',
+          'DataType': '0', 'Notes': '', 'OverrideValue': ''},
+         {'AppearenceOrder': '210', 'RowNumber': '4', 'ColumnName': 'HealthDescription',
+          'DBColumnName': 'HealthDescription', 'ColumnDisplayName': 'Health Description', 'InputType': 'text',
+Index: entities/views.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># -*- coding: utf-8 -*-\nfrom __future__ import unicode_literals\nfrom models import temp_entities_dict\nfrom django import forms\nfrom django.shortcuts import render, get_object_or_404, get_list_or_404,redirect\nfrom django.http import HttpResponse, Http404\nfrom django.template import loader\nfrom mysite import ImportModules\nfrom . import models\nfrom django.http import JsonResponse\n\nimport pyodbc\nimport re\nimport itertools\nimport time\nfrom operator import itemgetter\n\n\n\ndef index(request):\n    all_entities = temp_entities_dict.objects.all()\n    context = {'entities': all_entities}\n    all_entities = ImportModules.runSQLreturnresults(\"EXEC dbo.GetAllEntitiesForBattle @DMName = N'Sagi'\", '%s' %(ImportModules.SpecialString()))\n    all_entities = sorted(all_entities, key=lambda x: x[\"EntityName\"], reverse=False)\n    context = {'entities': all_entities}\n    return render(request, 'entities/index.html', context)\n\n\ndef getentities(request, entity_Id, canedit=0, error=\"\"):\n    all_entities=[]\n    all_pokemon = []\n    entity = {}\n    all_entities = ImportModules.runSQLreturnresults(\"EXEC dbo.GetAllEntitiesForBattle @DMName = N'Sagi'\", '%s' %(ImportModules.SpecialString()))\n    all_entities = sorted(all_entities, key=lambda x: x[\"EntityName\"], reverse=False)\n    EntityHeaders = models.EntityHeaders()\n    for ent in all_entities:\n        if int(ent['EntityId']) == int(entity_Id):\n            entity = ent\n            all_pokemon = ImportModules.runSQLreturnresults(\"EXEC dbo.GetAllPokemonsPerTrainer @Username = N'%s', @DMName = N'%s'\" %(entity['EntityName'],'Sagi'), '%s' %(ImportModules.SpecialString()))\n        for head in range(len(EntityHeaders)):\n            head=head-1\n            EntityHeaders[head]['ColumnValue'] = ''\n            for key in entity.keys():\n                if str(EntityHeaders[head]['DBColumnName'])==str(key):\n                    EntityHeaders[head]['ColumnValue'] = entity[key]\n                    #print \"ColumnName %s == str(key) %s == Value: %s\" % (str(EntityHeaders[head]['ColumnName']), str(key),EntityHeaders[head]['ColumnValue'])\n    #print EntityHeaders\n    return render(request, 'entities/trainerpage.html', {'entity':entity,'all_pokemon':all_pokemon,'EntityHeaders':EntityHeaders, 'CanEndit':canedit, 'error':error})\n\n\n\ndef pokemonpage(request,entity_Id,pokemon_Id,canedit=0):\n    pokemondetails = ImportModules.runSQLreturnresults(\"EXEC dbo.GetPokemonDetails @PokemonId = N'%s' \" %(pokemon_Id), ImportModules.SpecialString())\n    pokemondetails = pokemondetails[0]\n    PokemonHeaders = models.PokemonHeaders()\n    AllSpecies = ImportModules.runSQLreturnresults(\"SELECT TOP 5000 Pokemon AS Species FROM dbo.PokemonBasicAttributes WITH (NOLOCK)\", ImportModules.SpecialString())\n    for head in range(len(PokemonHeaders)):\n        head = head - 1\n        PokemonHeaders[head]['ColumnValue'] = ''\n        for key in pokemondetails.keys():\n            if str(PokemonHeaders[head]['DBColumnName']) == str(key):\n                PokemonHeaders[head]['ColumnValue'] = pokemondetails[key]\n    allavailablemoves = ImportModules.runSQLreturnresults(\n        \"EXEC dbo.Get_all_available_Moves @PokemonId = %s\" % (ImportModules.ModifyValueForSQL(pokemon_Id)), ImportModules.SpecialString())\n    #print allavailablemoves\n    return render(request, 'entities/pokemonpage.html', {'pokemondetails':pokemondetails,'PokemonHeaders':PokemonHeaders,'entity_Id':entity_Id,'allavailablemoves':allavailablemoves, 'AllSpecies':AllSpecies})\n\n\ndef TopSix(request, entity_Id):\n    ImportModules.runSQLNoResults(\n        \"UPDATE dbo.PokemonPerUserConfiguration SET IsOnBelt='1' WHERE PokemonId='%s'\" % (request.POST['Pokemon']),\n        ImportModules.SpecialString(), 1)\n    all_pokemon = []\n    entity = {}\n    all_entities = ImportModules.runSQLreturnresults(\"EXEC dbo.GetAllEntitiesForBattle @DMName = N'Sagi'\", '%s' %(ImportModules.SpecialString()))\n    for ent in all_entities:\n        if int(ent['EntityId']) == int(entity_Id):\n            entity = ent\n            all_pokemon = ImportModules.runSQLreturnresults(\"EXEC dbo.GetAllPokemonsPerTrainer @Username = N'%s', @DMName = N'%s'\" % (entity['EntityName'], 'Sagi'), '%s' %(ImportModules.SpecialString()))\n    return render(request, 'entities/trainerpage.html', {'entity': entity, 'all_pokemon': all_pokemon})\n\ndef TopSixRemove(request, entity_Id):\n    ImportModules.runSQLNoResults(\n        \"UPDATE dbo.PokemonPerUserConfiguration SET IsOnBelt='0' WHERE PokemonId='%s'\" % (request.POST['Pokemon']),\n        ImportModules.SpecialString(), 1)\n    all_pokemon = []\n    entity = {}\n    all_entities = ImportModules.runSQLreturnresults(\"EXEC dbo.GetAllEntitiesForBattle @DMName = N'Sagi'\", '%s' %(ImportModules.SpecialString()))\n    for ent in all_entities:\n        if int(ent['EntityId']) == int(entity_Id):\n            entity = ent\n            all_pokemon = ImportModules.runSQLreturnresults(\"EXEC dbo.GetAllPokemonsPerTrainer @Username = N'%s', @DMName = N'%s'\" % (entity['EntityName'], 'Sagi'), '%s' %(ImportModules.SpecialString()))\n    return render(request, 'entities/trainerpage.html', {'entity': entity, 'all_pokemon': all_pokemon})\n\ndef UpdateTrainerDetails(request, entity_Id):\n    try:\n        TrainerId = request.POST['TrainerId']\n        DMName = request.POST['DMName']\n        print \"Missing Input: TrainerId %s\" % (TrainerId)\n        print \"Missing Input: DMName %s\" % (DMName)\n    except:\n        return HttpResponse(\"MissingInput\")\n    EntityHeaders = models.EntityHeaders()\n    UpdateQuery = \"\"\"EXEC dbo.TrainerDetailsUpdate @Mode = 1                  \n                              ,@TrainerId = %s\n\t\t\t\t\t\t\t  ,@DMName = %s               \n                              ,@ErrNumber = ''\n                              ,@ErrDesc = '' \n                              ,@PrintOutput = 0 \"\"\" %(models.ForSQL(TrainerId),models.ForSQL(DMName))\n    for header in EntityHeaders:\n        x=request.POST[header['ColumnName']]\n        if not x is None and str(header['AllowEditing'])=='1':\n            ParameterLine = \",@%s = %s\" % (header['ColumnName'],models.ForSQL(x))\n            UpdateQuery += '\\n'+ParameterLine\n    #print UpdateQuery\n    ImportModules.runSQLNoResults(UpdateQuery,ImportModules.SpecialString(),1)\n    EntityDetails, EntityPokemons = models.getpokemonsbasedonentitiy(entity_Id)\n\n    return redirect('Entities:getentities', entity_Id)\n    #return render(request, 'entities/trainerpage.html', {'entity': EntityDetails, 'all_pokemon': EntityPokemons, 'WasUpdated': 'Yes','EntityHeaders':EntityHeaders})\n\n\ndef UpdatePokemonDetails(request, entity_Id, pokemon_Id):\n    try:\n        PokemonId = request.POST['PokemonId']\n        #print request\n    except:\n        return HttpResponse(\"MissingInput\")\n    PokemonHeaders = models.PokemonHeaders()\n    UpdateQuery = \"\"\"EXEC dbo.UpdatePokemonDetailsViaUX \n                    @PokemonId = %s\n                    ,@PrintResults = 0 \"\"\" %(models.ForSQL(pokemon_Id))\n    for header in PokemonHeaders:\n        x=request.POST[header['ColumnName']]\n        if not x is None and str(header['AllowEditing'])=='1':\n            ParameterLine = \",@%s = %s\" % (header['ColumnName'],models.ForSQL(x))\n            UpdateQuery += '\\n'+ParameterLine\n    #print UpdateQuery\n    ImportModules.runSQLNoResults(UpdateQuery,ImportModules.SpecialString(),1)\n    #EntityDetails, EntityPokemons = models.getpokemonsbasedonentitiy(entity_Id)\n\n    return redirect('Entities:pokemonpage', entity_Id,pokemon_Id)\n\ndef GetAllNatures(request):\n    data = ImportModules.runSQLreturnresults(\n        \"SELECT TOP 1000 * FROM dbo.Pokemon_NatureAndModifiers WITH (NOLOCK)\", (ImportModules.SpecialString()))\n    return JsonResponse(data, safe=False);\n\ndef CreateNewPokemon(request, DMName, entity_Id, OwnerName):\n    try:\n        #print request\n        PokemonNickName = models.ForSQL(request.POST['PokemonNickName'])\n        Species = models.ForSQL(request.POST['Species'])\n        Gender = models.ForSQL(request.POST['Gender'])\n        Nature = models.ForSQL(request.POST['Nature'])\n        StartingLevel = models.ForSQL(request.POST['StartingLevel'])\n        #IsShiny = models.ForSQL(request.POST['IsShiny'])\n        Move1 = models.ForSQL(request.POST['Move1'])\n        Move2 = models.ForSQL(request.POST['Move2'])\n        Move3 = models.ForSQL(request.POST['Move3'])\n        Move4 = models.ForSQL(request.POST['Move4'])\n        AdditionalTrainerNotes = models.ForSQL(request.POST['AdditionalTrainerNotes'])\n\n    except:\n        return HttpResponse(\"MissingInput\")\n    PokemonHeaders = models.PokemonHeaders()\n    UpdateQuery = \"\"\"DECLARE @ErrCode INT,\n                    @ErrDescription NVARCHAR(MAX),\n                    @PokemonId INT;\n                    \n                    EXEC dbo.Create_New_Pokemon \n                            @DMName = %s,     \n                            @OwnerName = %s,                      \n                            @TrainerId = %s,                           \n                            @PokemonNickName = %s,               \n                            @Species = %s,                   \n                            @Gender = %s,                          \n                            @Nature = %s, \n                            @StartingLevel = %s,                       \n                            @IsShiny = %s,                          \n                            @Move1 = %s,                             \n                            @Move2 = %s,                             \n                            @Move3 = %s,                             \n                            @Move4 = %s,                             \n                            @AdditionalTrainerNotes = %s, \n                            @ErrCode = @ErrCode OUTPUT,            \n                            @ErrDescription = @ErrDescription OUTPUT, \n                            @PokemonId = @PokemonId OUTPUT \n                            \n                    SELECT @ErrCode ErrCode,\n                    @ErrDescription ErrDescription,\n                    @PokemonId PokemonId;\"\"\" %(DMName,OwnerName,entity_Id,PokemonNickName,Species,Gender,Nature,StartingLevel,0,Move1,Move2,Move3,Move4,AdditionalTrainerNotes)\n    #print UpdateQuery\n    Results = ImportModules.runSQLreturnresults(UpdateQuery,ImportModules.SpecialString())\n    #print Results\n    if Results[0]['ErrCode'] is None or str(Results[0]['ErrCode'])==\"0\":\n        return redirect('Entities:pokemonpage', entity_Id,Results[0]['PokemonId'])\n    else:\n        print Results[0]['ErrCode']\n        print Results[0]['ErrDescription']\n        error = {'ErrCode':Results[0]['ErrCode'],'ErrDescription':Results[0]['ErrDescription']}\n        all_pokemon = ImportModules.runSQLreturnresults(\n            \"EXEC dbo.GetAllPokemonsPerTrainer @Username = N'%s', @DMName = N'%s'\" % (entity_Id, 'Sagi'),\n            '%s' % (ImportModules.SpecialString()))\n        #return render(request, 'entities/trainerpage.html', {'entity': entity_Id, 'all_pokemon': all_pokemon, 'error':error})\n        #raise forms.ValidationError(error['ErrDescription'])\n        return HttpResponse(render(request, 'entities/ErrPage.html', {'error':error,'entity_Id':entity_Id}))\n\n\n# Create your views here.\ndef index_Old(request):\n    all_entities = temp_entities_dict.objects.all()\n    html = ''\n    for entity in all_entities:\n        url = r'%s/' % (entity.pk)\n        html += '<a href = \"%s\">%s</a><br>' % (url, entity.EntityName)\n    return HttpResponse(html)\n\n\ndef index_ver2(request):\n    all_entities = temp_entities_dict.objects.all()\n    template = loader.get_template('entities/index.html')\n    context = {'entities': all_entities}\n    return HttpResponse(template.render(context, request))
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- entities/views.py	(revision 4d8a046c8a6842c6c56fbb97e2f0d1d1985d9c3d)
++++ entities/views.py	(date 1513810831486)
+@@ -53,7 +53,6 @@
+     pokemondetails = ImportModules.runSQLreturnresults("EXEC dbo.GetPokemonDetails @PokemonId = N'%s' " %(pokemon_Id), ImportModules.SpecialString())
+     pokemondetails = pokemondetails[0]
+     PokemonHeaders = models.PokemonHeaders()
+-    AllSpecies = ImportModules.runSQLreturnresults("SELECT TOP 5000 Pokemon AS Species FROM dbo.PokemonBasicAttributes WITH (NOLOCK)", ImportModules.SpecialString())
+     for head in range(len(PokemonHeaders)):
+         head = head - 1
+         PokemonHeaders[head]['ColumnValue'] = ''
+@@ -62,6 +61,9 @@
+                 PokemonHeaders[head]['ColumnValue'] = pokemondetails[key]
+     allavailablemoves = ImportModules.runSQLreturnresults(
+         "EXEC dbo.Get_all_available_Moves @PokemonId = %s" % (ImportModules.ModifyValueForSQL(pokemon_Id)), ImportModules.SpecialString())
++    AllSpecies = ImportModules.runSQLreturnresults(
++        "SELECT TOP 5000 Pokemon AS Species FROM dbo.PokemonBasicAttributes WITH (NOLOCK)",
++        ImportModules.SpecialString())
+     #print allavailablemoves
+     return render(request, 'entities/pokemonpage.html', {'pokemondetails':pokemondetails,'PokemonHeaders':PokemonHeaders,'entity_Id':entity_Id,'allavailablemoves':allavailablemoves, 'AllSpecies':AllSpecies})
+ 
+@@ -131,10 +133,14 @@
+                     @PokemonId = %s
+                     ,@PrintResults = 0 """ %(models.ForSQL(pokemon_Id))
+     for header in PokemonHeaders:
+-        x=request.POST[header['ColumnName']]
+-        if not x is None and str(header['AllowEditing'])=='1':
+-            ParameterLine = ",@%s = %s" % (header['ColumnName'],models.ForSQL(x))
+-            UpdateQuery += '\n'+ParameterLine
++        try:
++            x=request.POST[header['ColumnName']]
++            if not x is None and str(header['AllowEditing'])=='1':
++                ParameterLine = ",@%s = %s" % (header['ColumnName'],models.ForSQL(x))
++                print ParameterLine
++                UpdateQuery += '\n'+ParameterLine
++        except:
++            print '%s failed to return resaults. Please double check' %(header['ColumnName'])
+     #print UpdateQuery
+     ImportModules.runSQLNoResults(UpdateQuery,ImportModules.SpecialString(),1)
+     #EntityDetails, EntityPokemons = models.getpokemonsbasedonentitiy(entity_Id)

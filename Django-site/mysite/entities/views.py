@@ -93,13 +93,19 @@ def TopSixRemove(request, entity_Id):
     return render(request, 'entities/trainerpage.html', {'entity': entity, 'all_pokemon': all_pokemon})
 
 def UpdateTrainerDetails(request, entity_Id):
+    print request
+    print request.POST['StrModifier']
     try:
         TrainerId = request.POST['TrainerId']
-        DMName = request.POST['DMName']
-        print "Missing Input: TrainerId %s" % (TrainerId)
-        print "Missing Input: DMName %s" % (DMName)
     except:
-        return HttpResponse("MissingInput")
+        return HttpResponse("Missing Input: TrainerId")
+    try:
+        DMName = 'Sagi'#request.POST['DMName']
+    except:
+        return HttpResponse("Missing Input: DMName")
+        return render(request, 'battles/create-battle.html',
+                      {'DMName': 'Sagi', 'errormsg': errormsg, 'errorcode': errorcode})
+        return HttpResponse("Missing Battle Type")
     EntityHeaders = models.EntityHeaders()
     UpdateQuery = """EXEC dbo.TrainerDetailsUpdate @Mode = 1                  
                               ,@TrainerId = %s

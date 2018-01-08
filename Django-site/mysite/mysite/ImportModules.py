@@ -43,7 +43,7 @@ def runSQLreturnresults ( SQLQuery , Password):
         SQLConnection.close()
         return Dictionary
 
-print runSQLreturnresults ( "EXEC dbo.Get_all_available_Moves @PokemonId = 5" , '123qwe!!')
+#print runSQLreturnresults ( "EXEC dbo.Get_all_available_Moves @PokemonId = 5" , '123qwe!!')
 
 """ A function to run SQL SP/Updates that don't require an output """
 
